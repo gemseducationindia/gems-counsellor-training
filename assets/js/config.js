@@ -1,7 +1,7 @@
 /* Site settings. Change these without touching the rest of the code. */
 window.GCT_CONFIG = {
   // Google Apps Script web app URL (ends in /exec). Leave empty to keep results on this device only.
-  SHEET_URL: "",
+  SHEET_URL: "https://script.google.com/macros/s/AKfycbwibA-poLLnkaDbvmiSyCfazEYWzU-oofqvDWpIAsR5LReoM7PgVRHaP87fMLX5w5I/exec",
 
   // Percentage needed to pass a module quiz and the final exam.
   PASS_MARK: 70,
