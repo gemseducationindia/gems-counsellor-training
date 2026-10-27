@@ -8,6 +8,8 @@
   const LS_USER = "gct:user:";
   const LS_CURRENT = "gct:current";
   const LS_QUEUE = "gct:queue";
+  // ?preview opens everything without gates and never writes to the Sheet or this device's saved progress.
+  const PREVIEW = new URLSearchParams(location.search).has("preview");
 
   /* ---------------- small helpers ---------------- */
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -42,7 +44,15 @@
     return s;
   }
 
+  function previewUser() {
+    const s = blankState({ email: "preview@gems", name: "Preview", role: "Preview mode", campus: "All campuses" });
+    MODULES.forEach((m) => Object.assign(s.modules[m.id], { passed: true, best: 100, last: 100, passedAt: now() }));
+    Object.assign(s.final, { passed: true, best: 100, last: 100, passedAt: now(), certId: "PREVIEW" });
+    return s;
+  }
+
   function save(eventName, detail) {
+    if (PREVIEW) return;
     user.updated = now();
     store.set(LS_USER + user.email, user);
     if (eventName) queue({ kind: "event", ts: now(), event: eventName, detail: detail || "" });
@@ -78,6 +88,7 @@
   /* ---------------- Google Sheet sync ---------------- */
   let syncing = false;
   function queue(item) {
+    if (PREVIEW) return;
     const q = store.get(LS_QUEUE, []);
     if (item) { item.email = user.email; q.push(item); }
     store.set(LS_QUEUE, q.slice(-500));
@@ -85,7 +96,7 @@
   }
 
   async function flush() {
-    if (!CFG.SHEET_URL || syncing || !user) return;
+    if (PREVIEW || !CFG.SHEET_URL || syncing || !user) return;
     syncing = true;
     const q = store.get(LS_QUEUE, []);
     const mine = q.filter((x) => x.email === user.email);
@@ -158,7 +169,7 @@
   /* ---------------- layout ---------------- */
   function shell(inner, opts) {
     opts = opts || {};
-    const who = user ? `<div class="who"><span>${esc(user.name)}</span><button class="link" data-act="switch">Switch user</button></div>` : "";
+    const who = PREVIEW ? `<div class="who"><span class="chip ready">Preview mode: everything open, nothing saved</span></div>` : user ? `<div class="who"><span>${esc(user.name)}</span><button class="link" data-act="switch">Switch user</button></div>` : "";
     app.innerHTML = `
       <header class="top">
         <a class="brand" href="${user ? "#/home" : "#/"}"><span class="wordmark">GEMS</span><span class="sub">EDUCATION</span><span class="divider"></span><span class="title">Counsellor Academy</span></a>
@@ -512,7 +523,7 @@
       const q = questions[i];
       document.getElementById("count").textContent = `Question ${i + 1} of ${questions.length}`;
       document.getElementById("bar").style.width = pct(i, questions.length) + "%";
-      next.disabled = true;
+      next.disabled = !PREVIEW;
       next.textContent = i < questions.length - 1 ? "Next question →" : "See my result →";
       renderQuestion(box, q, { practice: false, onAnswer: (ok, given) => {
         if (ok) score++;
@@ -617,6 +628,7 @@
   function route() {
     stopSpeaking();
     const h = location.hash.replace(/^#\/?/, "").split("/");
+    if (PREVIEW) user = previewUser();
     if (!user) {
       const cur = store.get(LS_CURRENT, null);
       const s = cur && store.get(LS_USER + cur, null);
