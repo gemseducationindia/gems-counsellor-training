@@ -9,7 +9,7 @@
   const LS_CURRENT = "gct:current";
   const LS_QUEUE = "gct:queue";
   // ?preview opens everything without gates and never writes to the Sheet or this device's saved progress.
-  const PREVIEW = new URLSearchParams(location.search).has("preview");
+  const PREVIEW = new URLSearchParams(location.search).has("preview") || /preview/.test(location.hash);
 
   /* ---------------- small helpers ---------------- */
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
