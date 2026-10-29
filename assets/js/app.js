@@ -324,7 +324,7 @@
     const media = l.video
       ? `<figure class="media"><div class="vid"><video id="vid" controls playsinline preload="metadata" poster="assets/video/${l.video}.jpg" src="assets/video/${l.video}.mp4"></video></div>
          <div class="vctl"><button class="btn ghost" data-speed="0.75">Slower</button><button class="btn ghost" data-speed="1">Normal speed</button><button class="btn ghost" data-act="replay">↺ Watch again</button>
-         <span class="watch" id="watchnote">${watched ? "" : "Watch the video to unlock the question."}</span></div></figure>`
+         <span class="watch" id="watchnote">${already ? "" : "Watch the video, then answer the question below."}</span></div></figure>`
       : "";
     const image = l.image ? `<figure class="shot"><img src="${l.image.src}" alt="${esc(l.image.alt)}" loading="lazy"><figcaption>${esc(l.image.caption || "")}</figcaption></figure>` : "";
 
@@ -344,7 +344,7 @@
         ${l.remember ? `<div class="box tip"><b>Remember</b><p>${fill(l.remember)}</p></div>` : ""}
         ${l.extra ? extraBlock(l.extra) : ""}
         ${image}
-        <section class="check ${watched ? "" : "locked"}" id="check">
+        <section class="check" id="check">
           <p class="k">Quick check</p>
           <div id="q"></div>
         </section>
@@ -440,14 +440,14 @@
     if (q.type === "hotspot") {
       body.innerHTML = `<p class="hint">Tap on the picture.</p><div class="hot"><img src="${q.img}" alt="Screenshot for the question"><span class="mark" hidden></span><span class="zone" hidden></span></div>`;
       const hot = body.querySelector(".hot"), mark = hot.querySelector(".mark"), zone = hot.querySelector(".zone");
-      const [x1, y1, x2, y2] = q.box, pad = 1.5;
+      const [x1, y1, x2, y2] = q.box, padX = 1, padY = 3; // forgiving up and down; neighbouring icons sit side by side
       Object.assign(zone.style, { left: x1 + "%", top: y1 + "%", width: x2 - x1 + "%", height: y2 - y1 + "%" });
       let finished = false;
       hot.onclick = (e) => {
         if (finished) return;
         const r = hot.getBoundingClientRect();
         const x = ((e.clientX - r.left) / r.width) * 100, y = ((e.clientY - r.top) / r.height) * 100;
-        const ok = x >= x1 - pad && x <= x2 + pad && y >= y1 - pad && y <= y2 + pad;
+        const ok = x >= x1 - padX && x <= x2 + padX && y >= y1 - padY && y <= y2 + padY;
         mark.hidden = false; mark.className = "mark " + (ok ? "right" : "wrong");
         Object.assign(mark.style, { left: x + "%", top: y + "%" });
         if (ok || !opts.practice) { zone.hidden = false; finished = true; }
