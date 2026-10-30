@@ -10,12 +10,10 @@ window.CAMPUSES = [
   "short": "GMS Vikhroli",
   "city": "Vikhroli, Mumbai",
   "updated": "30 Oct 2026",
-  "feeYear": "2027–28",
   "board": "ICSE and Cambridge",
-  "grades": "Playgroup to Grade 8",
+  "grades": "Playgroup to Grade 7",
   "keyNotes": [
    "No hostel facility at any GEMS campus. Day school only.",
-   "Parents may know it by its former name, Cresmonde School Vikhroli.",
    "Book and uniform samples are available at school for parents to see."
   ],
   "feeRows": [
@@ -76,7 +74,7 @@ window.CAMPUSES = [
     "timings": "8:00 am – 3:00 pm"
    },
    {
-    "grade": "Grade 5 (ICSE)",
+    "grade": "Grade 5",
     "tuition": 255000,
     "max": 30,
     "ratio": "30:1",
@@ -97,20 +95,6 @@ window.CAMPUSES = [
     "timings": "8:00 am – 3:00 pm"
    },
    {
-    "grade": "Grade 8 (ICSE)",
-    "tuition": 255000,
-    "max": 30,
-    "ratio": "30:1",
-    "timings": "8:00 am – 3:00 pm"
-   },
-   {
-    "grade": "Grade 5 (Cambridge)",
-    "tuition": 287000,
-    "max": 30,
-    "ratio": "30:1",
-    "timings": "8:00 am – 3:00 pm"
-   },
-   {
     "grade": "Grade 6 (Cambridge)",
     "tuition": 287000,
     "max": 30,
@@ -123,80 +107,72 @@ window.CAMPUSES = [
     "max": 30,
     "ratio": "30:1",
     "timings": "8:00 am – 3:00 pm"
-   },
-   {
-    "grade": "Grade 8 (Cambridge)",
-    "tuition": 287000,
-    "max": 30,
-    "ratio": "30:1",
-    "timings": "8:00 am – 3:00 pm"
    }
   ],
-  "oneTime": {
-   "registration": 2000,
-   "admission": 40000
-  },
-  "transportNote": "School transport covers about 10 Kms around the campus.",
-  "routes": [],
-  "details": [
+  "applicationFee": 2000,
+  "admissionFee": 40000,
+  "extraFees": [
+   {
+    "key": "Uniform",
+    "cell": "Up to 10K",
+    "max": 10000
+   },
+   {
+    "key": "Books",
+    "cell": "8K – 10K",
+    "max": 10000
+   },
+   {
+    "key": "ICSE examination fee",
+    "cell": "≈ 4K – 5K",
+    "max": null
+   },
+   {
+    "key": "Cambridge examination fee",
+    "cell": "≈ 8K – 10K / subject",
+    "max": null
+   }
+  ],
+  "transport": [
    [
-    "Official name",
-    "GEMS Millennium School, Vikhroli"
+    "0 – 1 km",
+    15000
    ],
    [
-    "Address",
-    "CTS No. 339 Part of Village Hariyali, at, MHADA Layout, Tagore Nagar, Vikhroli East, Mumbai, Maharashtra 400083"
+    "1 – 3 km",
+    24000
    ],
    [
-    "Landmark",
-    "Near Vidya Mandir School"
+    "3 – 5 km",
+    30000
    ],
    [
-    "Admissions phone",
-    "9240920000 (centralised number)"
+    "5 – 8 km",
+    40000
    ],
    [
-    "Admissions email",
-    "admissiondesk@gemsedu.in"
-   ],
-   [
-    "Office hours",
-    "Mon–Fri 8:00 am - 5:00 pm; Sat 8:00 am - 5:00 pm"
-   ],
-   [
-    "Principal",
-    "Mr Austine Vas"
-   ],
-   [
-    "Vice principal",
-    "Dr Bhawna Sharma"
-   ],
-   [
-    "Head of admissions",
-    "Dip Kumar Shaw"
-   ],
-   [
-    "Established",
-    "2026"
-   ],
-   [
-    "Languages (2nd, 3rd)",
-    "Hindi, Marathi"
-   ],
-   [
-    "Students",
-    "86 · 17 teachers"
-   ],
-   [
-    "Student–teacher ratio",
-    "12:1"
-   ],
-   [
-    "Campus size",
-    "0.6 ACre"
+    "8 km and above",
+    60000
    ]
   ],
-  "admissions": [],
+  "bus": [
+   [
+    "Bus type",
+    "AC buses"
+   ],
+   [
+    "Attendant",
+    "1 per bus"
+   ],
+   [
+    "GPS tracking",
+    "Yes"
+   ],
+   [
+    "CCTV in bus",
+    "Yes"
+   ]
+  ],
   "facilities": [
    [
     "Labs and learning",
@@ -263,69 +239,6 @@ window.CAMPUSES = [
     ]
    ]
   ],
-  "awards": [],
-  "extraFees": [
-   {
-    "key": "Uniform",
-    "cell": "Up to 10K",
-    "max": 10000
-   },
-   {
-    "key": "Books",
-    "cell": "8K – 10K",
-    "max": 10000
-   },
-   {
-    "key": "ICSE examination fee",
-    "cell": "≈ 4K – 5K",
-    "max": null
-   },
-   {
-    "key": "Cambridge examination fee",
-    "cell": "≈ 8K – 10K / subject",
-    "max": null
-   }
-  ],
-  "transport": [
-   [
-    "0 – 1 km",
-    15000
-   ],
-   [
-    "1 – 3 km",
-    24000
-   ],
-   [
-    "3 – 5 km",
-    30000
-   ],
-   [
-    "5 – 8 km",
-    40000
-   ],
-   [
-    "8 km and above",
-    60000
-   ]
-  ],
-  "bus": [
-   [
-    "Bus type",
-    "AC buses"
-   ],
-   [
-    "Attendant",
-    "1 per bus"
-   ],
-   [
-    "GPS tracking",
-    "Yes"
-   ],
-   [
-    "CCTV in bus",
-    "Yes"
-   ]
-  ],
   "curriculum": {
    "icse": {
     "title": "ICSE subject groups · Grades 9 and 10",
@@ -389,204 +302,139 @@ window.CAMPUSES = [
   "short": "GMS Gurugram",
   "city": "Gurugram",
   "updated": "30 Oct 2026",
-  "feeYear": "2027–28",
   "board": "CBSE",
   "grades": "Pre-KG to Grade 12",
   "keyNotes": [
-   "No hostel facility at any GEMS campus. Day school only.",
-   "Parents may know it by its former name, GEMS International School."
+   "No hostel facility at any GEMS campus. Day school only."
   ],
   "feeRows": [
    {
     "grade": "Pre-KG",
-    "tuition": 150428,
-    "annual": 25000
+    "tuition": 150428
    },
    {
     "grade": "Nursery",
-    "tuition": 150428,
-    "annual": 25000
+    "tuition": 150428
    },
    {
     "grade": "Junior KG",
-    "tuition": 150428,
-    "annual": 25000
+    "tuition": 150428
    },
    {
     "grade": "Senior KG",
-    "tuition": 150428,
-    "annual": 25000
+    "tuition": 150428
    },
    {
     "grade": "Grade 1",
-    "tuition": 150428,
-    "annual": 25000
+    "tuition": 150428
    },
    {
     "grade": "Grade 2",
-    "tuition": 150428,
-    "annual": 25000
+    "tuition": 150428
    },
    {
     "grade": "Grade 3",
-    "tuition": 177012,
-    "annual": 25000
+    "tuition": 177012
    },
    {
     "grade": "Grade 4",
-    "tuition": 177012,
-    "annual": 25000
+    "tuition": 177012
    },
    {
     "grade": "Grade 5",
-    "tuition": 177012,
-    "annual": 25000
+    "tuition": 177012
    },
    {
     "grade": "Grade 6",
-    "tuition": 200660,
-    "annual": 25000
+    "tuition": 200660
    },
    {
     "grade": "Grade 7",
-    "tuition": 200660,
-    "annual": 25000
+    "tuition": 200660
    },
    {
     "grade": "Grade 8",
-    "tuition": 200660,
-    "annual": 25000
+    "tuition": 200660
    },
    {
     "grade": "Grade 9",
-    "tuition": 218136,
-    "annual": 25000
+    "tuition": 218136
    },
    {
     "grade": "Grade 10",
-    "tuition": 218136,
-    "annual": 25000
+    "tuition": 218136
    },
    {
     "grade": "Grade 11",
-    "tuition": 230512,
-    "annual": 25000
+    "tuition": 230512
    },
    {
     "grade": "Grade 12",
-    "tuition": 230512,
-    "annual": 25000
+    "tuition": 230512
    }
   ],
-  "oneTime": {
-   "registration": 5000,
-   "admission": 60000
-  },
-  "transportNote": "School transport covers about 20 km around the campus.",
-  "routes": [],
-  "details": [
+  "applicationFee": 5000,
+  "admissionFee": 60000,
+  "extraFees": [
+   {
+    "key": "Uniform",
+    "cell": null,
+    "max": null
+   },
+   {
+    "key": "Books",
+    "cell": null,
+    "max": null
+   },
+   {
+    "key": "CBSE examination fee",
+    "cell": null,
+    "max": null
+   }
+  ],
+  "transport": [
    [
-    "Official name",
-    "GEMS Millennium School, Gurugram"
+    "0 – 1 km",
+    null
    ],
    [
-    "Address",
-    "Block C2, Palam Vihar, Gurugram 122017"
+    "1 – 3 km",
+    null
    ],
    [
-    "Landmark",
-    "Near Palam Vihar Community Centre"
+    "3 – 5 km",
+    null
    ],
    [
-    "Admissions phone",
-    "7303096206, 9650014922"
+    "5 – 8 km",
+    null
    ],
    [
-    "Admissions email",
-    "admissions.gurugram@gemsedu.in"
-   ],
-   [
-    "Office hours",
-    "Mon–Fri 8 am to 4:30 pm; Sat 9 am to 2 pm"
-   ],
-   [
-    "Principal",
-    "Ms Mary Mahendri"
-   ],
-   [
-    "Vice principal",
-    "Mr Rohitash Raj"
-   ],
-   [
-    "Established",
-    "2010"
-   ],
-   [
-    "CBSE affiliation no.",
-    "530889"
-   ],
-   [
-    "Languages (2nd, 3rd)",
-    "Hindi, Sanskrit, French, Spanish"
-   ],
-   [
-    "Streams (Grades 11–12)",
-    "Science, Commerce, Humanities"
-   ],
-   [
-    "Students",
-    "1461 · 117 teachers"
-   ],
-   [
-    "Student–teacher ratio",
-    "12:1"
-   ],
-   [
-    "Campus size",
-    "5 acres"
-   ],
-   [
-    "Meals provided",
-    "Yes"
+    "8 km and above",
+    null
    ]
   ],
-  "admissions": [
+  "bus": [
    [
-    "Admissions open",
-    "1 Aug 2026"
+    "Bus type",
+    null
    ],
    [
-    "Admissions close",
-    "1 Aug 2027"
+    "Attendant",
+    null
    ],
    [
-    "Age cut-off",
-    "Child must be 3 years as on 31 March 2027"
+    "GPS tracking",
+    null
    ],
    [
-    "Assessment",
-    "Parent interaction, child interaction, IBT by ACER for children 3rd onwards"
-   ],
-   [
-    "Documents",
-    "Birth certificate, Aadhaar of parent and child, Immunization record, Medical certificate, passport size photographs of parent and child, current residence proof, parivaar pehechaan patra (mandatory in Haryana only), TC, Migration certificate (if applicable), report card from previous school, registration card (incase of direct entry in grade 10th and 12th), PEN number, SRN number"
-   ],
-   [
-    "Scholarships",
-    "Grade 10 - 10% scholarship for students scoing 85% and above, 15% scholarship for students scoring 90% and above, 20% scholarship for students scoring 95% and above"
-   ],
-   [
-    "Booking a visit",
-    "CRM, incoming calls, direct walk-ins"
-   ],
-   [
-    "Enquiries handled by",
-    "Ms Neha Shrivastava, Ms Shivani Kush"
+    "CCTV in bus",
+    null
    ]
   ],
   "facilities": [
    [
-    "Facilities",
+    "Labs and learning",
     [
      "Library",
      "Montessori lab",
@@ -597,46 +445,61 @@ window.CAMPUSES = [
      "Chemistry lab",
      "Biology lab",
      "ICT",
-     "Drama theatre",
-     "Cafeteria",
-     "Music room",
      "Math lab",
-     "Art room",
-     "Dance room",
      "Eurisko Lab",
-     "Psycho motor gym",
-     "Media lab",
+     "Badmintton"
+    ]
+   ],
+   [
+    "Performing arts",
+    [
+     "Drama theatre",
+     "Music room",
+     "Dance room",
+     "Media lab"
+    ]
+   ],
+   [
+    "Life skills",
+    [
+     "Art room",
      "Design and fashion studio"
     ]
    ],
    [
-    "Sports",
+    "Indoor sports",
+    [
+     "Psycho motor gym",
+     "Boxing",
+     "Martial arts",
+     "Yoga",
+     "Table tennis"
+    ]
+   ],
+   [
+    "Outdoor sports",
     [
      "Football",
      "Basketball",
      "Pickleball",
      "Cricket",
-     "Badmintton",
-     "Boxing",
      "Volleyball",
      "Swimming",
      "Tennis court",
-     "Martial arts",
-     "Throwball",
-     "Yoga",
-     "Table tennis"
+     "Throwball"
+    ]
+   ],
+   [
+    "Campus and safety",
+    [
+     "Cafeteria"
     ]
    ]
   ],
-  "awards": [
-   "Torch Bearers of Good Practices Award - IDA K12 Education Category",
-   "Rank No.1 in Gurgaon and Haryana in the category ' Best Curriculum Design Adaptation' - Education Today",
-   "Ranked #5 in Gurugram Leaders Category in TOI School Survey",
-   "1st in the India Early Childhood Excellence Index 2025, awarded by the Association of Indian Principals (AIP) and the Confederation for Quality in Early Childhood Care and Education (CQECCE)",
-   "Excellence in Life Skill Education, Excellence in STEAM Implementation, Excellence in Inclusive Education - ET Tech X Award",
-   "Sustainability Superstar Award - The Climate Action Award and Eco Innovation 'Earthivist Award'",
-   "Pre-School with Innovative Pedagogy and Efficient Supporter School of the SDGs 2030 - GSLC"
-  ]
+  "curriculum": null,
+  "notShown": {
+   "annualFee": 25000
+  }
  },
  {
   "slug": "indirapuram",
@@ -646,12 +509,10 @@ window.CAMPUSES = [
   "short": "GMS Indirapuram",
   "city": "Indirapuram, Ghaziabad",
   "updated": "30 Oct 2026",
-  "feeYear": "2027–28",
   "board": "CBSE",
   "grades": "Nursery to Grade 8",
   "keyNotes": [
-   "No hostel facility at any GEMS campus. Day school only.",
-   "First session 2027–28 runs up to Grade 8. Grades 9 to 12 open in later years."
+   "No hostel facility at any GEMS campus. Day school only."
   ],
   "feeRows": [
    {
@@ -699,128 +560,130 @@ window.CAMPUSES = [
     "tuition": 250000
    }
   ],
-  "oneTime": {
-   "registration": 5000,
-   "admission": 50000
-  },
-  "transportNote": "School transport covers about 15 Kms around the campus.",
-  "routes": [],
-  "details": [
+  "applicationFee": 5000,
+  "admissionFee": 50000,
+  "extraFees": [
+   {
+    "key": "Uniform",
+    "cell": null,
+    "max": null
+   },
+   {
+    "key": "Books",
+    "cell": null,
+    "max": null
+   },
+   {
+    "key": "CBSE examination fee",
+    "cell": null,
+    "max": null
+   }
+  ],
+  "transport": [
    [
-    "Official name",
-    "GEMS Millennium School, Indirapuram"
+    "0 – 1 km",
+    null
    ],
    [
-    "Address",
-    "Niti Khand 3, Shakti Khand 2, Indirapuram, Ghaziabad, Uttar Pradesh 201014"
+    "1 – 3 km",
+    null
    ],
    [
-    "Landmark",
-    "Yashoda Medicity/ Eros Mall/ DMart"
+    "3 – 5 km",
+    null
    ],
    [
-    "Admissions phone",
-    "9240920000 (centralised number)"
+    "5 – 8 km",
+    null
    ],
    [
-    "WhatsApp",
-    "9625937574"
-   ],
-   [
-    "Reception",
-    "9625937574"
-   ],
-   [
-    "Admissions email",
-    "admissions.indirapuram@gemsedu.in"
-   ],
-   [
-    "Office hours",
-    "Mon–Fri 9 am - 5 pm; Sat 9 am - 5 pm"
-   ],
-   [
-    "Founding Principal",
-    "Ms Rajeshree Shihag"
-   ],
-   [
-    "Head of admissions",
-    "Ms Sonali Prakash"
-   ],
-   [
-    "Established",
-    "2027"
-   ],
-   [
-    "Languages (2nd, 3rd)",
-    "Hindi, Sanskrit"
-   ],
-   [
-    "Streams (Grades 11–12)",
-    "Will have all three"
-   ],
-   [
-    "Campus size",
-    "3.13 Acres"
+    "8 km and above",
+    null
    ]
   ],
-  "admissions": [
+  "bus": [
    [
-    "Documents",
-    "Birth certificate, Aadhar of the child, Aadhar of the parents, Previous school TC (Grade 2 onwards), Previous class assessment card/report card/marksheet(Grade 2 onwards), Photographs, Medical Certificate, Address proof"
+    "Bus type",
+    null
    ],
    [
-    "Booking a visit",
-    "Online, follow-up call to enquiry"
+    "Attendant",
+    null
    ],
    [
-    "Enquiries handled by",
-    "Ms Sonali Prakash, Admissions Head"
+    "GPS tracking",
+    null
+   ],
+   [
+    "CCTV in bus",
+    null
    ]
   ],
   "facilities": [
    [
-    "Facilities",
+    "Labs and learning",
     [
      "Energy Conscious",
-     "Architecture",
      "Designed on",
-     "BALA Principles",
      "MONTESSORI LAB",
      "Eurisko Lab",
-     "WELL DESIGNED CORRIDORS",
-     "Newspaper reading station on all floors",
      "COMPUTER LAB",
-     "ATELIER - ART ROOM",
-     "AUDITORIUM",
      "LIBRARY",
-     "POTTERY ROOM",
-     "MUSIC STUDIOS",
      "STEAM Labs",
-     "Dance Studio",
      "Astronomy Lab",
-     "Robotics Lab"
+     "Robotics Lab",
+     "4 Nos Picke Ball",
+     "Courts"
     ]
    ],
    [
-    "Sports",
+    "Performing arts",
     [
-     "Olympic Sized Pool - FINA Facility Compliant 50 x 25m",
-     "Toddler & Practice Pool",
-     "4 Nos Picke Ball",
-     "Courts",
-     "Padel court",
-     "200m Racing track",
+     "MUSIC STUDIOS",
+     "Dance Studio"
+    ]
+   ],
+   [
+    "Life skills",
+    [
+     "ATELIER - ART ROOM",
+     "POTTERY ROOM"
+    ]
+   ],
+   [
+    "Indoor sports",
+    [
      "Yoga & Gymnasium Spaces",
      "Skating Rink",
      "Table Tennis",
+     "BOXING"
+    ]
+   ],
+   [
+    "Outdoor sports",
+    [
+     "Olympic Sized Pool - FINA Facility Compliant 50 x 25m",
+     "Toddler & Practice Pool",
+     "Padel court",
+     "200m Racing track",
      "PRACTICE CRICKET NET",
-     "BOXING",
      "Mountaineering wall",
      "Shooting range"
     ]
+   ],
+   [
+    "Campus and safety",
+    [
+     "Architecture",
+     "BALA Principles",
+     "WELL DESIGNED CORRIDORS",
+     "Newspaper reading station on all floors",
+     "AUDITORIUM"
+    ]
    ]
   ],
-  "awards": []
+  "curriculum": null,
+  "notShown": {}
  },
  {
   "slug": "kalyan",
@@ -830,12 +693,10 @@ window.CAMPUSES = [
   "short": "GMS Kalyan",
   "city": "Kalyan",
   "updated": "30 Oct 2026",
-  "feeYear": "2027–28",
-  "board": "CBSE and Cambridge",
+  "board": "CBSE",
   "grades": "Pre-KG to Grade 8",
   "keyNotes": [
-   "No hostel facility at any GEMS campus. Day school only.",
-   "Parents may know it by its former name, Cresmonde School Kalyan."
+   "No hostel facility at any GEMS campus. Day school only."
   ],
   "feeRows": [
    {
@@ -887,88 +748,106 @@ window.CAMPUSES = [
     "tuition": 110000
    }
   ],
-  "oneTime": {
-   "registration": 2000,
-   "admission": 10000
-  },
-  "transportNote": "School transport covers about 10 Kms around the campus.",
-  "routes": [],
-  "details": [
+  "applicationFee": 2000,
+  "admissionFee": 10000,
+  "extraFees": [
+   {
+    "key": "Uniform",
+    "cell": null,
+    "max": null
+   },
+   {
+    "key": "Books",
+    "cell": null,
+    "max": null
+   },
+   {
+    "key": "CBSE examination fee",
+    "cell": null,
+    "max": null
+   }
+  ],
+  "transport": [
    [
-    "Official name",
-    "GEMS Millennium School, Kalyan"
+    "0 – 1 km",
+    null
    ],
    [
-    "Address",
-    "Reservation No 227, Mauje, Gholap Nagar, Yogidham, Gauripada, Kalyan, Maharashtra 421301"
+    "1 – 3 km",
+    null
    ],
    [
-    "Landmark",
-    "Gholap Nagar"
+    "3 – 5 km",
+    null
    ],
    [
-    "Admissions phone",
-    "9240920000 (centralised number)"
+    "5 – 8 km",
+    null
    ],
    [
-    "Reception",
-    "+91 93242 39635"
-   ],
-   [
-    "Admissions email",
-    "admissiondesk@gemsedu.in"
-   ],
-   [
-    "Office hours",
-    "Mon–Fri 8:00 am - 5:00 pm; Sat 8:00 am - 5:00 pm"
-   ],
-   [
-    "Principal",
-    "Swati Patel"
-   ],
-   [
-    "Head of admissions",
-    "Dip Kumar Shaw"
-   ],
-   [
-    "Established",
-    "2025"
-   ],
-   [
-    "Languages (2nd, 3rd)",
-    "Hindi, Marathi"
-   ],
-   [
-    "Students",
-    "125"
-   ],
-   [
-    "Student–teacher ratio",
-    "12:1"
-   ],
-   [
-    "Campus size",
-    "1 acre"
+    "8 km and above",
+    null
    ]
   ],
-  "admissions": [],
+  "bus": [
+   [
+    "Bus type",
+    null
+   ],
+   [
+    "Attendant",
+    null
+   ],
+   [
+    "GPS tracking",
+    null
+   ],
+   [
+    "CCTV in bus",
+    null
+   ]
+  ],
   "facilities": [
    [
-    "Facilities",
+    "Labs and learning",
     [
-     "Auditorium",
      "Physics, Chemistry & Biology Labs",
      "ICT Labs (Primary & Secondary)",
      "Libraries (Primary & Secondary)",
      "STEAM Lab",
-     "Robotics & VR Lab",
-     "Art, Pottery, Culinary & Carpentry Studios",
+     "Robotics & VR Lab"
+    ]
+   ],
+   [
+    "Performing arts",
+    [
      "Music, Dance & Drama Rooms",
      "Music & performing arts: Keyboard, Piano, Guitar, Ukulele, Drums, Sitar, Vocals, Theatre & Drama, Public Speaking"
     ]
+   ],
+   [
+    "Life skills",
+    [
+     "Art, Pottery, Culinary & Carpentry Studios"
+    ]
+   ],
+   [
+    "Indoor sports",
+    []
+   ],
+   [
+    "Outdoor sports",
+    []
+   ],
+   [
+    "Campus and safety",
+    [
+     "Auditorium"
+    ]
    ]
   ],
-  "awards": []
+  "curriculum": null,
+  "notShown": {}
  },
  {
   "slug": "kochi-gms",
@@ -978,7 +857,6 @@ window.CAMPUSES = [
   "short": "GMS Kochi",
   "city": "Kochi",
   "updated": "30 Oct 2026",
-  "feeYear": "2027–28",
   "board": "CBSE",
   "grades": "Nursery to Grade 5",
   "keyNotes": [
@@ -987,123 +865,141 @@ window.CAMPUSES = [
   "feeRows": [
    {
     "grade": "Nursery",
-    "tuition": 145000,
-    "annual": 25000
+    "tuition": 145000
    },
    {
     "grade": "Junior KG",
-    "tuition": 145000,
-    "annual": 25000
+    "tuition": 145000
    },
    {
     "grade": "Senior KG",
-    "tuition": 145000,
-    "annual": 25000
+    "tuition": 145000
    },
    {
     "grade": "Grade 1",
-    "tuition": 159500,
-    "annual": 25000
+    "tuition": 159500
    },
    {
     "grade": "Grade 2",
-    "tuition": 159500,
-    "annual": 25000
+    "tuition": 159500
    },
    {
     "grade": "Grade 3",
-    "tuition": 159500,
-    "annual": 25000
+    "tuition": 159500
    },
    {
     "grade": "Grade 4",
-    "tuition": 175450,
-    "annual": 25000
+    "tuition": 175450
    },
    {
     "grade": "Grade 5",
-    "tuition": 175450,
-    "annual": 25000
+    "tuition": 175450
    }
   ],
-  "oneTime": {
-   "registration": 10000,
-   "admission": 100000
-  },
-  "transportNote": "School transport covers about 3 kms- 45 kms around the campus.",
-  "routes": [],
-  "details": [
+  "applicationFee": 10000,
+  "admissionFee": 100000,
+  "extraFees": [
+   {
+    "key": "Uniform",
+    "cell": null,
+    "max": null
+   },
+   {
+    "key": "Books",
+    "cell": null,
+    "max": null
+   },
+   {
+    "key": "CBSE examination fee",
+    "cell": null,
+    "max": null
+   }
+  ],
+  "transport": [
    [
-    "Official name",
-    "GEMS Millennium School"
+    "0 – 1 km",
+    null
    ],
    [
-    "Address",
-    "Plot B1-4, Smartcity,Brahmapuram,Kochi,Kerala 682303"
+    "1 – 3 km",
+    null
    ],
    [
-    "Landmark",
-    "Smart City"
+    "3 – 5 km",
+    null
    ],
    [
-    "Admissions phone",
-    "+ 91 9188939724"
+    "5 – 8 km",
+    null
    ],
    [
-    "Reception",
-    "0484-2587811"
-   ],
-   [
-    "Admissions email",
-    "admissions.gmsk@gemsedu.in"
-   ],
-   [
-    "Office hours",
-    "Mon–Fri 8:00 am - 5:00 pm; Sat 9:00 am – 1:00 pm (First & Third Saturdays only) (Admin)"
-   ],
-   [
-    "Principal",
-    "Ms Reshma Mather"
-   ],
-   [
-    "Head of admissions",
-    "Mr S Krishna Kumar- COO"
-   ],
-   [
-    "Established",
-    "2026"
-   ],
-   [
-    "Meals provided",
-    "Yes"
+    "8 km and above",
+    null
    ]
   ],
-  "admissions": [],
-  "facilities": [
+  "bus": [
    [
-    "Facilities",
-    [
-     "Auditorium"
-    ]
+    "Bus type",
+    null
    ],
    [
-    "Sports",
+    "Attendant",
+    null
+   ],
+   [
+    "GPS tracking",
+    null
+   ],
+   [
+    "CCTV in bus",
+    null
+   ]
+  ],
+  "facilities": [
+   [
+    "Labs and learning",
+    []
+   ],
+   [
+    "Performing arts",
+    []
+   ],
+   [
+    "Life skills",
+    []
+   ],
+   [
+    "Indoor sports",
     [
-     "Basketball Court",
-     "Tennis Court",
      "Skating Rink",
-     "Swimming Pool",
-     "MPH",
-     "Football Ground",
-     "Volleyball Court",
-     "Wall Climbing",
-     "Long Jump Pit",
      "Table Tennis",
      "Badminton"
     ]
+   ],
+   [
+    "Outdoor sports",
+    [
+     "Basketball Court",
+     "Tennis Court",
+     "Swimming Pool",
+     "Football Ground",
+     "Volleyball Court",
+     "Wall Climbing",
+     "Long Jump Pit"
+    ]
+   ],
+   [
+    "Campus and safety",
+    [
+     "Auditorium",
+     "MPH"
+    ]
    ]
   ],
-  "awards": []
+  "curriculum": null,
+  "notShown": {
+   "annualFee": 25000
+  }
  },
  {
   "slug": "varanasi",
@@ -1113,12 +1009,10 @@ window.CAMPUSES = [
   "short": "GMS Varanasi",
   "city": "Varanasi",
   "updated": "30 Oct 2026",
-  "feeYear": "2027–28",
-  "board": "CBSE and IB",
+  "board": "CBSE",
   "grades": "Nursery to Grade 12",
   "keyNotes": [
-   "No hostel facility at any GEMS campus. Day school only.",
-   "Parents may know it by its former name, CRIMSON world School, Varanasi."
+   "No hostel facility at any GEMS campus. Day school only."
   ],
   "feeRows": [
    {
@@ -1182,21 +1076,93 @@ window.CAMPUSES = [
     "tuition": 125664
    }
   ],
-  "oneTime": {
-   "registration": 1000,
-   "admission": 30000
-  },
-  "transportNote": null,
-  "routes": [],
-  "details": [
+  "applicationFee": 1000,
+  "admissionFee": 30000,
+  "extraFees": [
+   {
+    "key": "Uniform",
+    "cell": null,
+    "max": null
+   },
+   {
+    "key": "Books",
+    "cell": null,
+    "max": null
+   },
+   {
+    "key": "CBSE examination fee",
+    "cell": null,
+    "max": null
+   }
+  ],
+  "transport": [
    [
-    "Official name",
-    "GEMS Millennium School, Varanasi"
+    "0 – 1 km",
+    null
+   ],
+   [
+    "1 – 3 km",
+    null
+   ],
+   [
+    "3 – 5 km",
+    null
+   ],
+   [
+    "5 – 8 km",
+    null
+   ],
+   [
+    "8 km and above",
+    null
    ]
   ],
-  "admissions": [],
-  "facilities": [],
-  "awards": []
+  "bus": [
+   [
+    "Bus type",
+    null
+   ],
+   [
+    "Attendant",
+    null
+   ],
+   [
+    "GPS tracking",
+    null
+   ],
+   [
+    "CCTV in bus",
+    null
+   ]
+  ],
+  "facilities": [
+   [
+    "Labs and learning",
+    []
+   ],
+   [
+    "Performing arts",
+    []
+   ],
+   [
+    "Life skills",
+    []
+   ],
+   [
+    "Indoor sports",
+    []
+   ],
+   [
+    "Outdoor sports",
+    []
+   ],
+   [
+    "Campus and safety",
+    []
+   ]
+  ],
+  "curriculum": null,
+  "notShown": {}
  },
  {
   "slug": "lucknow",
@@ -1206,12 +1172,10 @@ window.CAMPUSES = [
   "short": "GSE Lucknow",
   "city": "Lucknow SCR",
   "updated": "30 Oct 2026",
-  "feeYear": "2027–28",
   "board": "CBSE",
   "grades": "Pre-KG to Grade 10",
   "keyNotes": [
-   "No hostel facility at any GEMS campus. Day school only.",
-   "Parents may know it by its former name, Adani Gems School of Excellence, Lucknow."
+   "No hostel facility at any GEMS campus. Day school only."
   ],
   "feeRows": [
    {
@@ -1271,198 +1235,68 @@ window.CAMPUSES = [
     "tuition": 124000
    }
   ],
-  "oneTime": {
-   "registration": 2000,
-   "admission": 32000
-  },
-  "transportNote": "School transport covers about 28 kms around the campus.",
-  "routes": [
+  "applicationFee": 2000,
+  "admissionFee": 32000,
+  "extraFees": [
+   {
+    "key": "Uniform",
+    "cell": null,
+    "max": null
+   },
+   {
+    "key": "Books",
+    "cell": null,
+    "max": null
+   },
+   {
+    "key": "CBSE examination fee",
+    "cell": null,
+    "max": null
+   }
+  ],
+  "transport": [
    [
-    "S9",
-    "SriVinayak Enclave",
-    "8:10–8:25 am",
-    "3:15-3:25 pm"
+    "0 – 1 km",
+    null
    ],
    [
-    "S8",
-    "IIM Road, JankiPuram",
-    "7:00–8:05 am",
-    "3:15-4:25 pm"
+    "1 – 3 km",
+    null
    ],
    [
-    "J8",
-    "Manas Green,Kissan Path",
-    "8:40–9:05 am",
-    "1:30-2:15 pm"
+    "3 – 5 km",
+    null
    ],
    [
-    "S7",
-    "Omega Spring Green, Ayodhya Road",
-    "7:00–8:10 am",
-    "3:15-4:25 pm"
+    "5 – 8 km",
+    null
    ],
    [
-    "S6",
-    "Deva Road,Naubastakala,Takroiya",
-    "7:10–8:00 am",
-    "3:15-4:15 pm"
-   ],
-   [
-    "S5",
-    "Indra Nagar",
-    "7:00–8:20 am",
-    "3:15-4:20 pm"
-   ],
-   [
-    "S4",
-    "Gomti Nagar,Kamta,BBD",
-    "6:50–7:55 am",
-    "3:15-4:40 pm"
-   ],
-   [
-    "J4",
-    "Malhor,Chinhat,TiwariGanj",
-    "8:40–9:15 am",
-    "1:30-2:35 pm"
-   ],
-   [
-    "S3",
-    "Amity Collage Malhor",
-    "6:50–7:55 am",
-    "3:15-4:30 pm"
-   ],
-   [
-    "J3",
-    "Deva Road Dayalform,Dhawaa",
-    "8:35–9:10 am",
-    "1:30-2:25 pm"
-   ],
-   [
-    "S2",
-    "Baba Hosiptal,BBD,TiwariGanj,Papnaa Mau,AnoraKala",
-    "7:00–7:50 am",
-    "3:15-4:20 pm"
-   ],
-   [
-    "J2",
-    "Kursi Road Janki Puram",
-    "8:45–9:05 am",
-    "1:30-2:40 pm"
-   ],
-   [
-    "S-1",
-    "Barabanki",
-    "6:50–7:40 am",
-    "3:15-4:20 pm"
-   ],
-   [
-    "J-1",
-    "Omega Spring Green,Narendi,Jugguar, Ayodhya Road",
-    "8:30–9:05 am",
-    "1:30-2:25 pm"
-   ],
-   [
-    "J9",
-    "Khamria Gaon,Post Gadiya Barabanki",
-    "8:50–9:05 am",
-    "1:30-2:35 pm"
+    "8 km and above",
+    null
    ]
   ],
-  "details": [
+  "bus": [
    [
-    "Official name",
-    "GEMS School of Excellence, Lucknow SCR"
+    "Bus type",
+    null
    ],
    [
-    "Address",
-    "Deva Road, Mati 225003"
+    "Attendant",
+    null
    ],
    [
-    "Landmark",
-    "Near DMart"
+    "GPS tracking",
+    null
    ],
    [
-    "Admissions phone",
-    "8303028336"
-   ],
-   [
-    "Reception",
-    "9335521492"
-   ],
-   [
-    "Admissions email",
-    "admissions.lucknow@gemsedu.in"
-   ],
-   [
-    "Office hours",
-    "Mon–Fri 8:30 am to 4:30 pm; Sat 8:30 am to 4:30 pm"
-   ],
-   [
-    "Principal",
-    "Mrs Pooja Lamba"
-   ],
-   [
-    "Head of admissions",
-    "Mrs Bhawana Palni"
-   ],
-   [
-    "Established",
-    "2025"
-   ],
-   [
-    "CBSE affiliation no.",
-    "2134383"
-   ],
-   [
-    "Languages (2nd, 3rd)",
-    "Hindi, Sanskrit"
-   ],
-   [
-    "Students",
-    "165 · 24 teachers"
-   ],
-   [
-    "Campus size",
-    "2.13 acres"
-   ],
-   [
-    "Meals provided",
-    "No"
-   ]
-  ],
-  "admissions": [
-   [
-    "Admissions open",
-    "1 Nov 2026"
-   ],
-   [
-    "Admissions close",
-    "31 Aug 2027"
-   ],
-   [
-    "Age cut-off",
-    "Child must be 3 yrs as on July 31, 2027 for admission to FS1"
-   ],
-   [
-    "Assessment",
-    "Parent interaction, child interaction, IBT by ACER for children above class 3"
-   ],
-   [
-    "Documents",
-    "Birth certificate, Aadhar of the child, Aadhar of the parents, Previous school TC, Previous class marksheet, Photographs, Medical Certificate, Address proof"
-   ],
-   [
-    "Booking a visit",
-    "Online form, call the admission number, Direct Walkin"
-   ],
-   [
-    "Enquiries handled by",
-    "Ms Mamta Bora, Ms Ankita Singh"
+    "CCTV in bus",
+    null
    ]
   ],
   "facilities": [
    [
-    "Facilities",
+    "Labs and learning",
     [
      "Library",
      "Montessori Lab",
@@ -1470,38 +1304,51 @@ window.CAMPUSES = [
      "Composite Science Lab",
      "ICT Lab",
      "Atelier",
-     "2 Music Room",
      "Robotics Lab",
      "Math Lab",
      "Language Lab",
-     "Dance Room",
-     "Fyule Lab",
-     "Indoor Sports Room"
+     "Fyule Lab"
     ]
    ],
    [
-    "Sports",
+    "Performing arts",
     [
-     "Football Court",
-     "Basketball Court",
+     "2 Music Room",
+     "Dance Room"
+    ]
+   ],
+   [
+    "Life skills",
+    []
+   ],
+   [
+    "Indoor sports",
+    [
+     "Indoor Sports Room",
      "Skating Rink",
-     "Net Cricket",
-     "Athletics Track",
      "Badminton",
      "Table Tennis",
      "Martial Arts",
      "Chess",
      "Carrom"
     ]
+   ],
+   [
+    "Outdoor sports",
+    [
+     "Football Court",
+     "Basketball Court",
+     "Net Cricket",
+     "Athletics Track"
+    ]
+   ],
+   [
+    "Campus and safety",
+    []
    ]
   ],
-  "awards": [
-   "Education Excellence Awards '25 \"Excellence in NEP/NCF Implementation 2025",
-   "India Early Childhood Excellence Award 2025",
-   "AI visionary school certificate (2026)",
-   "Cfore School Rankings India's Best Emerging Schools (Indian Curriculum) 2025 and 2026",
-   "Jagran EduSilv Awards 2026 \"Future Ready Campus Award\" 2026"
-  ]
+  "curriculum": null,
+  "notShown": {}
  },
  {
   "slug": "jodhpur",
@@ -1511,12 +1358,10 @@ window.CAMPUSES = [
   "short": "GSE Jodhpur",
   "city": "Jodhpur",
   "updated": "30 Oct 2026",
-  "feeYear": "2027–28",
   "board": "CBSE",
   "grades": "Pre-KG to Grade 12",
   "keyNotes": [
-   "No hostel facility at any GEMS campus. Day school only.",
-   "Parents may know it by its former name, Orchid International School, Saran nagar."
+   "No hostel facility at any GEMS campus. Day school only."
   ],
   "feeRows": [
    {
@@ -1584,179 +1429,116 @@ window.CAMPUSES = [
     "tuition": 129000
    }
   ],
-  "oneTime": {
-   "registration": 2000,
-   "admission": 30000
-  },
-  "transportNote": "School transport covers about 15 Km around the campus.",
-  "routes": [
+  "applicationFee": 2000,
+  "admissionFee": 30000,
+  "extraFees": [
+   {
+    "key": "Uniform",
+    "cell": null,
+    "max": null
+   },
+   {
+    "key": "Books",
+    "cell": null,
+    "max": null
+   },
+   {
+    "key": "CBSE examination fee",
+    "cell": null,
+    "max": null
+   }
+  ],
+  "transport": [
    [
-    "R-S1",
-    "Nandri,Banar and Saran nagar A",
-    "6:28-7:37 am",
-    "3:10-3:55 pm"
+    "0 – 1 km",
+    null
    ],
    [
-    "R- J1",
-    "Ramjan hatha, Digari",
-    "8:30-9:00 am",
-    "1:25-2:10 pm"
+    "1 – 3 km",
+    null
    ],
    [
-    "R-S2",
-    "Pal Road, Circuit house",
-    "6:50-7:33 am",
-    "3:05-4:15 pm"
+    "3 – 5 km",
+    null
    ],
    [
-    "R-J2",
-    "BZS, Basni, mata ka than",
-    "8:25-9:10 am",
-    "1:25-2:05 pm"
+    "5 – 8 km",
+    null
    ],
    [
-    "R-S3",
-    "Airforce area, Ratanada",
-    "6:40-7:28 am",
-    "2:55-4:10 pm"
-   ],
-   [
-    "R-S4",
-    "Mandore, Raikabagh,Digari",
-    "6:48-7:31 am",
-    "3:10-3:42 pm"
+    "8 km and above",
+    null
    ]
   ],
-  "details": [
+  "bus": [
    [
-    "Official name",
-    "GEMS School of Excellence, Jodhpur"
+    "Bus type",
+    null
    ],
    [
-    "Address",
-    "Saran Nagar 'C' Road, Jodhpur 342015"
+    "Attendant",
+    null
    ],
    [
-    "Landmark",
-    "Near Mahadev garden"
+    "GPS tracking",
+    null
    ],
    [
-    "Admissions phone",
-    "7304713784"
-   ],
-   [
-    "Reception",
-    "9079900561"
-   ],
-   [
-    "Admissions email",
-    "admissions.jodhpur@gemsedu.in"
-   ],
-   [
-    "Office hours",
-    "Mon–Fri 7:45 am to 4:00 pm; Sat 7:45 am to 4:00 pm"
-   ],
-   [
-    "Principal",
-    "Mrs Neha Mathur"
-   ],
-   [
-    "Head of admissions",
-    "Ms Anjali Bishnoi"
-   ],
-   [
-    "Established",
-    "2026"
-   ],
-   [
-    "CBSE affiliation no.",
-    "1730901"
-   ],
-   [
-    "Languages (2nd, 3rd)",
-    "Hindi, Sanskrit"
-   ],
-   [
-    "Students",
-    "211 · 28 teachers"
-   ],
-   [
-    "Student–teacher ratio",
-    "8:1"
-   ],
-   [
-    "Campus size",
-    "2 acres"
-   ]
-  ],
-  "admissions": [
-   [
-    "Admissions open",
-    "1 Nov 2026"
-   ],
-   [
-    "Admissions close",
-    "31 Aug 2027"
-   ],
-   [
-    "Age cut-off",
-    "Child must be 2 yrs as on July 31, 2027 for admission in playgroup"
-   ],
-   [
-    "Assessment",
-    "Parent interaction, child interaction, IBT by ACER for children above class 3"
-   ],
-   [
-    "Documents",
-    "Birth certificate, Aadhaar and photograph of child and parent,Previous school Report card and TC"
-   ],
-   [
-    "Scholarships",
-    "RTE Students"
-   ],
-   [
-    "Booking a visit",
-    "Call the admissions number"
-   ],
-   [
-    "Enquiries handled by",
-    "Ms Anjali Bishnoi, Ms Deepti K Daniel"
+    "CCTV in bus",
+    null
    ]
   ],
   "facilities": [
    [
-    "Facilities",
+    "Labs and learning",
     [
      "Library",
      "Montessori Lab",
      "Eurisko Discovery Lab",
      "Composite Science Lab",
      "Atelier lab",
-     "2 Music Room",
      "Robotics Lab",
      "Math Lab",
-     "Dance room",
-     "Drama room",
-     "Fyule Lab",
-     "Indoor Sports room"
+     "Fyule Lab"
     ]
    ],
    [
-    "Sports",
+    "Performing arts",
     [
-     "Football Court",
-     "Basketball Court",
+     "2 Music Room",
+     "Dance room",
+     "Drama room"
+    ]
+   ],
+   [
+    "Life skills",
+    []
+   ],
+   [
+    "Indoor sports",
+    [
+     "Indoor Sports room",
      "Skating Rink",
      "Table Tennis",
-     "Cricket Net",
      "Chess",
      "Carrom"
     ]
+   ],
+   [
+    "Outdoor sports",
+    [
+     "Football Court",
+     "Basketball Court",
+     "Cricket Net"
+    ]
+   ],
+   [
+    "Campus and safety",
+    []
    ]
   ],
-  "awards": [
-   "AI visionary school certificate (2026)"
-  ]
+  "curriculum": null,
+  "notShown": {}
  },
  {
   "slug": "kochi-gma",
@@ -1766,8 +1548,7 @@ window.CAMPUSES = [
   "short": "GMA Kochi",
   "city": "Kochi",
   "updated": "30 Oct 2026",
-  "feeYear": "2027–28",
-  "board": "IB (PYP, MYP) and Cambridge (IGCSE)",
+  "board": "IB and Cambridge",
   "grades": "Nursery to Grade 12",
   "keyNotes": [
    "No hostel facility at any GEMS campus. Day school only."
@@ -1775,473 +1556,215 @@ window.CAMPUSES = [
   "feeRows": [
    {
     "grade": "Nursery (IB)",
-    "tuition": 183000,
-    "annual": 25000
+    "tuition": 183000
    },
    {
     "grade": "Junior KG (IB)",
-    "tuition": 183000,
-    "annual": 25000
+    "tuition": 183000
    },
    {
     "grade": "Senior KG (IB)",
-    "tuition": 191030,
-    "annual": 25000
+    "tuition": 191030
    },
    {
     "grade": "Grade 1 (IB)",
-    "tuition": 204140,
-    "annual": 25000
+    "tuition": 204140
    },
    {
     "grade": "Grade 2 (IB)",
-    "tuition": 213500,
-    "annual": 25000
+    "tuition": 213500
    },
    {
     "grade": "Grade 3 (IB)",
-    "tuition": 228020,
-    "annual": 25000
+    "tuition": 228020
    },
    {
     "grade": "Grade 4 (IB)",
-    "tuition": 228020,
-    "annual": 25000
+    "tuition": 228020
    },
    {
     "grade": "Grade 5 (IB)",
-    "tuition": 228020,
-    "annual": 25000
+    "tuition": 228020
    },
    {
     "grade": "Grade 6 (IB)",
-    "tuition": 371000,
-    "annual": 25000
+    "tuition": 371000
    },
    {
     "grade": "Grade 7 (IB)",
-    "tuition": 371000,
-    "annual": 25000
+    "tuition": 371000
    },
    {
     "grade": "Grade 8 (IB)",
-    "tuition": 371000,
-    "annual": 25000
+    "tuition": 371000
    },
    {
     "grade": "Grade 9 (IB)",
-    "tuition": 386900,
-    "annual": 25000
+    "tuition": 386900
    },
    {
     "grade": "Grade 10 (IB)",
-    "tuition": 386900,
-    "annual": 25000
+    "tuition": 386900
    },
    {
     "grade": "Grade 11 (IB)",
-    "tuition": 424000,
-    "annual": 25000
+    "tuition": 424000
    },
    {
     "grade": "Grade 12 (IB)",
-    "tuition": 424000,
-    "annual": 25000
+    "tuition": 424000
    },
    {
     "grade": "Grade 6 (Cambridge)",
-    "tuition": 244000,
-    "annual": 25000
+    "tuition": 244000
    },
    {
     "grade": "Grade 7 (Cambridge)",
-    "tuition": 244000,
-    "annual": 25000
+    "tuition": 244000
    },
    {
     "grade": "Grade 8 (Cambridge)",
-    "tuition": 244000,
-    "annual": 25000
+    "tuition": 244000
    },
    {
     "grade": "Grade 9 (Cambridge)",
-    "tuition": 261420,
-    "annual": 25000
+    "tuition": 261420
    },
    {
     "grade": "Grade 10 (Cambridge)",
-    "tuition": 261420,
-    "annual": 25000
+    "tuition": 261420
    },
    {
     "grade": "Grade 11 (Cambridge)",
-    "tuition": 290470,
-    "annual": 25000
+    "tuition": 290470
    },
    {
     "grade": "Grade 12 (Cambridge)",
-    "tuition": 290470,
-    "annual": 25000
+    "tuition": 290470
    }
   ],
-  "oneTime": {
-   "prospectus": 2000,
-   "registration": 10000,
-   "admission": 30000
-  },
-  "transportNote": "School transport covers about 3 kms- 45 kms around the campus.",
-  "routes": [
+  "applicationFee": 10000,
+  "admissionFee": 30000,
+  "extraFees": [
+   {
+    "key": "Uniform",
+    "cell": null,
+    "max": null
+   },
+   {
+    "key": "Books",
+    "cell": null,
+    "max": null
+   },
+   {
+    "key": "IB examination fee",
+    "cell": null,
+    "max": null
+   },
+   {
+    "key": "Cambridge examination fee",
+    "cell": null,
+    "max": null
+   }
+  ],
+  "transport": [
    [
-    "1",
-    "Fort Kochi, Thoppumpady, Thevara, Petta,  Irumpanam, GEMS",
-    "6.45 AM",
-    "4.45 PM"
+    "0 – 1 km",
+    null
    ],
    [
-    "2",
-    "Koovappady, Perumbavoor,Chembaraky,Pukkattupady,Thevakkal,Edachira,GEMS",
-    "6.55 AM",
-    "4.30 PM"
+    "1 – 3 km",
+    null
    ],
    [
-    "3",
-    "Chendamangalam, Perumpadanna, Varappuzha, Edappilly, Unichira, Kakkanadu, GEMS",
-    "6.35 AM",
-    "5.00 PM"
+    "3 – 5 km",
+    null
    ],
    [
-    "4",
-    "U.C.College, Parvoorkavala, Muttam, Unichira, Kakkanadu, GEMS",
-    "6.45 AM",
-    "4.30 PM"
+    "5 – 8 km",
+    null
    ],
    [
-    "5",
-    "Kaloor, Judges Avanue, Lissie Hospital, Kathrikkadav, Palarivattam, Vazhakkala, Kakkanad, GEMS",
-    "6.50 AM",
-    "4.30 PM"
-   ],
-   [
-    "6",
-    "Poothotta, Puthenkavu, Vadakkekotta, Eroor, Vennala, Thuthiyoor, GEMS",
-    "6.55 AM",
-    "4.20PM"
-   ],
-   [
-    "7",
-    "Pachalam, Ayyappankavu, Kompara, Kacherippady, North ESI Hospital, Palarivattom, Padivattam, Padamugal, Mavelipuram, Kakkanad, GEMS",
-    "7.00 AM",
-    "4.30 PM"
-   ],
-   [
-    "8",
-    "Chowara, Thettaly, Thuruth, Asokapuram, Bank Jn Aluva, Kalamassery, Vallathol, Mavelipuram, GEMS",
-    "6.40 AM",
-    "4.35 PM"
-   ],
-   [
-    "9",
-    "Elamakkara, Changampuzha Park, Edappally, Toll Jn, Thrikkakkara, GEMS",
-    "7.00 AM",
-    "4.40 PM"
-   ],
-   [
-    "10",
-    "Ramamangalam, Thiruvaniyoor, Peringala, Kaninad, Karimukal, Brahamapuram,  GEMS",
-    "6.50 AM",
-    "4.55 PM"
-   ],
-   [
-    "11",
-    "Thammanam, Chakkaraparambu, Vennala, Alinchuvad, Palachuvad, Chittethukara, GEMS",
-    "7.00 AM",
-    "4.30 PM"
-   ],
-   [
-    "12",
-    "Aroor, Kannadikkadu, Thyakooadam, Vytila Janatha, Palarivattam, Vazhakkala, Eechamukku, GEMS",
-    "6.40 AM",
-    "4.40 AM"
-   ],
-   [
-    "14",
-    "Alangad, Panayikulam, Eloor, Kalamaserry, Manjummal, Cusat, Thrikkakara, GEMS",
-    "6.50 AM",
-    "4.40 PM"
-   ],
-   [
-    "15",
-    "Olive Kalista, GEMS",
-    "7.45 AM",
-    "3.30 PM"
-   ],
-   [
-    "16",
-    "Konthuruthy, Kallupalam, Bundroad, Ponnoth temple road, Elamkulam, Vytila, GEMS",
-    "7.00 AM",
-    "4.30 OM"
-   ],
-   [
-    "17",
-    "Queens Walkway, Highcourt, Kacherippady, Desabhimany, Stadium, Palarivattam,  Vazhakkala, GEMS",
-    "7.00 AM",
-    "4.15 PM"
-   ],
-   [
-    "18",
-    "DLF, Kakkanad, GEMS",
-    "7.35 AM",
-    "3.30 PM"
-   ],
-   [
-    "19",
-    "Cheranalloor, Vishnupuram, Amruta Nagar, Kunnumpram, Edappally, Marotichodu, Kakkanadu, GEMS",
-    "6.15 AM",
-    "4.35 PM"
-   ],
-   [
-    "20",
-    "Palarivattam, Pipeline Rod, Vazhakkala, Desiyamukku, Kakkanad, GEMS",
-    "7.20 AM",
-    "3.40 PM"
-   ],
-   [
-    "21",
-    "Pattimatom, Kitex, Kizhakkambalam, Pallikkara, Ambalapady, Wonderla, Thengod, Manakkakadvu, GEMS",
-    "6.50 AM",
-    "4.25 PM"
-   ],
-   [
-    "22",
-    "Mulamthuruthy, Thiruvankulam, Irumpanam, Chittethukara, Infopark, GEMS",
-    "7.00 AM",
-    "4.25 PM"
-   ],
-   [
-    "23",
-    "Kentpalm villas, Kollamkudymukal, Athany Jn, GEMS",
-    "7.35 AM",
-    "3.40 PM"
-   ],
-   [
-    "24",
-    "Kaloor, Kumaranasan Nagar, Ponnurunny, Vytila, Palarivattam, Vazakkala, Kakkanad, GEMS",
-    "6.55 AM",
-    "4.20 PM"
-   ],
-   [
-    "25",
-    "Vytila,  Chalikkavattam, Palarivattam, Vazhakkala, Padamukal, Palachuvad, Chittethiukara, GEMS",
-    "6.55 AM",
-    "4.30 PM"
-   ],
-   [
-    "26",
-    "Panampilly Nagar, Manorama.Jn, Kadavanthara, Javaharnagar, Ponnurunni, ,  Palachuvadu, Kakkanad, GEMS",
-    "7.00 AM",
-    "4.20 PM"
-   ],
-   [
-    "27",
-    "Ravipuram, Panampilly nagar, Girinagar, PonnurunnI, Vytila, Thykoodam, Petta, Irumpanam, GEMS",
-    "6.50 AM",
-    "4.20 PM"
-   ],
-   [
-    "28",
-    "Manjummal, Kunnumpuram, Edappally, Ponnevazhi, Anjumana Temple, Marottichodu, Trikkakkara, GEMS",
-    "7.00 AM",
-    "4.20 PM"
-   ],
-   [
-    "29",
-    "Edadachira, Skyline Ivy Leageu, GEMS",
-    "7.40 AM",
-    "3.30 PM"
-   ],
-   [
-    "30",
-    "Convent Jn, Chittoor road, KSRTC Bus Stand, Katrikadavu, Stadium, Palarivattom, Vazhakkala,  Kakkanadu, GEMS",
-    "6.50 AM",
-    "4.30 PM"
-   ],
-   [
-    "31",
-    "Aluva Choondi, Pukkattupady, Mochamkulam, Thevakkal, Millumpady, Thengodu, Edachira, GEMS",
-    "7.00 AM",
-    "4.10 PM"
-   ],
-   [
-    "32",
-    "Trinity world,Chittethukara, Infopark Expressway, GEMS",
-    "7.40 AM",
-    "3.30 PM"
-   ],
-   [
-    "33",
-    "Kolenchery, Kadayirippu, Pazhamthottam, Pallikkara, Thengode, Athani, GEMS",
-    "7.00 AM",
-    "4.30 PM"
-   ],
-   [
-    "34",
-    "Prestige Hilside Kakkanad, GEMS",
-    "7.40 AM",
-    "3.20 PM"
-   ],
-   [
-    "35",
-    "Elamkunnapuzha, Karthedam, Vallarpadam, Highcourt, Palarivattam, Kakkanadu, GEMS",
-    "6.15 AM",
-    "4.35 PM"
-   ],
-   [
-    "36",
-    "Aluva,  Kalamassery, Kollamkudimughal, Athani,  Kaakand,  GEMS",
-    "7.00 AM",
-    "4.25 PM"
-   ],
-   [
-    "37",
-    "Gold Tower Vazhakkala, Padamukal, Palachuvad, Chittethukara, GEMS",
-    "7.30 AM",
-    "4.40 PM"
-   ],
-   [
-    "38",
-    "Vazhakkala Kunnumpuram, Kakkanad, Nilampathinjamukal, GEMS",
-    "7.20 AM",
-    "4.00 PM"
-   ],
-   [
-    "39",
-    "High Court,  Kaloor,  Palrivattom,  Kakkanad, GEMS",
-    "7.05 AM",
-    "4.20 PM"
-   ],
-   [
-    "40",
-    "Edachira, Morakkala,  Pinarmunda,  GEMS",
-    "7.25 AM",
-    "3.50 PM"
-   ],
-   [
-    "41",
-    "Kangarappady, Millumpady, Kusumagiri, GEMS",
-    "7.40 AM",
-    "3.25 PM"
-   ],
-   [
-    "42",
-    "Edappally,  Unichira, Karimakkadu, NGO Quarters, Kakkanad,  GemsGEMS",
-    "7.00 AM",
-    "4.25 PM"
-   ],
-   [
-    "43",
-    "Highcourt, kaloor, Palalrivattom, Kakkakanad, GEMS",
-    "7.10 AM",
-    "4.05 PM"
+    "8 km and above",
+    null
    ]
   ],
-  "details": [
+  "bus": [
    [
-    "Official name",
-    "GEMS Modern Academy"
+    "Bus type",
+    null
    ],
    [
-    "Address",
-    "Plot B1-4, Smartcity,Brahmapuram,Kochi,Kerala 682303"
+    "Attendant",
+    null
    ],
    [
-    "Landmark",
-    "Smart City"
+    "GPS tracking",
+    null
    ],
    [
-    "Admissions phone",
-    "+ 91 7994205050"
-   ],
-   [
-    "Reception",
-    "0484-2587800"
-   ],
-   [
-    "Admissions email",
-    "admissions.gmak@gemsedu.in"
-   ],
-   [
-    "Office hours",
-    "Mon–Fri 8:00 am - 5:00 pm; Sat 9:00 am – 1:00 pm (First & Third Saturdays only) (Admin)"
-   ],
-   [
-    "Principal /Head of School",
-    "Mr Biju Baby"
-   ],
-   [
-    "Vice principal",
-    "Mr Binu Azeez - Deputy Head of School (Secondary - Cambridge) | Mr Rajesh K - Deputy Head of School (Secondary - IB) | Ms Lakshmi S - Deputy Head of School (EYP & PYP)"
-   ],
-   [
-    "Head of admissions",
-    "Mr S Krishna Kumar- COO"
-   ],
-   [
-    "Established",
-    "2018"
-   ],
-   [
-    "Languages (2nd, 3rd)",
-    "Hindi, Spanish, French for Grades 1-10, Malayalam for Grades 1-5"
-   ],
-   [
-    "Streams (Grades 11–12)",
-    "Science, Maths, Commerce, Computer Science, Humanities"
-   ],
-   [
-    "Campus size",
-    "8.26 Acres"
-   ],
-   [
-    "Meals provided",
-    "Yes"
+    "CCTV in bus",
+    null
    ]
   ],
-  "admissions": [],
   "facilities": [
    [
-    "Facilities",
+    "Labs and learning",
     [
-     "Auditorium",
      "Physics lab",
      "Chemistry lab",
      "Biology lab",
      "ICT lab",
      "Primary and secondary",
      "Library primary and secondary",
+     "STEAM lab"
+    ]
+   ],
+   [
+    "Performing arts",
+    [
      "Drama room",
      "Music room",
-     "STEAM lab",
      "Dance room"
     ]
    ],
    [
-    "Sports",
+    "Life skills",
+    []
+   ],
+   [
+    "Indoor sports",
     [
-     "Basketball Court",
-     "Tennis Court",
      "Skating Rink",
-     "Swimming Pool",
-     "MPH",
-     "Football Ground",
-     "Volleyball Court",
-     "Wall Climbing",
-     "Long Jump Pit",
      "Table Tennis",
      "Badminton"
     ]
+   ],
+   [
+    "Outdoor sports",
+    [
+     "Basketball Court",
+     "Tennis Court",
+     "Swimming Pool",
+     "Football Ground",
+     "Volleyball Court",
+     "Wall Climbing",
+     "Long Jump Pit"
+    ]
+   ],
+   [
+    "Campus and safety",
+    [
+     "Auditorium",
+     "MPH"
+    ]
    ]
   ],
-  "awards": []
+  "curriculum": null,
+  "notShown": {
+   "annualFee": 25000,
+   "prospectusFee": 2000
+  }
  },
  {
   "slug": "coimbatore",
@@ -2251,7 +1774,6 @@ window.CAMPUSES = [
   "short": "GMA Coimbatore",
   "city": "Coimbatore",
   "updated": "30 Oct 2026",
-  "feeYear": "2027–28",
   "board": "CBSE and IB",
   "grades": "Nursery to Grade 12",
   "keyNotes": [
@@ -2367,15 +1889,97 @@ window.CAMPUSES = [
     "tuition": 325000
    }
   ],
-  "oneTime": {
-   "registration": 5000,
-   "admission": 30000
-  },
-  "transportNote": null,
-  "routes": [],
-  "details": [],
-  "admissions": [],
-  "facilities": [],
-  "awards": []
+  "applicationFee": 5000,
+  "admissionFee": 30000,
+  "extraFees": [
+   {
+    "key": "Uniform",
+    "cell": null,
+    "max": null
+   },
+   {
+    "key": "Books",
+    "cell": null,
+    "max": null
+   },
+   {
+    "key": "CBSE examination fee",
+    "cell": null,
+    "max": null
+   },
+   {
+    "key": "IB examination fee",
+    "cell": null,
+    "max": null
+   }
+  ],
+  "transport": [
+   [
+    "0 – 1 km",
+    null
+   ],
+   [
+    "1 – 3 km",
+    null
+   ],
+   [
+    "3 – 5 km",
+    null
+   ],
+   [
+    "5 – 8 km",
+    null
+   ],
+   [
+    "8 km and above",
+    null
+   ]
+  ],
+  "bus": [
+   [
+    "Bus type",
+    null
+   ],
+   [
+    "Attendant",
+    null
+   ],
+   [
+    "GPS tracking",
+    null
+   ],
+   [
+    "CCTV in bus",
+    null
+   ]
+  ],
+  "facilities": [
+   [
+    "Labs and learning",
+    []
+   ],
+   [
+    "Performing arts",
+    []
+   ],
+   [
+    "Life skills",
+    []
+   ],
+   [
+    "Indoor sports",
+    []
+   ],
+   [
+    "Outdoor sports",
+    []
+   ],
+   [
+    "Campus and safety",
+    []
+   ]
+  ],
+  "curriculum": null,
+  "notShown": {}
  }
 ];

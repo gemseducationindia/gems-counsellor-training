@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>GEMS Campus Fact Files</title>
 <meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/png" href="img/favicon-64.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600;700&display=swap">
@@ -25,6 +27,7 @@
 [data-brand="GMA"], [data-brand="LG"] { --brand: #a07c2c; --brand-deep: #836524; --tint: #f5efe2; }
 
 * { box-sizing: border-box; }
+[hidden] { display: none !important; }
 html { -webkit-text-size-adjust: 100%; }
 body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.5 var(--body); }
 h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; line-height: 1.15; }
@@ -35,18 +38,23 @@ a { color: inherit; }
 .topbar { background: var(--surface); border-bottom: 1px solid var(--line); }
 .topbar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-block: 14px; }
 .wordmark { font-family: var(--display); font-weight: 700; font-size: 19px; text-decoration: none; }
-.wordmark span { color: var(--muted); font-weight: 500; }
+.wordmark { display: inline-flex; align-items: center; gap: 12px; }
+.wordmark img { height: 24px; width: auto; display: block; }
+.wordmark span { color: var(--muted); font-weight: 500; padding-left: 12px; border-left: 1px solid var(--line); }
 .back { font-size: 16px; color: var(--muted); text-decoration: none; }
 .back:hover { color: var(--ink); }
 
 /* Home */
-.home-hero .wrap { padding-block: 40px 24px; display: grid; gap: 10px; }
+.home-hero .wrap { padding-block: 28px 12px; display: grid; gap: 10px; }
 .home-hero h1 { font-size: clamp(30px, 4vw, 42px); }
 .home-hero p { margin: 0; color: var(--muted); max-width: 62ch; }
-.brand-group { padding-block: 12px 8px; }
+.brand-group { padding-block: 12px 8px; min-width: 0; }
+.pair { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 0 24px; }
+.pair .cards { grid-template-columns: repeat(auto-fill, minmax(min(100%, 150px), 1fr)); }
+.pair .card b { font-size: 18px; }
 .brand-group h2 { font-size: 14px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); font-family: var(--body); font-weight: 600; margin-bottom: 10px; }
-.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
-.card { display: grid; gap: 4px; padding: 16px 18px 16px 22px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; text-decoration: none; position: relative; overflow: hidden; }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 170px), 1fr)); gap: 12px; }
+.card { display: grid; gap: 2px; padding: 12px 16px 12px 20px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; text-decoration: none; position: relative; overflow: hidden; }
 .card::before { content: ""; position: absolute; inset: 0 auto 0 0; width: 5px; background: var(--brand); }
 .card b { font-family: var(--display); font-size: 20px; }
 .card small { color: var(--muted); font-size: 15px; }
@@ -123,6 +131,39 @@ tbody tr:nth-child(even) td, tbody tr:nth-child(even) th { background: var(--tin
 .awards { margin: 0; padding-left: 20px; display: grid; gap: 4px; }
 .foot { font-size: 14px; color: var(--muted); text-align: center; }
 
+/* Home map */
+.explorer { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 28px; align-items: start; padding-block: 8px; }
+.mapbox { position: relative; overflow: hidden; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 12px; }
+#india { width: 100%; height: auto; display: block; max-height: 78vh; --zoom: 1; overflow: hidden; }
+#india .india { fill: var(--tint); stroke: var(--brand); stroke-width: calc(1.6px / var(--zoom)); stroke-linejoin: round; stroke-dasharray: 1; stroke-dashoffset: 0; animation: draw 1.6s ease-out both, fillin 1.6s ease-out both; }
+@keyframes draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+@keyframes fillin { 0%, 45% { fill-opacity: 0; } 100% { fill-opacity: 1; } }
+.pin { cursor: pointer; outline: none; animation: drop .5s cubic-bezier(.2, 1.4, .4, 1) both; animation-delay: var(--d); }
+@keyframes drop { from { opacity: 0; translate: 0 -24px; } to { opacity: 1; translate: 0 0; } }
+.pin .pi { transform: scale(calc(1 / var(--zoom))); }
+.pin .dot { fill: var(--brand); stroke: var(--surface); stroke-width: 4; transform-box: fill-box; transform-origin: center; transition: transform .2s; }
+.pin .pulse { fill: var(--brand); opacity: .25; transform-box: fill-box; transform-origin: center; animation: pulse 2.4s ease-out infinite; animation-delay: calc(var(--d) + .5s); }
+@keyframes pulse { 0% { transform: scale(1); opacity: .35; } 100% { transform: scale(2.8); opacity: 0; } }
+.pin text { font: 700 30px var(--body); fill: var(--ink); paint-order: stroke; stroke: var(--surface); stroke-width: 7px; stroke-linejoin: round; }
+.pin:hover .dot, .pin.hover .dot, .pin:focus-visible .dot, .pin.on .dot { transform: scale(1.45); }
+.pin:focus-visible text { text-decoration: underline; }
+#india.focus .pin:not(.on) { opacity: .35; }
+.citypanel { position: absolute; left: 12px; right: 12px; bottom: 12px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px; box-shadow: 0 10px 30px rgba(0,0,0,.12); display: grid; gap: 10px; animation: rise .35s ease-out both; }
+@keyframes rise { from { opacity: 0; translate: 0 12px; } to { opacity: 1; translate: 0 0; } }
+.cp-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+.cp-head b { font-family: var(--display); font-size: 22px; }
+.linkbtn { background: none; border: 0; padding: 0; color: var(--muted); font: inherit; font-size: 15px; text-decoration: underline; cursor: pointer; }
+.cp-list { display: grid; gap: 8px; }
+.cp-item { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 10px; background: var(--brand); color: var(--on-brand); text-decoration: none; font-size: 18px; }
+.cp-item small { display: block; font-size: 14px; opacity: .85; }
+.cp-item:hover { filter: brightness(1.1); }
+.lists { display: grid; gap: 4px; min-width: 0; }
+.lists .card { transition: opacity .3s, transform .2s; }
+.lists .card.dim { opacity: .35; }
+.lists .card:hover { transform: translateY(-2px); }
+@media screen and (max-width: 900px) { .explorer { grid-template-columns: 1fr; } #india { max-height: 62vh; } }
+@media (prefers-reduced-motion: reduce) { #india .india, .pin, .pin .pulse, .citypanel { animation: none; } .lists .card { transition: none; } }
+
 @media screen and (max-width: 820px) {
   .routes .nw { white-space: normal; }
   .routes th, .routes td { padding: 7px 6px; font-size: 15px; }
@@ -189,86 +230,130 @@ tbody tr:nth-child(even) td, tbody tr:nth-child(even) th { background: var(--tin
 </head>
 <body>
 <header class="topbar"><div class="wrap">
-  <a class="wordmark" href="#">GEMS <span>Campus Fact Files</span></a>
+  <a class="wordmark" href="#"><img src="img/gems-logo.png" alt="GEMS Education" width="58" height="24"><span>Campus Fact Files</span></a>
   <a class="back noprint" id="back" href="#" hidden>All campuses</a>
 </div></header>
 <main id="app"></main>
 
-<script src="campuses.js"></script>
+<script src="campuses.js?v=20261030e"></script>
 <script>
 const BRANDS = { GMS: "GEMS Millennium Schools", GSE: "GEMS Schools of Excellence", GMA: "GEMS Modern Academy", LG: "Little GEMS" };
 const inr = n => "₹" + Number(n).toLocaleString("en-IN");
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const app = document.getElementById("app");
 
+const INDIA = {"d":"M286,64L291,65L294,63L297,65L298,61L305,61L307,55L316,54L324,50L326,46L331,48L338,48L340,45L343,46L345,50L347,49L351,58L355,59L355,61L359,58L360,60L359,61L362,66L366,61L372,64L372,66L369,69L368,74L366,77L366,86L364,86L362,92L357,93L354,95L354,101L345,102L348,109L345,111L342,118L333,118L330,117L327,119L331,127L330,129L333,131L327,132L328,140L333,147L337,146L342,147L340,154L347,163L346,166L342,171L338,170L334,173L333,177L329,178L323,173L322,165L319,168L315,168L312,171L314,174L315,180L323,190L321,196L325,203L322,207L324,209L323,214L327,215L333,209L337,213L339,220L342,221L343,224L345,224L348,227L353,225L356,226L358,229L367,233L367,239L376,244L378,243L384,248L391,251L390,253L387,252L382,259L378,261L375,267L371,268L372,274L367,279L370,283L369,287L367,287L368,289L364,291L362,300L376,309L375,306L377,305L384,310L391,313L391,315L396,316L400,324L403,323L404,325L417,333L419,331L422,331L433,339L441,338L442,345L456,347L460,351L462,348L462,346L468,346L476,350L475,347L481,347L485,345L489,349L499,351L501,355L499,361L509,363L512,366L511,367L516,366L516,370L520,371L529,366L532,369L532,374L536,377L541,373L547,376L550,375L562,381L572,376L573,381L580,384L584,381L588,383L597,379L600,384L603,381L606,371L604,363L600,358L602,351L601,345L606,335L604,331L604,329L612,329L619,324L625,328L627,333L623,343L624,348L627,352L624,354L622,357L626,358L626,364L628,362L628,364L633,366L634,369L641,367L649,370L649,371L656,372L666,370L667,367L671,365L682,370L693,368L700,369L702,367L705,369L711,369L717,365L722,367L724,363L721,359L721,353L724,352L720,346L710,346L707,341L709,336L718,338L727,332L730,335L733,334L734,335L742,329L742,326L740,326L740,323L748,321L754,316L758,310L763,306L771,306L774,303L777,303L779,300L781,301L782,298L788,297L791,293L788,291L789,289L801,283L804,288L811,290L810,288L818,292L819,289L822,290L823,288L825,290L825,288L828,288L828,286L831,287L833,283L835,282L836,283L839,281L842,281L848,286L849,289L846,293L850,290L853,296L856,296L859,305L856,305L855,308L852,311L855,314L855,310L858,307L861,307L868,316L874,316L881,321L879,326L882,328L881,332L877,332L867,342L867,347L875,358L872,359L866,356L867,353L861,350L858,350L856,352L847,353L841,356L838,360L834,362L832,366L830,365L828,368L826,368L823,372L819,374L817,373L814,375L812,381L814,383L814,392L816,393L810,399L811,404L807,410L799,416L797,422L802,425L801,431L792,446L785,467L778,463L774,464L773,462L769,461L765,464L762,459L760,459L763,472L761,483L762,490L759,494L754,493L755,497L753,501L753,510L756,513L756,518L754,519L755,521L751,521L750,528L749,526L747,529L746,525L741,522L740,527L738,528L736,504L733,498L731,497L730,487L732,487L728,471L726,473L724,470L721,473L719,471L719,479L713,485L715,492L709,497L706,495L704,486L702,485L701,488L703,492L700,491L700,483L695,474L696,472L695,472L695,470L697,470L698,467L697,464L699,462L701,463L701,458L708,459L710,454L713,457L712,454L716,454L717,457L718,451L720,451L719,449L725,448L725,445L727,445L729,438L727,432L732,434L735,433L733,428L722,423L709,425L708,423L704,424L698,422L673,424L659,419L655,419L656,408L654,402L657,397L655,397L656,396L653,394L654,393L650,390L650,388L648,390L650,394L647,397L643,394L641,395L635,391L633,382L629,380L627,382L630,386L632,386L632,388L627,386L625,388L624,385L620,387L622,384L621,384L619,380L613,377L612,375L610,379L615,380L616,384L614,383L611,388L605,391L606,395L603,398L603,402L605,403L608,402L614,407L613,409L616,412L621,413L624,411L625,417L630,420L628,423L625,422L624,423L613,422L612,431L610,431L610,433L608,433L607,430L604,431L605,433L600,440L610,449L622,453L622,457L621,458L623,462L620,466L617,466L617,473L622,479L624,478L622,486L630,488L625,494L629,500L627,502L629,504L628,509L630,518L633,522L631,524L632,529L631,528L630,530L633,539L628,539L626,534L625,539L625,537L622,537L621,532L623,527L623,525L621,525L622,527L619,525L617,533L616,529L614,530L614,540L613,536L612,540L612,536L611,537L608,536L609,541L607,541L605,528L606,522L601,520L606,524L601,527L594,537L580,540L581,542L573,542L567,548L565,555L569,565L566,566L570,567L570,568L568,569L569,569L572,568L563,575L562,574L561,578L564,579L560,582L564,580L556,585L553,591L549,592L551,593L526,601L511,611L512,611L502,619L502,621L504,619L503,621L491,637L483,644L484,645L467,654L456,668L438,677L429,685L428,690L431,692L430,687L431,689L430,694L428,695L431,695L429,699L428,696L429,699L428,700L429,700L412,708L412,706L411,708L407,706L398,708L395,718L390,723L391,725L388,727L387,725L388,726L385,727L384,722L380,721L376,722L368,728L361,746L362,755L366,761L364,762L366,762L363,772L364,778L368,786L367,791L370,802L365,827L356,840L353,851L355,861L353,860L355,861L356,866L356,893L344,892L346,893L342,893L338,895L337,898L338,901L330,911L327,918L330,922L329,922L336,924L326,925L308,932L304,940L306,940L303,944L304,948L302,952L286,961L279,959L269,952L256,936L260,933L256,935L254,929L255,928L253,925L254,928L250,921L247,904L249,904L248,901L247,902L245,897L246,896L245,897L242,886L238,879L239,878L237,878L235,868L236,868L234,867L233,861L229,857L226,850L221,845L219,842L216,841L205,815L206,815L204,813L205,815L201,800L200,791L202,791L200,790L193,771L196,772L193,771L191,763L189,764L189,761L190,761L188,760L189,758L184,756L185,753L183,754L182,749L177,746L179,744L177,738L174,736L177,735L174,734L175,733L173,733L172,730L174,728L172,729L168,720L165,719L162,707L163,706L161,706L164,705L161,705L160,702L160,700L161,703L163,702L160,699L162,698L160,698L159,695L160,692L159,692L158,688L160,687L158,685L159,686L160,685L158,685L159,684L156,677L159,677L157,677L155,674L156,673L154,669L156,668L154,667L153,660L154,660L152,658L153,657L151,656L153,655L151,655L150,649L148,648L149,646L153,650L151,645L153,645L151,646L148,644L147,638L150,640L146,633L146,629L148,629L150,632L150,627L147,626L152,622L150,623L150,617L149,622L146,623L144,626L145,617L143,618L145,615L143,617L144,613L147,614L143,612L142,608L147,606L142,606L140,597L140,593L142,593L141,589L143,585L143,582L147,574L145,567L148,567L145,566L143,562L145,560L143,562L142,559L142,558L145,558L144,558L145,556L141,556L144,553L140,554L139,557L139,553L142,553L138,550L141,548L139,547L141,544L143,545L139,545L140,543L145,538L148,537L136,538L139,530L142,528L136,530L135,528L138,520L143,521L145,519L147,518L142,520L136,517L133,520L131,516L130,517L129,524L127,527L125,526L127,529L125,528L127,530L127,533L126,532L125,533L129,539L127,545L123,549L123,553L105,561L103,563L85,569L73,564L65,557L42,532L38,530L28,517L32,511L31,514L36,513L35,517L37,519L40,516L44,516L45,513L47,517L49,515L50,517L52,512L54,514L55,512L58,513L60,509L65,509L73,495L69,496L67,493L67,496L64,496L64,495L63,498L57,499L57,497L52,500L51,503L47,501L44,502L41,500L41,498L40,500L37,499L36,500L32,496L32,497L19,489L22,490L17,487L20,485L17,483L15,478L13,479L14,477L13,478L16,471L24,466L20,466L15,470L13,470L13,468L10,476L8,476L8,474L8,476L5,474L10,471L10,470L8,472L8,470L7,473L6,471L6,467L11,463L23,463L23,452L24,452L26,455L28,452L30,454L33,453L36,454L48,452L52,456L61,456L63,452L77,448L78,448L77,454L81,455L87,453L86,452L88,450L94,449L90,447L90,442L93,439L88,431L87,424L80,416L80,406L72,406L68,405L63,398L65,377L62,376L55,376L45,371L45,362L48,356L61,343L64,335L71,328L78,328L82,337L86,338L96,334L110,332L117,330L118,324L126,315L132,302L148,293L158,274L162,262L174,257L179,253L176,247L179,244L178,244L178,243L179,244L180,241L182,241L183,238L189,234L188,233L192,227L196,225L197,223L201,222L201,220L198,220L197,222L195,220L197,212L200,210L195,200L198,194L205,191L206,188L217,186L221,182L220,177L216,175L214,175L213,173L211,172L209,174L206,172L200,172L199,168L201,166L200,164L201,160L199,161L199,163L195,163L193,161L191,162L178,153L174,154L169,151L170,147L167,141L169,135L167,131L168,122L165,117L165,108L162,104L164,97L170,98L172,90L181,86L184,77L174,73L172,74L171,69L174,65L174,62L162,62L160,57L154,55L153,54L156,53L155,50L147,51L145,49L141,51L137,50L135,48L137,44L136,42L136,36L149,27L152,22L152,19L161,17L176,18L175,15L171,13L170,10L181,14L193,7L197,9L197,6L201,4L202,6L205,5L207,10L208,8L214,6L217,9L223,9L224,18L226,17L226,16L232,17L238,22L241,28L244,29L247,33L252,33L254,37L262,39L265,50L270,52L273,54L280,55L284,58L286,64ZM775,986L779,993L777,999L775,1001L775,999L770,993L770,989L775,986ZM766,956L767,962L765,963L765,961L764,958L766,956ZM736,875L739,882L736,887L732,886L731,878L736,875ZM741,834L741,836L743,836L741,840L744,840L742,844L744,844L743,850L740,852L743,852L742,857L740,856L736,846L737,843L738,846L739,838L741,834ZM745,832L747,833L744,838L742,839L742,834L745,832ZM747,813L750,825L748,829L747,827L746,827L747,829L744,827L747,831L741,831L741,822L744,822L742,816L747,813ZM751,794L750,797L753,800L749,800L752,802L751,809L749,810L748,807L748,809L747,808L748,812L746,814L744,813L745,800L748,794L751,794ZM605,534L604,539L601,537L604,531L605,534Z","w":882.0,"h":1001.0,"pins":{"Mumbai":[147.9,619.6],"Delhi NCR":[276.0,308.8],"Kochi":[251.1,902.3],"Coimbatore":[268.8,871.2],"Varanasi":[449.1,418.2],"Lucknow":[392.4,364.1],"Jodhpur":[152.7,385.2]}};
+// Pins are grouped by city; label side keeps neighbouring labels apart.
+const CITIES = [
+  { id: "delhi", name: "Delhi NCR", pin: "Delhi NCR", side: "top", slugs: ["gurugram", "indirapuram"] },
+  { id: "jodhpur", name: "Jodhpur", pin: "Jodhpur", side: "left", slugs: ["jodhpur"] },
+  { id: "lucknow", name: "Lucknow", pin: "Lucknow", side: "top", slugs: ["lucknow"] },
+  { id: "varanasi", name: "Varanasi", pin: "Varanasi", side: "right", slugs: ["varanasi"] },
+  { id: "mumbai", name: "Mumbai", pin: "Mumbai", side: "left", slugs: ["vikhroli", "kalyan"] },
+  { id: "kochi", name: "Kochi", pin: "Kochi", side: "left", slugs: ["kochi-gms", "kochi-gma"] },
+  { id: "coimbatore", name: "Coimbatore", pin: "Coimbatore", side: "right", slugs: ["coimbatore"] }
+];
+const FULL_VIEW = [-40, -10, INDIA.w + 80, INDIA.h + 20];
+let mapView = FULL_VIEW.slice(), mapAnim = 0;
+const reduceMotion = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+function setView(svg, target) {
+  cancelAnimationFrame(mapAnim);
+  const from = mapView.slice(), t0 = performance.now(), dur = reduceMotion() ? 0 : 700;
+  const ease = t => 1 - Math.pow(1 - t, 3);
+  const step = now => {
+    const k = dur ? Math.min(1, (now - t0) / dur) : 1, e = ease(k);
+    mapView = from.map((v, i) => v + (target[i] - v) * e);
+    svg.setAttribute("viewBox", mapView.join(" "));
+    svg.style.setProperty("--zoom", (FULL_VIEW[2] / mapView[2]).toFixed(3));
+    if (k < 1) mapAnim = requestAnimationFrame(step);
+  };
+  mapAnim = requestAnimationFrame(step);
+}
+
 function home() {
   document.documentElement.removeAttribute("data-brand");
   document.title = "GEMS Campus Fact Files";
   document.getElementById("back").hidden = true;
-  const groups = Object.keys(BRANDS).map(b => {
-    const list = CAMPUSES.filter(c => c.brand === b);
-    if (!list.length) return "";
-    return `<section class="brand-group wrap" data-brand="${b}"><h2>${BRANDS[b]}</h2><div class="cards">${
-      list.map(c => c.live
-        ? `<a class="card" href="#${c.slug}"><b>${esc(c.short)}</b><small>${esc(c.city)}</small><span class="state">Open fact file</span></a>`
-        : `<div class="card" aria-disabled="true"><b>${esc(c.short)}</b><small>${esc(c.city)}</small><span class="state">Coming soon</span></div>`).join("")
-    }</div></section>`;
+  const bySlug = Object.fromEntries(CAMPUSES.map(c => [c.slug, c]));
+  const card = c => `<a class="card" data-brand="${c.brand}" data-slug="${c.slug}" href="#${c.slug}"><b>${esc(c.short)}</b><small>${esc(c.city)}</small><span class="state">Open fact file</span></a>`;
+  const group = b => {
+    const list = CAMPUSES.filter(c => c.brand === b && c.live);
+    return list.length ? `<section class="brand-group" data-brand="${b}"><h2>${BRANDS[b]}</h2><div class="cards">${list.map(card).join("")}</div></section>` : "";
+  };
+  const pins = CITIES.map((city, n) => {
+    const [x, y] = INDIA.pins[city.pin];
+    const lx = city.side === "left" ? -20 : city.side === "right" ? 20 : 0, ly = city.side === "top" ? -22 : 10;
+    const anchor = city.side === "left" ? "end" : city.side === "right" ? "start" : "middle";
+    return `<g class="pin" data-city="${city.id}" transform="translate(${x} ${y})" style="--d:${0.9 + n * 0.09}s" tabindex="0" role="button" aria-label="${city.name}: ${city.slugs.length} campus${city.slugs.length > 1 ? "es" : ""}">
+      <g class="pi"><circle class="pulse" r="13"></circle><circle class="dot" r="11"></circle>
+      <text x="${lx}" y="${ly}" text-anchor="${anchor}">${city.name}</text></g></g>`;
   }).join("");
+
   app.innerHTML = `<section class="home-hero"><div class="wrap"><h1>Campus Fact Files</h1>
-    <p>Fees, timings, transport, facilities and curriculum for every GEMS campus. Open a campus and download its two-page PDF for the front desk.</p></div></section>${groups}<div style="height:48px"></div>`;
+    <p>Pick a city on the map, or a school from the list, to see its fees, transport, facilities and admissions. Each campus has a printable PDF.</p></div></section>
+  <section class="wrap explorer">
+    <div class="mapbox">
+      <svg id="india" viewBox="${FULL_VIEW.join(" ")}" role="img" aria-label="Map of India showing GEMS campuses">
+        <path class="india" d="${INDIA.d}" pathLength="1"></path>
+        ${pins}
+      </svg>
+      <div class="citypanel" id="citypanel" hidden>
+        <div class="cp-head"><b id="cp-name"></b><button type="button" id="cp-close" class="linkbtn">Show all of India</button></div>
+        <div id="cp-list" class="cp-list"></div>
+      </div>
+    </div>
+    <div class="lists">${group("GMS")}<div class="pair">${group("GSE")}${group("GMA")}</div></div>
+  </section><div style="height:40px"></div>`;
+
+  const svg = document.getElementById("india");
+  mapView = FULL_VIEW.slice();
+  const panel = document.getElementById("citypanel");
+  const choose = id => {
+    const city = CITIES.find(c => c.id === id);
+    svg.querySelectorAll(".pin").forEach(p => p.classList.toggle("on", p.dataset.city === id));
+    svg.classList.toggle("focus", !!city);
+    document.querySelectorAll(".lists .card").forEach(el => el.classList.toggle("dim", !!city && !city.slugs.includes(el.dataset.slug)));
+    if (!city) { panel.hidden = true; setView(svg, FULL_VIEW); return; }
+    const [x, y] = INDIA.pins[city.pin], w = 380, h = w * FULL_VIEW[3] / FULL_VIEW[2];
+    setView(svg, [x - w / 2, y - h * 0.32, w, h]);
+    document.getElementById("cp-name").textContent = city.name;
+    document.getElementById("cp-list").innerHTML = city.slugs.map(s => bySlug[s]).filter(Boolean).map(c =>
+      `<a class="cp-item" data-brand="${c.brand}" href="#${c.slug}"><span><b>${esc(c.short)}</b><small>${esc(c.board || "")}${c.grades ? " · " + esc(c.grades) : ""}</small></span><span aria-hidden="true">→</span></a>`).join("");
+    panel.hidden = false;
+  };
+  svg.querySelectorAll(".pin").forEach(p => {
+    p.addEventListener("click", () => choose(p.classList.contains("on") ? null : p.dataset.city));
+    p.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); p.dispatchEvent(new Event("click")); } });
+  });
+  document.getElementById("cp-close").addEventListener("click", () => choose(null));
+  document.querySelectorAll(".lists .card").forEach(el => {
+    const city = CITIES.find(c => c.slugs.includes(el.dataset.slug));
+    el.addEventListener("mouseenter", () => svg.querySelector(`.pin[data-city="${city.id}"]`)?.classList.add("hover"));
+    el.addEventListener("mouseleave", () => svg.querySelector(`.pin[data-city="${city.id}"]`)?.classList.remove("hover"));
+  });
 }
 
 function campus(c) {
   document.documentElement.dataset.brand = c.brand;
   document.title = `${c.short} Fact File`;
   document.getElementById("back").hidden = false;
-  const rows = c.feeRows, one = c.oneTime || {}, extras = c.extraFees || [];
-  const has = k => rows.some(r => r[k] != null);
+  // Same template for every campus (the Vikhroli layout). Missing values stay blank.
+  const blank = v => v == null || v === "" ? "" : v;
+  const money = v => v == null ? "" : inr(v);
+  const extras = c.extraFees || [];
   const extrasMax = extras.reduce((s, f) => s + (f.max || 0), 0);
-  const oneSum = (one.prospectus || 0) + (one.registration || 0) + (one.admission || 0);
-  const total = r => oneSum + (r.annual || 0) + r.tuition + extrasMax;
-
-  // Columns follow the CEO's sample sheet; a column shows only when this campus has data for it.
-  const cols = [
-    has("max") && ["Max students per class", r => r.max, "c"],
-    has("ratio") && ["Student–teacher ratio", r => esc(r.ratio), "c"],
-    has("timings") && ["School timings", r => esc(r.timings), "time"],
-    one.prospectus && ["Prospectus fee", () => inr(one.prospectus), "r"],
-    one.registration && ["Application fee", () => inr(one.registration), "r"],
-    one.admission && ["Admission fee", () => inr(one.admission), "r"],
-    has("annual") && ["Annual fee", r => r.annual ? inr(r.annual) : "–", "r"],
-    ["Annual tuition (₹)", r => `<b>${inr(r.tuition)}</b>`, "r"],
-    ...extras.map(f => [esc(f.key), () => esc(f.cell), "c ex"]),
-    ["Total*", r => inr(total(r)), "r total"]
-  ].filter(Boolean);
-  const feeRows = rows.map(r => `<tr><th>${esc(r.grade)}</th>${cols.map(([h, fn, cls]) => `<td class="${cls}" data-label="${h.replace(/<[^>]+>/g, "")}">${fn(r)}</td>`).join("")}</tr>`).join("");
-  const parts = [one.prospectus && "prospectus fee", one.registration && "application fee", one.admission && "admission fee", has("annual") && "annual fee", "annual tuition", ...extras.filter(f => f.max).map(f => f.key.toLowerCase() + " (upper figure)")].filter(Boolean);
-  const extraNote = extras.some(f => !f.max) ? " Examination fees are extra." : (extras.length ? "" : " Uniform, books and exam fees are extra.");
-
-  const tbl = (head, body, cls = "") => `<div class="scroll"><table class="${cls}">${head ? `<thead><tr>${head.map(h => `<th>${h}</th>`).join("")}</tr></thead>` : ""}<tbody>${body}</tbody></table></div>`;
-  const kvRows = list => list.map(([k, v]) => `<tr><th>${esc(k)}</th><td>${typeof v === "number" ? inr(v) : esc(v)}</td></tr>`).join("");
-  const half = list => { const m = Math.ceil(list.length / 2); return [list.slice(0, m), list.slice(m)]; };
+  const oneSum = (c.applicationFee || 0) + (c.admissionFee || 0);
+  const inTotal = extras.filter(f => f.max).map(f => f.key.toLowerCase());
+  const exams = extras.filter(f => / examination fee$/.test(f.key)).map(f => f.key.replace(" examination fee", ""));
+  const feeRows = c.feeRows.map(r => `<tr>
+    <th>${esc(r.grade)}</th><td class="c" data-label="Max students per class">${esc(blank(r.max))}</td><td class="c" data-label="Student–teacher ratio">${esc(blank(r.ratio))}</td><td class="time" data-label="School timings">${esc(blank(r.timings))}</td>
+    <td class="r" data-label="Application fee">${money(c.applicationFee)}</td><td class="r" data-label="Admission fee">${money(c.admissionFee)}</td><td class="r" data-label="Annual tuition"><b>${money(r.tuition)}</b></td>
+    ${extras.map(f => `<td class="c ex" data-label="${esc(f.key)}">${esc(blank(f.cell))}</td>`).join("")}
+    <td class="r total" data-label="Total*">${inr(r.tuition + oneSum + extrasMax)}</td></tr>`).join("");
+  const tbl = (head, body, cls = "") => `<div class="scroll"><table class="${cls}"><thead><tr>${head.map(h => `<th>${h}</th>`).join("")}</tr></thead><tbody>${body}</tbody></table></div>`;
   const alert = cls => `<div class="alert ${cls}"><strong>Tell every parent</strong>${c.keyNotes.map(n => `<span>${esc(n)}</span>`).join("")}</div>`;
-
-  const transport = c.transport ? `<div class="row2">
-      <div class="sec"><h2>Transport</h2>${tbl(["Distance from school", "Annual fee (₹)"], c.transport.map(([k, v]) => `<tr><th>${esc(k)}</th><td class="r">${inr(v)}</td></tr>`).join(""), "kv")}</div>
-      <div class="sec"><h2>School bus</h2>${tbl(["Feature", "Details"], kvRows(c.bus), "kv")}</div>
-    </div>` : "";
-  const routes = c.routes && c.routes.length ? `<div class="sec noprint"><h2>Bus routes <small class="count">${c.routes.length} routes</small></h2>
-      ${tbl(["Route", "Areas covered", "Pickup", "Drop"], c.routes.map(([n, a, p, d]) => `<tr><th>${esc(n)}</th><td>${esc(a)}</td><td class="nw">${esc(p)}</td><td class="nw">${esc(d)}</td></tr>`).join(""), "routes")}</div>` : "";
-  const details = c.details && c.details.length > 1 ? `<div class="sec"><h2>School details</h2>
-      <div class="row2 tight">${half(c.details).map(h => tbl(null, kvRows(h), "kv det")).join("")}</div>
-      ${c.transportNote ? `<p class="note strong">${esc(c.transportNote)}${c.routes && c.routes.length ? ` ${c.routes.length} bus routes are listed on the website.` : ""}</p>` : ""}</div>` : "";
-  const admissions = c.admissions && c.admissions.length ? `<div class="sec"><h2>Admissions ${esc(c.feeYear)}</h2>${tbl(null, kvRows(c.admissions), "kv det")}</div>` : "";
-  const facilities = c.facilities && c.facilities.length ? `<div class="sec"><h2>Facilities at ${esc(c.short)}</h2>
-      ${tbl(["Area", "Facilities"], c.facilities.map(([area, items]) => `<tr><th>${esc(area)}</th><td>${items.map(i => `<span class="chip">${esc(i)}</span>`).join("")}</td></tr>`).join(""), "fac")}</div>` : "";
-  const curriculum = c.curriculum ? `<div class="row2">${[c.curriculum.icse, c.curriculum.igcse].map(cu => `<div class="sec"><h2>${esc(cu.title)}</h2>
-        ${tbl(["Group", "Type", "Subjects"], cu.groups.map(([g, k, s]) => `<tr><td>${esc(g)}</td><td>${esc(k)}</td><td>${esc(s)}</td></tr>`).join(""), "cur")}
-        <p class="note">${esc(cu.note)}</p></div>`).join("")}</div>` : "";
-  const awards = c.awards && c.awards.length ? `<div class="sec"><h2>Awards and recognition</h2><ul class="awards">${c.awards.map(a => `<li>${esc(a)}</li>`).join("")}</ul></div>` : "";
-  const hasRest = [transport, details, admissions, facilities, curriculum, awards].some(Boolean);
-  const late = rows.length > 20 && hasRest;
-  const facts = [["Location", c.city], ["Board", c.board], ["Grades", c.grades], ["Fees for", c.feeYear], ["Updated", c.updated]].filter(f => f[1]);
+  const facts = [["Location", c.city], ["Board", c.board], ["Grades", c.grades], ["Updated", c.updated]];
 
   app.innerHTML = `
   <section class="band"><div class="wrap">
@@ -276,30 +361,41 @@ function campus(c) {
       <div class="eyebrow">Campus Fact File · For admissions teams</div>
       <h1>${esc(c.name)}, ${esc(c.city.split(",")[0])}</h1>
     </div>
-    <a class="dl" href="pdf/${c.slug}.pdf" download="${esc(c.short)} Fact File.pdf">
+    <a class="dl" href="pdf/${c.slug}.pdf?v=20261030e" download="${esc(c.short)} Fact File.pdf">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></svg>
       Download PDF</a>
-    <div class="facts">${facts.map(([k, v]) => `<span class="fact"><b>${k}</b> ${esc(v)}</span>`).join("")}</div>
+    <div class="facts">${facts.map(([k, v]) => `<span class="fact"><b>${k}</b> ${esc(blank(v))}</span>`).join("")}</div>
   </div></section>
 
   <section class="sheet"><div class="wrap">
     <div class="sec feesec">
-      <h2>Fees ${esc(c.feeYear)}</h2>
-      ${tbl(["Grade", ...cols.map(x => x[0])], feeRows, "fees" + (rows.length > 22 ? " xdense" : rows.length > 13 ? " dense" : ""))}
-      <p class="note">* Total = ${parts.join(" + ")}.${extraNote} Transport is extra. Fees may change; check the latest fee circular before quoting.</p>
+      <h2>Fees</h2>
+      ${tbl(["Grade", "Max students per class", "Student–teacher ratio", "School timings", "Application fee", "Admission fee", "Annual tuition (₹)", ...extras.map(f => esc(f.key)), "Total*"], feeRows, "fees" + (c.feeRows.length > 18 ? " xdense" : c.feeRows.length > 13 ? " dense" : ""))}
+      <p class="note">* Total = application fee + admission fee + annual tuition${inTotal.length ? " + " + inTotal.join(" + ") + " (upper figure)" : ""}. ${exams.length ? exams.join(" and ") + " examination fees are extra." : ""} Transport is extra. Fees may change; check the latest fee circular before quoting.</p>
     </div>
-    ${late ? "" : alert("printonly")}
-    <div class="rest${hasRest ? "" : " bare"}">
-    ${late ? alert("printonly") : ""}
-    ${transport}
-    ${details}
-    ${admissions}
-    ${routes}
-    ${facilities}
-    ${curriculum}
-    ${awards}
+    ${alert("printonly")}
+
+    <div class="row2 page2">
+      <div class="sec">
+        <h2>Transport</h2>
+        ${tbl(["Distance from school", "Annual fee (₹)"], c.transport.map(([k, v]) => `<tr><th>${esc(k)}</th><td class="r">${money(v)}</td></tr>`).join(""), "kv")}
+      </div>
+      <div class="sec">
+        <h2>School bus</h2>
+        ${tbl(["Feature", "Details"], c.bus.map(([k, v]) => `<tr><th>${esc(k)}</th><td>${esc(blank(v))}</td></tr>`).join(""), "kv")}
+      </div>
+    </div>
+
+    <div class="sec">
+      <h2>Facilities at ${esc(c.short)}</h2>
+      ${tbl(["Area", "Facilities"], c.facilities.map(([area, items]) => `<tr><th>${esc(area)}</th><td>${items.map(i => `<span class="chip">${esc(i)}</span>`).join("")}</td></tr>`).join(""), "fac")}
+    </div>
+
+    ${c.curriculum ? `<div class="row2">${[c.curriculum.icse, c.curriculum.igcse].map(cu => `<div class="sec"><h2>${esc(cu.title)}</h2>
+        ${tbl(["Group", "Type", "Subjects"], cu.groups.map(([g, k, s]) => `<tr><td>${esc(g)}</td><td>${esc(k)}</td><td>${esc(s)}</td></tr>`).join(""), "cur")}
+        <p class="note">${esc(cu.note)}</p></div>`).join("")}</div>` : ""}
+
     ${alert("noprint")}
-    </div>
     <p class="foot">${esc(c.short)} · Campus Fact File · For GEMS admissions teams · Updated ${esc(c.updated)}</p>
   </div></section>`;
 }
