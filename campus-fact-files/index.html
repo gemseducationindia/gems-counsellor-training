@@ -70,6 +70,7 @@ a.card:hover { border-color: var(--brand); }
 /* Sheet */
 .sheet .wrap { padding-block: 24px 48px; display: grid; gap: 22px; }
 .alert { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: baseline; background: var(--tint); border: 1px solid var(--line); border-radius: 10px; padding: 12px 18px; font-weight: 600; font-size: 17px; }
+.printonly { display: none; }
 .alert strong { color: var(--brand); text-transform: uppercase; letter-spacing: .05em; font-size: 14px; }
 .alert span + span::before { content: "•"; margin-right: 14px; color: var(--brand); }
 .sec { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 20px 22px; display: grid; gap: 12px; align-content: start; min-width: 0; }
@@ -125,6 +126,7 @@ tbody tr:nth-child(even) td, tbody tr:nth-child(even) th { background: var(--tin
   * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   body { font-size: 12.5px; line-height: 1.35; }
   .topbar, .dl, .noprint { display: none !important; }
+  .printonly { display: flex; }
   .wrap { max-width: none; padding: 0 !important; }
   .band { border-radius: 6px; }
   .band .wrap { padding: 10px 16px !important; gap: 6px 16px; }
@@ -219,13 +221,13 @@ function campus(c) {
   </div></section>
 
   <section class="sheet"><div class="wrap">
-    <div class="alert"><strong>Tell every parent</strong>${c.keyNotes.map(n => `<span>${esc(n)}</span>`).join("")}</div>
-
     <div class="sec">
       <h2>Fees</h2>
       ${tbl(["Grade", "Max students per class", "Student–teacher ratio", "School timings", "Application fee", "Admission fee", "Annual tuition (₹)", ...c.extraFees.map(f => esc(f.key)), "Total*"], feeRows, "fees")}
       <p class="note">* Total = application fee + admission fee + annual tuition + ${inTotal.join(" + ")} (upper figure). ICSE and Cambridge examination fees are extra. Transport is extra. Fees may change; check the latest fee circular before quoting.</p>
     </div>
+
+    <div class="alert printonly"><strong>Tell every parent</strong>${c.keyNotes.map(n => `<span>${esc(n)}</span>`).join("")}</div>
 
     <div class="row2 page2">
       <div class="sec">
@@ -248,6 +250,8 @@ function campus(c) {
         ${tbl(["Group", "Type", "Subjects"], cu.groups.map(([g, k, s]) => `<tr><td>${esc(g)}</td><td>${esc(k)}</td><td>${esc(s)}</td></tr>`).join(""), "cur")}
         <p class="note">${esc(cu.note)}</p></div>`).join("")}
     </div>
+
+    <div class="alert noprint"><strong>Tell every parent</strong>${c.keyNotes.map(n => `<span>${esc(n)}</span>`).join("")}</div>
 
     ${c.awards && c.awards.length ? `<div class="sec"><h2>Awards and recognition</h2><ul>${c.awards.map(a => `<li>${esc(a)}</li>`).join("")}</ul></div>` : ""}
 
