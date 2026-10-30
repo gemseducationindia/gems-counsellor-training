@@ -28,7 +28,7 @@
 html { -webkit-text-size-adjust: 100%; }
 body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.5 var(--body); }
 h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; line-height: 1.15; }
-.wrap { max-width: 1240px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.wrap { max-width: 1360px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
 a { color: inherit; }
 :focus-visible { outline: 3px solid var(--brand); outline-offset: 2px; }
 
@@ -88,7 +88,23 @@ tbody tr:nth-child(even) td, tbody tr:nth-child(even) th { background: var(--tin
 .r { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .total { font-weight: 700; color: var(--brand); }
 .fees td.r, .fees td.c { white-space: nowrap; }
+.fees { font-size: 15px; }
+.fees th, .fees td { padding: 8px 6px; }
+.fees thead th { font-size: 13px; }
 .fees td { white-space: nowrap; }
+.fees td.time, .fees td.ex { white-space: normal; }
+/* Below laptop width the fees table turns into one card per grade, so nothing scrolls sideways. */
+@media screen and (max-width: 1180px) {
+  .fees thead { display: none; }
+  .fees, .fees tbody { display: block; }
+  .fees tbody { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; }
+  .fees tr { display: block; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: var(--surface); }
+  .fees tbody tr:nth-child(even) td { background: transparent; }
+  .fees tbody th { display: block; background: var(--brand) !important; color: var(--on-brand); font-size: 18px; border: 0; padding: 9px 14px; }
+  .fees td { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; border: 0; border-top: 1px solid var(--line); padding: 7px 14px; text-align: right; white-space: normal !important; }
+  .fees td::before { content: attr(data-label); color: var(--muted); font-size: 15px; text-align: left; font-weight: 400; }
+  .fees td.total { background: var(--tint) !important; }
+}
 .kv tbody th { width: 55%; }
 .fac td { line-height: 1.9; }
 .chip { display: inline-block; font-size: 15px; padding: 1px 10px; margin: 2px 4px 2px 0; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); line-height: 1.6; }
@@ -133,6 +149,7 @@ tbody tr:nth-child(even) td, tbody tr:nth-child(even) th { background: var(--tin
   .fees { font-size: 13px; }
   .fees th, .fees td { padding: 6.5px 5px; }
   .fees thead th { font-size: 11.5px; }
+  .fees td.time, .fees td.ex { white-space: nowrap; }
   .foot { font-size: 10px; }
 }
 </style>
@@ -177,10 +194,10 @@ function campus(c) {
   const rows = c.gradeGroups.flatMap(g => g.rows);
 
   const feeRows = rows.map(([gr, fee, max, ratio, time]) => `<tr>
-    <th>${esc(gr)}</th><td class="c">${max}</td><td class="c">${esc(ratio)}</td><td>${esc(time)}</td>
-    <td class="r">${inr(c.applicationFee)}</td><td class="r">${inr(c.admissionFee)}</td><td class="r"><b>${inr(fee)}</b></td>
-    ${c.extraFees.map(f => `<td class="c">${esc(f.cell)}</td>`).join("")}
-    <td class="r total">${inr(fee + c.applicationFee + c.admissionFee + extrasMax)}</td></tr>`).join("");
+    <th>${esc(gr)}</th><td class="c" data-label="Max students per class">${max}</td><td class="c" data-label="Student–teacher ratio">${esc(ratio)}</td><td class="time" data-label="School timings">${esc(time)}</td>
+    <td class="r" data-label="Application fee">${inr(c.applicationFee)}</td><td class="r" data-label="Admission fee">${inr(c.admissionFee)}</td><td class="r" data-label="Annual tuition"><b>${inr(fee)}</b></td>
+    ${c.extraFees.map(f => `<td class="c ex" data-label="${esc(f.key)}">${esc(f.cell)}</td>`).join("")}
+    <td class="r total" data-label="Total*">${inr(fee + c.applicationFee + c.admissionFee + extrasMax)}</td></tr>`).join("");
 
   const tbl = (head, body, cls = "") => `<div class="scroll"><table class="${cls}"><thead><tr>${head.map(h => `<th>${h}</th>`).join("")}</tr></thead><tbody>${body}</tbody></table></div>`;
 
