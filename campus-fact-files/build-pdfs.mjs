@@ -8,8 +8,9 @@ import path from "path";
 const require = createRequire(import.meta.url);
 const { chromium } = require("playwright");
 const dir = path.dirname(fileURLToPath(import.meta.url));
-const src = readFileSync(path.join(dir, "campuses.js"), "utf8");
-const live = [...src.matchAll(/slug:\s*"([^"]+)",\s*\n?\s*live:\s*true/g)].map(m => m[1]);
+const window = {};
+new Function("window", readFileSync(path.join(dir, "campuses.js"), "utf8"))(window);
+const live = window.CAMPUSES.filter(c => c.live).map(c => c.slug);
 
 mkdirSync(path.join(dir, "pdf"), { recursive: true });
 const browser = await chromium.launch();

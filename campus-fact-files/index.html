@@ -71,6 +71,7 @@ a.card:hover { border-color: var(--brand); }
 .sheet .wrap { padding-block: 24px 48px; display: grid; gap: 22px; }
 .alert { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: baseline; background: var(--tint); border: 1px solid var(--line); border-radius: 10px; padding: 12px 18px; font-weight: 600; font-size: 17px; }
 .printonly { display: none; }
+.rest { display: grid; gap: 22px; min-width: 0; }
 .alert strong { color: var(--brand); text-transform: uppercase; letter-spacing: .05em; font-size: 14px; }
 .alert span + span::before { content: "•"; margin-right: 14px; color: var(--brand); }
 .sec { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 20px 22px; display: grid; gap: 12px; align-content: start; min-width: 0; }
@@ -111,9 +112,21 @@ tbody tr:nth-child(even) td, tbody tr:nth-child(even) th { background: var(--tin
 .chip { display: inline-block; font-size: 15px; padding: 1px 10px; margin: 2px 4px 2px 0; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); line-height: 1.6; }
 .cur td:first-child { white-space: nowrap; font-weight: 700; color: var(--brand); }
 .cur td:nth-child(2) { color: var(--muted); }
+.sec h2 small.count { font-family: var(--body); font-size: 14px; color: var(--muted); font-weight: 500; margin-left: 8px; }
+.row2.tight { gap: 0 22px; }
+.det tbody th { width: 38%; white-space: normal; color: var(--muted); font-weight: 600; }
+.det td { white-space: normal; overflow-wrap: anywhere; }
+.det tbody tr:nth-child(even) td, .det tbody tr:nth-child(even) th { background: transparent; }
+.note.strong { color: var(--ink); font-weight: 600; }
+.routes td { white-space: normal; }
+.routes .nw { white-space: nowrap; }
+.awards { margin: 0; padding-left: 20px; display: grid; gap: 4px; }
 .foot { font-size: 14px; color: var(--muted); text-align: center; }
 
 @media screen and (max-width: 820px) {
+  .routes .nw { white-space: normal; }
+  .routes th, .routes td { padding: 7px 6px; font-size: 15px; }
+  .routes td { overflow-wrap: anywhere; }
   .row2 { grid-template-columns: 1fr; }
   .band .wrap { grid-template-columns: 1fr; }
 }
@@ -127,6 +140,24 @@ tbody tr:nth-child(even) td, tbody tr:nth-child(even) th { background: var(--tin
   body { font-size: 12.5px; line-height: 1.35; }
   .topbar, .dl, .noprint { display: none !important; }
   .printonly { display: flex; }
+  .sec.feesec { break-inside: auto; }
+  .rest { display: block; column-count: 2; column-gap: 16px; break-before: page; font-size: 11px; }
+  .rest > .sec, .rest > .row2 > .sec { display: block; break-inside: avoid; margin-bottom: 9px; }
+  .rest > .sec > * + *, .rest > .row2 > .sec > * + * { margin-top: 4px; }
+  .rest > .row2 { display: block; }
+  .rest table { font-size: 11px; }
+  .rest .chip { font-size: 10.5px; }
+  .rest .row2.tight { display: block; }
+  .rest .sec h2 { font-size: 14px; }
+  .fees.dense { font-size: 12.5px; }
+  .fees.dense th, .fees.dense td { padding: 3.5px 5px; }
+  .fees.xdense { font-size: 11px; }
+  .fees.xdense th, .fees.xdense td { padding: 1px 5px; line-height: 1.25; }
+  .rest.bare { display: none; }
+  .fees.xdense thead th, .fees.dense thead th { padding-block: 4px; }
+  .det th, .det td { padding: 3px 6px; }
+  .awards { gap: 1px; font-size: 11.5px; }
+  .row2.tight { gap: 0 14px; }
   .wrap { max-width: none; padding: 0 !important; }
   .band { border-radius: 6px; }
   .band .wrap { padding: 10px 16px !important; gap: 6px 16px; }
@@ -191,17 +222,53 @@ function campus(c) {
   document.documentElement.dataset.brand = c.brand;
   document.title = `${c.short} Fact File`;
   document.getElementById("back").hidden = false;
-  const extrasMax = c.extraFees.reduce((s, f) => s + (f.max || 0), 0);
-  const inTotal = c.extraFees.filter(f => f.max).map(f => f.key.toLowerCase());
-  const rows = c.gradeGroups.flatMap(g => g.rows);
+  const rows = c.feeRows, one = c.oneTime || {}, extras = c.extraFees || [];
+  const has = k => rows.some(r => r[k] != null);
+  const extrasMax = extras.reduce((s, f) => s + (f.max || 0), 0);
+  const oneSum = (one.prospectus || 0) + (one.registration || 0) + (one.admission || 0);
+  const total = r => oneSum + (r.annual || 0) + r.tuition + extrasMax;
 
-  const feeRows = rows.map(([gr, fee, max, ratio, time]) => `<tr>
-    <th>${esc(gr)}</th><td class="c" data-label="Max students per class">${max}</td><td class="c" data-label="Student–teacher ratio">${esc(ratio)}</td><td class="time" data-label="School timings">${esc(time)}</td>
-    <td class="r" data-label="Application fee">${inr(c.applicationFee)}</td><td class="r" data-label="Admission fee">${inr(c.admissionFee)}</td><td class="r" data-label="Annual tuition"><b>${inr(fee)}</b></td>
-    ${c.extraFees.map(f => `<td class="c ex" data-label="${esc(f.key)}">${esc(f.cell)}</td>`).join("")}
-    <td class="r total" data-label="Total*">${inr(fee + c.applicationFee + c.admissionFee + extrasMax)}</td></tr>`).join("");
+  // Columns follow the CEO's sample sheet; a column shows only when this campus has data for it.
+  const cols = [
+    has("max") && ["Max students per class", r => r.max, "c"],
+    has("ratio") && ["Student–teacher ratio", r => esc(r.ratio), "c"],
+    has("timings") && ["School timings", r => esc(r.timings), "time"],
+    one.prospectus && ["Prospectus fee", () => inr(one.prospectus), "r"],
+    one.registration && ["Application fee", () => inr(one.registration), "r"],
+    one.admission && ["Admission fee", () => inr(one.admission), "r"],
+    has("annual") && ["Annual fee", r => r.annual ? inr(r.annual) : "–", "r"],
+    ["Annual tuition (₹)", r => `<b>${inr(r.tuition)}</b>`, "r"],
+    ...extras.map(f => [esc(f.key), () => esc(f.cell), "c ex"]),
+    ["Total*", r => inr(total(r)), "r total"]
+  ].filter(Boolean);
+  const feeRows = rows.map(r => `<tr><th>${esc(r.grade)}</th>${cols.map(([h, fn, cls]) => `<td class="${cls}" data-label="${h.replace(/<[^>]+>/g, "")}">${fn(r)}</td>`).join("")}</tr>`).join("");
+  const parts = [one.prospectus && "prospectus fee", one.registration && "application fee", one.admission && "admission fee", has("annual") && "annual fee", "annual tuition", ...extras.filter(f => f.max).map(f => f.key.toLowerCase() + " (upper figure)")].filter(Boolean);
+  const extraNote = extras.some(f => !f.max) ? " Examination fees are extra." : (extras.length ? "" : " Uniform, books and exam fees are extra.");
 
-  const tbl = (head, body, cls = "") => `<div class="scroll"><table class="${cls}"><thead><tr>${head.map(h => `<th>${h}</th>`).join("")}</tr></thead><tbody>${body}</tbody></table></div>`;
+  const tbl = (head, body, cls = "") => `<div class="scroll"><table class="${cls}">${head ? `<thead><tr>${head.map(h => `<th>${h}</th>`).join("")}</tr></thead>` : ""}<tbody>${body}</tbody></table></div>`;
+  const kvRows = list => list.map(([k, v]) => `<tr><th>${esc(k)}</th><td>${typeof v === "number" ? inr(v) : esc(v)}</td></tr>`).join("");
+  const half = list => { const m = Math.ceil(list.length / 2); return [list.slice(0, m), list.slice(m)]; };
+  const alert = cls => `<div class="alert ${cls}"><strong>Tell every parent</strong>${c.keyNotes.map(n => `<span>${esc(n)}</span>`).join("")}</div>`;
+
+  const transport = c.transport ? `<div class="row2">
+      <div class="sec"><h2>Transport</h2>${tbl(["Distance from school", "Annual fee (₹)"], c.transport.map(([k, v]) => `<tr><th>${esc(k)}</th><td class="r">${inr(v)}</td></tr>`).join(""), "kv")}</div>
+      <div class="sec"><h2>School bus</h2>${tbl(["Feature", "Details"], kvRows(c.bus), "kv")}</div>
+    </div>` : "";
+  const routes = c.routes && c.routes.length ? `<div class="sec noprint"><h2>Bus routes <small class="count">${c.routes.length} routes</small></h2>
+      ${tbl(["Route", "Areas covered", "Pickup", "Drop"], c.routes.map(([n, a, p, d]) => `<tr><th>${esc(n)}</th><td>${esc(a)}</td><td class="nw">${esc(p)}</td><td class="nw">${esc(d)}</td></tr>`).join(""), "routes")}</div>` : "";
+  const details = c.details && c.details.length > 1 ? `<div class="sec"><h2>School details</h2>
+      <div class="row2 tight">${half(c.details).map(h => tbl(null, kvRows(h), "kv det")).join("")}</div>
+      ${c.transportNote ? `<p class="note strong">${esc(c.transportNote)}${c.routes && c.routes.length ? ` ${c.routes.length} bus routes are listed on the website.` : ""}</p>` : ""}</div>` : "";
+  const admissions = c.admissions && c.admissions.length ? `<div class="sec"><h2>Admissions ${esc(c.feeYear)}</h2>${tbl(null, kvRows(c.admissions), "kv det")}</div>` : "";
+  const facilities = c.facilities && c.facilities.length ? `<div class="sec"><h2>Facilities at ${esc(c.short)}</h2>
+      ${tbl(["Area", "Facilities"], c.facilities.map(([area, items]) => `<tr><th>${esc(area)}</th><td>${items.map(i => `<span class="chip">${esc(i)}</span>`).join("")}</td></tr>`).join(""), "fac")}</div>` : "";
+  const curriculum = c.curriculum ? `<div class="row2">${[c.curriculum.icse, c.curriculum.igcse].map(cu => `<div class="sec"><h2>${esc(cu.title)}</h2>
+        ${tbl(["Group", "Type", "Subjects"], cu.groups.map(([g, k, s]) => `<tr><td>${esc(g)}</td><td>${esc(k)}</td><td>${esc(s)}</td></tr>`).join(""), "cur")}
+        <p class="note">${esc(cu.note)}</p></div>`).join("")}</div>` : "";
+  const awards = c.awards && c.awards.length ? `<div class="sec"><h2>Awards and recognition</h2><ul class="awards">${c.awards.map(a => `<li>${esc(a)}</li>`).join("")}</ul></div>` : "";
+  const hasRest = [transport, details, admissions, facilities, curriculum, awards].some(Boolean);
+  const late = rows.length > 20 && hasRest;
+  const facts = [["Location", c.city], ["Board", c.board], ["Grades", c.grades], ["Fees for", c.feeYear], ["Updated", c.updated]].filter(f => f[1]);
 
   app.innerHTML = `
   <section class="band"><div class="wrap">
@@ -212,49 +279,27 @@ function campus(c) {
     <a class="dl" href="pdf/${c.slug}.pdf" download="${esc(c.short)} Fact File.pdf">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></svg>
       Download PDF</a>
-    <div class="facts">
-      <span class="fact"><b>Location</b> ${esc(c.city)}</span>
-      <span class="fact"><b>Board</b> ${esc(c.board)}</span>
-      <span class="fact"><b>Grades</b> ${esc(c.grades)}</span>
-      <span class="fact"><b>Updated</b> ${esc(c.updated)}</span>
-    </div>
+    <div class="facts">${facts.map(([k, v]) => `<span class="fact"><b>${k}</b> ${esc(v)}</span>`).join("")}</div>
   </div></section>
 
   <section class="sheet"><div class="wrap">
-    <div class="sec">
-      <h2>Fees</h2>
-      ${tbl(["Grade", "Max students per class", "Student–teacher ratio", "School timings", "Application fee", "Admission fee", "Annual tuition (₹)", ...c.extraFees.map(f => esc(f.key)), "Total*"], feeRows, "fees")}
-      <p class="note">* Total = application fee + admission fee + annual tuition + ${inTotal.join(" + ")} (upper figure). ICSE and Cambridge examination fees are extra. Transport is extra. Fees may change; check the latest fee circular before quoting.</p>
+    <div class="sec feesec">
+      <h2>Fees ${esc(c.feeYear)}</h2>
+      ${tbl(["Grade", ...cols.map(x => x[0])], feeRows, "fees" + (rows.length > 22 ? " xdense" : rows.length > 13 ? " dense" : ""))}
+      <p class="note">* Total = ${parts.join(" + ")}.${extraNote} Transport is extra. Fees may change; check the latest fee circular before quoting.</p>
     </div>
-
-    <div class="alert printonly"><strong>Tell every parent</strong>${c.keyNotes.map(n => `<span>${esc(n)}</span>`).join("")}</div>
-
-    <div class="row2 page2">
-      <div class="sec">
-        <h2>Transport</h2>
-        ${tbl(["Distance from school", "Annual fee (₹)"], c.transport.map(([k, v]) => `<tr><th>${esc(k)}</th><td class="r">${inr(v)}</td></tr>`).join(""), "kv")}
-      </div>
-      <div class="sec">
-        <h2>School bus</h2>
-        ${tbl(["Feature", "Details"], c.bus.map(([k, v]) => `<tr><th>${esc(k)}</th><td>${esc(v)}</td></tr>`).join(""), "kv")}
-      </div>
+    ${late ? "" : alert("printonly")}
+    <div class="rest${hasRest ? "" : " bare"}">
+    ${late ? alert("printonly") : ""}
+    ${transport}
+    ${details}
+    ${admissions}
+    ${routes}
+    ${facilities}
+    ${curriculum}
+    ${awards}
+    ${alert("noprint")}
     </div>
-
-    <div class="sec">
-      <h2>Facilities at ${esc(c.short)}</h2>
-      ${tbl(["Area", "Facilities"], c.facilities.map(([area, items]) => `<tr><th>${esc(area)}</th><td>${items.map(i => `<span class="chip">${esc(i)}</span>`).join("")}</td></tr>`).join(""), "fac")}
-    </div>
-
-    <div class="row2">
-      ${[c.curriculum.icse, c.curriculum.igcse].map(cu => `<div class="sec"><h2>${esc(cu.title)}</h2>
-        ${tbl(["Group", "Type", "Subjects"], cu.groups.map(([g, k, s]) => `<tr><td>${esc(g)}</td><td>${esc(k)}</td><td>${esc(s)}</td></tr>`).join(""), "cur")}
-        <p class="note">${esc(cu.note)}</p></div>`).join("")}
-    </div>
-
-    <div class="alert noprint"><strong>Tell every parent</strong>${c.keyNotes.map(n => `<span>${esc(n)}</span>`).join("")}</div>
-
-    ${c.awards && c.awards.length ? `<div class="sec"><h2>Awards and recognition</h2><ul>${c.awards.map(a => `<li>${esc(a)}</li>`).join("")}</ul></div>` : ""}
-
     <p class="foot">${esc(c.short)} · Campus Fact File · For GEMS admissions teams · Updated ${esc(c.updated)}</p>
   </div></section>`;
 }
