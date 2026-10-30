@@ -213,31 +213,62 @@ def routes(campus_key):
 NO_HOSTEL = "No hostel facility at any GEMS campus. Day school only."
 
 
-def campus(slug, brand, short, city, fkey, blocks, akey=None, route_key=None, labels=None, only=None, notes=(), extra=()):
+CATS = ["Labs and learning", "Performing arts", "Life skills", "Indoor sports", "Outdoor sports", "Campus and safety"]
+KW = [
+    ("Campus and safety", ["auditorium", "classroom", "cctv", "rfid", "sen ", "infirmary", "cafeteria", "mph", "corridor", "architecture", "bala", "newspaper"]),
+    ("Performing arts", ["music", "dance", "drama", "theatre", "keyboard", "piano", "guitar", "ukulele", "drums", "sitar", "vocal", "public speaking", "media lab"]),
+    ("Life skills", ["pottery", "culinary", "carpentry", "fashion", "art room", "art,"]),
+    ("Outdoor sports", ["football", "cricket", "athletic", "track", "tennis court", "volleyball", "throwball", "turf", "play area", "long jump", "swimming", "pool", "pickleball", "padel", "shooting", "mountaineering", "wall climbing", "basketball"]),
+    ("Indoor sports", ["table tennis", "chess", "carrom", "skating", "martial", "boxing", "yoga", "gym", "taekwondo", "indoor sports", "badminton"]),
+]
+
+
+def categorise(items):
+    out = {k: [] for k in CATS}
+    for it in items:
+        low = it.lower() + " "
+        cat = next((c for c, kws in KW if any(k in low for k in kws)), "Labs and learning")
+        if cat == "Outdoor sports" and "table tennis" in low:
+            cat = "Indoor sports"
+        out[cat].append(it)
+    return [[k, v] for k, v in out.items()]
+
+
+NO_HOSTEL = "No hostel facility at any GEMS campus. Day school only."
+EXAM_BOARDS = {"CBSE": "CBSE", "ICSE": "ICSE", "Cambridge": "Cambridge", "IB": "IB"}
+
+
+def campus(slug, brand, short, city, fkey, blocks, labels=None, only=None, **_):
     f = facts.get(fkey, {})
     rows, one = fee_table(blocks, labels, only)
-    kn = [NO_HOSTEL]
-    former = f.get("Former name still used by parents")
-    if former:
-        kn.append(f"Parents may know it by its former name, {former}.")
-    kn += list(notes)
-    gfrom, gto = f.get("Grades offered, from"), f.get("Grades offered, to")
+    boards = []
+    for _, b in blocks:
+        if b and b not in boards:
+            boards.append(b)
+    if not boards:
+        boards = [x.strip() for x in re.split(r",|and", f.get("Board(s) offered") or "CBSE") if x.strip()][:1] or ["CBSE"]
     name = (f.get("Full official school name") or short).split(",")[0].strip()
-    radius = f.get("Transport radius covered, km")
+    items = []
+    for _, lst in facility_rows(f):
+        items += lst
+    # Kept only for the record; the Vikhroli template has no column for these.
+    not_shown = {k: v for k, v in {"annualFee": next((r["annual"] for r in rows if r.get("annual")), None), "prospectusFee": one.get("prospectus")}.items() if v}
     return {
         "slug": slug, "live": True, "brand": brand, "name": name, "short": short, "city": city,
-        "updated": "30 Oct 2026", "feeYear": "2027–28",
-        "board": (f.get("Board(s) offered") or "").replace(" ,", ",").strip() or None,
+        "updated": "30 Oct 2026",
+        "board": " and ".join(boards),
         "grades": f"{rows[0]['grade'].split(' (')[0]} to {rows[-1]['grade'].split(' (')[0]}" if rows else None,
-        "keyNotes": kn,
-        "feeRows": rows,
-        "oneTime": one,
-        "transportNote": f"School transport covers about {radius} around the campus." if radius else None,
-        "routes": routes(route_key) if route_key else [],
-        "details": details(f, extra),
-        "admissions": admissions(adm.get(akey)) if akey else [],
-        "facilities": facility_rows(f),
-        "awards": awards(f),
+        "keyNotes": [NO_HOSTEL],
+        "feeRows": [{"grade": r["grade"], "tuition": r["tuition"]} for r in rows],
+        "applicationFee": one.get("registration"),
+        "admissionFee": one.get("admission"),
+        "extraFees": [{"key": "Uniform", "cell": None, "max": None}, {"key": "Books", "cell": None, "max": None}] +
+                     [{"key": f"{b} examination fee", "cell": None, "max": None} for b in boards],
+        "transport": [["0 – 1 km", None], ["1 – 3 km", None], ["3 – 5 km", None], ["5 – 8 km", None], ["8 km and above", None]],
+        "bus": [["Bus type", None], ["Attendant", None], ["GPS tracking", None], ["CCTV in bus", None]],
+        "facilities": categorise(items),
+        "curriculum": None,
+        "notShown": not_shown,
     }
 
 
@@ -254,18 +285,17 @@ C.append(campus("kochi-gma", "GMA", "GMA Kochi", "Kochi", "Modern Academy Kochi"
 C.append(campus("coimbatore", "GMA", "GMA Coimbatore", "Coimbatore", "Coimbatore", [("K", "CBSE"), ("L", "IB")]))
 
 # Vikhroli: 2027-28 fees from the workbook plus the hand-checked Word-file details.
-v = campus("vikhroli", "GMS", "GMS Vikhroli", "Vikhroli, Mumbai", "Vikhroli", [("M", "ICSE"), ("N", "Cambridge")], labels=VIK_LABELS,
-           notes=["Book and uniform samples are available at school for parents to see."])
-for r in v["feeRows"]:
-    early = r["grade"].split(" (")[0] in ("Playgroup", "Nursery", "Jr KG", "Sr KG")
-    g = r["grade"].split(" (")[0]
-    small = early or g == "Grade 1"
-    r["max"] = 24 if small else 30
-    r["ratio"] = "12:1" if small or g == "Grade 2" else "30:1"
-    r["timings"] = "9:30 am – 1:30 pm" if early else "8:00 am – 3:00 pm"
-    if r["grade"].endswith("(ICSE)") and g in ("Playgroup", "Nursery", "Jr KG", "Sr KG", "Grade 1", "Grade 2", "Grade 3", "Grade 4"):
-        r["grade"] = g  # only one board for these grades
-v["grades"] = "Playgroup to Grade 8"
+v = campus("vikhroli", "GMS", "GMS Vikhroli", "Vikhroli, Mumbai", "Vikhroli", [("M", "ICSE"), ("N", "Cambridge")], labels=VIK_LABELS)
+v["keyNotes"].append("Book and uniform samples are available at school for parents to see.")
+# Vikhroli keeps exactly the approved Word-file figures (Playgroup to Grade 7).
+E, P = ("9:30 am – 1:30 pm", "8:00 am – 3:00 pm")
+v["feeRows"] = [{"grade": g, "tuition": t, "max": m, "ratio": r, "timings": tm} for g, t, m, r, tm in [
+    ("Playgroup", 149000, 24, "12:1", E), ("Nursery", 160000, 24, "12:1", E), ("Jr KG", 172000, 24, "12:1", E), ("Sr KG", 183000, 24, "12:1", E),
+    ("Grade 1", 210000, 24, "12:1", P), ("Grade 2", 220000, 30, "12:1", P), ("Grade 3", 232000, 30, "30:1", P), ("Grade 4", 243000, 30, "30:1", P),
+    ("Grade 5", 255000, 30, "30:1", P), ("Grade 6 (ICSE)", 255000, 30, "30:1", P), ("Grade 7 (ICSE)", 255000, 30, "30:1", P),
+    ("Grade 6 (Cambridge)", 287000, 30, "30:1", P), ("Grade 7 (Cambridge)", 287000, 30, "30:1", P)]]
+v["applicationFee"], v["admissionFee"] = 2000, 40000
+v["grades"] = "Playgroup to Grade 7"
 v["board"] = "ICSE and Cambridge"
 v["extraFees"] = [
     {"key": "Uniform", "cell": "Up to 10K", "max": 10000},
@@ -283,6 +313,7 @@ v["facilities"] = [
     ["Outdoor sports", ["Cricket nets", "Turf", "Badminton", "Play area"]],
     ["Campus and safety", ["Auditorium", "AC classrooms", "CCTV", "RFID", "SEN room", "Infirmary"]],
 ]
+v.pop("notShown", None)
 v["curriculum"] = {
     "icse": {"title": "ICSE subject groups · Grades 9 and 10", "note": "Set by CISCE. Final choices depend on what the school offers and CISCE rules.", "groups": [
         ["Group I", "Compulsory, take all", "English, Second language (Hindi, Marathi or another approved language), History, Civics and Geography"],
@@ -296,16 +327,13 @@ v["curriculum"] = {
         ["Group 5", "Professional and creative", "Art and Design, Computer Science, ICT, Business Studies, Economics, Accounting"]]},
 }
 C.insert(0, v)
-BOARD = {"kochi-gma": "IB (PYP, MYP) and Cambridge (IGCSE)", "coimbatore": "CBSE and IB"}
 for c in C:
     if c["slug"] == "coimbatore":
         c["name"] = "GEMS Modern Academy"
-    c["board"] = BOARD.get(c["slug"], (c["board"] or "").replace(", ", " and "))
-
 with open(sys.argv[2], "w") as fh:
     fh.write("// Generated from the GEMS school facts workbook (AOD 6 Oct 2026) plus the Vikhroli Word file.\n"
              "// Edit values here directly; run `node build-pdfs.mjs` afterwards to rebuild the PDFs.\n"
              "// Brand: \"GMS\" (maroon), \"GSE\" (navy), \"GMA\" (gold).\n")
     fh.write("window.CAMPUSES = " + json.dumps(C, ensure_ascii=False, indent=1) + ";\n")
 for c in C:
-    print(c["slug"], len(c["feeRows"]), c["oneTime"], c["grades"], "| board:", c["board"], "| details", len(c["details"]), "adm", len(c["admissions"]), "routes", len(c["routes"]), "awards", len(c["awards"]))
+    print(c["slug"], len(c["feeRows"]), c["applicationFee"], c["admissionFee"], c["grades"], "|", c["board"], "|", c.get("notShown"), [len(x[1]) for x in c["facilities"]])
