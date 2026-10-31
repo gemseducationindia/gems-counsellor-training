@@ -1648,91 +1648,113 @@ window.CAMPUSES = [
   "feeRows": [
    {
     "grade": "Nursery (IB)",
-    "tuition": 183000
+    "tuition": 183000,
+    "max": 20
    },
    {
     "grade": "Junior KG (IB)",
-    "tuition": 183000
+    "tuition": 183000,
+    "max": 18
    },
    {
     "grade": "Senior KG (IB)",
-    "tuition": 191030
+    "tuition": 191030,
+    "max": 25
    },
    {
     "grade": "Grade 1 (IB)",
-    "tuition": 204140
+    "tuition": 204140,
+    "max": 30
    },
    {
     "grade": "Grade 2 (IB)",
-    "tuition": 213500
+    "tuition": 213500,
+    "max": 30
    },
    {
     "grade": "Grade 3 (IB)",
-    "tuition": 228020
+    "tuition": 228020,
+    "max": 30
    },
    {
     "grade": "Grade 4 (IB)",
-    "tuition": 228020
+    "tuition": 228020,
+    "max": 30
    },
    {
     "grade": "Grade 5 (IB)",
-    "tuition": 228020
+    "tuition": 228020,
+    "max": 30
    },
    {
     "grade": "Grade 6 (IB)",
-    "tuition": 371000
+    "tuition": 371000,
+    "max": 20
    },
    {
     "grade": "Grade 7 (IB)",
-    "tuition": 371000
+    "tuition": 371000,
+    "max": 20
    },
    {
     "grade": "Grade 8 (IB)",
-    "tuition": 371000
+    "tuition": 371000,
+    "max": 20
    },
    {
     "grade": "Grade 9 (IB)",
-    "tuition": 386900
+    "tuition": 386900,
+    "max": 20
    },
    {
     "grade": "Grade 10 (IB)",
-    "tuition": 386900
+    "tuition": 386900,
+    "max": 29
    },
    {
     "grade": "Grade 11 (IB)",
-    "tuition": 424000
+    "tuition": 424000,
+    "max": 20
    },
    {
     "grade": "Grade 12 (IB)",
-    "tuition": 424000
+    "tuition": 424000,
+    "max": 20
    },
    {
     "grade": "Grade 6 (Cambridge)",
-    "tuition": 244000
+    "tuition": 244000,
+    "max": 30
    },
    {
     "grade": "Grade 7 (Cambridge)",
-    "tuition": 244000
+    "tuition": 244000,
+    "max": 30
    },
    {
     "grade": "Grade 8 (Cambridge)",
-    "tuition": 244000
+    "tuition": 244000,
+    "max": 30
    },
    {
     "grade": "Grade 9 (Cambridge)",
-    "tuition": 261420
+    "tuition": 261420,
+    "max": 20
    },
    {
     "grade": "Grade 10 (Cambridge)",
-    "tuition": 261420
+    "tuition": 261420,
+    "max": 29
    },
    {
     "grade": "Grade 11 (Cambridge)",
-    "tuition": 290470
+    "tuition": 290470,
+    "max": 20
    },
    {
     "grade": "Grade 12 (Cambridge)",
-    "tuition": 290470
+    "tuition": 290470,
+    "max": 20
    }
   ],
   "applicationFee": 10000,
@@ -1867,7 +1889,7 @@ window.CAMPUSES = [
   "city": "Coimbatore",
   "updated": "30 Oct 2026",
   "board": "CBSE and IB",
-  "grades": "Nursery to Grade 12",
+  "grades": "Nursery to Grade 8",
   "keyNotes": [
    "No hostel facility at any GEMS campus. Day school only."
   ],
@@ -1928,22 +1950,6 @@ window.CAMPUSES = [
     "max": 40
    },
    {
-    "grade": "Grade 9 (CBSE)",
-    "tuition": 181500
-   },
-   {
-    "grade": "Grade 10 (CBSE)",
-    "tuition": 181500
-   },
-   {
-    "grade": "Grade 11 (CBSE)",
-    "tuition": 190000
-   },
-   {
-    "grade": "Grade 12 (CBSE)",
-    "tuition": 190000
-   },
-   {
     "grade": "Grade 1 (IB)",
     "tuition": 225000,
     "max": 40
@@ -1982,22 +1988,6 @@ window.CAMPUSES = [
     "grade": "Grade 8 (IB)",
     "tuition": 250000,
     "max": 40
-   },
-   {
-    "grade": "Grade 9 (IB)",
-    "tuition": 275000
-   },
-   {
-    "grade": "Grade 10 (IB)",
-    "tuition": 275000
-   },
-   {
-    "grade": "Grade 11 (IB)",
-    "tuition": 325000
-   },
-   {
-    "grade": "Grade 12 (IB)",
-    "tuition": 325000
    }
   ],
   "applicationFee": 5000,
