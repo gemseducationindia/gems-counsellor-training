@@ -235,7 +235,7 @@ tbody tr:nth-child(even) td, tbody tr:nth-child(even) th { background: var(--tin
 </div></header>
 <main id="app"></main>
 
-<script src="campuses.js?v=20261031a"></script>
+<script src="campuses.js?v=20261031b"></script>
 <script>
 const BRANDS = { GMS: "GEMS Millennium Schools", GSE: "GEMS Schools of Excellence", GMA: "GEMS Modern Academy", LG: "Little GEMS" };
 const inr = n => "₹" + Number(n).toLocaleString("en-IN");
@@ -361,7 +361,7 @@ function campus(c) {
       <div class="eyebrow">Campus Fact File · For admissions teams</div>
       <h1>${esc(c.name)}, ${esc(c.city.split(",")[0])}</h1>
     </div>
-    <a class="dl" href="pdf/${c.slug}.pdf?v=20261031a" download="${esc(c.short)} Fact File.pdf">
+    <a class="dl" href="pdf/${c.slug}.pdf?v=20261031b" download="${esc(c.short)} Fact File.pdf">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></svg>
       Download PDF</a>
     <div class="facts">${facts.map(([k, v]) => `<span class="fact"><b>${k}</b> ${esc(blank(v))}</span>`).join("")}</div>

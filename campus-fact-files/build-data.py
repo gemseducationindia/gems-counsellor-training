@@ -327,6 +327,23 @@ v["curriculum"] = {
         ["Group 4", "Mathematics", "Mathematics"],
         ["Group 5", "Professional and creative", "Art and Design, Computer Science, ICT, Business Studies, Economics, Accounting"]]},
 }
+# Jay, 31 Oct 2026: Coimbatore stops at Grade 8 for 2027-28.
+_hi = {"Grade 9", "Grade 10", "Grade 11", "Grade 12"}
+for c in C:
+    if c["slug"] == "coimbatore":
+        c["feeRows"] = [fr for fr in c["feeRows"] if fr["grade"].split(" (")[0] not in _hi]
+        c["grades"] = "Nursery to Grade 8"
+# Jay, 31 Oct 2026: GMA Kochi Pre EY = Nursery, EYP 1 = Junior KG, EYP 2 = Senior KG; MYP rows are the IB class size for Grades 6-9.
+GMA_KOCHI_MAX = {"Nursery (IB)": 20, "Junior KG (IB)": 18, "Senior KG (IB)": 25,
+                 **{f"Grade {g} (IB)": 30 for g in range(1, 6)}, **{f"Grade {g} (IB)": 20 for g in range(6, 10)},
+                 **{f"Grade {g} (Cambridge)": 30 for g in range(6, 9)}, "Grade 9 (Cambridge)": 20,
+                 "Grade 10 (IB)": 29, "Grade 10 (Cambridge)": 29, "Grade 11 (IB)": 20, "Grade 11 (Cambridge)": 20,
+                 "Grade 12 (IB)": 20, "Grade 12 (Cambridge)": 20}
+for c in C:
+    if c["slug"] == "kochi-gma":
+        for fr in c["feeRows"]:
+            if fr["grade"] in GMA_KOCHI_MAX: fr["max"] = GMA_KOCHI_MAX[fr["grade"]]
+
 # Max students per class, from the "School Capacities" sheet of the GEMS CRM Requirements workbook (31 Oct 2026).
 # GMA Kochi is left out: its sheet uses PYP/MYP/CIE labels that don't map cleanly to the page's rows.
 CAP_SCHOOL = {"Gurgaon": "gurugram", "Millenium School Kochi": "kochi-gms", "Lucknow": "lucknow", "Jodhpur": "jodhpur",
