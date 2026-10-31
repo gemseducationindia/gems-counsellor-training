@@ -327,6 +327,55 @@ v["curriculum"] = {
         ["Group 4", "Mathematics", "Mathematics"],
         ["Group 5", "Professional and creative", "Art and Design, Computer Science, ICT, Business Studies, Economics, Accounting"]]},
 }
+# ---- 31 Oct 2026: CEO's V3 template additions ----
+def _t(v):
+    """Normalise a bus time to '6:45 am'. Returns (text, fixed) where fixed flags a typo we corrected."""
+    import datetime as _dt
+    if v is None or str(v).strip() in ("", "\xa0"): return None, False
+    if isinstance(v, _dt.time):
+        h, m = v.hour, v.minute
+        return f"{(h - 1) % 12 + 1}:{m:02d} {'am' if h < 12 else 'pm'}", False
+    t = str(v).strip().replace("–", "-")
+    m = re.fullmatch(r"(\d{1,2}):(\d{2}):00", t)
+    if m:
+        h, mi = int(m[1]), int(m[2]); return f"{(h - 1) % 12 + 1}:{mi:02d} {'am' if h < 12 else 'pm'}", False
+    t = re.sub(r"(\d)\.(\d\d)", r"\1:\2", t)
+    t = re.sub(r"\s*(AM|am)\b", " am", t); t = re.sub(r"\s*(PM|pm|OM)\b", " pm", t)
+    t = re.sub(r"\s*-\s*", " – ", t)
+    return t.strip(), "OM" in str(v)
+
+def _ride(v):
+    if v is None: return None
+    t = str(v).strip().lower()
+    if t in ("8 hrs", ""): return None   # GMA Kochi sheet has the school day (8 hrs), not the ride time
+    h = re.search(r"(\d+)\s*h", t); mi = re.search(r"(\d+)\s*min", t)
+    if not h and not mi: return str(v).strip()
+    parts = ([f"{h[1]} hr"] if h else []) + ([f"{mi[1]} min"] if mi else [])
+    return " ".join(parts)
+
+ROUTE_CAMPUS = {"Jodhpur": "jodhpur", "LUCKNOW, SCR": "lucknow", "GEMS MODERN ACADEMY KOCHI": "kochi-gma", "GEMS Millennium School Gurgaon": "gurugram"}
+_routes = {}
+for r in wb["Transport routes"].iter_rows(min_row=5, values_only=True):
+    slug = ROUTE_CAMPUS.get(str(r[0]).strip() if r[0] else None)
+    if not slug: continue
+    pick, _ = _t(r[4]); drop, fixed = _t(r[5])
+    if slug == "kochi-gma" and drop and drop.endswith("am"):   # "4.40 AM" afternoon drop: sheet typo
+        drop = drop[:-2] + "pm"
+    rno = re.sub(r"^ROUTE NO\.\s*", "", str(r[1]).strip()).replace("R- ", "R-").replace("S-1", "S1").replace("J-1", "J1")
+    clean = lambda x: ", ".join(p.strip() for p in re.split(r"[\n/]|,(?!\s*\d)", str(x)) if p.strip()) if x and str(x).strip() not in ("\xa0",) else None
+    _routes.setdefault(slug, []).append({"route": rno, "area": clean(r[2]), "landmark": clean(r[3]), "dist": None, "slab": None, "fee": None,
+                                         "pick": pick, "drop": drop, "ride": _ride(r[6])})
+for c in C + [v]:
+    c["updated"] = "31 Oct 2026"
+    c["technology"] = [["Smart boards per classroom", None], ["ERP", None], ["Care Desk", None]]
+    c["tieups"] = []
+    rows = _routes.get(c["slug"], [])
+    for i, row in enumerate(rows, 1): row["stop"] = i
+    c["routes"] = {"stops": None, "routes": len(rows) or None, "reach": None, "leave": None, "rows": rows}
+TIEUPS = {"vikhroli": [["Music", "Torrence"]], "varanasi": [["Cricket", "MS Dhoni Cricket Academy"]]}
+for c in C + [v]:
+    c["tieups"] = TIEUPS.get(c["slug"], [])
+
 # Jay, 31 Oct 2026: Coimbatore stops at Grade 8 for 2027-28.
 _hi = {"Grade 9", "Grade 10", "Grade 11", "Grade 12"}
 for c in C:
