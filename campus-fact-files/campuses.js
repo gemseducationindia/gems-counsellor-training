@@ -311,81 +311,97 @@ window.CAMPUSES = [
    {
     "grade": "Pre-KG",
     "tuition": 150428,
+    "annual": 25000,
     "max": 30
    },
    {
     "grade": "Nursery",
     "tuition": 150428,
+    "annual": 25000,
     "max": 30
    },
    {
     "grade": "Junior KG",
     "tuition": 150428,
+    "annual": 25000,
     "max": 30
    },
    {
     "grade": "Senior KG",
     "tuition": 150428,
+    "annual": 25000,
     "max": 30
    },
    {
     "grade": "Grade 1",
     "tuition": 150428,
+    "annual": 25000,
     "max": 30
    },
    {
     "grade": "Grade 2",
     "tuition": 150428,
+    "annual": 25000,
     "max": 30
    },
    {
     "grade": "Grade 3",
     "tuition": 177012,
+    "annual": 25000,
     "max": 30
    },
    {
     "grade": "Grade 4",
     "tuition": 177012,
+    "annual": 25000,
     "max": 30
    },
    {
     "grade": "Grade 5",
     "tuition": 177012,
+    "annual": 25000,
     "max": 30
    },
    {
     "grade": "Grade 6",
     "tuition": 200660,
+    "annual": 25000,
     "max": 30
    },
    {
     "grade": "Grade 7",
     "tuition": 200660,
+    "annual": 25000,
     "max": 30
    },
    {
     "grade": "Grade 8",
     "tuition": 200660,
+    "annual": 25000,
     "max": 30
    },
    {
     "grade": "Grade 9",
     "tuition": 218136,
+    "annual": 25000,
     "max": 30
    },
    {
     "grade": "Grade 10",
     "tuition": 218136,
+    "annual": 25000,
     "max": 30
    },
    {
     "grade": "Grade 11",
     "tuition": 230512,
+    "annual": 25000,
     "max": 30
    },
    {
     "grade": "Grade 12",
     "tuition": 230512,
+    "annual": 25000,
     "max": 30
    }
   ],
@@ -513,9 +529,7 @@ window.CAMPUSES = [
    ]
   ],
   "curriculum": null,
-  "notShown": {
-   "annualFee": 25000
-  }
+  "notShown": {}
  },
  {
   "slug": "indirapuram",
@@ -905,41 +919,49 @@ window.CAMPUSES = [
    {
     "grade": "Nursery",
     "tuition": 145000,
+    "annual": 25000,
     "max": 30
    },
    {
     "grade": "Junior KG",
     "tuition": 145000,
+    "annual": 25000,
     "max": 30
    },
    {
     "grade": "Senior KG",
     "tuition": 145000,
+    "annual": 25000,
     "max": 30
    },
    {
     "grade": "Grade 1",
     "tuition": 159500,
+    "annual": 25000,
     "max": 30
    },
    {
     "grade": "Grade 2",
     "tuition": 159500,
+    "annual": 25000,
     "max": 30
    },
    {
     "grade": "Grade 3",
     "tuition": 159500,
+    "annual": 25000,
     "max": 30
    },
    {
     "grade": "Grade 4",
     "tuition": 175450,
+    "annual": 25000,
     "max": 30
    },
    {
     "grade": "Grade 5",
     "tuition": 175450,
+    "annual": 25000,
     "max": 30
    }
   ],
@@ -1044,9 +1066,7 @@ window.CAMPUSES = [
    ]
   ],
   "curriculum": null,
-  "notShown": {
-   "annualFee": 25000
-  }
+  "notShown": {}
  },
  {
   "slug": "varanasi",
@@ -1649,111 +1669,133 @@ window.CAMPUSES = [
    {
     "grade": "Nursery (IB)",
     "tuition": 183000,
+    "annual": 25000,
     "max": 20
    },
    {
     "grade": "Junior KG (IB)",
     "tuition": 183000,
+    "annual": 25000,
     "max": 18
    },
    {
     "grade": "Senior KG (IB)",
     "tuition": 191030,
+    "annual": 25000,
     "max": 25
    },
    {
     "grade": "Grade 1 (IB)",
     "tuition": 204140,
+    "annual": 25000,
     "max": 30
    },
    {
     "grade": "Grade 2 (IB)",
     "tuition": 213500,
+    "annual": 25000,
     "max": 30
    },
    {
     "grade": "Grade 3 (IB)",
     "tuition": 228020,
+    "annual": 25000,
     "max": 30
    },
    {
     "grade": "Grade 4 (IB)",
     "tuition": 228020,
+    "annual": 25000,
     "max": 30
    },
    {
     "grade": "Grade 5 (IB)",
     "tuition": 228020,
+    "annual": 25000,
     "max": 30
    },
    {
     "grade": "Grade 6 (IB)",
     "tuition": 371000,
+    "annual": 25000,
     "max": 20
    },
    {
     "grade": "Grade 7 (IB)",
     "tuition": 371000,
+    "annual": 25000,
     "max": 20
    },
    {
     "grade": "Grade 8 (IB)",
     "tuition": 371000,
+    "annual": 25000,
     "max": 20
    },
    {
     "grade": "Grade 9 (IB)",
     "tuition": 386900,
+    "annual": 25000,
     "max": 20
    },
    {
     "grade": "Grade 10 (IB)",
     "tuition": 386900,
+    "annual": 25000,
     "max": 29
    },
    {
     "grade": "Grade 11 (IB)",
     "tuition": 424000,
+    "annual": 25000,
     "max": 20
    },
    {
     "grade": "Grade 12 (IB)",
     "tuition": 424000,
+    "annual": 25000,
     "max": 20
    },
    {
     "grade": "Grade 6 (Cambridge)",
     "tuition": 244000,
+    "annual": 25000,
     "max": 30
    },
    {
     "grade": "Grade 7 (Cambridge)",
     "tuition": 244000,
+    "annual": 25000,
     "max": 30
    },
    {
     "grade": "Grade 8 (Cambridge)",
     "tuition": 244000,
+    "annual": 25000,
     "max": 30
    },
    {
     "grade": "Grade 9 (Cambridge)",
     "tuition": 261420,
+    "annual": 25000,
     "max": 20
    },
    {
     "grade": "Grade 10 (Cambridge)",
     "tuition": 261420,
+    "annual": 25000,
     "max": 29
    },
    {
     "grade": "Grade 11 (Cambridge)",
     "tuition": 290470,
+    "annual": 25000,
     "max": 20
    },
    {
     "grade": "Grade 12 (Cambridge)",
     "tuition": 290470,
+    "annual": 25000,
     "max": 20
    }
   ],
@@ -1876,7 +1918,6 @@ window.CAMPUSES = [
   ],
   "curriculum": null,
   "notShown": {
-   "annualFee": 25000,
    "prospectusFee": 2000
   }
  },

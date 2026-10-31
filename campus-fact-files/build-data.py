@@ -253,14 +253,14 @@ def campus(slug, brand, short, city, fkey, blocks, labels=None, only=None, **_):
     for _, lst in facility_rows(f):
         items += lst
     # Kept only for the record; the Vikhroli template has no column for these.
-    not_shown = {k: v for k, v in {"annualFee": next((r["annual"] for r in rows if r.get("annual")), None), "prospectusFee": one.get("prospectus")}.items() if v}
+    not_shown = {k: v for k, v in {"prospectusFee": one.get("prospectus")}.items() if v}
     return {
         "slug": slug, "live": True, "brand": brand, "name": name, "short": short, "city": city,
         "updated": "30 Oct 2026",
         "board": " and ".join(boards),
         "grades": f"{rows[0]['grade'].split(' (')[0]} to {rows[-1]['grade'].split(' (')[0]}" if rows else None,
         "keyNotes": [NO_HOSTEL],
-        "feeRows": [{"grade": r["grade"], "tuition": r["tuition"]} for r in rows],
+        "feeRows": [{"grade": r["grade"], "tuition": r["tuition"], **({"annual": r["annual"]} if r.get("annual") else {})} for r in rows],
         "applicationFee": one.get("registration"),
         "admissionFee": one.get("admission"),
         "extraFees": [{"key": "Uniform", "cell": None, "max": None}, {"key": "Books", "cell": None, "max": None}] +

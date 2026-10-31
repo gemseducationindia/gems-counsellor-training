@@ -235,7 +235,7 @@ tbody tr:nth-child(even) td, tbody tr:nth-child(even) th { background: var(--tin
 </div></header>
 <main id="app"></main>
 
-<script src="campuses.js?v=20261031b"></script>
+<script src="campuses.js?v=20261031c"></script>
 <script>
 const BRANDS = { GMS: "GEMS Millennium Schools", GSE: "GEMS Schools of Excellence", GMA: "GEMS Modern Academy", LG: "Little GEMS" };
 const inr = n => "₹" + Number(n).toLocaleString("en-IN");
@@ -348,9 +348,9 @@ function campus(c) {
   const exams = extras.filter(f => / examination fee$/.test(f.key)).map(f => f.key.replace(" examination fee", ""));
   const feeRows = c.feeRows.map(r => `<tr>
     <th>${esc(r.grade)}</th><td class="c" data-label="Max students per class">${esc(blank(r.max))}</td><td class="c" data-label="Student–teacher ratio">${esc(blank(r.ratio))}</td><td class="time" data-label="School timings">${esc(blank(r.timings))}</td>
-    <td class="r" data-label="Application fee">${money(c.applicationFee)}</td><td class="r" data-label="Admission fee">${money(c.admissionFee)}</td><td class="r" data-label="Annual tuition"><b>${money(r.tuition)}</b></td>
+    <td class="r" data-label="Application fee">${money(c.applicationFee)}</td><td class="r" data-label="Admission fee">${money(c.admissionFee)}</td><td class="r" data-label="Annual fee">${r.annual ? money(r.annual) : "–"}</td><td class="r" data-label="Annual tuition"><b>${money(r.tuition)}</b></td>
     ${extras.map(f => `<td class="c ex" data-label="${esc(f.key)}">${esc(blank(f.cell))}</td>`).join("")}
-    <td class="r total" data-label="Total*">${inr(r.tuition + oneSum + extrasMax)}</td></tr>`).join("");
+    <td class="r total" data-label="Total*">${inr(r.tuition + (r.annual || 0) + oneSum + extrasMax)}</td></tr>`).join("");
   const tbl = (head, body, cls = "") => `<div class="scroll"><table class="${cls}"><thead><tr>${head.map(h => `<th>${h}</th>`).join("")}</tr></thead><tbody>${body}</tbody></table></div>`;
   const alert = cls => `<div class="alert ${cls}"><strong>Tell every parent</strong>${c.keyNotes.map(n => `<span>${esc(n)}</span>`).join("")}</div>`;
   const facts = [["Location", c.city], ["Board", c.board], ["Grades", c.grades], ["Updated", c.updated]];
@@ -361,7 +361,7 @@ function campus(c) {
       <div class="eyebrow">Campus Fact File · For admissions teams</div>
       <h1>${esc(c.name)}, ${esc(c.city.split(",")[0])}</h1>
     </div>
-    <a class="dl" href="pdf/${c.slug}.pdf?v=20261031b" download="${esc(c.short)} Fact File.pdf">
+    <a class="dl" href="pdf/${c.slug}.pdf?v=20261031c" download="${esc(c.short)} Fact File.pdf">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></svg>
       Download PDF</a>
     <div class="facts">${facts.map(([k, v]) => `<span class="fact"><b>${k}</b> ${esc(blank(v))}</span>`).join("")}</div>
@@ -370,8 +370,8 @@ function campus(c) {
   <section class="sheet"><div class="wrap">
     <div class="sec feesec">
       <h2>Fees</h2>
-      ${tbl(["Grade", "Max students per class", "Student–teacher ratio", "School timings", "Application fee", "Admission fee", "Annual tuition (₹)", ...extras.map(f => esc(f.key)), "Total*"], feeRows, "fees" + (c.feeRows.length > 18 ? " xdense" : c.feeRows.length > 13 ? " dense" : ""))}
-      <p class="note">* Total = application fee + admission fee + annual tuition${inTotal.length ? " + " + inTotal.join(" + ") + " (upper figure)" : ""}. ${exams.length ? exams.join(" and ") + " examination fees are extra." : ""} Transport is extra. Fees may change; check the latest fee circular before quoting.</p>
+      ${tbl(["Grade", "Max students per class", "Student–teacher ratio", "School timings", "Application fee", "Admission fee", "Annual fee", "Annual tuition (₹)", ...extras.map(f => esc(f.key)), "Total*"], feeRows, "fees" + (c.feeRows.length > 18 ? " xdense" : c.feeRows.length > 13 ? " dense" : ""))}
+      <p class="note">* Total = application fee + admission fee + annual fee + annual tuition${inTotal.length ? " + " + inTotal.join(" + ") + " (upper figure)" : ""}. ${exams.length ? exams.join(" and ") + " examination fees are extra." : ""} Transport is extra. Fees may change; check the latest fee circular before quoting.</p>
     </div>
     ${alert("printonly")}
 
