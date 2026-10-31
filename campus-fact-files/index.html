@@ -77,6 +77,11 @@ a.card:hover { border-color: var(--brand); }
 
 /* Sheet */
 .sheet .wrap { padding-block: 24px 48px; display: grid; gap: 22px; }
+.howto { background: var(--tint); border: 1px solid var(--line); border-radius: 10px; padding: 12px 18px; margin: 12px 0 18px; font-size: 16px; }
+.howto strong { color: var(--brand); text-transform: uppercase; letter-spacing: .05em; font-size: 14px; }
+.howto ol { margin: 6px 0 0; padding-left: 20px; } .howto li { margin: 3px 0; }
+.rfacts { margin: 6px 0 4px; } .rfacts .fact { border-color: var(--line); background: var(--tint); } .rfacts .fact b { color: var(--brand); } .page3 .eyebrow { color: var(--brand); }
+.routes td.lm { font-size: .88em; color: #444; }
 .alert { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: baseline; background: var(--tint); border: 1px solid var(--line); border-radius: 10px; padding: 12px 18px; font-weight: 600; font-size: 17px; }
 .printonly { display: none; }
 .rest { display: grid; gap: 22px; min-width: 0; }
@@ -114,6 +119,14 @@ tbody tr:nth-child(even) td, tbody tr:nth-child(even) th { background: var(--tin
   .fees td { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; border: 0; border-top: 1px solid var(--line); padding: 7px 14px; text-align: right; white-space: normal !important; }
   .fees td::before { content: attr(data-label); color: var(--muted); font-size: 15px; text-align: left; font-weight: 400; }
   .fees td.total { background: var(--tint) !important; }
+  .routes thead { display: none; }
+  .routes, .routes tbody { display: block; }
+  .routes tbody { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; }
+  .routes tr { display: block; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: var(--surface); }
+  .routes tbody tr:nth-child(even) td { background: transparent; }
+  .routes td { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; border: 0; border-top: 1px solid var(--line); padding: 7px 14px; text-align: right; white-space: normal !important; }
+  .routes td::before { content: attr(data-label); color: var(--muted); font-size: 15px; text-align: left; font-weight: 400; flex: none; }
+  .routes td:empty, .routes tr.blankrow { display: none; }
 }
 .kv tbody th { width: 55%; }
 .fac td { line-height: 1.9; }
@@ -219,6 +232,13 @@ tbody tr:nth-child(even) td, tbody tr:nth-child(even) th { background: var(--tin
   .note { font-size: 11px; }
   .row2 { gap: 14px; }
   .page2 { break-before: page; }
+  .page3 { break-before: page; }
+  .kv th, .kv td, .fac th, .fac td, .cur th, .cur td { padding: 2.5px 7px !important; font-size: 10px !important; line-height: 1.3; }
+  .fac .chip { padding: 0 6px; font-size: 9.5px; margin: 1px 2px 1px 0; }
+  .page2 ~ .sec h2, .page2 ~ .row2 h2 { margin: 6px 0 4px; }
+  .howto { padding: 6px 12px; font-size: 11px; margin: 6px 0 8px; } .howto strong { font-size: 10px; } .howto ol { display: flex; flex-wrap: wrap; gap: 2px 18px; list-style: none; padding: 0; } .howto li { margin: 0; flex: 1 1 45%; }
+  .routes th, .routes td { font-size: 9.5px !important; padding: 3px 5px !important; line-height: 1.25; }
+  .routes td.lm { font-size: 8.5px !important; }
   .scroll { overflow: visible; }
   .fees { font-size: 13px; }
   .fees th, .fees td { padding: 6.5px 5px; }
@@ -235,7 +255,7 @@ tbody tr:nth-child(even) td, tbody tr:nth-child(even) th { background: var(--tin
 </div></header>
 <main id="app"></main>
 
-<script src="campuses.js?v=20261031c"></script>
+<script src="campuses.js?v=20261031d"></script>
 <script>
 const BRANDS = { GMS: "GEMS Millennium Schools", GSE: "GEMS Schools of Excellence", GMA: "GEMS Modern Academy", LG: "Little GEMS" };
 const inr = n => "₹" + Number(n).toLocaleString("en-IN");
@@ -353,6 +373,24 @@ function campus(c) {
     <td class="r total" data-label="Total*">${inr(r.tuition + (r.annual || 0) + oneSum + extrasMax)}</td></tr>`).join("");
   const tbl = (head, body, cls = "") => `<div class="scroll"><table class="${cls}"><thead><tr>${head.map(h => `<th>${h}</th>`).join("")}</tr></thead><tbody>${body}</tbody></table></div>`;
   const alert = cls => `<div class="alert ${cls}"><strong>Tell every parent</strong>${c.keyNotes.map(n => `<span>${esc(n)}</span>`).join("")}</div>`;
+  const routesPage = () => {
+    const R = c.routes || { rows: [] };
+    const rows = R.rows.length ? R.rows : [{ b: 1 }, { b: 1 }, { b: 1 }];
+    const band = [["Stops", R.stops], ["Routes", R.routes], ["Bus reaches school", R.reach], ["Bus leaves school", R.leave]];
+    return `<div class="sec page3">
+      <div class="eyebrow">Campus Fact File · Transport</div>
+      <h2>School bus routes and stops</h2>
+      <div class="facts rfacts">${band.map(([k, v]) => `<span class="fact"><b>${k}</b> ${esc(blank(v))}</span>`).join("")}</div>
+      <div class="howto"><strong>How admission officers use this page</strong>
+        <ol><li><b>Find the stop.</b> Ask the parent where they live and find the nearest stop below, or the nearest landmark.</li>
+        <li><b>Quote the fee.</b> Distance gives the fee slab, matching the Transport table above.</li>
+        <li><b>Give the timings.</b> Read the morning pick-up and afternoon drop for that stop, and mention the ride time.</li>
+        <li><b>If no stop fits.</b> Note the address and check with the transport desk. Do not promise a new stop.</li></ol></div>
+      <h2>Route and stop list</h2>
+      ${tbl(["Stop", "Pickup point / area", "Nearest landmark", "Route", "Distance from school", "Fee slab", "Annual transport fee", "Morning pick-up", "Afternoon drop", "Ride time"],
+        rows.map(r => `<tr${r.b ? ' class="blankrow"' : ""}><td class="c" data-label="Stop">${esc(blank(r.stop))}</td><td data-label="Pickup point / area">${esc(blank(r.area))}</td><td class="lm" data-label="Nearest landmark">${esc(blank(r.landmark))}</td><td class="c" data-label="Route">${esc(blank(r.route))}</td><td class="c" data-label="Distance from school">${esc(blank(r.dist))}</td><td class="c" data-label="Fee slab">${esc(blank(r.slab))}</td><td class="r" data-label="Annual transport fee">${money(r.fee)}</td><td class="c" data-label="Morning pick-up">${esc(blank(r.pick))}</td><td class="c" data-label="Afternoon drop">${esc(blank(r.drop))}</td><td class="c" data-label="Ride time">${esc(blank(r.ride))}</td></tr>`).join(""), "routes")}
+    </div>`;
+  };
   const facts = [["Location", c.city], ["Board", c.board], ["Grades", c.grades], ["Updated", c.updated]];
 
   app.innerHTML = `
@@ -361,7 +399,7 @@ function campus(c) {
       <div class="eyebrow">Campus Fact File · For admissions teams</div>
       <h1>${esc(c.name)}, ${esc(c.city.split(",")[0])}</h1>
     </div>
-    <a class="dl" href="pdf/${c.slug}.pdf?v=20261031c" download="${esc(c.short)} Fact File.pdf">
+    <a class="dl" href="pdf/${c.slug}.pdf?v=20261031d" download="${esc(c.short)} Fact File.pdf">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></svg>
       Download PDF</a>
     <div class="facts">${facts.map(([k, v]) => `<span class="fact"><b>${k}</b> ${esc(blank(v))}</span>`).join("")}</div>
@@ -370,8 +408,8 @@ function campus(c) {
   <section class="sheet"><div class="wrap">
     <div class="sec feesec">
       <h2>Fees</h2>
-      ${tbl(["Grade", "Max students per class", "Student–teacher ratio", "School timings", "Application fee", "Admission fee", "Annual fee", "Annual tuition (₹)", ...extras.map(f => esc(f.key)), "Total*"], feeRows, "fees" + (c.feeRows.length > 18 ? " xdense" : c.feeRows.length > 13 ? " dense" : ""))}
-      <p class="note">* Total = application fee + admission fee + annual fee + annual tuition${inTotal.length ? " + " + inTotal.join(" + ") + " (upper figure)" : ""}. ${exams.length ? exams.join(" and ") + " examination fees are extra." : ""} Transport is extra. Fees may change; check the latest fee circular before quoting.</p>
+      ${tbl(["Grade", "Max students per class", "Student–teacher ratio", "School timings", "Application fee (one time)", "Admission fee (one time)", "Annual fee", "Annual tuition (₹)", ...extras.map(f => esc(f.key)), "Total*"], feeRows, "fees" + (c.feeRows.length > 18 ? " xdense" : c.feeRows.length > 13 ? " dense" : ""))}
+      <p class="note">* Total = application fee (one time) + admission fee (one time) + annual fee + annual tuition${inTotal.length ? " + " + inTotal.join(" + ") + " (upper figure)" : ""}. ${exams.length ? exams.join(" and ") + " examination fees are extra." : ""} Transport is extra. Fees may change; check the latest fee circular before quoting.</p>
     </div>
     ${alert("printonly")}
 
@@ -388,12 +426,14 @@ function campus(c) {
 
     <div class="sec">
       <h2>Facilities at ${esc(c.short)}</h2>
-      ${tbl(["Area", "Facilities"], c.facilities.map(([area, items]) => `<tr><th>${esc(area)}</th><td>${items.map(i => `<span class="chip">${esc(i)}</span>`).join("")}</td></tr>`).join(""), "fac")}
+      ${tbl(["Area", "Facilities"], [...c.facilities, ["Technology", (c.technology || []).map(([k, v]) => `${k}: ${v == null ? "" : v}`)], ["Strategic tie-ups", (c.tieups || []).map(([k, v]) => `${k}: ${v}`)]].map(([area, items]) => `<tr><th>${esc(area)}</th><td>${items.map(i => `<span class="chip">${esc(i)}</span>`).join("")}</td></tr>`).join(""), "fac")}
     </div>
 
     ${c.curriculum ? `<div class="row2">${[c.curriculum.icse, c.curriculum.igcse].map(cu => `<div class="sec"><h2>${esc(cu.title)}</h2>
         ${tbl(["Group", "Type", "Subjects"], cu.groups.map(([g, k, s]) => `<tr><td>${esc(g)}</td><td>${esc(k)}</td><td>${esc(s)}</td></tr>`).join(""), "cur")}
         <p class="note">${esc(cu.note)}</p></div>`).join("")}</div>` : ""}
+
+    ${routesPage()}
 
     ${alert("noprint")}
     <p class="foot">${esc(c.short)} · Campus Fact File · For GEMS admissions teams · Updated ${esc(c.updated)}</p>
