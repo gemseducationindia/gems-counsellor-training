@@ -1,3 +1,4 @@
+import re
 """Turn the school facts workbook into site/campuses.js.
 Usage: python3 -I gen.py <workbook.xlsx> <out campuses.js>"""
 import datetime, json, re, sys
@@ -326,6 +327,25 @@ v["curriculum"] = {
         ["Group 4", "Mathematics", "Mathematics"],
         ["Group 5", "Professional and creative", "Art and Design, Computer Science, ICT, Business Studies, Economics, Accounting"]]},
 }
+# Max students per class, from the "School Capacities" sheet of the GEMS CRM Requirements workbook (31 Oct 2026).
+# GMA Kochi is left out: its sheet uses PYP/MYP/CIE labels that don't map cleanly to the page's rows.
+CAP_SCHOOL = {"Gurgaon": "gurugram", "Millenium School Kochi": "kochi-gms", "Lucknow": "lucknow", "Jodhpur": "jodhpur",
+              "Varanasi": "varanasi", "Indirapuram": "indirapuram", "Coimbatore": "coimbatore", "Kalyan": "kalyan"}
+if len(sys.argv) > 3:
+    import openpyxl as _ox
+    ws = _ox.load_workbook(sys.argv[3], data_only=True)["School Capacities"]
+    caps, cur = {}, None
+    for r in range(18, ws.max_row + 1):
+        a, b, c3 = (ws.cell(r, k).value for k in (1, 2, 3))
+        if a and b is None and c3 is None and "Grade" not in str(a):
+            cur = next((v for k, v in CAP_SCHOOL.items() if k in str(a)), None)
+        elif cur and a and isinstance(c3, (int, float)):
+            g = re.sub(r" (Science|Commerce|Humanities)$", "", str(a).strip()).replace("Pre-Kindergarten", "Pre-KG")
+            caps.setdefault(cur, {})[g] = int(c3)
+    for c in C:
+        for fr in c["feeRows"]:
+            m = caps.get(c["slug"], {}).get(fr["grade"].split(" (")[0])
+            if m: fr["max"] = m
 C.insert(0, v)
 for c in C:
     if c["slug"] == "coimbatore":

@@ -310,67 +310,83 @@ window.CAMPUSES = [
   "feeRows": [
    {
     "grade": "Pre-KG",
-    "tuition": 150428
+    "tuition": 150428,
+    "max": 30
    },
    {
     "grade": "Nursery",
-    "tuition": 150428
+    "tuition": 150428,
+    "max": 30
    },
    {
     "grade": "Junior KG",
-    "tuition": 150428
+    "tuition": 150428,
+    "max": 30
    },
    {
     "grade": "Senior KG",
-    "tuition": 150428
+    "tuition": 150428,
+    "max": 30
    },
    {
     "grade": "Grade 1",
-    "tuition": 150428
+    "tuition": 150428,
+    "max": 30
    },
    {
     "grade": "Grade 2",
-    "tuition": 150428
+    "tuition": 150428,
+    "max": 30
    },
    {
     "grade": "Grade 3",
-    "tuition": 177012
+    "tuition": 177012,
+    "max": 30
    },
    {
     "grade": "Grade 4",
-    "tuition": 177012
+    "tuition": 177012,
+    "max": 30
    },
    {
     "grade": "Grade 5",
-    "tuition": 177012
+    "tuition": 177012,
+    "max": 30
    },
    {
     "grade": "Grade 6",
-    "tuition": 200660
+    "tuition": 200660,
+    "max": 30
    },
    {
     "grade": "Grade 7",
-    "tuition": 200660
+    "tuition": 200660,
+    "max": 30
    },
    {
     "grade": "Grade 8",
-    "tuition": 200660
+    "tuition": 200660,
+    "max": 30
    },
    {
     "grade": "Grade 9",
-    "tuition": 218136
+    "tuition": 218136,
+    "max": 30
    },
    {
     "grade": "Grade 10",
-    "tuition": 218136
+    "tuition": 218136,
+    "max": 30
    },
    {
     "grade": "Grade 11",
-    "tuition": 230512
+    "tuition": 230512,
+    "max": 30
    },
    {
     "grade": "Grade 12",
-    "tuition": 230512
+    "tuition": 230512,
+    "max": 30
    }
   ],
   "applicationFee": 5000,
@@ -517,47 +533,58 @@ window.CAMPUSES = [
   "feeRows": [
    {
     "grade": "Nursery",
-    "tuition": 200000
+    "tuition": 200000,
+    "max": 40
    },
    {
     "grade": "Junior KG",
-    "tuition": 200000
+    "tuition": 200000,
+    "max": 40
    },
    {
     "grade": "Senior KG",
-    "tuition": 200000
+    "tuition": 200000,
+    "max": 40
    },
    {
     "grade": "Grade 1",
-    "tuition": 225000
+    "tuition": 225000,
+    "max": 40
    },
    {
     "grade": "Grade 2",
-    "tuition": 225000
+    "tuition": 225000,
+    "max": 40
    },
    {
     "grade": "Grade 3",
-    "tuition": 225000
+    "tuition": 225000,
+    "max": 40
    },
    {
     "grade": "Grade 4",
-    "tuition": 225000
+    "tuition": 225000,
+    "max": 40
    },
    {
     "grade": "Grade 5",
-    "tuition": 250000
+    "tuition": 250000,
+    "max": 40
    },
    {
     "grade": "Grade 6",
-    "tuition": 250000
+    "tuition": 250000,
+    "max": 40
    },
    {
     "grade": "Grade 7",
-    "tuition": 250000
+    "tuition": 250000,
+    "max": 40
    },
    {
     "grade": "Grade 8",
-    "tuition": 250000
+    "tuition": 250000,
+    "max": 40
    }
   ],
   "applicationFee": 5000,
@@ -701,51 +728,63 @@ window.CAMPUSES = [
   "feeRows": [
    {
     "grade": "Pre-KG",
-    "tuition": 62000
+    "tuition": 62000,
+    "max": 30
    },
    {
     "grade": "Nursery",
-    "tuition": 67000
+    "tuition": 67000,
+    "max": 30
    },
    {
     "grade": "Junior KG",
-    "tuition": 73000
+    "tuition": 73000,
+    "max": 30
    },
    {
     "grade": "Senior KG",
-    "tuition": 78000
+    "tuition": 78000,
+    "max": 30
    },
    {
     "grade": "Grade 1",
-    "tuition": 100000
+    "tuition": 100000,
+    "max": 30
    },
    {
     "grade": "Grade 2",
-    "tuition": 100000
+    "tuition": 100000,
+    "max": 30
    },
    {
     "grade": "Grade 3",
-    "tuition": 110000
+    "tuition": 110000,
+    "max": 30
    },
    {
     "grade": "Grade 4",
-    "tuition": 110000
+    "tuition": 110000,
+    "max": 30
    },
    {
     "grade": "Grade 5",
-    "tuition": 110000
+    "tuition": 110000,
+    "max": 30
    },
    {
     "grade": "Grade 6",
-    "tuition": 110000
+    "tuition": 110000,
+    "max": 30
    },
    {
     "grade": "Grade 7",
-    "tuition": 110000
+    "tuition": 110000,
+    "max": 30
    },
    {
     "grade": "Grade 8",
-    "tuition": 110000
+    "tuition": 110000,
+    "max": 30
    }
   ],
   "applicationFee": 2000,
@@ -865,35 +904,43 @@ window.CAMPUSES = [
   "feeRows": [
    {
     "grade": "Nursery",
-    "tuition": 145000
+    "tuition": 145000,
+    "max": 30
    },
    {
     "grade": "Junior KG",
-    "tuition": 145000
+    "tuition": 145000,
+    "max": 30
    },
    {
     "grade": "Senior KG",
-    "tuition": 145000
+    "tuition": 145000,
+    "max": 30
    },
    {
     "grade": "Grade 1",
-    "tuition": 159500
+    "tuition": 159500,
+    "max": 30
    },
    {
     "grade": "Grade 2",
-    "tuition": 159500
+    "tuition": 159500,
+    "max": 30
    },
    {
     "grade": "Grade 3",
-    "tuition": 159500
+    "tuition": 159500,
+    "max": 30
    },
    {
     "grade": "Grade 4",
-    "tuition": 175450
+    "tuition": 175450,
+    "max": 30
    },
    {
     "grade": "Grade 5",
-    "tuition": 175450
+    "tuition": 175450,
+    "max": 30
    }
   ],
   "applicationFee": 10000,
@@ -1017,63 +1064,78 @@ window.CAMPUSES = [
   "feeRows": [
    {
     "grade": "Nursery",
-    "tuition": 98340
+    "tuition": 98340,
+    "max": 40
    },
    {
     "grade": "Junior KG",
-    "tuition": 98340
+    "tuition": 98340,
+    "max": 40
    },
    {
     "grade": "Senior KG",
-    "tuition": 98340
+    "tuition": 98340,
+    "max": 40
    },
    {
     "grade": "Grade 1",
-    "tuition": 100128
+    "tuition": 100128,
+    "max": 40
    },
    {
     "grade": "Grade 2",
-    "tuition": 100128
+    "tuition": 100128,
+    "max": 40
    },
    {
     "grade": "Grade 3",
-    "tuition": 100128
+    "tuition": 100128,
+    "max": 40
    },
    {
     "grade": "Grade 4",
-    "tuition": 100128
+    "tuition": 100128,
+    "max": 40
    },
    {
     "grade": "Grade 5",
-    "tuition": 113098
+    "tuition": 113098,
+    "max": 40
    },
    {
     "grade": "Grade 6",
-    "tuition": 113098
+    "tuition": 113098,
+    "max": 40
    },
    {
     "grade": "Grade 7",
-    "tuition": 113098
+    "tuition": 113098,
+    "max": 40
    },
    {
     "grade": "Grade 8",
-    "tuition": 113098
+    "tuition": 113098,
+    "max": 40
    },
    {
     "grade": "Grade 9",
-    "tuition": 113098
+    "tuition": 113098,
+    "max": 40
    },
    {
     "grade": "Grade 10",
-    "tuition": 113098
+    "tuition": 113098,
+    "max": 40
    },
    {
     "grade": "Grade 11",
-    "tuition": 125664
+    "tuition": 125664,
+    "max": 40
    },
    {
     "grade": "Grade 12",
-    "tuition": 125664
+    "tuition": 125664,
+    "max": 40
    }
   ],
   "applicationFee": 1000,
@@ -1180,59 +1242,73 @@ window.CAMPUSES = [
   "feeRows": [
    {
     "grade": "Pre-KG",
-    "tuition": 102000
+    "tuition": 102000,
+    "max": 20
    },
    {
     "grade": "Nursery",
-    "tuition": 102000
+    "tuition": 102000,
+    "max": 30
    },
    {
     "grade": "Junior KG",
-    "tuition": 102000
+    "tuition": 102000,
+    "max": 30
    },
    {
     "grade": "Senior KG",
-    "tuition": 102000
+    "tuition": 102000,
+    "max": 30
    },
    {
     "grade": "Grade 1",
-    "tuition": 113000
+    "tuition": 113000,
+    "max": 30
    },
    {
     "grade": "Grade 2",
-    "tuition": 113000
+    "tuition": 113000,
+    "max": 30
    },
    {
     "grade": "Grade 3",
-    "tuition": 113000
+    "tuition": 113000,
+    "max": 30
    },
    {
     "grade": "Grade 4",
-    "tuition": 113000
+    "tuition": 113000,
+    "max": 35
    },
    {
     "grade": "Grade 5",
-    "tuition": 113000
+    "tuition": 113000,
+    "max": 35
    },
    {
     "grade": "Grade 6",
-    "tuition": 113000
+    "tuition": 113000,
+    "max": 35
    },
    {
     "grade": "Grade 7",
-    "tuition": 113000
+    "tuition": 113000,
+    "max": 35
    },
    {
     "grade": "Grade 8",
-    "tuition": 113000
+    "tuition": 113000,
+    "max": 35
    },
    {
     "grade": "Grade 9",
-    "tuition": 124000
+    "tuition": 124000,
+    "max": 35
    },
    {
     "grade": "Grade 10",
-    "tuition": 124000
+    "tuition": 124000,
+    "max": 35
    }
   ],
   "applicationFee": 2000,
@@ -1366,67 +1442,83 @@ window.CAMPUSES = [
   "feeRows": [
    {
     "grade": "Pre-KG",
-    "tuition": 81000
+    "tuition": 81000,
+    "max": 30
    },
    {
     "grade": "Nursery",
-    "tuition": 81000
+    "tuition": 81000,
+    "max": 30
    },
    {
     "grade": "Junior KG",
-    "tuition": 81000
+    "tuition": 81000,
+    "max": 30
    },
    {
     "grade": "Senior KG",
-    "tuition": 81000
+    "tuition": 81000,
+    "max": 30
    },
    {
     "grade": "Grade 1",
-    "tuition": 93000
+    "tuition": 93000,
+    "max": 30
    },
    {
     "grade": "Grade 2",
-    "tuition": 93000
+    "tuition": 93000,
+    "max": 30
    },
    {
     "grade": "Grade 3",
-    "tuition": 93000
+    "tuition": 93000,
+    "max": 30
    },
    {
     "grade": "Grade 4",
-    "tuition": 93000
+    "tuition": 93000,
+    "max": 30
    },
    {
     "grade": "Grade 5",
-    "tuition": 93000
+    "tuition": 93000,
+    "max": 30
    },
    {
     "grade": "Grade 6",
-    "tuition": 107000
+    "tuition": 107000,
+    "max": 30
    },
    {
     "grade": "Grade 7",
-    "tuition": 107000
+    "tuition": 107000,
+    "max": 30
    },
    {
     "grade": "Grade 8",
-    "tuition": 107000
+    "tuition": 107000,
+    "max": 30
    },
    {
     "grade": "Grade 9",
-    "tuition": 107000
+    "tuition": 107000,
+    "max": 30
    },
    {
     "grade": "Grade 10",
-    "tuition": 107000
+    "tuition": 107000,
+    "max": 30
    },
    {
     "grade": "Grade 11",
-    "tuition": 129000
+    "tuition": 129000,
+    "max": 30
    },
    {
     "grade": "Grade 12",
-    "tuition": 129000
+    "tuition": 129000,
+    "max": 30
    }
   ],
   "applicationFee": 2000,
@@ -1782,47 +1874,58 @@ window.CAMPUSES = [
   "feeRows": [
    {
     "grade": "Nursery (CBSE)",
-    "tuition": 120000
+    "tuition": 120000,
+    "max": 40
    },
    {
     "grade": "Junior KG (CBSE)",
-    "tuition": 120000
+    "tuition": 120000,
+    "max": 40
    },
    {
     "grade": "Senior KG (CBSE)",
-    "tuition": 120000
+    "tuition": 120000,
+    "max": 40
    },
    {
     "grade": "Grade 1 (CBSE)",
-    "tuition": 150000
+    "tuition": 150000,
+    "max": 40
    },
    {
     "grade": "Grade 2 (CBSE)",
-    "tuition": 150000
+    "tuition": 150000,
+    "max": 40
    },
    {
     "grade": "Grade 3 (CBSE)",
-    "tuition": 150000
+    "tuition": 150000,
+    "max": 40
    },
    {
     "grade": "Grade 4 (CBSE)",
-    "tuition": 165000
+    "tuition": 165000,
+    "max": 40
    },
    {
     "grade": "Grade 5 (CBSE)",
-    "tuition": 165000
+    "tuition": 165000,
+    "max": 40
    },
    {
     "grade": "Grade 6 (CBSE)",
-    "tuition": 165000
+    "tuition": 165000,
+    "max": 40
    },
    {
     "grade": "Grade 7 (CBSE)",
-    "tuition": 165000
+    "tuition": 165000,
+    "max": 40
    },
    {
     "grade": "Grade 8 (CBSE)",
-    "tuition": 165000
+    "tuition": 165000,
+    "max": 40
    },
    {
     "grade": "Grade 9 (CBSE)",
@@ -1842,35 +1945,43 @@ window.CAMPUSES = [
    },
    {
     "grade": "Grade 1 (IB)",
-    "tuition": 225000
+    "tuition": 225000,
+    "max": 40
    },
    {
     "grade": "Grade 2 (IB)",
-    "tuition": 225000
+    "tuition": 225000,
+    "max": 40
    },
    {
     "grade": "Grade 3 (IB)",
-    "tuition": 225000
+    "tuition": 225000,
+    "max": 40
    },
    {
     "grade": "Grade 4 (IB)",
-    "tuition": 225000
+    "tuition": 225000,
+    "max": 40
    },
    {
     "grade": "Grade 5 (IB)",
-    "tuition": 225000
+    "tuition": 225000,
+    "max": 40
    },
    {
     "grade": "Grade 6 (IB)",
-    "tuition": 250000
+    "tuition": 250000,
+    "max": 40
    },
    {
     "grade": "Grade 7 (IB)",
-    "tuition": 250000
+    "tuition": 250000,
+    "max": 40
    },
    {
     "grade": "Grade 8 (IB)",
-    "tuition": 250000
+    "tuition": 250000,
+    "max": 40
    },
    {
     "grade": "Grade 9 (IB)",
