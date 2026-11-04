@@ -9,7 +9,7 @@ window.CAMPUSES = [
   "name": "GEMS Millennium School",
   "short": "GMS Vikhroli",
   "city": "Vikhroli, Mumbai",
-  "updated": "31 Oct 2026",
+  "updated": "4 Nov 2026",
   "board": "ICSE and Cambridge",
   "grades": "Playgroup to Grade 7",
   "keyNotes": [
@@ -200,9 +200,12 @@ window.CAMPUSES = [
    [
     "Life skills",
     [
+     "Stream",
      "Pottery",
      "Culinary",
-     "Carpentry"
+     "Carpentry",
+     "Media Studies",
+     "Financial Literacy"
     ]
    ],
    [
@@ -755,23 +758,28 @@ window.CAMPUSES = [
      "ICT",
      "Math lab",
      "Eurisko Lab",
-     "Badminton"
+     "Badminton",
+     "Art room",
+     "Design and fashion studio"
     ]
    ],
    [
     "Performing arts",
     [
-     "Drama theatre",
-     "Music room",
-     "Dance room",
-     "Media lab"
+     "Western and Indian dance",
+     "Music (Torrins): keyboard, guitar, percussion lab, tabla and drums",
+     "Theatre and drama"
     ]
    ],
    [
     "Life skills",
     [
-     "Art room",
-     "Design and fashion studio"
+     "Stream",
+     "Pottery",
+     "Culinary",
+     "Carpentry",
+     "Media Studies",
+     "Financial Literacy"
     ]
    ],
    [
@@ -1481,22 +1489,27 @@ window.CAMPUSES = [
      "STEAM Labs",
      "Astronomy Lab",
      "Robotics Lab",
-     "4 Nos Pickleball",
-     "Courts"
+     "4 pickleball courts",
+     "ATELIER - ART ROOM"
     ]
    ],
    [
     "Performing arts",
     [
-     "MUSIC STUDIOS",
-     "Dance Studio"
+     "Western and Indian dance",
+     "Music (Torrins): keyboard, guitar, percussion lab, tabla and drums",
+     "Theatre and drama"
     ]
    ],
    [
     "Life skills",
     [
-     "ATELIER - ART ROOM",
-     "POTTERY ROOM"
+     "Stream",
+     "Pottery",
+     "Culinary",
+     "Carpentry",
+     "Media Studies",
+     "Financial Literacy"
     ]
    ],
    [
@@ -1925,14 +1938,20 @@ window.CAMPUSES = [
    [
     "Performing arts",
     [
-     "Music, Dance & Drama Rooms",
-     "Music & performing arts: Keyboard, Piano, Guitar, Ukulele, Drums, Sitar, Vocals, Theatre & Drama, Public Speaking"
+     "Western and Indian dance",
+     "Music (Torrins): keyboard, guitar, percussion lab, tabla and drums",
+     "Theatre and drama"
     ]
    ],
    [
     "Life skills",
     [
-     "Art, Pottery, Culinary & Carpentry Studios"
+     "Stream",
+     "Pottery",
+     "Culinary",
+     "Carpentry",
+     "Media Studies",
+     "Financial Literacy"
     ]
    ],
    [
@@ -2390,12 +2409,23 @@ window.CAMPUSES = [
      "Kalari",
      "Dance",
      "Music",
-     "Instruments"
+     "Instruments",
+     "Western and Indian dance",
+     "Music (Torrins): keyboard, guitar, percussion lab, tabla and drums",
+     "Sitar",
+     "Theatre and drama"
     ]
    ],
    [
     "Life skills",
-    []
+    [
+     "Stream",
+     "Pottery",
+     "Culinary",
+     "Carpentry",
+     "Media Studies",
+     "Financial Literacy"
+    ]
    ],
    [
     "Indoor sports",
@@ -3339,16 +3369,20 @@ window.CAMPUSES = [
    [
     "Performing arts",
     [
-     "Drama theatre",
-     "Music room",
-     "Dance room",
-     "Media lab"
+     "Western and Indian dance",
+     "Music (Torrins): keyboard, guitar, percussion lab, tabla and drums",
+     "Theatre and drama"
     ]
    ],
    [
     "Life skills",
     [
-     "Art room"
+     "Stream",
+     "Pottery",
+     "Culinary",
+     "Carpentry",
+     "Media Studies",
+     "Financial Literacy"
     ]
    ],
    [
@@ -3782,8 +3816,9 @@ window.CAMPUSES = [
    [
     "Performing arts",
     [
-     "2 Music Rooms",
-     "Dance room"
+     "Western and Indian dance",
+     "Music (Torrins): keyboard, guitar, percussion lab, tabla and drums",
+     "Theatre and drama"
     ]
    ],
    [
@@ -3794,7 +3829,12 @@ window.CAMPUSES = [
      "Financial Literacy",
      "Coding & Design Thinking",
      "Social Emotional Learning",
-     "GEMS own life skills curriculum"
+     "GEMS own life skills curriculum",
+     "Stream",
+     "Pottery",
+     "Culinary",
+     "Carpentry",
+     "Media Studies"
     ]
    ],
    [
@@ -4397,14 +4437,21 @@ window.CAMPUSES = [
    [
     "Performing arts",
     [
-     "2 Music Room",
-     "Dance room",
-     "Drama room"
+     "Western and Indian dance",
+     "Music (Torrins): keyboard, guitar, percussion lab, tabla and drums",
+     "Theatre and drama"
     ]
    ],
    [
     "Life skills",
-    []
+    [
+     "Stream",
+     "Pottery",
+     "Culinary",
+     "Carpentry",
+     "Media Studies",
+     "Financial Literacy"
+    ]
    ],
    [
     "Indoor sports",
@@ -4827,14 +4874,21 @@ window.CAMPUSES = [
    [
     "Performing arts",
     [
-     "Drama room",
-     "Music room",
-     "Dance room"
+     "Western and Indian dance",
+     "Music (Torrins): keyboard, guitar, percussion lab, tabla and drums",
+     "Theatre and drama"
     ]
    ],
    [
     "Life skills",
-    []
+    [
+     "Stream",
+     "Pottery",
+     "Culinary",
+     "Carpentry",
+     "Media Studies",
+     "Financial Literacy"
+    ]
    ],
    [
     "Indoor sports",
@@ -5861,15 +5915,20 @@ window.CAMPUSES = [
    [
     "Performing arts",
     [
-     "MUSIC STUDIOS",
-     "Dance Studio"
+     "Western and Indian dance",
+     "Music (Torrins): keyboard, guitar, percussion lab, tabla and drums",
+     "Theatre and drama"
     ]
    ],
    [
     "Life skills",
     [
-     "ATELIER - ART ROOM",
-     "POTTERY ROOM"
+     "Stream",
+     "Pottery",
+     "Culinary",
+     "Carpentry",
+     "Media Studies",
+     "Financial Literacy"
     ]
    ],
    [
