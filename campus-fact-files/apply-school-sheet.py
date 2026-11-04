@@ -1,6 +1,7 @@
 """Apply a filled-in "Campus Fact Files - Data Needed" workbook to campuses.js.
 
-Usage: python3 apply-school-sheet.py <filled workbook.xlsx> campuses.js [--date "4 Nov 2026"]
+Usage: python3 apply-school-sheet.py <filled workbook.xlsx> campuses.js [--date "4 Nov 2026"] [--prev <previous filled workbook.xlsx>]
+(--prev lets an edit to the "On the page now" facilities column win over the older "Correct / complete list".)
 
 Rules (Jay, Nov 2026):
 - What the school wrote wins. A cell left blank in the sheet stays blank on the page (no guessing).
@@ -37,6 +38,7 @@ OVERRIDES = {
 }
 
 TYPO = {
+    "Instruments Western": "Instruments, Western", "drums Sitar": "drums, Sitar", "Torrence": "Torrins",
     "4 Nos Picke Ball, Courts": "4 pickleball courts", "Nos Picke Ball, Courts": "Pickleball courts",
     "Badmintton": "Badminton", "Badinton": "Badminton", "Brittanica": "Britannica",
     "Fooseball": "Foosball", "Literrature": "Literature", "Prespectives": "Perspectives",
@@ -160,10 +162,17 @@ def items(v):
     v = clean(v)
     if not v or v.lower() in {"yes", "no", "na"}:
         return []
-    out = []
+    # Keep "Music (Torrins): keyboard, guitar, ..." as one item.
+    keep = re.findall(r"Music \([^)]*\):[^,]*(?:,[^,:]*?)*?drums", v)
+    for i, k in enumerate(keep):
+        v = v.replace(k, f"@@{i}@@")
+    out, seen = [], set()
     for x in v.split(","):
         x = clean(x)
-        if x and len(x) > 1:
+        for i, k in enumerate(keep):
+            x = x.replace(f"@@{i}@@", k) if x else x
+        if x and len(x) > 1 and x.lower() not in seen:
+            seen.add(x.lower())
             out.append(x)
     return out
 
@@ -205,6 +214,13 @@ def ride(v):
     v = re.sub(r"\bminutes\b", "min", v)
     return v.strip()
 
+def pick_fac(prev_b, b, f):
+    """Column F (corrected list) wins, unless the school edited column B since the previous sheet."""
+    norm = lambda xs: [clean(x).lower() for x in (xs or [])]
+    if f is not None and (prev_b is None or norm(b) == norm(prev_b) or not b):
+        return f
+    return b
+
 
 def read_tab(ws):
     out = {}
@@ -241,9 +257,11 @@ def read_tab(ws):
         fv = ws.cell(f + i, 6).value
         if fv is None:
             fv = ws.cell(f + i, 4).value if clean(ws.cell(f - 1, 4).value or "") else None
-        chosen = fv if (clean(fv) and clean(fv).lower() not in {"yes", "y"}) else bv
-        fac.append([area, items(chosen)])
+        # B is "On the page now" and F the corrected list; when a school edits B itself, B is newer.
+        fi = items(fv) if (clean(fv) and clean(fv).lower() not in {"yes", "y"}) else None
+        fac.append([area, items(bv), fi])
     out["facilities"] = fac
+
     # 5. Technology
     s = find_row(ws, "Smart boards")
     out["technology"] = [[clean(ws.cell(s + i, 1).value), yes_no(ws.cell(s + i, 2).value)] for i in range(3)]
@@ -313,7 +331,7 @@ def extra_cell(vals):
     return None
 
 
-def apply(c, d, date):
+def apply(c, d, date, prev=None):
     slug = c["slug"]
     changes = []
     old = json.loads(json.dumps(c))
@@ -377,7 +395,9 @@ def apply(c, d, date):
     c["bus"] = [[k, v] for k, v in d["bus"]]
     oldfac = dict((a, v) for a, v in c["facilities"])
     fac = []
-    for area, its in d["facilities"]:
+    prevb = {a: b for a, b, _ in prev["facilities"]} if prev else {}
+    for area, b_, f_ in d["facilities"]:
+        its = pick_fac(prevb.get(area) if prev else None, b_, f_)
         if its and ", ".join(its) == ", ".join(items(", ".join(oldfac.get(area, [])))):
             its = [clean(i) for i in oldfac[area]]
         its = [i for i in its if i not in DROP_ITEMS]
@@ -448,15 +468,32 @@ def apply(c, d, date):
 def main():
     wb = openpyxl.load_workbook(sys.argv[1], data_only=False)
     path = sys.argv[2]
+    pwb = openpyxl.load_workbook(sys.argv[sys.argv.index("--prev") + 1]) if "--prev" in sys.argv else None
     date = sys.argv[sys.argv.index("--date") + 1] if "--date" in sys.argv else dt.date.today().strftime("%-d %b %Y")
     src = open(path, encoding="utf8").read()
     head, body = src.split("window.CAMPUSES = ", 1)
     C = json.loads(body.rstrip().rstrip(";"))
     by = {c["slug"]: c for c in C}
     olds = {}
+    # Vikhroli keeps its Word-file page; only facility areas edited in the example tab are applied.
+    ex = "GMS Vikhroli (example)"
+    if ex in wb.sheetnames:
+        v = by["vikhroli"]
+        before = json.dumps(v["facilities"])
+        cur = dict((a, its) for a, its in v["facilities"])
+        prevb = {a: b for a, b, _ in read_tab(pwb[ex])["facilities"]} if pwb and ex in pwb.sheetnames else {}
+        for area, b_, f_ in read_tab(wb[ex])["facilities"]:
+            its = pick_fac(prevb.get(area) if pwb else None, b_, f_)
+            if its and [x.lower() for x in its] != [clean(x).lower() for x in cur.get(area, [])]:
+                cur[area] = its
+                print("vikhroli", area, "->", its)
+        v["facilities"] = [[a, cur[a]] for a, _ in v["facilities"]]
+        if json.dumps(v["facilities"]) != before:
+            v["updated"] = date
     for tab, slug in TABS.items():
         if tab in wb.sheetnames:
-            olds[slug] = apply(by[slug], read_tab(wb[tab]), date)
+            prev = read_tab(pwb[tab]) if pwb and tab in pwb.sheetnames else None
+            olds[slug] = apply(by[slug], read_tab(wb[tab]), date, prev)
     with open(path, "w", encoding="utf8") as fh:
         fh.write(head + "window.CAMPUSES = " + json.dumps(C, ensure_ascii=False, indent=1) + ";\n")
     json.dump(olds, open("/tmp/claude-0/olds.json", "w"), ensure_ascii=False, indent=1)
