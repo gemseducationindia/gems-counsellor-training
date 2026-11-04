@@ -328,108 +328,365 @@ window.CAMPUSES = [
   "name": "GEMS Millennium School",
   "short": "GMS Gurugram",
   "city": "Gurugram",
-  "updated": "31 Oct 2026",
+  "updated": "4 Nov 2026",
   "board": "CBSE",
   "grades": "Pre-KG to Grade 12",
   "keyNotes": [
-   "No hostel facility at any GEMS campus. Day school only."
+   "No hostel facility at any GEMS campus. Day school only.",
+   "Book and uniform samples are available at school for parents to see."
   ],
   "feeRows": [
    {
     "grade": "Pre-KG",
     "tuition": 150428,
+    "max": 30,
+    "ratio": "15:1",
+    "timings": "9:00 am – 1:00 pm",
     "annual": 25000,
-    "max": 30
+    "ex": {
+     "Uniform": {
+      "cell": "5,260",
+      "max": 5260
+     },
+     "Books": {
+      "cell": "7,788",
+      "max": 7788
+     },
+     "CBSE examination fee": {
+      "cell": "–",
+      "max": 0
+     }
+    }
    },
    {
     "grade": "Nursery",
     "tuition": 150428,
+    "max": 30,
+    "ratio": "15:1",
+    "timings": "9:00 am – 1:00 pm",
     "annual": 25000,
-    "max": 30
+    "ex": {
+     "Uniform": {
+      "cell": "5,260",
+      "max": 5260
+     },
+     "Books": {
+      "cell": "8,813",
+      "max": 8813
+     },
+     "CBSE examination fee": {
+      "cell": "–",
+      "max": 0
+     }
+    }
    },
    {
     "grade": "Junior KG",
     "tuition": 150428,
+    "max": 30,
+    "ratio": "15:1",
+    "timings": "9:00 am – 1:00 pm",
     "annual": 25000,
-    "max": 30
+    "ex": {
+     "Uniform": {
+      "cell": "5,260",
+      "max": 5260
+     },
+     "Books": {
+      "cell": "8,860",
+      "max": 8860
+     },
+     "CBSE examination fee": {
+      "cell": "–",
+      "max": 0
+     }
+    }
    },
    {
     "grade": "Senior KG",
     "tuition": 150428,
+    "max": 30,
+    "ratio": "10:1",
+    "timings": "9:00 am – 1:00 pm",
     "annual": 25000,
-    "max": 30
+    "ex": {
+     "Uniform": {
+      "cell": "4,840",
+      "max": 4840
+     },
+     "Books": {
+      "cell": "6,304",
+      "max": 6304
+     },
+     "CBSE examination fee": {
+      "cell": "–",
+      "max": 0
+     }
+    }
    },
    {
     "grade": "Grade 1",
     "tuition": 150428,
+    "max": 30,
+    "ratio": "1 mother teacher",
+    "timings": "8:00 am – 2:30 pm",
     "annual": 25000,
-    "max": 30
+    "ex": {
+     "Uniform": {
+      "cell": "5,600",
+      "max": 5600
+     },
+     "Books": {
+      "cell": "13,825",
+      "max": 13825
+     },
+     "CBSE examination fee": {
+      "cell": "–",
+      "max": 0
+     }
+    }
    },
    {
     "grade": "Grade 2",
     "tuition": 150428,
+    "max": 30,
+    "ratio": "30:1",
+    "timings": "8:00 am – 2:30 pm",
     "annual": 25000,
-    "max": 30
+    "ex": {
+     "Uniform": {
+      "cell": "5,600",
+      "max": 5600
+     },
+     "Books": {
+      "cell": "14,805",
+      "max": 14805
+     },
+     "CBSE examination fee": {
+      "cell": "–",
+      "max": 0
+     }
+    }
    },
    {
     "grade": "Grade 3",
     "tuition": 177012,
+    "max": 30,
+    "ratio": "30:1",
+    "timings": "8:00 am – 2:30 pm",
     "annual": 25000,
-    "max": 30
+    "ex": {
+     "Uniform": {
+      "cell": "9,500 – 9,850",
+      "max": 9850
+     },
+     "Books": {
+      "cell": "8,278",
+      "max": 8278
+     },
+     "CBSE examination fee": {
+      "cell": "–",
+      "max": 0
+     }
+    }
    },
    {
     "grade": "Grade 4",
     "tuition": 177012,
+    "max": 30,
+    "ratio": "30:1",
+    "timings": "8:00 am – 2:30 pm",
     "annual": 25000,
-    "max": 30
+    "ex": {
+     "Uniform": {
+      "cell": "9,500 – 9,850",
+      "max": 9850
+     },
+     "Books": {
+      "cell": "9,533",
+      "max": 9533
+     },
+     "CBSE examination fee": {
+      "cell": "–",
+      "max": 0
+     }
+    }
    },
    {
     "grade": "Grade 5",
     "tuition": 177012,
+    "max": 30,
+    "ratio": "30:1",
+    "timings": "8:00 am – 2:30 pm",
     "annual": 25000,
-    "max": 30
+    "ex": {
+     "Uniform": {
+      "cell": "9,500 – 9,850",
+      "max": 9850
+     },
+     "Books": {
+      "cell": "10,260",
+      "max": 10260
+     },
+     "CBSE examination fee": {
+      "cell": "–",
+      "max": 0
+     }
+    }
    },
    {
     "grade": "Grade 6",
     "tuition": 200660,
+    "max": 30,
+    "ratio": "30:1",
+    "timings": "8:00 am – 2:30 pm",
     "annual": 25000,
-    "max": 30
+    "ex": {
+     "Uniform": {
+      "cell": "10,150 – 10,700",
+      "max": 10700
+     },
+     "Books": {
+      "cell": "10,847",
+      "max": 10847
+     },
+     "CBSE examination fee": {
+      "cell": "–",
+      "max": 0
+     }
+    }
    },
    {
     "grade": "Grade 7",
     "tuition": 200660,
+    "max": 30,
+    "ratio": "30:1",
+    "timings": "8:00 am – 2:30 pm",
     "annual": 25000,
-    "max": 30
+    "ex": {
+     "Uniform": {
+      "cell": "10,920 – 11,460",
+      "max": 11460
+     },
+     "Books": {
+      "cell": "11,489",
+      "max": 11489
+     },
+     "CBSE examination fee": {
+      "cell": "–",
+      "max": 0
+     }
+    }
    },
    {
     "grade": "Grade 8",
     "tuition": 200660,
+    "max": 30,
+    "ratio": "30:1",
+    "timings": "8:00 am – 2:30 pm",
     "annual": 25000,
-    "max": 30
+    "ex": {
+     "Uniform": {
+      "cell": "10,920 – 11,460",
+      "max": 11460
+     },
+     "Books": {
+      "cell": "10,978",
+      "max": 10978
+     },
+     "CBSE examination fee": {
+      "cell": "–",
+      "max": 0
+     }
+    }
    },
    {
     "grade": "Grade 9",
     "tuition": 218136,
+    "max": 30,
+    "ratio": "30:1",
+    "timings": "8:00 am – 2:30 pm",
     "annual": 25000,
-    "max": 30
+    "ex": {
+     "Uniform": {
+      "cell": "11,670 – 12,120",
+      "max": 12120
+     },
+     "Books": {
+      "cell": "7,317",
+      "max": 7317
+     },
+     "CBSE examination fee": {
+      "cell": "500",
+      "max": 500
+     }
+    }
    },
    {
     "grade": "Grade 10",
     "tuition": 218136,
+    "max": 30,
+    "ratio": "30:1",
+    "timings": "8:00 am – 2:30 pm",
     "annual": 25000,
-    "max": 30
+    "ex": {
+     "Uniform": {
+      "cell": "11,670 – 12,120",
+      "max": 12120
+     },
+     "Books": {
+      "cell": "10,232",
+      "max": 10232
+     },
+     "CBSE examination fee": {
+      "cell": "1,920",
+      "max": 1920
+     }
+    }
    },
    {
     "grade": "Grade 11",
     "tuition": 230512,
+    "max": 30,
+    "ratio": "40:1",
+    "timings": "8:00 am – 2:30 pm",
     "annual": 25000,
-    "max": 30
+    "ex": {
+     "Uniform": {
+      "cell": "12,510 – 12,710",
+      "max": 12710
+     },
+     "Books": {
+      "cell": "4,853",
+      "max": 4853
+     },
+     "CBSE examination fee": {
+      "cell": "500",
+      "max": 500
+     }
+    }
    },
    {
     "grade": "Grade 12",
     "tuition": 230512,
+    "max": 30,
+    "ratio": "40:1",
+    "timings": "8:00 am – 2:30 pm",
     "annual": 25000,
-    "max": 30
+    "ex": {
+     "Uniform": {
+      "cell": "12,510 – 12,710",
+      "max": 12710
+     },
+     "Books": {
+      "cell": "5,167",
+      "max": 5167
+     },
+     "CBSE examination fee": {
+      "cell": "2,800",
+      "max": 2800
+     }
+    }
    }
   ],
   "applicationFee": 5000,
@@ -453,42 +710,34 @@ window.CAMPUSES = [
   ],
   "transport": [
    [
-    "0 – 1 km",
-    null
+    "0 – 5 km",
+    47152
    ],
    [
-    "1 – 3 km",
-    null
+    "5 – 10 km",
+    61236
    ],
    [
-    "3 – 5 km",
-    null
-   ],
-   [
-    "5 – 8 km",
-    null
-   ],
-   [
-    "8 km and above",
-    null
+    "10 km above",
+    74844
    ]
   ],
   "bus": [
    [
     "Bus type",
-    null
+    "AC"
    ],
    [
     "Attendant",
-    null
+    "Yes"
    ],
    [
     "GPS tracking",
-    null
+    "Yes"
    ],
    [
     "CCTV in bus",
-    null
+    "Yes"
    ]
   ],
   "facilities": [
@@ -506,7 +755,7 @@ window.CAMPUSES = [
      "ICT",
      "Math lab",
      "Eurisko Lab",
-     "Badmintton"
+     "Badminton"
     ]
    ],
    [
@@ -551,30 +800,82 @@ window.CAMPUSES = [
    [
     "Campus and safety",
     [
-     "Cafeteria"
+     "CCTV",
+     "Security patrolling"
     ]
    ]
   ],
-  "curriculum": null,
+  "curriculum": [
+   {
+    "title": "CBSE subject groups · Grades 11 and 12",
+    "note": "As listed by the school. Final choices depend on what the school offers and CBSE rules.",
+    "groups": [
+     [
+      "Group 1",
+      "Non-medical",
+      "English with PCM and one optional Eco/CS/PE/PSY"
+     ],
+     [
+      "Group 2",
+      "Medical",
+      "English with Physics chemistry"
+     ],
+     [
+      "Group 3",
+      "Optionals",
+      "Optional 1-maths/app maths/ bio/pe/LS/painting/IP; Optional 2-Eco/CS/PE/PSY"
+     ]
+    ]
+   }
+  ],
   "notShown": {},
   "technology": [
    [
     "Smart boards per classroom",
-    null
+    "Yes"
    ],
    [
     "ERP",
-    null
+    "My Class board"
    ],
    [
     "Care Desk",
     null
    ]
   ],
-  "tieups": [],
+  "tieups": [
+   [
+    "Media Literacy",
+    "Fyule"
+   ],
+   [
+    "E Library",
+    "GetLitt"
+   ],
+   [
+    "International Benchmark Assessment (IBT)",
+    "Acer"
+   ],
+   [
+    "Facial recognition based photo-sharing",
+    "LitApp"
+   ],
+   [
+    "Open Door Learning",
+    "Mastery Assessments and Thinking Classroom"
+   ],
+   [
+    "Jodo Gyan",
+    "Mathematics"
+   ],
+   [
+    "Go Sharpner",
+    "ed-tech and sustainability networking platform"
+   ]
+  ],
   "routes": {
    "stops": null,
-   "routes": 18,
+   "routes": 28,
    "reach": null,
    "leave": null,
    "rows": [
@@ -793,6 +1094,126 @@ window.CAMPUSES = [
      "drop": "3:55 pm",
      "ride": "1 hr 10 min",
      "stop": 18
+    },
+    {
+     "stop": 19,
+     "area": "Dayanand Colony,Dayanand Colony ,Sector-7 Gurgaon,Jyoti Park Gurgaon",
+     "landmark": "Dayanand Colony,Dayanand Colony ,Sector-7 Gurgaon,Jyoti Park Gurgaon",
+     "route": "JR-1",
+     "dist": "0-5 km-5",
+     "slab": "0 – 5KM – 5",
+     "fee": null,
+     "pick": null,
+     "drop": null,
+     "ride": null
+    },
+    {
+     "stop": 20,
+     "area": "Rajiv Nagar Near Hanuman Mandir,Sec-6 Gurgaon Haryana,Rajiv Nagar Gurgaon",
+     "landmark": "Rajiv Nagar Near Hanuman Mandir,Sec-6 Gurgaon Haryana,Rajiv Nagar Gurgaon",
+     "route": "JR-2",
+     "dist": "0-5 km-3 5-10 km-1",
+     "slab": "0 – 5KM – 3 5 – 10 KM – 1",
+     "fee": null,
+     "pick": null,
+     "drop": null,
+     "ride": null
+    },
+    {
+     "stop": 21,
+     "area": "Sector-9 Gurgaon,Sector-7 Gurgaon,Sector-4 Gurgaon Haryana,SEC-4, 4TH FLOOR , NEAR BAL BHAWAN, GURGAON, Laxman Vihar Ph-II Near Daultabad Flyover",
+     "landmark": "Sector-9 Gurgaon,Sector-7 Gurgaon,Sector-4 Gurgaon Haryana,SEC-4, 4TH FLOOR , NEAR BAL BHAWAN, GURGAON, Laxman Vihar Ph-II Near Daultabad Flyover",
+     "route": "JR-4",
+     "dist": "0-5 km-5 5-10 km-1",
+     "slab": "0 – 5KM – 5 5 – 10 KM – 1",
+     "fee": null,
+     "pick": null,
+     "drop": null,
+     "ride": null
+    },
+    {
+     "stop": 22,
+     "area": "Sector-23 Near Community Centre,Sec-23 Gate No-1,Sec-23 Gate No-5 , Sec-23 Near Usha Stud Farm GGN,Sector-23 Near Mother dairy",
+     "landmark": "Sector-23 Near Community Centre,Sec-23 Gate No-1,Sec-23 Gate No-5 , Sec-23 Near Usha Stud Farm GGN,Sector-23 Near Mother dairy",
+     "route": "JR-5",
+     "dist": "0-5 km-8 5-10 km-1",
+     "slab": "0 – 5KM – 8 5 – 10 KM – 1",
+     "fee": null,
+     "pick": null,
+     "drop": null,
+     "ride": null
+    },
+    {
+     "stop": 23,
+     "area": "Sec-22A Gurgaon,Sectoe-23 Gurgaon Haryana,Caterpuri Road Near Sunshine School Sec-23A Gurgaon, Dharam Appartment Sunbeam Palam Vihar,Dharam Colony Near Mahindra Show Room",
+     "landmark": "Sec-22A Gurgaon,Sectoe-23 Gurgaon Haryana,Caterpuri Road Near Sunshine School Sec-23A Gurgaon, Dharam Appartment Sunbeam Palam Vihar,Dharam Colony Near Mahindra Show Room",
+     "route": "JR-6",
+     "dist": "0-5 km-5 5-10 km-1",
+     "slab": "0 – 5KM – 5 5 – 10 KM – 1",
+     "fee": null,
+     "pick": null,
+     "drop": null,
+     "ride": null
+    },
+    {
+     "stop": 24,
+     "area": "Palam Vihar Near park Hospital Gurgaon, Chauma Village Palam Vihar, Palam Vihar F Block Gurgaon ,Cosmos executive apartment , palam vihar,Block Palam Vihar Gurgaon,C Block Gate No-6 Palam Vihar",
+     "landmark": "Palam Vihar Near park Hospital Gurgaon, Chauma Village Palam Vihar, Palam Vihar F Block Gurgaon ,Cosmos executive apartment , palam vihar,Block Palam Vihar Gurgaon,C Block Gate No-6 Palam Vihar",
+     "route": "JR-7",
+     "dist": "0-5 km-8",
+     "slab": "0 – 5KM – 8",
+     "fee": null,
+     "pick": null,
+     "drop": null,
+     "ride": null
+    },
+    {
+     "stop": 25,
+     "area": "TATA Lavida Sector-113 Gurgaon,Mahindra Aura Sector-110 Gurgaon ,Geteway Sector-112 Bajghera,",
+     "landmark": "TATA Lavida Sector-113 Gurgaon,Mahindra Aura Sector-110 Gurgaon ,Geteway Sector-112 Bajghera,",
+     "route": "JR-8",
+     "dist": "0-5 km-7 5-10 km-1",
+     "slab": "0 – 5KM – 7 5 – 10 KM – 1",
+     "fee": null,
+     "pick": null,
+     "drop": null,
+     "ride": null
+    },
+    {
+     "stop": 26,
+     "area": "Sai Kunj Palam Vihar Gurgaon,C-1 Block Palam Vihar,Park View main gate,C-2 Block Palam Vihar",
+     "landmark": "Sai Kunj Palam Vihar Gurgaon,C-1 Block Palam Vihar,Park View main gate,C-2 Block Palam Vihar",
+     "route": "JR-9",
+     "dist": "0-5 km-7",
+     "slab": "0 – 5KM – 7",
+     "fee": null,
+     "pick": null,
+     "drop": null,
+     "ride": null
+    },
+    {
+     "stop": 27,
+     "area": "Sec-37D Gurgaon,Satya the hermitage Sector-103 Gurgaon",
+     "landmark": "Sec-37D Gurgaon,Satya the hermitage Sector-103 Gurgaon",
+     "route": "JR-15",
+     "dist": "0-5 km-1 5-10 km-1",
+     "slab": "0 – 5KM – 1 5 – 10 KM – 1",
+     "fee": null,
+     "pick": null,
+     "drop": null,
+     "ride": null
+    },
+    {
+     "stop": 28,
+     "area": "Emaar Imperial Garden, Sector 102,ATS Triumph Sec-104 Gurgaon,Godrej Submit",
+     "landmark": "Emaar Imperial Garden, Sector 102,ATS Triumph Sec-104 Gurgaon,Godrej Submit",
+     "route": "JR-19",
+     "dist": "0-5 km-2 5-10 km-2",
+     "slab": "0 – 5KM – 2 5 – 10 KM – 2",
+     "fee": null,
+     "pick": null,
+     "drop": null,
+     "ride": null
     }
    ]
   }
@@ -804,7 +1225,7 @@ window.CAMPUSES = [
   "name": "GEMS Millennium School",
   "short": "GMS Indirapuram",
   "city": "Indirapuram, Ghaziabad",
-  "updated": "31 Oct 2026",
+  "updated": "4 Nov 2026",
   "board": "CBSE",
   "grades": "Nursery to Grade 8",
   "keyNotes": [
@@ -814,57 +1235,178 @@ window.CAMPUSES = [
    {
     "grade": "Nursery",
     "tuition": 200000,
-    "max": 40
+    "max": 40,
+    "timings": "9:30 am – 1:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Junior KG",
     "tuition": 200000,
-    "max": 40
+    "max": 40,
+    "timings": "9:30 am – 1:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Senior KG",
     "tuition": 200000,
-    "max": 40
+    "max": 40,
+    "timings": "9:30 am – 1:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 1",
     "tuition": 225000,
-    "max": 40
+    "max": 40,
+    "timings": "9:30 am – 1:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 2",
     "tuition": 225000,
-    "max": 40
+    "max": 40,
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 3",
     "tuition": 225000,
-    "max": 40
+    "max": 40,
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 4",
     "tuition": 225000,
-    "max": 40
+    "max": 40,
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 5",
     "tuition": 250000,
-    "max": 40
+    "max": 40,
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 6",
     "tuition": 250000,
-    "max": 40
+    "max": 40,
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 7",
     "tuition": 250000,
-    "max": 40
+    "max": 40,
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 8",
     "tuition": 250000,
-    "max": 40
+    "max": 40,
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    }
   ],
   "applicationFee": 5000,
@@ -911,19 +1453,19 @@ window.CAMPUSES = [
   "bus": [
    [
     "Bus type",
-    null
+    "AC"
    ],
    [
     "Attendant",
-    null
+    "Yes"
    ],
    [
     "GPS tracking",
-    null
+    "Yes"
    ],
    [
     "CCTV in bus",
-    null
+    "Yes"
    ]
   ],
   "facilities": [
@@ -939,7 +1481,7 @@ window.CAMPUSES = [
      "STEAM Labs",
      "Astronomy Lab",
      "Robotics Lab",
-     "4 Nos Picke Ball",
+     "4 Nos Pickleball",
      "Courts"
     ]
    ],
@@ -994,18 +1536,47 @@ window.CAMPUSES = [
   "technology": [
    [
     "Smart boards per classroom",
-    null
+    "Yes"
    ],
    [
     "ERP",
-    null
+    "MCB"
    ],
    [
     "Care Desk",
-    null
+    "Yes"
    ]
   ],
-  "tieups": [],
+  "tieups": [
+   [
+    "Music",
+    "Torrins"
+   ],
+   [
+    "Media Literacy",
+    "Fyule"
+   ],
+   [
+    "E Library",
+    "GetLitt"
+   ],
+   [
+    "E Library",
+    "Britannica"
+   ],
+   [
+    "Photo Sharing Platform",
+    "LitApp"
+   ],
+   [
+    "Infirmary",
+    "Address Health"
+   ],
+   [
+    "International Benchmark Assessment",
+    "Acer IBT"
+   ]
+  ],
   "routes": {
    "stops": null,
    "routes": null,
@@ -1021,7 +1592,7 @@ window.CAMPUSES = [
   "name": "GEMS Millennium School",
   "short": "GMS Kalyan",
   "city": "Kalyan",
-  "updated": "31 Oct 2026",
+  "updated": "4 Nov 2026",
   "board": "CBSE",
   "grades": "Pre-KG to Grade 8",
   "keyNotes": [
@@ -1031,62 +1602,254 @@ window.CAMPUSES = [
    {
     "grade": "Pre-KG",
     "tuition": 62000,
-    "max": 30
+    "max": 24,
+    "ratio": "12:1",
+    "timings": "9:30 am – 1:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "CBSE examination fee": {
+      "cell": "–",
+      "max": 0
+     }
+    }
    },
    {
     "grade": "Nursery",
     "tuition": 67000,
-    "max": 30
+    "max": 24,
+    "ratio": "12:1",
+    "timings": "9:30 am – 1:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "CBSE examination fee": {
+      "cell": "–",
+      "max": 0
+     }
+    }
    },
    {
     "grade": "Junior KG",
     "tuition": 73000,
-    "max": 30
+    "max": 24,
+    "ratio": "12:1",
+    "timings": "9:30 am – 1:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "CBSE examination fee": {
+      "cell": "–",
+      "max": 0
+     }
+    }
    },
    {
     "grade": "Senior KG",
     "tuition": 78000,
-    "max": 30
+    "max": 24,
+    "ratio": "12:1",
+    "timings": "9:30 am – 1:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "CBSE examination fee": {
+      "cell": "–",
+      "max": 0
+     }
+    }
    },
    {
     "grade": "Grade 1",
     "tuition": 100000,
-    "max": 30
+    "max": 30,
+    "ratio": "30:1",
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "CBSE examination fee": {
+      "cell": "–",
+      "max": 0
+     }
+    }
    },
    {
     "grade": "Grade 2",
     "tuition": 100000,
-    "max": 30
+    "max": 30,
+    "ratio": "30:1",
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "CBSE examination fee": {
+      "cell": "–",
+      "max": 0
+     }
+    }
    },
    {
     "grade": "Grade 3",
     "tuition": 110000,
-    "max": 30
+    "max": 30,
+    "ratio": "30:1",
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "CBSE examination fee": {
+      "cell": "–",
+      "max": 0
+     }
+    }
    },
    {
     "grade": "Grade 4",
     "tuition": 110000,
-    "max": 30
+    "max": 30,
+    "ratio": "30:1",
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "CBSE examination fee": {
+      "cell": "–",
+      "max": 0
+     }
+    }
    },
    {
     "grade": "Grade 5",
     "tuition": 110000,
-    "max": 30
+    "max": 30,
+    "ratio": "30:1",
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "CBSE examination fee": {
+      "cell": "–",
+      "max": 0
+     }
+    }
    },
    {
     "grade": "Grade 6",
     "tuition": 110000,
-    "max": 30
+    "max": 30,
+    "ratio": "30:1",
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "CBSE examination fee": {
+      "cell": "–",
+      "max": 0
+     }
+    }
    },
    {
     "grade": "Grade 7",
     "tuition": 110000,
-    "max": 30
+    "max": 30,
+    "ratio": "30:1",
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "CBSE examination fee": {
+      "cell": "–",
+      "max": 0
+     }
+    }
    },
    {
     "grade": "Grade 8",
     "tuition": 110000,
-    "max": 30
+    "max": 30,
+    "ratio": "30:1",
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "CBSE examination fee": {
+      "cell": "–",
+      "max": 0
+     }
+    }
    }
   ],
   "applicationFee": 2000,
@@ -1111,41 +1874,41 @@ window.CAMPUSES = [
   "transport": [
    [
     "0 – 1 km",
-    null
+    15000
    ],
    [
     "1 – 3 km",
-    null
+    24000
    ],
    [
     "3 – 5 km",
-    null
+    30000
    ],
    [
     "5 – 8 km",
-    null
+    40000
    ],
    [
     "8 km and above",
-    null
+    60000
    ]
   ],
   "bus": [
    [
     "Bus type",
-    null
+    "AC"
    ],
    [
     "Attendant",
-    null
+    "Yes"
    ],
    [
     "GPS tracking",
-    null
+    "Yes"
    ],
    [
     "CCTV in bus",
-    null
+    "Yes"
    ]
   ],
   "facilities": [
@@ -1174,16 +1937,31 @@ window.CAMPUSES = [
    ],
    [
     "Indoor sports",
-    []
+    [
+     "Carrom",
+     "Chess",
+     "Foosball",
+     "Yoga",
+     "Gymnastics",
+     "Table tennis"
+    ]
    ],
    [
     "Outdoor sports",
-    []
+    [
+     "Football",
+     "Skating",
+     "Squash",
+     "Badminton",
+     "Turf"
+    ]
    ],
    [
     "Campus and safety",
     [
-     "Auditorium"
+     "AC Class",
+     "CCTV",
+     "SEN ROOM"
     ]
    ]
   ],
@@ -1192,24 +1970,270 @@ window.CAMPUSES = [
   "technology": [
    [
     "Smart boards per classroom",
-    null
+    "Yes"
    ],
    [
     "ERP",
-    null
+    "MCB"
    ],
    [
     "Care Desk",
-    null
+    "Yes"
    ]
   ],
-  "tieups": [],
+  "tieups": [
+   [
+    "Music",
+    "Torrins"
+   ],
+   [
+    "Media Literacy",
+    "Fyule"
+   ],
+   [
+    "E Library",
+    "GetLitt"
+   ],
+   [
+    "E Library",
+    "Britannica"
+   ],
+   [
+    "Photo Sharing Platform",
+    "LitApp"
+   ],
+   [
+    "Infirmary",
+    "Address Health"
+   ],
+   [
+    "International Benchmark Assessment",
+    "Acer IBT"
+   ]
+  ],
   "routes": {
    "stops": null,
-   "routes": null,
+   "routes": 2,
    "reach": null,
    "leave": null,
-   "rows": []
+   "rows": [
+    {
+     "stop": "1",
+     "area": "Mankoli – Lodha",
+     "landmark": "Upper Lodha",
+     "route": "2",
+     "dist": "15 km",
+     "slab": "10 – 14.9 km",
+     "fee": 42000,
+     "pick": "7:00 am",
+     "drop": "3:45 pm",
+     "ride": "60 min"
+    },
+    {
+     "stop": "2",
+     "area": "Mankoli - Lodha",
+     "landmark": "Upper Lodha Complex",
+     "route": "2",
+     "dist": "15 km",
+     "slab": "10 – 14.9 km",
+     "fee": 42000,
+     "pick": "7:05 am",
+     "drop": "3:35 pm",
+     "ride": "50 min"
+    },
+    {
+     "stop": "3",
+     "area": "Mankoli – Lodha",
+     "landmark": "Upper Lodha Complex",
+     "route": "2",
+     "dist": "15 km",
+     "slab": "10 – 14.9 km",
+     "fee": 42000,
+     "pick": "7:10 am",
+     "drop": "3:40 pm",
+     "ride": "50 min"
+    },
+    {
+     "stop": "4",
+     "area": "Amrutpal – Kalyan",
+     "landmark": "Sai Chowk",
+     "route": "2",
+     "dist": "150 m",
+     "slab": "0 – 1.9 km",
+     "fee": 28200,
+     "pick": "7:35 am",
+     "drop": "2:50 pm",
+     "ride": "5 min"
+    },
+    {
+     "stop": "5",
+     "area": "Yogidham – Kalyan",
+     "landmark": "Yogidham",
+     "route": "2",
+     "dist": "400 m",
+     "slab": "0 – 1.9 km",
+     "fee": 28200,
+     "pick": "9:35 am",
+     "drop": "12:35 pm",
+     "ride": "10 min"
+    },
+    {
+     "stop": "6",
+     "area": "Anupam Nagar - Kalyan",
+     "landmark": "Yogidham",
+     "route": "2",
+     "dist": "1 km",
+     "slab": "0 – 1.9 km",
+     "fee": 7500,
+     "pick": "9:30 am",
+     "drop": "12:38 pm",
+     "ride": "13 min"
+    },
+    {
+     "stop": "7",
+     "area": "Khadakpada – only Drop",
+     "landmark": "Khadpada Circle",
+     "route": "2",
+     "dist": "2.5 km",
+     "slab": "2 – 4.9 km",
+     "fee": 7500,
+     "pick": null,
+     "drop": "3:05 pm",
+     "ride": "20 min"
+    },
+    {
+     "stop": "1A",
+     "area": "Anupam Nagar",
+     "landmark": "Yogidham – only drop",
+     "route": "1",
+     "dist": "1.5 km",
+     "slab": "0 – 1.9 km",
+     "fee": 7050,
+     "pick": null,
+     "drop": "3:05 pm",
+     "ride": "3 min"
+    },
+    {
+     "stop": "1",
+     "area": "Shanti Nagar",
+     "landmark": "Bata",
+     "route": "1",
+     "dist": "4.4 km",
+     "slab": "2 – 4.9 km",
+     "fee": 30000,
+     "pick": "6:40 am",
+     "drop": "4:15 pm",
+     "ride": "1 hr 15 min"
+    },
+    {
+     "stop": "2",
+     "area": "Ulhasnagar 5",
+     "landmark": "Ulhasnagar 5",
+     "route": "1",
+     "dist": "7.8 km",
+     "slab": "7.5 – 9.9 km",
+     "fee": 36000,
+     "pick": "6:55 am",
+     "drop": "3:40 pm",
+     "ride": "40 min"
+    },
+    {
+     "stop": "3",
+     "area": "Ambarnath",
+     "landmark": "Gurukul School",
+     "route": "1",
+     "dist": "5.9 km",
+     "slab": "5 – 7.4 km",
+     "fee": 32400,
+     "pick": "7:00 am",
+     "drop": "3:55 pm",
+     "ride": "1 hr 05 min"
+    },
+    {
+     "stop": "4",
+     "area": "Ulhasnagar 3",
+     "landmark": "Kavita medical",
+     "route": "1",
+     "dist": "5.7 km",
+     "slab": "5 – 7.4 km",
+     "fee": 32400,
+     "pick": "7:10 am",
+     "drop": "3:30 pm",
+     "ride": "23 min"
+    },
+    {
+     "stop": "5",
+     "area": "Ulhasnagar 1",
+     "landmark": "Befikri Chowk",
+     "route": "1",
+     "dist": "3.8 km",
+     "slab": "2 – 4.9 km",
+     "fee": 30000,
+     "pick": "7:12 am",
+     "drop": "3:20 pm",
+     "ride": "30 min"
+    },
+    {
+     "stop": "6",
+     "area": "Ulhasnagar 1",
+     "landmark": "1 No. Police Station",
+     "route": "1",
+     "dist": "3.1 km",
+     "slab": "5 – 7.4 km",
+     "fee": 32400,
+     "pick": "7:17 am",
+     "drop": "3:19 pm",
+     "ride": "15 min"
+    },
+    {
+     "stop": "7",
+     "area": "Ulhasnagar 1",
+     "landmark": "Balaji medical",
+     "route": "1",
+     "dist": "3.3 km",
+     "slab": "2 – 4.9 km",
+     "fee": 30000,
+     "pick": "7:15 am",
+     "drop": "3:15 pm",
+     "ride": "32 min"
+    },
+    {
+     "stop": "8",
+     "area": "Ulhasnagar 1",
+     "landmark": "Balaji Medical",
+     "route": "1",
+     "dist": "3.3 km",
+     "slab": "2 – 4.9 km",
+     "fee": 30000,
+     "pick": "7:15 am",
+     "drop": "3:15 pm",
+     "ride": "32 min"
+    },
+    {
+     "stop": "9",
+     "area": "Maral Goan",
+     "landmark": "Maral Goan",
+     "route": "1",
+     "dist": "3.9 km",
+     "slab": "2 – 4.9 km",
+     "fee": 30000,
+     "pick": "7:30 am",
+     "drop": "3:10 pm",
+     "ride": "10 min"
+    },
+    {
+     "stop": "10",
+     "area": "Warap Village",
+     "landmark": "Scared Heart School",
+     "route": "1",
+     "dist": "4.5 km",
+     "slab": "2 – 4 km",
+     "fee": 30000,
+     "pick": "7:35 am",
+     "drop": "12:50 pm",
+     "ride": "12 min"
+    }
+   ]
   }
  },
  {
@@ -1219,63 +2243,80 @@ window.CAMPUSES = [
   "name": "GEMS Millennium School",
   "short": "GMS Kochi",
   "city": "Kochi",
-  "updated": "31 Oct 2026",
+  "updated": "4 Nov 2026",
   "board": "CBSE",
   "grades": "Nursery to Grade 5",
   "keyNotes": [
-   "No hostel facility at any GEMS campus. Day school only."
+   "No hostel facility at any GEMS campus. Day school only.",
+   "Book and uniform samples are available at school for parents to see."
   ],
   "feeRows": [
    {
     "grade": "Nursery",
-    "tuition": 145000,
+    "max": 35,
+    "ratio": "30:1",
+    "timings": "8:30 am – 12:30 pm",
     "annual": 25000,
-    "max": 30
+    "ex": {}
    },
    {
     "grade": "Junior KG",
-    "tuition": 145000,
+    "max": 35,
+    "ratio": "30:1",
+    "timings": "8:30 am – 12:30 pm",
     "annual": 25000,
-    "max": 30
+    "ex": {}
    },
    {
     "grade": "Senior KG",
-    "tuition": 145000,
+    "max": 35,
+    "ratio": "30:1",
+    "timings": "8:30 am – 12:30 pm",
     "annual": 25000,
-    "max": 30
+    "ex": {}
    },
    {
     "grade": "Grade 1",
-    "tuition": 159500,
+    "max": 35,
+    "ratio": "30:1",
+    "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "max": 30
+    "ex": {}
    },
    {
     "grade": "Grade 2",
-    "tuition": 159500,
+    "max": 35,
+    "ratio": "30:1",
+    "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "max": 30
+    "ex": {}
    },
    {
     "grade": "Grade 3",
-    "tuition": 159500,
+    "max": 35,
+    "ratio": "30:1",
+    "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "max": 30
+    "ex": {}
    },
    {
     "grade": "Grade 4",
-    "tuition": 175450,
+    "max": 35,
+    "ratio": "30:1",
+    "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "max": 30
+    "ex": {}
    },
    {
     "grade": "Grade 5",
-    "tuition": 175450,
+    "max": 35,
+    "ratio": "30:1",
+    "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "max": 30
+    "ex": {}
    }
   ],
-  "applicationFee": 10000,
+  "applicationFee": 2000,
   "admissionFee": 100000,
   "extraFees": [
    {
@@ -1296,42 +2337,46 @@ window.CAMPUSES = [
   ],
   "transport": [
    [
-    "0 – 1 km",
-    null
+    "0 – 5 km",
+    43700
    ],
    [
-    "1 – 3 km",
-    null
+    "5.1 – 10 km",
+    61300
    ],
    [
-    "3 – 5 km",
-    null
+    "10.1 – 15 km",
+    76200
    ],
    [
-    "5 – 8 km",
-    null
+    "15.1 – 20 km",
+    84400
    ],
    [
-    "8 km and above",
-    null
+    "20.1 – 30 km",
+    91000
+   ],
+   [
+    "Above 30 km",
+    100800
    ]
   ],
   "bus": [
    [
     "Bus type",
-    null
+    "AC"
    ],
    [
     "Attendant",
-    null
+    "Yes"
    ],
    [
     "GPS tracking",
-    null
+    "Yes"
    ],
    [
     "CCTV in bus",
-    null
+    "No"
    ]
   ],
   "facilities": [
@@ -1341,7 +2386,12 @@ window.CAMPUSES = [
    ],
    [
     "Performing arts",
-    []
+    [
+     "Kalari",
+     "Dance",
+     "Music",
+     "Instruments"
+    ]
    ],
    [
     "Life skills",
@@ -1380,24 +2430,558 @@ window.CAMPUSES = [
   "technology": [
    [
     "Smart boards per classroom",
-    null
+    "Yes"
    ],
    [
     "ERP",
-    null
+    "Entab- Admissions & Finance & Managebac- Academics"
    ],
    [
     "Care Desk",
-    null
+    "Yes"
    ]
   ],
-  "tieups": [],
+  "tieups": [
+   [
+    "Music",
+    "Torrins"
+   ],
+   [
+    "Media Literacy",
+    "Fyule"
+   ],
+   [
+    "E Library",
+    "GetLitt"
+   ],
+   [
+    "E Library",
+    "Britannica"
+   ],
+   [
+    "Photo Sharing Platform",
+    "LitApp"
+   ],
+   [
+    "Infirmary",
+    "Address Health"
+   ],
+   [
+    "International Benchmark Assessment",
+    "Acer IBT"
+   ]
+  ],
   "routes": {
-   "stops": null,
-   "routes": null,
-   "reach": null,
-   "leave": null,
-   "rows": []
+   "stops": 500,
+   "routes": 42,
+   "reach": "8:15 am",
+   "leave": "12:30 pm and 3:00 pm",
+   "rows": [
+    {
+     "stop": "1",
+     "area": "Fort Kochi, Thoppumpady, Thevara, Petta, Irumpanam, GEMS",
+     "landmark": "Near Cochin College, Near Nazareth Church, Oh My Cake Lane, Thoppumpady, Darragh Residency, Pandit Kuruppan Road, Thevara, Professors Enclave, Santhi Nagar Road, Thevara, Revera Flat, Thevara Ferry, Near Chakolas Waterscapes, Chakolas Habitat, Thevara Ferry Road, Willingdon Enclave, Chakolas Habitat, Thevara Ferry Road, Chakolas Waterscapes, Thevara Ferry Road, Thevara, St. Madien Point, Near Angadi Super Market, Peeyush, Gandhi Square, Poonithura, North Fort Garden, Vadakkekotta, Choice Paradise, Thrippunithura, NSD Trumpf, Irumpanam, Near Choice Tower, Tower 2, Asten Rajagiri Campus Court, Rajagiri Valley, Kakkanad, SFS Sunnyvale, Infopark Expressway",
+     "route": "1",
+     "dist": "26 km",
+     "slab": "20.1 – 30 km",
+     "fee": 91000,
+     "pick": "6:45 am",
+     "drop": "4:45 pm",
+     "ride": "90 min"
+    },
+    {
+     "stop": "2",
+     "area": "Koovappady, Perumbavoor, Chembaraky, Pukkattupady, Thevakkal, Edachira, GEMS",
+     "landmark": "Harihara Villas, Koovappady, Perumbavoor, Poopani Road, Perumbavoor, Ponjassery MH Kavala, Kuzhivelipady, Mavinchuvadu, Near Peekay Market, Near Cloud Nest Villa, Thrikkakara North, Travancore Opus Highway, Puthiya Road, Vennala, Kansterra Villa, AP Varkey Road, Thengod, Sunshine Villas, Edachira",
+     "route": "2",
+     "dist": "28 km",
+     "slab": "20.1 – 30 km",
+     "fee": 91000,
+     "pick": "6:55 am",
+     "drop": "4:30 pm",
+     "ride": "90 min"
+    },
+    {
+     "stop": "3",
+     "area": "Chendamangalam, Perumpadanna, Varappuzha, Edappilly, Unichira, Kakkanadu, GEMS",
+     "landmark": "FRUITBAE, Kodungallur, Near Kottapuram Bridge, Chendamangalam, North Paravur, Travancore Opus Highway, Puthiya Road, Vennala, Athani Thonniyakavu, North Paravur, Cheriyapilly, North Paravur, S.N.D.P. Junction, Varapuzha, Skyline Orion Park, Netaji Nagar, Edappally – 682024",
+     "route": "3",
+     "dist": "40 km",
+     "slab": "Above 30 km",
+     "fee": 100800,
+     "pick": "6:35 am",
+     "drop": "5:00 pm",
+     "ride": "120 min"
+    },
+    {
+     "stop": "4",
+     "area": "U.C.College, Parvoorkavala, Muttam, Unichira, Kakkanadu, GEMS",
+     "landmark": "Oxonia River Mansion, West Veliyathunadu, Aluva, 1-C, R M Homes Saphir, UC College, Aluva, Livit Harmony, Chamaparambil Road, Jyothi Nagar, U.C. P.O., Aluva, KRA-74, Kadeppilly Road, U.C. College P.O., Aluva, Couch Luxe Villa, Kollamkudimugal, Kakkanad, VT Trine Apartment, Kollamkudimugal, L & E Salon, Thrikkakara Top Road, Kollamkudimugal, Sophia Celestia, Kollamkudimugal, Noel Serenia, Kollamkudimugal, Confident Whiteberry, Kakkanad",
+     "route": "4",
+     "dist": "25 km",
+     "slab": "20.1 – 30 km",
+     "fee": 91000,
+     "pick": "6:45 am",
+     "drop": "4:30 pm",
+     "ride": "90 min"
+    },
+    {
+     "stop": "5",
+     "area": "Kaloor, Judges Avanue, Lissie Hospital, Kathrikkadav, Palarivattam, Vazhakkala, Kakkanad, GEMS",
+     "landmark": "Shanthi Kavadom, Public Crematorium, Pachalam, ANRA 48 A, Alungal (H), Kanmani Road, Kaloor, Empire Heights, Perandoor Road, J M Manor, Sastha Temple Road, Kaloor, Dream Flower Avalon Apartment, Shenoy Road, Travancore Opus Highway, Puthiya Road, Vennala, Cheryl Enclave, Spices Street, North End, Kaloor, DD West Wind Apartment, Kathrikadavu, Jain Charing Cross, Kathrikadavu Junction, Kent Palm Grove, Stadium Link Road, Palarivattom, Newland Heights, TD Sannidhi Road, Thammanam, Pisharath House, Chammanikodath Road, Chiraparambil (H), Sreekala Bay Lane, Sreekala Road, Vennala",
+     "route": "5",
+     "dist": "14 km",
+     "slab": "10.1 – 15 km",
+     "fee": 76200,
+     "pick": "6:50 am",
+     "drop": "4:30 pm",
+     "ride": "90 min"
+    },
+    {
+     "stop": "6",
+     "area": "Poothotta, Puthenkavu, Vadakkekotta, Eroor, Vennala, Thuthiyoor, GEMS",
+     "landmark": "Puthiyedathuparambil (H), Kureekadu P.O., Puthiyakavu, 7B, Royal Dream, Sanskrit College Road, Thrippunithura, Veegaland Kingsfort, Eroor Overbridge, Travancore Opus Highway, Puthiya Road, Vennala, Kent Illam, Vennala, High School Road, Vennala, The Lantern, Vennala–Palachode Road, Dr. Ambedkar Road, Vennala, Komaroth House, Ambedkar Road, Vennala, Near St. Jude Thaddeus Chapel, Komaroth House, Ambedkar Road, Vennala, Srambikkal House, Near Mariyamman Kovil, Kattadiyil Lane, Nadakkavu, Thrippunithura",
+     "route": "6",
+     "dist": "15 km",
+     "slab": "10.1 – 15 km",
+     "fee": 76200,
+     "pick": "6:55 am",
+     "drop": "4:20 pm",
+     "ride": "90 min"
+    },
+    {
+     "stop": "7",
+     "area": "Pachalam, Ayyappankavu, Kompara, Kacherippady, North ESI Hospital, Palarivattom, Padivattam, Padamugal, Mavelipuram, Kakkanad, GEMS",
+     "landmark": "Jewel Bluebell Tower, Kannachan Thodu Road, RRA 001, Old Railway Station Road, Kombara Junction, Next to Alijan Laundry Firm, Old Railway Station Road, Kacheripady, Near Rosary Supermarket, Link Heritage, Kacheripady, Ernakulam, Noorjehan Manzil, North Railway Station, Crash Road, Vazhakkala, Jainraj Sonata, Kunnumpuram, Kakkanad, Thekettu House, Pazhappura 2nd Cross Road",
+     "route": "7",
+     "dist": "17 km",
+     "slab": "15.1 – 20 km",
+     "fee": 84400,
+     "pick": "7:00 am",
+     "drop": "4:30 pm",
+     "ride": "75 min"
+    },
+    {
+     "stop": "8",
+     "area": "Chowara, Thettaly, Thuruth, Asokapuram, Bank Jn Aluva, Kalamassery, Vallathol, Mavelipuram, GEMS",
+     "landmark": "Tettali Bus Stop, Chowara, Thopil House, Thuruth, Aluva, AJL Serenewoods, Canal Road, Federal Bank Junction, Aluva, Thaikkattukara, Muttam, Menon Bari Complex, North Kalamassery, Noel Fragranz, Thrikkakara, Cochin – 682021, Bava Aurora Heights, Vallathole, Noel Ecoden, Vallatholppadi Junction, Thrikkakara, Noel Ecotat, Vallathol Junction, Seaport–Airport Road, Abad Green Terrace, Malepally Road, Opp. B.M.C., Seaport–Airport Road",
+     "route": "8",
+     "dist": "23 km",
+     "slab": "20.1 – 30 km",
+     "fee": 90000,
+     "pick": "6:40 am",
+     "drop": "4:35 pm",
+     "ride": "90 min"
+    },
+    {
+     "stop": "9",
+     "area": "Elamakkara, Changampuzha Park, Edappally, Toll Jn, Thrikkakkara, GEMS",
+     "landmark": "Sanjeevani Apartment, Thannikkal, Perandoor Road, Padam Stop, Elamakara, Opp. Dream Flower Celesta, Aiswarya Lane, Punnakkal, Travancore Opus Highway, Puthiya Road, Vennala, Skyline Eminence, Elamakara, Good Earth Melange, Menon Parambu Road, Changampuzha, Residents' Lane, Devkulangara, KLRA 26, Thenayath Parambil (H), Kannanthodath No. 453, Near YES Bank, Admiral Towers, Thrikkakara",
+     "route": "9",
+     "dist": "15 km",
+     "slab": "10.1 – 15 km",
+     "fee": 76200,
+     "pick": "7:00 am",
+     "drop": "4:40 pm",
+     "ride": "75 min"
+    },
+    {
+     "stop": "10",
+     "area": "Ramamangalam, Thiruvaniyoor, Peringala, Kaninad, Karimukal, Brahamapuram, GEMS",
+     "landmark": "Aronnil House, Ramamangalam, Kandakottu House, Ramamangalam, Vattakattu House, Nechoor, Maneed, Kudilil House, Thiruvaniyoor, Payyadakuzhi House, Kaninad, Palayamkottil (H), Peringala, Peringala P.O., Ernakulam, Shalome Residency, Karimugal, Near Harimattom Temple, Ambalmedu, Kent Mahal, Karimukal Road, Brahmapuram",
+     "route": "10",
+     "dist": "19 km",
+     "slab": "15.1 – 20 km",
+     "fee": 84400,
+     "pick": "6:50 am",
+     "drop": "4:55 pm",
+     "ride": "90 min"
+    },
+    {
+     "stop": "11",
+     "area": "Thammanam, Chakkaraparambu, Vennala, Alinchuvad, Palachuvad, Chittethukara, GEMS",
+     "landmark": "St. Vincent De Paul Convent Road, Palarivattom, PRRA 41 A, Puthiya Road, Thammanam, Chaithram, Pulluparambu Road, SFS Boulevard, Puthiya Road, Vennala, Travancore Opus Highway, Puthiya Road, Vennala, Willingdon Boutique Villas, Vennala, Kent Nalukettu Villa, Vennala, Galaxy Ebony Groove, Vennala, Trinity New Castle, Vennala, National Empress Garden, Vennala, Yasoram Tejus Apartment, Vennala",
+     "route": "11",
+     "dist": "11 km",
+     "slab": "10.1 – 15 km",
+     "fee": 76200,
+     "pick": "7:00 am",
+     "drop": "4:30 pm",
+     "ride": "75 min"
+    },
+    {
+     "stop": "12",
+     "area": "Aroor, Kannadikkadu, Thyakooadam, Vytila Janatha, Palarivattam, Vazhakkala, Eechamukku, GEMS",
+     "landmark": "Near Aroor North Mahal, Kumbalam Center, Asset Canvas Flat, KRL Road, Nettoor, Absolute Inland Water Authority, Maradu, Bhavana Road, Near Agavae Beauty, Maradu, DLF Riverside Janatha",
+     "route": "12",
+     "dist": "25 km",
+     "slab": "20.1 – 30 km",
+     "fee": 90000,
+     "pick": "6:40 am",
+     "drop": "4:40 pm",
+     "ride": "120 min"
+    },
+    {
+     "stop": "14",
+     "area": "Alangad, Panayikulam, Eloor, Kalamaserry, Manjummal, Cusat, Thrikkakara, GEMS",
+     "landmark": "Alangadu Temple, Angadikadavu Road, Malikapedika, Panaikulam Junction, Travancore Opus Highway, Puthiya Road, Vennala, FACT Road, North Kalamassery, Good Earth, Modern Times, Kalamassery, Mangala Luiz Gardens, Kalamassery, Changampuzha Nagar, Kalamassery, University Colony, Kalamassery, Vihara-505, B, 21 University Colony, CUSAT, Kalamassery, CUSAT, Kalamassery, Erriyakkattumoola House, Manopilly Nagar Road",
+     "route": "14",
+     "dist": "23 km",
+     "slab": "20.1 – 30 km",
+     "fee": 91000,
+     "pick": "6:50 am",
+     "drop": "4:40 pm",
+     "ride": "90 min"
+    },
+    {
+     "stop": "15",
+     "area": "Olive Kalista, GEMS",
+     "landmark": "Olive Kalista",
+     "route": "15",
+     "dist": "4 km",
+     "slab": "0 – 5 km",
+     "fee": 53700,
+     "pick": "7:45 am",
+     "drop": "3:30 pm",
+     "ride": "30 min"
+    },
+    {
+     "stop": "16",
+     "area": "Konthuruthy, Kallupalam, Bundroad, Ponnoth temple road, Elamkulam, Vytila, GEMS",
+     "landmark": "Chakolas Bayside, Chakola Colony, Thevara, Greha Nakshatra Apartments, Abad Knightbridge, Pandarachira Road, K.P. Vallon Road, Heera Waters Apartment, Chilavannoor, South Ponneth Road End, Chilavannoor, Noel Song, Poneth Temple Road, Kadavanthra, 8-E, Noel Song, Poneth Temple Road, Kadavanthra, Riitham Enclave, Tagore Nagar, Kadavanthra, Jolly Dale, Fathima Church Lane, Elamkulam, Abad Lotus Lake, Chilavannoor Road, Vyttila",
+     "route": "16",
+     "dist": "19 km",
+     "slab": "15.1 – 20 km",
+     "fee": 84400,
+     "pick": "7:00 am",
+     "drop": "4:30 pm",
+     "ride": "60 min"
+    },
+    {
+     "stop": "17",
+     "area": "Queens Walkway, Highcourt, Kacherippady, Desabhimany, Stadium, Palarivattam, Vazhakkala, GEMS",
+     "landmark": "Prestige Neptunes Courtyard, Queens Walkway, Marina One, Marine Drive, Marina One, Tower F4, Marine Drive, Purva Grandbay, Marine Drive, Abad Bay Pride Towers, Marine Drive, Link Horizon, 2B, Shanmugham Road, Marine Drive, 6-A, Peevees Triton, Marine Drive, Master Coaching, Board Road, Kaloor Stadium",
+     "route": "17",
+     "dist": "15 km",
+     "slab": "10.1 – 15 km",
+     "fee": 76200,
+     "pick": "7:00 am",
+     "drop": "4:15 pm",
+     "ride": "60 min"
+    },
+    {
+     "stop": "18",
+     "area": "DLF, Kakkanad, GEMS",
+     "landmark": "DLF New Town Heights Kakkanad",
+     "route": "18",
+     "dist": "5 km",
+     "slab": "0 – 5 km",
+     "fee": 53700,
+     "pick": "7:35 am",
+     "drop": "3:30 pm",
+     "ride": "45 min"
+    },
+    {
+     "stop": "19",
+     "area": "Cheranalloor, Vishnupuram, Amruta Nagar, Kunnumpram, Edappally, Marotichodu, Kakkanadu, GEMS",
+     "landmark": "Edappally – Chilavannoor Toll Junction, Raj Nakshatra Gardens, Cheranallur, Noel Tall Terrace, Cheranallur, Palm Grove, Yaleem Khana Road, Edappally, Confident Pride Apartments, Vattekkunnam, Edappally, Skyline Palmshade, Edappally, Trinity Apartment, Edappally, Mather Silver Lawn Apartments, Marottichodu, Prarthana, Bismi Gardens, Edappally, Krishnakripa Residence, Kariyil Lane",
+     "route": "19",
+     "dist": "18 km",
+     "slab": "15.1 – 20 km",
+     "fee": 84400,
+     "pick": "6:15 am",
+     "drop": "4:35 pm",
+     "ride": "120 min"
+    },
+    {
+     "stop": "20",
+     "area": "Palarivattam, Pipeline Rod, Vazhakkala, Desiyamukku, Kakkanad, GEMS",
+     "landmark": "V.K. Lane, Vazhakkala, Benedict Road, Vazhakkala, Kent Oak Villa, Vazhakkala, Asset Alpine Oaks, Vazhakkala, Heavenly Asta Villas, Desiyamukku, NGO Quarters, Kakkanad, Kuzhikattu House, Near Kuzhikattu Temple",
+     "route": "20",
+     "dist": "8 km",
+     "slab": "5.1 – 10 km",
+     "fee": 61300,
+     "pick": "7:20 am",
+     "drop": "3:40 pm",
+     "ride": "50 min"
+    },
+    {
+     "stop": "21",
+     "area": "Pattimatom, Kitex, Kizhakkambalam, Pallikkara, Ambalapady, Wonderla, Thengod, Manakkakadvu, GEMS",
+     "landmark": "Nedumpillil (H), Vengola P.O., Arakkapady, Naalukettu, Kizhakkambalam, Njaralloor, Happy Valley, Erumelikkara, Asten Viveria, Manakkakadavu, Purva Eternity, Athani, Manjoorans Orchid Meadows, Athani, Noel Greenature, Sainik Ashram Road",
+     "route": "21",
+     "dist": "17 km",
+     "slab": "15.1 – 20 km",
+     "fee": 84400,
+     "pick": "6:50 am",
+     "drop": "4:25 pm",
+     "ride": "90 min"
+    },
+    {
+     "stop": "22",
+     "area": "Mulamthuruthy, Thiruvankulam, Irumpanam, Chittethukara, Infopark, GEMS",
+     "landmark": "The Palm, Near Mulamthuruthy Block Panchayath, Malhar Souhradha Residence, Mamala (KEL Charging Station), F2, Palace Apartment, Water Tank Road, Irumpanam, Kavalackal Building, Kopparambu, Abad Rainbow Retreat, Chakolas Heights, Seaport–Airport Road, Opp. Water Metro, Kakkanad, Mather Highlands, Rajagiri Valley, Mather Leisure Villa, Jewel Homes, Richmond Tower, Rajagiri Valley, Kakkanad, Kochi, Anzera Lavender Apartments, Infopark Expressway",
+     "route": "22",
+     "dist": "14 km",
+     "slab": "10.1 – 15 km",
+     "fee": 76200,
+     "pick": "7:00 am",
+     "drop": "4:25 pm",
+     "ride": "60 min"
+    },
+    {
+     "stop": "23",
+     "area": "Kentpalm villas, Kollamkudymukal, Athany Jn, GEMS",
+     "landmark": "Kent Palm Villa, Near Athani Junction, Skyline Xylus, Lavanya Nagar",
+     "route": "23",
+     "dist": "5 km",
+     "slab": "0 – 5 km",
+     "fee": 53700,
+     "pick": "7:35 am",
+     "drop": "3:40 pm",
+     "ride": "45 min"
+    },
+    {
+     "stop": "24",
+     "area": "Kaloor, Kumaranasan Nagar, Ponnurunny, Vytila, Palarivattam, Vazakkala, Kakkanad, GEMS",
+     "landmark": "Veegaland Petunia, Sastha Temple Road, Kaloor, Justice K.M. Mathew Road, S.R.M. Road, Mazhuvanchery Valiyaveetil, Kumaranasan Road, Saranya, Kumaranasan Nagar, Kadavanthra, Plot No. 36, Kumaranasan Nagar, Kadavanthra, Thanzeel Chalet, Kadavanthra, Thanzeel Chalet, Kumaranasan Nagar, Tiknar Petals Apartment, Kumaranasan Nagar, Sayujam, Vrindhavanam, S.C. Bose Road, Elamkulam, Havilah Windchimes, Panorama Enclave, Ponnurunni, Meridian New Castle, Ponnurunni, Kopraparambil House, Subash Chandra Bose Road, Elavakkad (H), MRRA 248, Brothers Road, Vazhakkala, Chembukku Junction, NCC Laurel, Kakkanad, NCC Green Valley, Kakkanad",
+     "route": "24",
+     "dist": "15 km",
+     "slab": "10.1 – 15 km",
+     "fee": 76200,
+     "pick": "6:55 am",
+     "drop": "4:20 pm",
+     "ride": "90 min"
+    },
+    {
+     "stop": "25",
+     "area": "Vytila, Chalikkavattam, Palarivattam, Vazhakkala, Padamukal, Palachuvad, Chittethiukara, GEMS",
+     "landmark": "Kalpaka Gardens, Pattath Road, Chalikavattom, Capitol Point, Chalikavattom, Plum Flower, Ponnurunni, Promenade Villas, Pavoor Road, Recca Enclave, Palachuvadu, Golden Oak Villa 8, Padamugal, Greenwoods, Indira Junction, Padamugal, Padamugal, Palachuvadu Road, Divine Homes, Adarsha Nagar Road, CSEZ, Thuthiyoor, Asset Petals, CSEZ, Kakkanad",
+     "route": "25",
+     "dist": "15 km",
+     "slab": "10.1 – 15 km",
+     "fee": 76200,
+     "pick": "6:55 am",
+     "drop": "4:30 pm",
+     "ride": "90 min"
+    },
+    {
+     "stop": "26",
+     "area": "Panampilly Nagar, Manorama.Jn, Kadavanthara, Javaharnagar, Ponnurunni, Palachuvadu, Kakkanad, GEMS",
+     "landmark": "RDS Avenue One, Panampilly Nagar, Near Passport Office, Mather Ivory Heights, Panampilly Nagar, JGT Samrudhi, Jawahar Nagar, Blue Moon Silver Apartment, North Jawahar Nagar, Mather El Castillo, Jawahar Nagar, Vijaya Glimse Main Avenue, Jawahar Nagar, Skyline City Park, Jawahar Nagar, Abad Silver Crest, Jawahar Nagar, Kadavanthra, Aratt Williams Manor, Subash Chandra Bose Road, Ponnurunni, Emerald Residency, Palachuvadu",
+     "route": "26",
+     "dist": "17 km",
+     "slab": "15.1 – 20 km",
+     "fee": 84400,
+     "pick": "7:00 am",
+     "drop": "4:20 pm",
+     "ride": "70 min"
+    },
+    {
+     "stop": "27",
+     "area": "Ravipuram, Panampilly nagar, Girinagar, PonnurunnI, Vytila, Thykoodam, Petta, Irumpanam, GEMS",
+     "landmark": "Mather Dover Court Apartment, Ravipuram, Link Heights, Panampilly Nagar, Vidya Nagar, Kadavanthra, Kochi, Tony Daniel Homes, Ponneth Temple Road, Silversand Island, Vyttila, Cochin, Abhayam, MRRA-22, Poonithura, Vineyard Villa 51, Behind Choice School, Petro Palace Apartment, Karingachira",
+     "route": "27",
+     "dist": "18 km",
+     "slab": "15.1 – 20 km",
+     "fee": 84400,
+     "pick": "6:50 am",
+     "drop": "4:20 pm",
+     "ride": "90 min"
+    },
+    {
+     "stop": "28",
+     "area": "Manjummal, Kunnumpuram, Edappally, Ponnevazhi, Anjumana Temple, Marottichodu, Trikkakkara, GEMS",
+     "landmark": "Janatha Road, Manjummel, Sulu Residency, Pattayamchery House, Ambedkar Road, Kunnumpuram, Edappally North, Pone Vazhi Road, Edappally, Jawan Cross Road, Ponekkara, Prasanthi Nagar, Manimala Road, Edappally, Club Junction, Thrikkakara, MIR Green Metropolis, Jade Heights, Ambadimoola, Sinai Tower, Behind Onam Park, Mavelipuram",
+     "route": "28",
+     "dist": "14 km",
+     "slab": "10.1 – 15 km",
+     "fee": 76200,
+     "pick": "7:00 am",
+     "drop": "4:20 pm",
+     "ride": "70 min"
+    },
+    {
+     "stop": "29",
+     "area": "Edadachira, Skyline Ivy Leageu, GEMS",
+     "landmark": "Skyline IVY League Edachira",
+     "route": "29",
+     "dist": "5 km",
+     "slab": "0 – 5 km",
+     "fee": 53700,
+     "pick": "7:40 am",
+     "drop": "3:30 pm",
+     "ride": "35 min"
+    },
+    {
+     "stop": "30",
+     "area": "Convent Jn, Chittoor road, KSRTC Bus Stand, Katrikadavu, Stadium, Palarivattom, Vazhakkala, Kakkanadu, GEMS",
+     "landmark": "Market Road, Convent Junction, Skyline Aristocrat, P.T. Usha Road, Opp. Maharajas Ground, Kochi, Anjam Apartment, Iyyattil Junction, Chittoor Road, Vallangattu (H), Veekshanam Road, North Ernakulam, Near Balaji Medical Center, Skyline Imperial Gardens, Stadium Link Road, Kent Hail Garden, Stadium Link Road, Kaloor, Olive Woodstock, Stadium Link Road, Abad Inspirations, Stadium Link Road, Palarivattom, Skyline Epic-128, Stadium Link Road, Palarivattom, Pukalakkattu Thiruvonam (H), Thammanam Road, Palarivattom, Opp. Pandhal Cake Shop, Garden Court Apartments, Alinchuvadu, Veegaland Green Cloud, Vazhakkala, Abad Sunshine Court, Padamughal, SFS Branton Park, Vazhakkala, Casaflora Apartment, Padamughal",
+     "route": "30",
+     "dist": "17 km",
+     "slab": "15.1 – 20 km",
+     "fee": 84400,
+     "pick": "6:50 am",
+     "drop": "4:30 pm",
+     "ride": "90 min"
+    },
+    {
+     "stop": "31",
+     "area": "Aluva Choondi, Pukkattupady, Mochamkulam, Thevakkal, Millumpady, Thengodu, Edachira, GEMS",
+     "landmark": "Pathiyanthara (H), Pukkattupady, Behind SOS Orphanage, Aluva, Near Fresh and More Supermarket, Ponnakudam Tharavadu, Thevakkal, Grand County, Millumpady Road, Kangarappady, DD Misty Valley, Thengode, Confident Pinnacle, Poo, DD Misty, Cascade Project, Near AKG Road, Edachira, Block 1, Green Vistas Prakriti, Edachira, Kakkanad, Galaxy Cloudspace, Edachira, Kakkanad, Estonia, Olive Courtyard Apartments, Edachira, Kakkanad",
+     "route": "31",
+     "dist": "17 km",
+     "slab": "15.1 – 20 km",
+     "fee": 84400,
+     "pick": "7:00 am",
+     "drop": "4:10 pm",
+     "ride": "70 min"
+    },
+    {
+     "stop": "32",
+     "area": "Trinity world, Chittethukara, Infopark Expressway, GEMS",
+     "landmark": "Trinity World Chittethukara",
+     "route": "32",
+     "dist": "5 km",
+     "slab": "0 – 5 km",
+     "fee": 53700,
+     "pick": "7:40 am",
+     "drop": "3:30 pm",
+     "ride": "35 min"
+    },
+    {
+     "stop": "33",
+     "area": "Kolenchery, Kadayirippu, Pazhamthottam, Pallikkara, Thengode, Athani, GEMS",
+     "landmark": "MOSC Medical College Hospital, Kolenchery, Near Govt. HSS, Pazhamthottam, Near Btown Resort, Kakkanad, Pallikara, Spanish Villa, Kumarapuram, Scotlandyard Villas, Kumarapuram, Pallikkara, Villa No. 11, Scotlandyard Villas, Kumarapuram, Pallikkara, Spice Valley, Pallikara, Confident Leo 3, Manakkakadavu, Thengode, Nirvana by Avni Homes, Bible College, Thengode, Garden Valley Villas, Thengode, O2 Zone Apartment, Vikasvani, Thengode, Kochery Apartment, Kochery Lane",
+     "route": "33",
+     "dist": "18 km",
+     "slab": "15.1 – 20 km",
+     "fee": 84400,
+     "pick": "7:00 am",
+     "drop": "4:30 pm",
+     "ride": "70 min"
+    },
+    {
+     "stop": "34",
+     "area": "Prestige Hilside Kakkanad, GEMS",
+     "landmark": "Prestige Hill Side",
+     "route": "34",
+     "dist": "4 km",
+     "slab": "0 – 5 km",
+     "fee": 53700,
+     "pick": "7:40 am",
+     "drop": "3:20 pm",
+     "ride": "30 min"
+    },
+    {
+     "stop": "35",
+     "area": "Elamkunnapuzha, Karthedam, Vallarpadam, Highcourt, Palarivattam, Kakkanadu, GEMS",
+     "landmark": "Menachery Manghat H.N., Nayarambalam, Near Mahavishnu Temple, Elakunnapuzha Bus Stop, Karthedam, Malipuram, Yerik Garden Apartments, Sainik Ashram Road, Kusumagiri, Noel Greenature, Sainik Ashram Road",
+     "route": "35",
+     "dist": "27 km",
+     "slab": "20.1 – 30 km",
+     "fee": 91000,
+     "pick": "6:15 am",
+     "drop": "4:35 pm",
+     "ride": "90 min"
+    },
+    {
+     "stop": "36",
+     "area": "Aluva, Kalamassery, Kollamkudimughal, Athani, Kaakand, GEMS",
+     "landmark": "Kattuparambil (H), Periyar Gardens, GCDA Road, Thottakkattukara, Periyar Gardens, GCDA Road, Thottakkattukara, Asset Bay Apartment, GCDA, Althara Road, Aluva, Prestige Eden Garden, North Kalamassery, ABAD Chancellor, Vallathol, Judgemukku, Kalapurakkal Apartment, Opp. Chittilappilly Square, Asset Down to Earth, Kollamkudimukal, Mundampalam, Kakkanad",
+     "route": "36",
+     "dist": "24 km",
+     "slab": "20.1 – 30 km",
+     "fee": 91000,
+     "pick": "7:00 am",
+     "drop": "4:25 pm",
+     "ride": "70 min"
+    },
+    {
+     "stop": "37",
+     "area": "Gold Tower Vazhakkala, Padamukal, Palachuvad, Chittethukara, GEMS",
+     "landmark": "Joy Alukkas Gold Tower, Vazhakkala, RDS Rhythm, Padamughal, Kakkanad, SFS Silicon Hills 4 Meadows, Seaport-Airport Road, Kakkanad, Shanti Hill View, CSEZ, Manayath House, Behind TV Station, Asset E Valley, Chittethukara, VB Springs, Seaport-Airport Road, Padamukal",
+     "route": "37",
+     "dist": "8 km",
+     "slab": "5.1 – 10 km",
+     "fee": 61300,
+     "pick": "7:30 am",
+     "drop": "4:40 pm",
+     "ride": "30 min"
+    },
+    {
+     "stop": "38",
+     "area": "Vazhakkala Kunnumpuram, Kakkanad, Nilampathinjamukal, GEMS",
+     "landmark": "National Merryland Villas, Mather Green Hills Apartment, Kunnumpuram, Kakkanad, 8D Infra Aspire, VSNL Road, Kakkanad, The Mateo by Palal, Klangad Road, VSNL Road, Ultima Skymax, Nilampathinjamugal, Confident Capella Main Gate, Info Park Expressway, Heera Vastu Gram Villas",
+     "route": "38",
+     "dist": "9 km",
+     "slab": "5.1 – 10 km",
+     "fee": 61300,
+     "pick": "7:20 am",
+     "drop": "4:00 pm",
+     "ride": "31 min"
+    },
+    {
+     "stop": "39",
+     "area": "High Court, Kaloor, Palrivattom, Kakkanad, GEMS",
+     "landmark": "National Merryland Villas, Mather Green Hills Apartment, Kunnumpuram, Kakkanad, 8D Infra Aspire, VSNL Road, Kakkanad, The Mateo by Palal, Klangad Road, VSNL Road, Ultima Skymax, Nilampathinjamugal, Confident Capella Main Gate, Info Park Expressway, Heera Vastu Gram Villas",
+     "route": "39",
+     "dist": "15 km",
+     "slab": "10.1 – 15 km",
+     "fee": 76200,
+     "pick": "7:05 am",
+     "drop": "4:20 pm",
+     "ride": "40 min"
+    },
+    {
+     "stop": "40",
+     "area": "Edachira, Morakkala, Pinarmunda, GEMS",
+     "landmark": "DD Diamond Valley Apartments, Edachira, Manjooran Rowan Park, Edachira, Garland Primrose, Pallikkara, Peringala, Swasti Homes, Peringala, Claysys Heights Apartments, Hyland Villas, Pinarmundam, Sky City Villa",
+     "route": "40",
+     "dist": "5 km",
+     "slab": "0 – 5 km",
+     "fee": 53700,
+     "pick": "7:25 am",
+     "drop": "3:50 pm",
+     "ride": "30 min"
+    },
+    {
+     "stop": "41",
+     "area": "Kangarappady, Millumpady, Kusumagiri, GEMS",
+     "landmark": "Prestige Hill Side",
+     "route": "41",
+     "dist": "3 km",
+     "slab": "0 – 5 km",
+     "fee": 53700,
+     "pick": "7:40 am",
+     "drop": "3:25 pm",
+     "ride": "30 min"
+    },
+    {
+     "stop": "42",
+     "area": "Edappally, Unichira, Karimakkadu, NGO Quarters, Kakkanad, GemsGEMS",
+     "landmark": "St. Joseph's Vidyabhavan, Edappally, Asset Enlive, VP Marakkar Road, Edappally, Near Subramaniyan Temple, Kalpaka Avenue, Koonamthi (Pickup and Drop: Nice Bakery, Koonamthi Temple Road), Kalpaka Elanza Building, Unichira, Thykkavu Road, 2D Goodearth Elements, Thrikkakkara, Cochin Public School Road, 8B, SFS Grandvilla, Edappally–Pukkattupady Road, Thrikkakkara, SFS Highland Park, Thrikkakkara, Model Engineering College, Karimakkadu, Thrikkakkara, Sophia Emerald Villa, Near Karimakkad Juma Masjid, FifthCrew, MEC Karimakkad (Pickup and Drop: RAW Strength Gym), Kuzhikattu House, Near Kuzhikattu Temple, NGO Quarters, Kakkanad, Veliyathil House, Ambadimoola, Near Noel Vilas, Kakkanad",
+     "route": "42",
+     "dist": "12 km",
+     "slab": "10.1 – 15 km",
+     "fee": 76200,
+     "pick": "7:00 am",
+     "drop": "4:25 pm",
+     "ride": "60 min"
+    },
+    {
+     "stop": "43",
+     "area": "Highcourt, kaloor, Palalrivattom, Kakkakanad, GEMS",
+     "landmark": "National Kingdom Apartments, Palarivattom, Skyline Opus Apartments, Mammangalam, Sunny Estate, Mammangalam, Edappally, 68, Nerrwa, Vellayikodathu, Koduvathra Road, Padivattom (Near Arippa Hotel, Edappally), Infra Splendour, Edappally, Surabhi Road, Palarivattom, Valiyapadam Road, Near Anjumana Temple, Al Bhusthan Juma Masjid, Unichira, ABAD Oasis, Edappally–Pukkattupady Road, Unichira, Judgemukku, Thrikkakkara, Near Cardinal School, Noel Poetry, Mavelipuram, Thrikkakkara, Skyline Spectra, Mavelipuram, Kakkanad",
+     "route": "43",
+     "dist": "12 km",
+     "slab": "10.1 – 15 km",
+     "fee": 76200,
+     "pick": "7:10 am",
+     "drop": "4:05 pm",
+     "ride": "60 min"
+    }
+   ]
   }
  },
  {
@@ -1407,8 +2991,8 @@ window.CAMPUSES = [
   "name": "GEMS Millennium School",
   "short": "GMS Varanasi",
   "city": "Varanasi",
-  "updated": "31 Oct 2026",
-  "board": "CBSE",
+  "updated": "4 Nov 2026",
+  "board": "CBSE and IB",
   "grades": "Nursery to Grade 12",
   "keyNotes": [
    "No hostel facility at any GEMS campus. Day school only."
@@ -1417,77 +3001,250 @@ window.CAMPUSES = [
    {
     "grade": "Nursery",
     "tuition": 98340,
-    "max": 40
+    "max": 40,
+    "timings": "9:30 am – 1:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Junior KG",
     "tuition": 98340,
-    "max": 40
+    "max": 40,
+    "timings": "9:30 am – 1:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Senior KG",
     "tuition": 98340,
-    "max": 40
+    "max": 40,
+    "timings": "9:30 am – 1:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 1",
     "tuition": 100128,
-    "max": 40
+    "max": 40,
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 2",
     "tuition": 100128,
-    "max": 40
+    "max": 40,
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 3",
     "tuition": 100128,
-    "max": 40
+    "max": 40,
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 4",
     "tuition": 100128,
-    "max": 40
+    "max": 40,
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 5",
     "tuition": 113098,
-    "max": 40
+    "max": 40,
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 6",
     "tuition": 113098,
-    "max": 40
+    "max": 40,
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 7",
     "tuition": 113098,
-    "max": 40
+    "max": 40,
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 8",
     "tuition": 113098,
-    "max": 40
+    "max": 40,
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 9",
     "tuition": 113098,
-    "max": 40
+    "max": 40,
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 10",
     "tuition": 113098,
-    "max": 40
+    "max": 40,
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "CBSE examination fee": {
+      "cell": "3,000",
+      "max": 3000
+     }
+    }
    },
    {
     "grade": "Grade 11",
     "tuition": 125664,
-    "max": 40
+    "max": 40,
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 12",
     "tuition": 125664,
-    "max": 40
+    "max": 40,
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "CBSE examination fee": {
+      "cell": "3,000",
+      "max": 3000
+     }
+    }
    }
   ],
   "applicationFee": 1000,
@@ -1512,89 +3269,187 @@ window.CAMPUSES = [
   "transport": [
    [
     "0 – 1 km",
-    null
+    21600
    ],
    [
     "1 – 3 km",
-    null
+    21600
    ],
    [
     "3 – 5 km",
-    null
+    21600
    ],
    [
-    "5 – 8 km",
-    null
+    "5 – 10 km",
+    31800
    ],
    [
-    "8 km and above",
-    null
+    "11 – 20 km",
+    34800
+   ],
+   [
+    "21 – 25 km",
+    39000
+   ],
+   [
+    "25 km +",
+    48600
+   ],
+   [
+    "35 km +",
+    54000
    ]
   ],
   "bus": [
    [
     "Bus type",
-    null
+    "AC"
    ],
    [
     "Attendant",
-    null
+    "Yes"
    ],
    [
     "GPS tracking",
-    null
+    "Yes"
    ],
    [
     "CCTV in bus",
-    null
+    "Yes"
    ]
   ],
   "facilities": [
    [
     "Labs and learning",
-    []
+    [
+     "Library",
+     "Montessori lab",
+     "Discovery lab",
+     "Innovation lab",
+     "Science lab",
+     "Physics lab",
+     "Chemistry lab",
+     "Biology lab",
+     "ICT",
+     "Math lab",
+     "Eurisko Lab",
+     "Badminton"
+    ]
    ],
    [
     "Performing arts",
-    []
+    [
+     "Drama theatre",
+     "Music room",
+     "Dance room",
+     "Media lab"
+    ]
    ],
    [
     "Life skills",
-    []
+    [
+     "Art room"
+    ]
    ],
    [
     "Indoor sports",
-    []
+    [
+     "Psycho motor gym",
+     "Boxing",
+     "Martial arts",
+     "Yoga",
+     "Table tennis"
+    ]
    ],
    [
     "Outdoor sports",
-    []
+    [
+     "Football",
+     "Basketball",
+     "Cricket",
+     "Volleyball",
+     "Swimming",
+     "Throwball"
+    ]
    ],
    [
     "Campus and safety",
-    []
+    [
+     "CCTV",
+     "Security patrolling"
+    ]
    ]
   ],
-  "curriculum": null,
+  "curriculum": [
+   {
+    "title": "CBSE subject groups · Grades 11 and 12",
+    "note": "As listed by the school. Final choices depend on what the school offers and CBSE rules.",
+    "groups": [
+     [
+      "Group 1",
+      "Non-medical",
+      "English with PCM and one optional Eco/CS/PE/PSY"
+     ],
+     [
+      "Group 2",
+      "Medical",
+      "English with Physics chemistry"
+     ],
+     [
+      "Group 3",
+      "Optionals",
+      "Optional 1-maths/app maths/ bio/pe/LS/painting/IP; Optional 2-Eco/CS/PE/PSY"
+     ]
+    ]
+   }
+  ],
   "notShown": {},
   "technology": [
    [
     "Smart boards per classroom",
-    null
+    "Yes"
    ],
    [
     "ERP",
-    null
+    "MCB"
    ],
    [
     "Care Desk",
-    null
+    "Yes"
    ]
   ],
   "tieups": [
    [
     "Cricket",
-    "MS Dhoni Cricket Academy"
+    "Rohit sharma - Crickingdom"
+   ],
+   [
+    "Media Literacy",
+    "Fyule"
+   ],
+   [
+    "E Library",
+    "GetLitt"
+   ],
+   [
+    "International Benchmark Assessment (IBT)",
+    "Acer"
+   ],
+   [
+    "Facial recognition based photo-sharing",
+    "LitApp"
+   ],
+   [
+    "Open Door Learning",
+    "Mastery Assessments and Thinking Classroom"
+   ],
+   [
+    "Jodo Gyan",
+    "Mathematics"
+   ],
+   [
+    "Go Sharpner",
+    "ed-tech and sustainability networking platform"
    ]
   ],
   "routes": {
@@ -1612,82 +3467,242 @@ window.CAMPUSES = [
   "name": "GEMS School of Excellence",
   "short": "GSE Lucknow",
   "city": "Lucknow SCR",
-  "updated": "31 Oct 2026",
+  "updated": "4 Nov 2026",
   "board": "CBSE",
   "grades": "Pre-KG to Grade 10",
   "keyNotes": [
-   "No hostel facility at any GEMS campus. Day school only."
+   "No hostel facility at any GEMS campus. Day school only.",
+   "Book and uniform samples are available at school for parents to see."
   ],
   "feeRows": [
    {
     "grade": "Pre-KG",
     "tuition": 102000,
-    "max": 20
+    "max": 20,
+    "ratio": "20:1",
+    "timings": "9:30 am – 1:30 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Nursery",
     "tuition": 102000,
-    "max": 30
+    "max": 30,
+    "ratio": "30:1",
+    "timings": "9:30 am – 1:30 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Junior KG",
     "tuition": 102000,
-    "max": 30
+    "max": 30,
+    "ratio": "30:1",
+    "timings": "9:30 am – 1:30 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Senior KG",
     "tuition": 102000,
-    "max": 30
+    "max": 30,
+    "ratio": "30:1",
+    "timings": "9:30 am – 1:30 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 1",
     "tuition": 113000,
-    "max": 30
+    "max": 30,
+    "ratio": "30:1",
+    "timings": "8:30 am – 3:15 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 2",
     "tuition": 113000,
-    "max": 30
+    "max": 30,
+    "ratio": "30:1",
+    "timings": "8:30 am – 3:15 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 3",
     "tuition": 113000,
-    "max": 30
+    "max": 30,
+    "ratio": "30:1",
+    "timings": "8:30 am – 3:15 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 4",
     "tuition": 113000,
-    "max": 35
+    "max": 35,
+    "ratio": "35:1",
+    "timings": "8:30 am – 3:15 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 5",
     "tuition": 113000,
-    "max": 35
+    "max": 35,
+    "ratio": "35:1",
+    "timings": "8:30 am – 3:15 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 6",
     "tuition": 113000,
-    "max": 35
+    "max": 35,
+    "ratio": "35:1",
+    "timings": "8:30 am – 3:15 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 7",
     "tuition": 113000,
-    "max": 35
+    "max": 35,
+    "ratio": "35:1",
+    "timings": "8:30 am – 3:15 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 8",
     "tuition": 113000,
-    "max": 35
+    "max": 35,
+    "ratio": "35:1",
+    "timings": "8:30 am – 3:15 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 9",
     "tuition": 124000,
-    "max": 35
+    "max": 35,
+    "ratio": "35:1",
+    "timings": "8:30 am – 3:15 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 10",
     "tuition": 124000,
-    "max": 35
+    "max": 35,
+    "ratio": "35:1",
+    "timings": "8:30 am – 3:15 pm",
+    "ex": {}
    }
   ],
   "applicationFee": 2000,
@@ -1712,41 +3727,41 @@ window.CAMPUSES = [
   "transport": [
    [
     "0 – 1 km",
-    null
+    33600
    ],
    [
     "1 – 3 km",
-    null
+    33600
    ],
    [
     "3 – 5 km",
-    null
+    33600
    ],
    [
     "5 – 8 km",
-    null
+    33600
    ],
    [
     "8 km and above",
-    null
+    42000
    ]
   ],
   "bus": [
    [
     "Bus type",
-    null
+    "AC"
    ],
    [
     "Attendant",
-    null
+    "Yes"
    ],
    [
     "GPS tracking",
-    null
+    "Yes"
    ],
    [
     "CCTV in bus",
-    null
+    "Yes"
    ]
   ],
   "facilities": [
@@ -1757,35 +3772,39 @@ window.CAMPUSES = [
      "Montessori Lab",
      "Eurisko Discovery Lab",
      "Composite Science Lab",
-     "ICT Lab",
-     "Atelier",
-     "Robotics Lab",
+     "Atelier lab",
+     "Innovation & Robotics Lab",
      "Math Lab",
-     "Language Lab",
-     "Fyule Lab"
+     "Fyule Lab",
+     "ICT Lab"
     ]
    ],
    [
     "Performing arts",
     [
-     "2 Music Room",
-     "Dance Room"
+     "2 Music Rooms",
+     "Dance room"
     ]
    ],
    [
     "Life skills",
-    []
+    [
+     "Kaushal Bodh",
+     "Fair Trade",
+     "Financial Literacy",
+     "Coding & Design Thinking",
+     "Social Emotional Learning",
+     "GEMS own life skills curriculum"
+    ]
    ],
    [
     "Indoor sports",
     [
-     "Indoor Sports Room",
-     "Skating Rink",
-     "Badminton",
      "Table Tennis",
-     "Martial Arts",
      "Chess",
-     "Carrom"
+     "Carrom",
+     "Darts",
+     "Ludo"
     ]
    ],
    [
@@ -1794,12 +3813,19 @@ window.CAMPUSES = [
      "Football Court",
      "Basketball Court",
      "Net Cricket",
-     "Athletics Track"
+     "Athletics Track",
+     "Martial Arts",
+     "Skating Rink",
+     "Outdoor Traffic Park & Swing Area"
     ]
    ],
    [
     "Campus and safety",
-    []
+    [
+     "Green Belt",
+     "CCTV Camera",
+     "Security Male & Female Guards"
+    ]
    ]
   ],
   "curriculum": null,
@@ -1807,18 +3833,47 @@ window.CAMPUSES = [
   "technology": [
    [
     "Smart boards per classroom",
-    null
+    "Yes"
    ],
    [
     "ERP",
-    null
+    "Yes"
    ],
    [
     "Care Desk",
-    null
+    "Yes"
    ]
   ],
-  "tieups": [],
+  "tieups": [
+   [
+    "Music",
+    "Furtados"
+   ],
+   [
+    "Media Literacy",
+    "Fyule"
+   ],
+   [
+    "E Library",
+    "GetLitt"
+   ],
+   [
+    "E Library",
+    "Britannica"
+   ],
+   [
+    "Photo Sharing Platform",
+    "LitApp"
+   ],
+   [
+    "Infirmary",
+    "Address Health"
+   ],
+   [
+    "International Benchmark Assessment",
+    "Acer IBT"
+   ]
+  ],
   "routes": {
    "stops": null,
    "routes": 15,
@@ -2015,92 +4070,255 @@ window.CAMPUSES = [
   "name": "GEMS School of Excellence",
   "short": "GSE Jodhpur",
   "city": "Jodhpur",
-  "updated": "31 Oct 2026",
+  "updated": "4 Nov 2026",
   "board": "CBSE",
-  "grades": "Pre-KG to Grade 12",
+  "grades": "Pre-KG to Grade 10",
   "keyNotes": [
-   "No hostel facility at any GEMS campus. Day school only."
+   "No hostel facility at any GEMS campus. Day school only.",
+   "Book and uniform samples are available at school for parents to see."
   ],
   "feeRows": [
    {
     "grade": "Pre-KG",
     "tuition": 81000,
-    "max": 30
+    "max": 30,
+    "ratio": "15:1",
+    "timings": "9:30 am – 1:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Nursery",
     "tuition": 81000,
-    "max": 30
+    "max": 30,
+    "ratio": "15:1",
+    "timings": "9:30 am – 1:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Junior KG",
     "tuition": 81000,
-    "max": 30
+    "max": 30,
+    "ratio": "15:1",
+    "timings": "9:30 am – 1:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Senior KG",
     "tuition": 81000,
-    "max": 30
+    "max": 30,
+    "ratio": "15:1",
+    "timings": "9:30 am – 1:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 1",
     "tuition": 93000,
-    "max": 30
+    "max": 30,
+    "ratio": "15:1",
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 2",
     "tuition": 93000,
-    "max": 30
+    "max": 30,
+    "ratio": "30:1",
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 3",
     "tuition": 93000,
-    "max": 30
+    "max": 30,
+    "ratio": "30:1",
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 4",
     "tuition": 93000,
-    "max": 30
+    "max": 30,
+    "ratio": "30:1",
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 5",
     "tuition": 93000,
-    "max": 30
+    "max": 30,
+    "ratio": "30:1",
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 6",
     "tuition": 107000,
-    "max": 30
+    "max": 30,
+    "ratio": "30:1",
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 7",
     "tuition": 107000,
-    "max": 30
+    "max": 30,
+    "ratio": "30:1",
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 8",
     "tuition": 107000,
-    "max": 30
+    "max": 30,
+    "ratio": "30:1",
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 9",
     "tuition": 107000,
-    "max": 30
+    "max": 30,
+    "ratio": "30:1",
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 10",
     "tuition": 107000,
-    "max": 30
-   },
-   {
-    "grade": "Grade 11",
-    "tuition": 129000,
-    "max": 30
-   },
-   {
-    "grade": "Grade 12",
-    "tuition": 129000,
-    "max": 30
+    "max": 30,
+    "ratio": "30:1",
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "CBSE examination fee": {
+      "cell": "3,000",
+      "max": 3000
+     }
+    }
    }
   ],
   "applicationFee": 2000,
@@ -2147,19 +4365,19 @@ window.CAMPUSES = [
   "bus": [
    [
     "Bus type",
-    null
+    "AC"
    ],
    [
     "Attendant",
-    null
+    "Yes"
    ],
    [
     "GPS tracking",
-    null
+    "Yes"
    ],
    [
     "CCTV in bus",
-    null
+    "Yes"
    ]
   ],
   "facilities": [
@@ -2216,18 +4434,47 @@ window.CAMPUSES = [
   "technology": [
    [
     "Smart boards per classroom",
-    null
+    "Yes"
    ],
    [
     "ERP",
-    null
+    "MCB"
    ],
    [
     "Care Desk",
-    null
+    "Yes"
    ]
   ],
-  "tieups": [],
+  "tieups": [
+   [
+    "Music",
+    "Torrins"
+   ],
+   [
+    "Media Literacy",
+    "Fyule"
+   ],
+   [
+    "E Library",
+    "GetLitt"
+   ],
+   [
+    "E Library",
+    "Britannica"
+   ],
+   [
+    "Photo Sharing Platform",
+    "LitApp"
+   ],
+   [
+    "Infirmary",
+    "Address Health"
+   ],
+   [
+    "International Benchmark Assessment",
+    "Acer IBT"
+   ]
+  ],
   "routes": {
    "stops": null,
    "routes": 6,
@@ -2316,7 +4563,7 @@ window.CAMPUSES = [
   "name": "GEMS Modern Academy",
   "short": "GMA Kochi",
   "city": "Kochi",
-  "updated": "31 Oct 2026",
+  "updated": "4 Nov 2026",
   "board": "IB and Cambridge",
   "grades": "Nursery to Grade 12",
   "keyNotes": [
@@ -2325,138 +4572,178 @@ window.CAMPUSES = [
   "feeRows": [
    {
     "grade": "Nursery (IB)",
-    "tuition": 183000,
+    "max": 20,
+    "ratio": "15:1",
+    "timings": "8:30 am – 12:30 pm",
     "annual": 25000,
-    "max": 20
+    "ex": {}
    },
    {
     "grade": "Junior KG (IB)",
-    "tuition": 183000,
+    "max": 18,
+    "ratio": "15:1",
+    "timings": "8:30 am – 12:30 pm",
     "annual": 25000,
-    "max": 18
+    "ex": {}
    },
    {
     "grade": "Senior KG (IB)",
-    "tuition": 191030,
+    "max": 25,
+    "ratio": "15:1",
+    "timings": "8:30 am – 12:30 pm",
     "annual": 25000,
-    "max": 25
+    "ex": {}
    },
    {
     "grade": "Grade 1 (IB)",
-    "tuition": 204140,
+    "max": 30,
+    "ratio": "15:1",
+    "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "max": 30
+    "ex": {}
    },
    {
     "grade": "Grade 2 (IB)",
-    "tuition": 213500,
+    "max": 30,
+    "ratio": "15:1",
+    "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "max": 30
+    "ex": {}
    },
    {
     "grade": "Grade 3 (IB)",
-    "tuition": 228020,
+    "max": 30,
+    "ratio": "15:1",
+    "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "max": 30
+    "ex": {}
    },
    {
     "grade": "Grade 4 (IB)",
-    "tuition": 228020,
+    "max": 30,
+    "ratio": "15:1",
+    "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "max": 30
+    "ex": {}
    },
    {
     "grade": "Grade 5 (IB)",
-    "tuition": 228020,
+    "max": 30,
+    "ratio": "15:1",
+    "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "max": 30
+    "ex": {}
    },
    {
     "grade": "Grade 6 (IB)",
-    "tuition": 371000,
+    "max": 20,
+    "ratio": "30:1",
+    "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "max": 20
+    "ex": {}
    },
    {
     "grade": "Grade 7 (IB)",
-    "tuition": 371000,
+    "max": 20,
+    "ratio": "30:1",
+    "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "max": 20
+    "ex": {}
    },
    {
     "grade": "Grade 8 (IB)",
-    "tuition": 371000,
+    "max": 20,
+    "ratio": "30:1",
+    "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "max": 20
+    "ex": {}
    },
    {
     "grade": "Grade 9 (IB)",
-    "tuition": 386900,
+    "max": 20,
+    "ratio": "30:1",
+    "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "max": 20
+    "ex": {}
    },
    {
     "grade": "Grade 10 (IB)",
-    "tuition": 386900,
+    "max": 29,
+    "ratio": "30:1",
+    "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "max": 29
+    "ex": {}
    },
    {
     "grade": "Grade 11 (IB)",
-    "tuition": 424000,
-    "annual": 25000,
-    "max": 20
+    "max": 20,
+    "timings": "8:30 am – 3:00 pm",
+    "ex": {}
    },
    {
     "grade": "Grade 12 (IB)",
-    "tuition": 424000,
-    "annual": 25000,
-    "max": 20
+    "max": 20,
+    "timings": "8:30 am – 3:00 pm",
+    "ex": {}
    },
    {
     "grade": "Grade 6 (Cambridge)",
-    "tuition": 244000,
+    "max": 30,
+    "ratio": "30:1",
+    "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "max": 30
+    "ex": {}
    },
    {
     "grade": "Grade 7 (Cambridge)",
-    "tuition": 244000,
+    "max": 30,
+    "ratio": "30:1",
+    "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "max": 30
+    "ex": {}
    },
    {
     "grade": "Grade 8 (Cambridge)",
-    "tuition": 244000,
+    "max": 30,
+    "ratio": "30:1",
+    "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "max": 30
+    "ex": {}
    },
    {
     "grade": "Grade 9 (Cambridge)",
-    "tuition": 261420,
+    "max": 20,
+    "ratio": "30:1",
+    "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "max": 20
+    "ex": {}
    },
    {
     "grade": "Grade 10 (Cambridge)",
-    "tuition": 261420,
+    "max": 29,
+    "ratio": "30:1",
+    "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "max": 29
+    "ex": {}
    },
    {
     "grade": "Grade 11 (Cambridge)",
-    "tuition": 290470,
+    "max": 20,
+    "ratio": "30:1",
+    "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "max": 20
+    "ex": {}
    },
    {
     "grade": "Grade 12 (Cambridge)",
-    "tuition": 290470,
+    "max": 20,
+    "ratio": "30:1",
+    "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "max": 20
+    "ex": {}
    }
   ],
-  "applicationFee": 10000,
+  "applicationFee": 2000,
   "admissionFee": 30000,
   "extraFees": [
    {
@@ -2482,42 +4769,46 @@ window.CAMPUSES = [
   ],
   "transport": [
    [
-    "0 – 1 km",
-    null
+    "0 – 5 km",
+    43700
    ],
    [
-    "1 – 3 km",
-    null
+    "5.1 – 10 km",
+    61300
    ],
    [
-    "3 – 5 km",
-    null
+    "10.1 – 15 km",
+    76200
    ],
    [
-    "5 – 8 km",
-    null
+    "15.1 – 20 km",
+    84400
    ],
    [
-    "8 km and above",
-    null
+    "20.1 – 30 km",
+    91000
+   ],
+   [
+    "Above 30 km",
+    100800
    ]
   ],
   "bus": [
    [
     "Bus type",
-    null
+    "AC"
    ],
    [
     "Attendant",
-    null
+    "Yes"
    ],
    [
     "GPS tracking",
-    null
+    "Yes"
    ],
    [
     "CCTV in bus",
-    null
+    "No"
    ]
   ],
   "facilities": [
@@ -2573,534 +4864,617 @@ window.CAMPUSES = [
     ]
    ]
   ],
-  "curriculum": null,
+  "curriculum": [
+   {
+    "title": "Cambridge IGCSE subject groups · Grades 9 and 10",
+    "note": "As listed by the school. Final choices depend on what the school offers.",
+    "groups": [
+     [
+      "Group 1",
+      "Language & Literature",
+      "French, Hindi, English, English - 1st, English - 2nd Lang"
+     ],
+     [
+      "Group 2",
+      "Humanities & Social Sciences",
+      "Economics, History, Geography"
+     ],
+     [
+      "Group 3",
+      "Sciences",
+      "Biology, Chemistry, Physics, Envt Management"
+     ],
+     [
+      "Group 5",
+      "Creative & Professional",
+      "Accounting, Business, Art & Design, Information & Communication Technology, Enterprise, Travel & Tourism"
+     ]
+    ]
+   },
+   {
+    "title": "Cambridge AS & A Level subject groups · Grades 11 and 12",
+    "note": "As listed by the school. Final choices depend on what the school offers.",
+    "groups": [
+     [
+      "Group 1",
+      "Language & Literature",
+      "English Literature, English Literature & Language & English Language"
+     ],
+     [
+      "Group 2",
+      "Humanities & Social Sciences",
+      "Economics, History, Geography, Psychology, English General Paper"
+     ],
+     [
+      "Group 3",
+      "Sciences",
+      "Biology, Chemistry, Physics"
+     ],
+     [
+      "Group 4",
+      "Mathematics",
+      "Mathematics & Mathematics Further"
+     ],
+     [
+      "Group 5",
+      "Creative & Professional",
+      "Accounting, Business, Art & Design, Information & Communication Technology, Enterprise, Travel & Tourism"
+     ]
+    ]
+   }
+  ],
   "notShown": {
    "prospectusFee": 2000
   },
   "technology": [
    [
     "Smart boards per classroom",
-    null
+    "Yes"
    ],
    [
     "ERP",
-    null
+    "Entab- Admissions & Finance & Managebac- Academics"
    ],
    [
     "Care Desk",
     null
    ]
   ],
-  "tieups": [],
+  "tieups": [
+   [
+    "Football",
+    "LiveinSports"
+   ],
+   [
+    "Football",
+    "Sportshood"
+   ],
+   [
+    "Badminton",
+    "LiveinSports"
+   ],
+   [
+    "Chess",
+    "Individual Coach - Mr.Ummer"
+   ],
+   [
+    "Table Tennis",
+    "Individual Coach - Mr.Rajesh"
+   ],
+   [
+    "Skating",
+    "Individual Coach - Mr.Anil"
+   ]
+  ],
   "routes": {
-   "stops": null,
+   "stops": 500,
    "routes": 42,
-   "reach": null,
-   "leave": null,
+   "reach": "8:15 am",
+   "leave": "12:30 pm and 3:00 pm",
    "rows": [
     {
-     "route": "1",
+     "stop": "1",
      "area": "Fort Kochi, Thoppumpady, Thevara, Petta, Irumpanam, GEMS",
      "landmark": "Near Cochin College, Near Nazareth Church, Oh My Cake Lane, Thoppumpady, Darragh Residency, Pandit Kuruppan Road, Thevara, Professors Enclave, Santhi Nagar Road, Thevara, Revera Flat, Thevara Ferry, Near Chakolas Waterscapes, Chakolas Habitat, Thevara Ferry Road, Willingdon Enclave, Chakolas Habitat, Thevara Ferry Road, Chakolas Waterscapes, Thevara Ferry Road, Thevara, St. Madien Point, Near Angadi Super Market, Peeyush, Gandhi Square, Poonithura, North Fort Garden, Vadakkekotta, Choice Paradise, Thrippunithura, NSD Trumpf, Irumpanam, Near Choice Tower, Tower 2, Asten Rajagiri Campus Court, Rajagiri Valley, Kakkanad, SFS Sunnyvale, Infopark Expressway",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "1",
+     "dist": "26 km",
+     "slab": "20.1 – 30 km",
+     "fee": 91000,
      "pick": "6:45 am",
      "drop": "4:45 pm",
-     "ride": null,
-     "stop": 1
+     "ride": "90 min"
     },
     {
-     "route": "2",
+     "stop": "2",
      "area": "Koovappady, Perumbavoor, Chembaraky, Pukkattupady, Thevakkal, Edachira, GEMS",
      "landmark": "Harihara Villas, Koovappady, Perumbavoor, Poopani Road, Perumbavoor, Ponjassery MH Kavala, Kuzhivelipady, Mavinchuvadu, Near Peekay Market, Near Cloud Nest Villa, Thrikkakara North, Travancore Opus Highway, Puthiya Road, Vennala, Kansterra Villa, AP Varkey Road, Thengod, Sunshine Villas, Edachira",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "2",
+     "dist": "28 km",
+     "slab": "20.1 – 30 km",
+     "fee": 91000,
      "pick": "6:55 am",
      "drop": "4:30 pm",
-     "ride": null,
-     "stop": 2
+     "ride": "90 min"
     },
     {
-     "route": "3",
+     "stop": "3",
      "area": "Chendamangalam, Perumpadanna, Varappuzha, Edappilly, Unichira, Kakkanadu, GEMS",
      "landmark": "FRUITBAE, Kodungallur, Near Kottapuram Bridge, Chendamangalam, North Paravur, Travancore Opus Highway, Puthiya Road, Vennala, Athani Thonniyakavu, North Paravur, Cheriyapilly, North Paravur, S.N.D.P. Junction, Varapuzha, Skyline Orion Park, Netaji Nagar, Edappally – 682024",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "3",
+     "dist": "40 km",
+     "slab": "Above 30 km",
+     "fee": 100800,
      "pick": "6:35 am",
      "drop": "5:00 pm",
-     "ride": null,
-     "stop": 3
+     "ride": "120 min"
     },
     {
-     "route": "4",
+     "stop": "4",
      "area": "U.C.College, Parvoorkavala, Muttam, Unichira, Kakkanadu, GEMS",
      "landmark": "Oxonia River Mansion, West Veliyathunadu, Aluva, 1-C, R M Homes Saphir, UC College, Aluva, Livit Harmony, Chamaparambil Road, Jyothi Nagar, U.C. P.O., Aluva, KRA-74, Kadeppilly Road, U.C. College P.O., Aluva, Couch Luxe Villa, Kollamkudimugal, Kakkanad, VT Trine Apartment, Kollamkudimugal, L & E Salon, Thrikkakara Top Road, Kollamkudimugal, Sophia Celestia, Kollamkudimugal, Noel Serenia, Kollamkudimugal, Confident Whiteberry, Kakkanad",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "4",
+     "dist": "25 km",
+     "slab": "20.1 – 30 km",
+     "fee": 91000,
      "pick": "6:45 am",
      "drop": "4:30 pm",
-     "ride": null,
-     "stop": 4
+     "ride": "90 min"
     },
     {
-     "route": "5",
+     "stop": "5",
      "area": "Kaloor, Judges Avanue, Lissie Hospital, Kathrikkadav, Palarivattam, Vazhakkala, Kakkanad, GEMS",
      "landmark": "Shanthi Kavadom, Public Crematorium, Pachalam, ANRA 48 A, Alungal (H), Kanmani Road, Kaloor, Empire Heights, Perandoor Road, J M Manor, Sastha Temple Road, Kaloor, Dream Flower Avalon Apartment, Shenoy Road, Travancore Opus Highway, Puthiya Road, Vennala, Cheryl Enclave, Spices Street, North End, Kaloor, DD West Wind Apartment, Kathrikadavu, Jain Charing Cross, Kathrikadavu Junction, Kent Palm Grove, Stadium Link Road, Palarivattom, Newland Heights, TD Sannidhi Road, Thammanam, Pisharath House, Chammanikodath Road, Chiraparambil (H), Sreekala Bay Lane, Sreekala Road, Vennala",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "5",
+     "dist": "14 km",
+     "slab": "10.1 – 15 km",
+     "fee": 76200,
      "pick": "6:50 am",
      "drop": "4:30 pm",
-     "ride": null,
-     "stop": 5
+     "ride": "90 min"
     },
     {
-     "route": "6",
+     "stop": "6",
      "area": "Poothotta, Puthenkavu, Vadakkekotta, Eroor, Vennala, Thuthiyoor, GEMS",
      "landmark": "Puthiyedathuparambil (H), Kureekadu P.O., Puthiyakavu, 7B, Royal Dream, Sanskrit College Road, Thrippunithura, Veegaland Kingsfort, Eroor Overbridge, Travancore Opus Highway, Puthiya Road, Vennala, Kent Illam, Vennala, High School Road, Vennala, The Lantern, Vennala–Palachode Road, Dr. Ambedkar Road, Vennala, Komaroth House, Ambedkar Road, Vennala, Near St. Jude Thaddeus Chapel, Komaroth House, Ambedkar Road, Vennala, Srambikkal House, Near Mariyamman Kovil, Kattadiyil Lane, Nadakkavu, Thrippunithura",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "6",
+     "dist": "15 km",
+     "slab": "10.1 – 15 km",
+     "fee": 76200,
      "pick": "6:55 am",
      "drop": "4:20 pm",
-     "ride": null,
-     "stop": 6
+     "ride": "90 min"
     },
     {
-     "route": "7",
+     "stop": "7",
      "area": "Pachalam, Ayyappankavu, Kompara, Kacherippady, North ESI Hospital, Palarivattom, Padivattam, Padamugal, Mavelipuram, Kakkanad, GEMS",
      "landmark": "Jewel Bluebell Tower, Kannachan Thodu Road, RRA 001, Old Railway Station Road, Kombara Junction, Next to Alijan Laundry Firm, Old Railway Station Road, Kacheripady, Near Rosary Supermarket, Link Heritage, Kacheripady, Ernakulam, Noorjehan Manzil, North Railway Station, Crash Road, Vazhakkala, Jainraj Sonata, Kunnumpuram, Kakkanad, Thekettu House, Pazhappura 2nd Cross Road",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "7",
+     "dist": "17 km",
+     "slab": "15.1 – 20 km",
+     "fee": 84400,
      "pick": "7:00 am",
      "drop": "4:30 pm",
-     "ride": null,
-     "stop": 7
+     "ride": "75 min"
     },
     {
-     "route": "8",
+     "stop": "8",
      "area": "Chowara, Thettaly, Thuruth, Asokapuram, Bank Jn Aluva, Kalamassery, Vallathol, Mavelipuram, GEMS",
      "landmark": "Tettali Bus Stop, Chowara, Thopil House, Thuruth, Aluva, AJL Serenewoods, Canal Road, Federal Bank Junction, Aluva, Thaikkattukara, Muttam, Menon Bari Complex, North Kalamassery, Noel Fragranz, Thrikkakara, Cochin – 682021, Bava Aurora Heights, Vallathole, Noel Ecoden, Vallatholppadi Junction, Thrikkakara, Noel Ecotat, Vallathol Junction, Seaport–Airport Road, Abad Green Terrace, Malepally Road, Opp. B.M.C., Seaport–Airport Road",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "8",
+     "dist": "23 km",
+     "slab": "20.1 – 30 km",
+     "fee": 90000,
      "pick": "6:40 am",
      "drop": "4:35 pm",
-     "ride": null,
-     "stop": 8
+     "ride": "90 min"
     },
     {
-     "route": "9",
+     "stop": "9",
      "area": "Elamakkara, Changampuzha Park, Edappally, Toll Jn, Thrikkakkara, GEMS",
      "landmark": "Sanjeevani Apartment, Thannikkal, Perandoor Road, Padam Stop, Elamakara, Opp. Dream Flower Celesta, Aiswarya Lane, Punnakkal, Travancore Opus Highway, Puthiya Road, Vennala, Skyline Eminence, Elamakara, Good Earth Melange, Menon Parambu Road, Changampuzha, Residents' Lane, Devkulangara, KLRA 26, Thenayath Parambil (H), Kannanthodath No. 453, Near YES Bank, Admiral Towers, Thrikkakara",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "9",
+     "dist": "15 km",
+     "slab": "10.1 – 15 km",
+     "fee": 76200,
      "pick": "7:00 am",
      "drop": "4:40 pm",
-     "ride": null,
-     "stop": 9
+     "ride": "75 min"
     },
     {
-     "route": "10",
+     "stop": "10",
      "area": "Ramamangalam, Thiruvaniyoor, Peringala, Kaninad, Karimukal, Brahamapuram, GEMS",
      "landmark": "Aronnil House, Ramamangalam, Kandakottu House, Ramamangalam, Vattakattu House, Nechoor, Maneed, Kudilil House, Thiruvaniyoor, Payyadakuzhi House, Kaninad, Palayamkottil (H), Peringala, Peringala P.O., Ernakulam, Shalome Residency, Karimugal, Near Harimattom Temple, Ambalmedu, Kent Mahal, Karimukal Road, Brahmapuram",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "10",
+     "dist": "19 km",
+     "slab": "15.1 – 20 km",
+     "fee": 84400,
      "pick": "6:50 am",
      "drop": "4:55 pm",
-     "ride": null,
-     "stop": 10
+     "ride": "90 min"
     },
     {
-     "route": "11",
+     "stop": "11",
      "area": "Thammanam, Chakkaraparambu, Vennala, Alinchuvad, Palachuvad, Chittethukara, GEMS",
      "landmark": "St. Vincent De Paul Convent Road, Palarivattom, PRRA 41 A, Puthiya Road, Thammanam, Chaithram, Pulluparambu Road, SFS Boulevard, Puthiya Road, Vennala, Travancore Opus Highway, Puthiya Road, Vennala, Willingdon Boutique Villas, Vennala, Kent Nalukettu Villa, Vennala, Galaxy Ebony Groove, Vennala, Trinity New Castle, Vennala, National Empress Garden, Vennala, Yasoram Tejus Apartment, Vennala",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "11",
+     "dist": "11 km",
+     "slab": "10.1 – 15 km",
+     "fee": 76200,
      "pick": "7:00 am",
      "drop": "4:30 pm",
-     "ride": null,
-     "stop": 11
+     "ride": "75 min"
     },
     {
-     "route": "12",
+     "stop": "12",
      "area": "Aroor, Kannadikkadu, Thyakooadam, Vytila Janatha, Palarivattam, Vazhakkala, Eechamukku, GEMS",
      "landmark": "Near Aroor North Mahal, Kumbalam Center, Asset Canvas Flat, KRL Road, Nettoor, Absolute Inland Water Authority, Maradu, Bhavana Road, Near Agavae Beauty, Maradu, DLF Riverside Janatha",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "12",
+     "dist": "25 km",
+     "slab": "20.1 – 30 km",
+     "fee": 90000,
      "pick": "6:40 am",
      "drop": "4:40 pm",
-     "ride": null,
-     "stop": 12
+     "ride": "120 min"
     },
     {
-     "route": "14",
+     "stop": "14",
      "area": "Alangad, Panayikulam, Eloor, Kalamaserry, Manjummal, Cusat, Thrikkakara, GEMS",
      "landmark": "Alangadu Temple, Angadikadavu Road, Malikapedika, Panaikulam Junction, Travancore Opus Highway, Puthiya Road, Vennala, FACT Road, North Kalamassery, Good Earth, Modern Times, Kalamassery, Mangala Luiz Gardens, Kalamassery, Changampuzha Nagar, Kalamassery, University Colony, Kalamassery, Vihara-505, B, 21 University Colony, CUSAT, Kalamassery, CUSAT, Kalamassery, Erriyakkattumoola House, Manopilly Nagar Road",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "14",
+     "dist": "23 km",
+     "slab": "20.1 – 30 km",
+     "fee": 91000,
      "pick": "6:50 am",
      "drop": "4:40 pm",
-     "ride": null,
-     "stop": 13
+     "ride": "90 min"
     },
     {
-     "route": "15",
+     "stop": "15",
      "area": "Olive Kalista, GEMS",
      "landmark": "Olive Kalista",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "15",
+     "dist": "4 km",
+     "slab": "0 – 5 km",
+     "fee": 53700,
      "pick": "7:45 am",
      "drop": "3:30 pm",
-     "ride": null,
-     "stop": 14
+     "ride": "30 min"
     },
     {
-     "route": "16",
+     "stop": "16",
      "area": "Konthuruthy, Kallupalam, Bundroad, Ponnoth temple road, Elamkulam, Vytila, GEMS",
      "landmark": "Chakolas Bayside, Chakola Colony, Thevara, Greha Nakshatra Apartments, Abad Knightbridge, Pandarachira Road, K.P. Vallon Road, Heera Waters Apartment, Chilavannoor, South Ponneth Road End, Chilavannoor, Noel Song, Poneth Temple Road, Kadavanthra, 8-E, Noel Song, Poneth Temple Road, Kadavanthra, Riitham Enclave, Tagore Nagar, Kadavanthra, Jolly Dale, Fathima Church Lane, Elamkulam, Abad Lotus Lake, Chilavannoor Road, Vyttila",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "16",
+     "dist": "19 km",
+     "slab": "15.1 – 20 km",
+     "fee": 84400,
      "pick": "7:00 am",
      "drop": "4:30 pm",
-     "ride": null,
-     "stop": 15
+     "ride": "60 min"
     },
     {
-     "route": "17",
+     "stop": "17",
      "area": "Queens Walkway, Highcourt, Kacherippady, Desabhimany, Stadium, Palarivattam, Vazhakkala, GEMS",
      "landmark": "Prestige Neptunes Courtyard, Queens Walkway, Marina One, Marine Drive, Marina One, Tower F4, Marine Drive, Purva Grandbay, Marine Drive, Abad Bay Pride Towers, Marine Drive, Link Horizon, 2B, Shanmugham Road, Marine Drive, 6-A, Peevees Triton, Marine Drive, Master Coaching, Board Road, Kaloor Stadium",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "17",
+     "dist": "15 km",
+     "slab": "10.1 – 15 km",
+     "fee": 76200,
      "pick": "7:00 am",
      "drop": "4:15 pm",
-     "ride": null,
-     "stop": 16
+     "ride": "60 min"
     },
     {
-     "route": "18",
+     "stop": "18",
      "area": "DLF, Kakkanad, GEMS",
      "landmark": "DLF New Town Heights Kakkanad",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "18",
+     "dist": "5 km",
+     "slab": "0 – 5 km",
+     "fee": 53700,
      "pick": "7:35 am",
      "drop": "3:30 pm",
-     "ride": null,
-     "stop": 17
+     "ride": "45 min"
     },
     {
-     "route": "19",
+     "stop": "19",
      "area": "Cheranalloor, Vishnupuram, Amruta Nagar, Kunnumpram, Edappally, Marotichodu, Kakkanadu, GEMS",
      "landmark": "Edappally – Chilavannoor Toll Junction, Raj Nakshatra Gardens, Cheranallur, Noel Tall Terrace, Cheranallur, Palm Grove, Yaleem Khana Road, Edappally, Confident Pride Apartments, Vattekkunnam, Edappally, Skyline Palmshade, Edappally, Trinity Apartment, Edappally, Mather Silver Lawn Apartments, Marottichodu, Prarthana, Bismi Gardens, Edappally, Krishnakripa Residence, Kariyil Lane",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "19",
+     "dist": "18 km",
+     "slab": "15.1 – 20 km",
+     "fee": 84400,
      "pick": "6:15 am",
      "drop": "4:35 pm",
-     "ride": null,
-     "stop": 18
+     "ride": "120 min"
     },
     {
-     "route": "20",
+     "stop": "20",
      "area": "Palarivattam, Pipeline Rod, Vazhakkala, Desiyamukku, Kakkanad, GEMS",
      "landmark": "V.K. Lane, Vazhakkala, Benedict Road, Vazhakkala, Kent Oak Villa, Vazhakkala, Asset Alpine Oaks, Vazhakkala, Heavenly Asta Villas, Desiyamukku, NGO Quarters, Kakkanad, Kuzhikattu House, Near Kuzhikattu Temple",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "20",
+     "dist": "8 km",
+     "slab": "5.1 – 10 km",
+     "fee": 61300,
      "pick": "7:20 am",
      "drop": "3:40 pm",
-     "ride": null,
-     "stop": 19
+     "ride": "50 min"
     },
     {
-     "route": "21",
+     "stop": "21",
      "area": "Pattimatom, Kitex, Kizhakkambalam, Pallikkara, Ambalapady, Wonderla, Thengod, Manakkakadvu, GEMS",
      "landmark": "Nedumpillil (H), Vengola P.O., Arakkapady, Naalukettu, Kizhakkambalam, Njaralloor, Happy Valley, Erumelikkara, Asten Viveria, Manakkakadavu, Purva Eternity, Athani, Manjoorans Orchid Meadows, Athani, Noel Greenature, Sainik Ashram Road",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "21",
+     "dist": "17 km",
+     "slab": "15.1 – 20 km",
+     "fee": 84400,
      "pick": "6:50 am",
      "drop": "4:25 pm",
-     "ride": null,
-     "stop": 20
+     "ride": "90 min"
     },
     {
-     "route": "22",
+     "stop": "22",
      "area": "Mulamthuruthy, Thiruvankulam, Irumpanam, Chittethukara, Infopark, GEMS",
      "landmark": "The Palm, Near Mulamthuruthy Block Panchayath, Malhar Souhradha Residence, Mamala (KEL Charging Station), F2, Palace Apartment, Water Tank Road, Irumpanam, Kavalackal Building, Kopparambu, Abad Rainbow Retreat, Chakolas Heights, Seaport–Airport Road, Opp. Water Metro, Kakkanad, Mather Highlands, Rajagiri Valley, Mather Leisure Villa, Jewel Homes, Richmond Tower, Rajagiri Valley, Kakkanad, Kochi, Anzera Lavender Apartments, Infopark Expressway",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "22",
+     "dist": "14 km",
+     "slab": "10.1 – 15 km",
+     "fee": 76200,
      "pick": "7:00 am",
      "drop": "4:25 pm",
-     "ride": null,
-     "stop": 21
+     "ride": "60 min"
     },
     {
-     "route": "23",
+     "stop": "23",
      "area": "Kentpalm villas, Kollamkudymukal, Athany Jn, GEMS",
      "landmark": "Kent Palm Villa, Near Athani Junction, Skyline Xylus, Lavanya Nagar",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "23",
+     "dist": "5 km",
+     "slab": "0 – 5 km",
+     "fee": 53700,
      "pick": "7:35 am",
      "drop": "3:40 pm",
-     "ride": null,
-     "stop": 22
+     "ride": "45 min"
     },
     {
-     "route": "24",
+     "stop": "24",
      "area": "Kaloor, Kumaranasan Nagar, Ponnurunny, Vytila, Palarivattam, Vazakkala, Kakkanad, GEMS",
      "landmark": "Veegaland Petunia, Sastha Temple Road, Kaloor, Justice K.M. Mathew Road, S.R.M. Road, Mazhuvanchery Valiyaveetil, Kumaranasan Road, Saranya, Kumaranasan Nagar, Kadavanthra, Plot No. 36, Kumaranasan Nagar, Kadavanthra, Thanzeel Chalet, Kadavanthra, Thanzeel Chalet, Kumaranasan Nagar, Tiknar Petals Apartment, Kumaranasan Nagar, Sayujam, Vrindhavanam, S.C. Bose Road, Elamkulam, Havilah Windchimes, Panorama Enclave, Ponnurunni, Meridian New Castle, Ponnurunni, Kopraparambil House, Subash Chandra Bose Road, Elavakkad (H), MRRA 248, Brothers Road, Vazhakkala, Chembukku Junction, NCC Laurel, Kakkanad, NCC Green Valley, Kakkanad",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "24",
+     "dist": "15 km",
+     "slab": "10.1 – 15 km",
+     "fee": 76200,
      "pick": "6:55 am",
      "drop": "4:20 pm",
-     "ride": null,
-     "stop": 23
+     "ride": "90 min"
     },
     {
-     "route": "25",
+     "stop": "25",
      "area": "Vytila, Chalikkavattam, Palarivattam, Vazhakkala, Padamukal, Palachuvad, Chittethiukara, GEMS",
      "landmark": "Kalpaka Gardens, Pattath Road, Chalikavattom, Capitol Point, Chalikavattom, Plum Flower, Ponnurunni, Promenade Villas, Pavoor Road, Recca Enclave, Palachuvadu, Golden Oak Villa 8, Padamugal, Greenwoods, Indira Junction, Padamugal, Padamugal, Palachuvadu Road, Divine Homes, Adarsha Nagar Road, CSEZ, Thuthiyoor, Asset Petals, CSEZ, Kakkanad",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "25",
+     "dist": "15 km",
+     "slab": "10.1 – 15 km",
+     "fee": 76200,
      "pick": "6:55 am",
      "drop": "4:30 pm",
-     "ride": null,
-     "stop": 24
+     "ride": "90 min"
     },
     {
-     "route": "26",
+     "stop": "26",
      "area": "Panampilly Nagar, Manorama.Jn, Kadavanthara, Javaharnagar, Ponnurunni, Palachuvadu, Kakkanad, GEMS",
      "landmark": "RDS Avenue One, Panampilly Nagar, Near Passport Office, Mather Ivory Heights, Panampilly Nagar, JGT Samrudhi, Jawahar Nagar, Blue Moon Silver Apartment, North Jawahar Nagar, Mather El Castillo, Jawahar Nagar, Vijaya Glimse Main Avenue, Jawahar Nagar, Skyline City Park, Jawahar Nagar, Abad Silver Crest, Jawahar Nagar, Kadavanthra, Aratt Williams Manor, Subash Chandra Bose Road, Ponnurunni, Emerald Residency, Palachuvadu",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "26",
+     "dist": "17 km",
+     "slab": "15.1 – 20 km",
+     "fee": 84400,
      "pick": "7:00 am",
      "drop": "4:20 pm",
-     "ride": null,
-     "stop": 25
+     "ride": "70 min"
     },
     {
-     "route": "27",
+     "stop": "27",
      "area": "Ravipuram, Panampilly nagar, Girinagar, PonnurunnI, Vytila, Thykoodam, Petta, Irumpanam, GEMS",
      "landmark": "Mather Dover Court Apartment, Ravipuram, Link Heights, Panampilly Nagar, Vidya Nagar, Kadavanthra, Kochi, Tony Daniel Homes, Ponneth Temple Road, Silversand Island, Vyttila, Cochin, Abhayam, MRRA-22, Poonithura, Vineyard Villa 51, Behind Choice School, Petro Palace Apartment, Karingachira",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "27",
+     "dist": "18 km",
+     "slab": "15.1 – 20 km",
+     "fee": 84400,
      "pick": "6:50 am",
      "drop": "4:20 pm",
-     "ride": null,
-     "stop": 26
+     "ride": "90 min"
     },
     {
-     "route": "28",
+     "stop": "28",
      "area": "Manjummal, Kunnumpuram, Edappally, Ponnevazhi, Anjumana Temple, Marottichodu, Trikkakkara, GEMS",
      "landmark": "Janatha Road, Manjummel, Sulu Residency, Pattayamchery House, Ambedkar Road, Kunnumpuram, Edappally North, Pone Vazhi Road, Edappally, Jawan Cross Road, Ponekkara, Prasanthi Nagar, Manimala Road, Edappally, Club Junction, Thrikkakara, MIR Green Metropolis, Jade Heights, Ambadimoola, Sinai Tower, Behind Onam Park, Mavelipuram",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "28",
+     "dist": "14 km",
+     "slab": "10.1 – 15 km",
+     "fee": 76200,
      "pick": "7:00 am",
      "drop": "4:20 pm",
-     "ride": null,
-     "stop": 27
+     "ride": "70 min"
     },
     {
-     "route": "29",
+     "stop": "29",
      "area": "Edadachira, Skyline Ivy Leageu, GEMS",
      "landmark": "Skyline IVY League Edachira",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "29",
+     "dist": "5 km",
+     "slab": "0 – 5 km",
+     "fee": 53700,
      "pick": "7:40 am",
      "drop": "3:30 pm",
-     "ride": null,
-     "stop": 28
+     "ride": "35 min"
     },
     {
-     "route": "30",
+     "stop": "30",
      "area": "Convent Jn, Chittoor road, KSRTC Bus Stand, Katrikadavu, Stadium, Palarivattom, Vazhakkala, Kakkanadu, GEMS",
      "landmark": "Market Road, Convent Junction, Skyline Aristocrat, P.T. Usha Road, Opp. Maharajas Ground, Kochi, Anjam Apartment, Iyyattil Junction, Chittoor Road, Vallangattu (H), Veekshanam Road, North Ernakulam, Near Balaji Medical Center, Skyline Imperial Gardens, Stadium Link Road, Kent Hail Garden, Stadium Link Road, Kaloor, Olive Woodstock, Stadium Link Road, Abad Inspirations, Stadium Link Road, Palarivattom, Skyline Epic-128, Stadium Link Road, Palarivattom, Pukalakkattu Thiruvonam (H), Thammanam Road, Palarivattom, Opp. Pandhal Cake Shop, Garden Court Apartments, Alinchuvadu, Veegaland Green Cloud, Vazhakkala, Abad Sunshine Court, Padamughal, SFS Branton Park, Vazhakkala, Casaflora Apartment, Padamughal",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "30",
+     "dist": "17 km",
+     "slab": "15.1 – 20 km",
+     "fee": 84400,
      "pick": "6:50 am",
      "drop": "4:30 pm",
-     "ride": null,
-     "stop": 29
+     "ride": "90 min"
     },
     {
-     "route": "31",
+     "stop": "31",
      "area": "Aluva Choondi, Pukkattupady, Mochamkulam, Thevakkal, Millumpady, Thengodu, Edachira, GEMS",
      "landmark": "Pathiyanthara (H), Pukkattupady, Behind SOS Orphanage, Aluva, Near Fresh and More Supermarket, Ponnakudam Tharavadu, Thevakkal, Grand County, Millumpady Road, Kangarappady, DD Misty Valley, Thengode, Confident Pinnacle, Poo, DD Misty, Cascade Project, Near AKG Road, Edachira, Block 1, Green Vistas Prakriti, Edachira, Kakkanad, Galaxy Cloudspace, Edachira, Kakkanad, Estonia, Olive Courtyard Apartments, Edachira, Kakkanad",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "31",
+     "dist": "17 km",
+     "slab": "15.1 – 20 km",
+     "fee": 84400,
      "pick": "7:00 am",
      "drop": "4:10 pm",
-     "ride": null,
-     "stop": 30
+     "ride": "70 min"
     },
     {
-     "route": "32",
+     "stop": "32",
      "area": "Trinity world, Chittethukara, Infopark Expressway, GEMS",
      "landmark": "Trinity World Chittethukara",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "32",
+     "dist": "5 km",
+     "slab": "0 – 5 km",
+     "fee": 53700,
      "pick": "7:40 am",
      "drop": "3:30 pm",
-     "ride": null,
-     "stop": 31
+     "ride": "35 min"
     },
     {
-     "route": "33",
+     "stop": "33",
      "area": "Kolenchery, Kadayirippu, Pazhamthottam, Pallikkara, Thengode, Athani, GEMS",
      "landmark": "MOSC Medical College Hospital, Kolenchery, Near Govt. HSS, Pazhamthottam, Near Btown Resort, Kakkanad, Pallikara, Spanish Villa, Kumarapuram, Scotlandyard Villas, Kumarapuram, Pallikkara, Villa No. 11, Scotlandyard Villas, Kumarapuram, Pallikkara, Spice Valley, Pallikara, Confident Leo 3, Manakkakadavu, Thengode, Nirvana by Avni Homes, Bible College, Thengode, Garden Valley Villas, Thengode, O2 Zone Apartment, Vikasvani, Thengode, Kochery Apartment, Kochery Lane",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "33",
+     "dist": "18 km",
+     "slab": "15.1 – 20 km",
+     "fee": 84400,
      "pick": "7:00 am",
      "drop": "4:30 pm",
-     "ride": null,
-     "stop": 32
+     "ride": "70 min"
     },
     {
-     "route": "34",
+     "stop": "34",
      "area": "Prestige Hilside Kakkanad, GEMS",
      "landmark": "Prestige Hill Side",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "34",
+     "dist": "4 km",
+     "slab": "0 – 5 km",
+     "fee": 53700,
      "pick": "7:40 am",
      "drop": "3:20 pm",
-     "ride": null,
-     "stop": 33
+     "ride": "30 min"
     },
     {
-     "route": "35",
+     "stop": "35",
      "area": "Elamkunnapuzha, Karthedam, Vallarpadam, Highcourt, Palarivattam, Kakkanadu, GEMS",
      "landmark": "Menachery Manghat H.N., Nayarambalam, Near Mahavishnu Temple, Elakunnapuzha Bus Stop, Karthedam, Malipuram, Yerik Garden Apartments, Sainik Ashram Road, Kusumagiri, Noel Greenature, Sainik Ashram Road",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "35",
+     "dist": "27 km",
+     "slab": "20.1 – 30 km",
+     "fee": 91000,
      "pick": "6:15 am",
      "drop": "4:35 pm",
-     "ride": null,
-     "stop": 34
+     "ride": "90 min"
     },
     {
-     "route": "36",
+     "stop": "36",
      "area": "Aluva, Kalamassery, Kollamkudimughal, Athani, Kaakand, GEMS",
      "landmark": "Kattuparambil (H), Periyar Gardens, GCDA Road, Thottakkattukara, Periyar Gardens, GCDA Road, Thottakkattukara, Asset Bay Apartment, GCDA, Althara Road, Aluva, Prestige Eden Garden, North Kalamassery, ABAD Chancellor, Vallathol, Judgemukku, Kalapurakkal Apartment, Opp. Chittilappilly Square, Asset Down to Earth, Kollamkudimukal, Mundampalam, Kakkanad",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "36",
+     "dist": "24 km",
+     "slab": "20.1 – 30 km",
+     "fee": 91000,
      "pick": "7:00 am",
      "drop": "4:25 pm",
-     "ride": null,
-     "stop": 35
+     "ride": "70 min"
     },
     {
-     "route": "37",
+     "stop": "37",
      "area": "Gold Tower Vazhakkala, Padamukal, Palachuvad, Chittethukara, GEMS",
      "landmark": "Joy Alukkas Gold Tower, Vazhakkala, RDS Rhythm, Padamughal, Kakkanad, SFS Silicon Hills 4 Meadows, Seaport-Airport Road, Kakkanad, Shanti Hill View, CSEZ, Manayath House, Behind TV Station, Asset E Valley, Chittethukara, VB Springs, Seaport-Airport Road, Padamukal",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "37",
+     "dist": "8 km",
+     "slab": "5.1 – 10 km",
+     "fee": 61300,
      "pick": "7:30 am",
      "drop": "4:40 pm",
-     "ride": null,
-     "stop": 36
+     "ride": "30 min"
     },
     {
-     "route": "38",
+     "stop": "38",
      "area": "Vazhakkala Kunnumpuram, Kakkanad, Nilampathinjamukal, GEMS",
      "landmark": "National Merryland Villas, Mather Green Hills Apartment, Kunnumpuram, Kakkanad, 8D Infra Aspire, VSNL Road, Kakkanad, The Mateo by Palal, Klangad Road, VSNL Road, Ultima Skymax, Nilampathinjamugal, Confident Capella Main Gate, Info Park Expressway, Heera Vastu Gram Villas",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "38",
+     "dist": "9 km",
+     "slab": "5.1 – 10 km",
+     "fee": 61300,
      "pick": "7:20 am",
      "drop": "4:00 pm",
-     "ride": null,
-     "stop": 37
+     "ride": "31 min"
     },
     {
-     "route": "39",
+     "stop": "39",
      "area": "High Court, Kaloor, Palrivattom, Kakkanad, GEMS",
      "landmark": "National Merryland Villas, Mather Green Hills Apartment, Kunnumpuram, Kakkanad, 8D Infra Aspire, VSNL Road, Kakkanad, The Mateo by Palal, Klangad Road, VSNL Road, Ultima Skymax, Nilampathinjamugal, Confident Capella Main Gate, Info Park Expressway, Heera Vastu Gram Villas",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "39",
+     "dist": "15 km",
+     "slab": "10.1 – 15 km",
+     "fee": 76200,
      "pick": "7:05 am",
      "drop": "4:20 pm",
-     "ride": null,
-     "stop": 38
+     "ride": "40 min"
     },
     {
-     "route": "40",
+     "stop": "40",
      "area": "Edachira, Morakkala, Pinarmunda, GEMS",
      "landmark": "DD Diamond Valley Apartments, Edachira, Manjooran Rowan Park, Edachira, Garland Primrose, Pallikkara, Peringala, Swasti Homes, Peringala, Claysys Heights Apartments, Hyland Villas, Pinarmundam, Sky City Villa",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "40",
+     "dist": "5 km",
+     "slab": "0 – 5 km",
+     "fee": 53700,
      "pick": "7:25 am",
      "drop": "3:50 pm",
-     "ride": null,
-     "stop": 39
+     "ride": "30 min"
     },
     {
-     "route": "41",
+     "stop": "41",
      "area": "Kangarappady, Millumpady, Kusumagiri, GEMS",
      "landmark": "Prestige Hill Side",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "41",
+     "dist": "3 km",
+     "slab": "0 – 5 km",
+     "fee": 53700,
      "pick": "7:40 am",
      "drop": "3:25 pm",
-     "ride": null,
-     "stop": 40
+     "ride": "30 min"
     },
     {
-     "route": "42",
+     "stop": "42",
      "area": "Edappally, Unichira, Karimakkadu, NGO Quarters, Kakkanad, GemsGEMS",
      "landmark": "St. Joseph's Vidyabhavan, Edappally, Asset Enlive, VP Marakkar Road, Edappally, Near Subramaniyan Temple, Kalpaka Avenue, Koonamthi (Pickup and Drop: Nice Bakery, Koonamthi Temple Road), Kalpaka Elanza Building, Unichira, Thykkavu Road, 2D Goodearth Elements, Thrikkakkara, Cochin Public School Road, 8B, SFS Grandvilla, Edappally–Pukkattupady Road, Thrikkakkara, SFS Highland Park, Thrikkakkara, Model Engineering College, Karimakkadu, Thrikkakkara, Sophia Emerald Villa, Near Karimakkad Juma Masjid, FifthCrew, MEC Karimakkad (Pickup and Drop: RAW Strength Gym), Kuzhikattu House, Near Kuzhikattu Temple, NGO Quarters, Kakkanad, Veliyathil House, Ambadimoola, Near Noel Vilas, Kakkanad",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "42",
+     "dist": "12 km",
+     "slab": "10.1 – 15 km",
+     "fee": 76200,
      "pick": "7:00 am",
      "drop": "4:25 pm",
-     "ride": null,
-     "stop": 41
+     "ride": "60 min"
     },
     {
-     "route": "43",
+     "stop": "43",
      "area": "Highcourt, kaloor, Palalrivattom, Kakkakanad, GEMS",
      "landmark": "National Kingdom Apartments, Palarivattom, Skyline Opus Apartments, Mammangalam, Sunny Estate, Mammangalam, Edappally, 68, Nerrwa, Vellayikodathu, Koduvathra Road, Padivattom (Near Arippa Hotel, Edappally), Infra Splendour, Edappally, Surabhi Road, Palarivattom, Valiyapadam Road, Near Anjumana Temple, Al Bhusthan Juma Masjid, Unichira, ABAD Oasis, Edappally–Pukkattupady Road, Unichira, Judgemukku, Thrikkakkara, Near Cardinal School, Noel Poetry, Mavelipuram, Thrikkakkara, Skyline Spectra, Mavelipuram, Kakkanad",
-     "dist": null,
-     "slab": null,
-     "fee": null,
+     "route": "43",
+     "dist": "12 km",
+     "slab": "10.1 – 15 km",
+     "fee": 76200,
      "pick": "7:10 am",
      "drop": "4:05 pm",
-     "ride": null,
-     "stop": 42
+     "ride": "60 min"
     }
    ]
   }
@@ -3112,7 +5486,7 @@ window.CAMPUSES = [
   "name": "GEMS Modern Academy",
   "short": "GMA Coimbatore",
   "city": "Coimbatore",
-  "updated": "31 Oct 2026",
+  "updated": "4 Nov 2026",
   "board": "CBSE and IB",
   "grades": "Nursery to Grade 8",
   "keyNotes": [
@@ -3122,97 +5496,287 @@ window.CAMPUSES = [
    {
     "grade": "Nursery (CBSE)",
     "tuition": 120000,
-    "max": 40
+    "max": 40,
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Junior KG (CBSE)",
     "tuition": 120000,
-    "max": 40
+    "max": 40,
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Senior KG (CBSE)",
     "tuition": 120000,
-    "max": 40
+    "max": 40,
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 1 (CBSE)",
     "tuition": 150000,
-    "max": 40
+    "max": 40,
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 2 (CBSE)",
     "tuition": 150000,
-    "max": 40
+    "max": 40,
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 3 (CBSE)",
     "tuition": 150000,
-    "max": 40
+    "max": 40,
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 4 (CBSE)",
     "tuition": 165000,
-    "max": 40
+    "max": 40,
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 5 (CBSE)",
     "tuition": 165000,
-    "max": 40
+    "max": 40,
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 6 (CBSE)",
     "tuition": 165000,
-    "max": 40
+    "max": 40,
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 7 (CBSE)",
     "tuition": 165000,
-    "max": 40
+    "max": 40,
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 8 (CBSE)",
     "tuition": 165000,
-    "max": 40
+    "max": 40,
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 1 (IB)",
     "tuition": 225000,
-    "max": 40
+    "max": 40,
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 2 (IB)",
     "tuition": 225000,
-    "max": 40
+    "max": 40,
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 3 (IB)",
     "tuition": 225000,
-    "max": 40
+    "max": 40,
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 4 (IB)",
     "tuition": 225000,
-    "max": 40
+    "max": 40,
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 5 (IB)",
     "tuition": 225000,
-    "max": 40
+    "max": 40,
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 6 (IB)",
     "tuition": 250000,
-    "max": 40
+    "max": 40,
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 7 (IB)",
     "tuition": 250000,
-    "max": 40
+    "max": 40,
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 8 (IB)",
     "tuition": 250000,
-    "max": 40
+    "max": 40,
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    }
   ],
   "applicationFee": 5000,
@@ -3282,27 +5846,56 @@ window.CAMPUSES = [
   "facilities": [
    [
     "Labs and learning",
-    []
+    [
+     "Energy Conscious",
+     "Designed on",
+     "MONTESSORI LAB",
+     "Eurisko Lab",
+     "COMPUTER LAB",
+     "LIBRARY",
+     "STEAM Labs",
+     "Robotics Lab",
+     "Pickleball courts"
+    ]
    ],
    [
     "Performing arts",
-    []
+    [
+     "MUSIC STUDIOS",
+     "Dance Studio"
+    ]
    ],
    [
     "Life skills",
-    []
+    [
+     "ATELIER - ART ROOM",
+     "POTTERY ROOM"
+    ]
    ],
    [
     "Indoor sports",
-    []
+    [
+     "Yoga & Gymnasium Spaces",
+     "Skating Rink",
+     "Table Tennis"
+    ]
    ],
    [
     "Outdoor sports",
-    []
+    [
+     "Olympic Sized Pool - FINA Facility Compliant 50 x 25m",
+     "Toddler & Practice Pool",
+     "200m Racing track",
+     "PRACTICE CRICKET NET"
+    ]
    ],
    [
     "Campus and safety",
-    []
+    [
+     "Architecture",
+     "WELL DESIGNED CORRIDORS",
+     "AUDITORIUM"
+    ]
    ]
   ],
   "curriculum": null,
@@ -3310,18 +5903,47 @@ window.CAMPUSES = [
   "technology": [
    [
     "Smart boards per classroom",
-    null
+    "Yes"
    ],
    [
     "ERP",
-    null
+    "MCB"
    ],
    [
     "Care Desk",
-    null
+    "Yes"
    ]
   ],
-  "tieups": [],
+  "tieups": [
+   [
+    "Music",
+    "Torrins"
+   ],
+   [
+    "Media Literacy",
+    "Fyule"
+   ],
+   [
+    "E Library",
+    "GetLitt"
+   ],
+   [
+    "E Library",
+    "Britannica"
+   ],
+   [
+    "Photo Sharing Platform",
+    "LitApp"
+   ],
+   [
+    "Infirmary",
+    "Address Health"
+   ],
+   [
+    "International Benchmark Assessment",
+    "Acer IBT"
+   ]
+  ],
   "routes": {
    "stops": null,
    "routes": null,
