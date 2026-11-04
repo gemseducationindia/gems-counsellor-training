@@ -27,14 +27,16 @@ TABS = {
 OVERRIDES = {
     # The "max per class" column holds whole-grade enrolment (e.g. 127 in Grade 3), not class size.
     "keep_old_max": {"gurugram", "kochi-gma"},
-    # Ratio typed as "2:1" for KG with 40 per class: unclear, left blank until the school confirms.
-    "blank_ratio": {"varanasi"},
+    # Ratio typed as "2:1" / "4:1" with 40 per class: unclear, left blank until the school confirms.
+    "blank_ratio": {"indirapuram"},
     # The stop table was cleared and replaced with one unclear line; keep the 15 routes already shown.
     "keep_old_routes": {"lucknow", "jodhpur"},
     # Rows the school says do not run in 2027-28.
     "drop_grades": {"jodhpur": {"Grade 11", "Grade 12"}},
     "grades_text": {"jodhpur": "Pre-KG to Grade 10"},
-    "board": {"varanasi": "CBSE and IB"},  # answered "yes" to "Is IB offered in 2027-28?"
+    "board": {"varanasi": "CBSE and IB"},
+    # 3rd sheet added labels ("CIE", "IGCSE", "IBDP") inside the board column; subjects unchanged, keep the tables.
+    "keep_old_curriculum": {"kochi-gma"},  # answered "yes" to "Is IB offered in 2027-28?"
 }
 
 TYPO = {
@@ -60,7 +62,7 @@ def clean(v):
 
 
 def is_na(v):
-    return isinstance(v, str) and v.strip().lower() in {"na", "n/a", "nil", "to be finalised"}
+    return isinstance(v, str) and v.strip().lower() in {"na", "n/a", "nil", "to be finalised", "tbd", "yet to decide", "yet to deicide"}
 
 
 def num(v):
@@ -131,9 +133,14 @@ def ratio(v):
     if isinstance(v, dt.time):  # Excel read "1:30" as a time
         h, m = v.hour, v.minute
         return f"{m}:1" if h == 1 else f"{h}:{m}"
+    if isinstance(v, dt.timedelta):  # Excel read "40:1" as 40 hours 1 minute
+        h, m = int(v.total_seconds() // 3600), int(v.total_seconds() % 3600 // 60)
+        return f"{h}:{m}"
     if isinstance(v, (int, float)):
         return f"{int(v)}:1"
     s = clean(v)
+    if re.fullmatch(r"\d+\s*:\s*\.\d", s):  # "30:.1", "15:.2" typed for 30:1 / 15:1
+        return s.split(":")[0].strip() + ":1"
     m = re.fullmatch(r"(\d+)\s*[/:]\s*(\d+)", s)
     if m:
         a, b = int(m.group(1)), int(m.group(2))
@@ -222,6 +229,15 @@ def pick_fac(prev_b, b, f):
     return b
 
 
+def same_fac(a, b):
+    """True when a facilities row (B list, F list) is unchanged between two sheets, in any column layout."""
+    if a is None:
+        return False
+    norm = lambda xs: [clean(x).lower() for x in (xs or [])]
+    pick = lambda bf: norm(bf[1]) if bf[1] else norm(bf[0])
+    return pick(a) == pick(b)
+
+
 def read_tab(ws):
     out = {}
     # 1. Fees
@@ -275,7 +291,7 @@ def read_tab(ws):
     out["tieups"] = ties
     # 7. Bus band + stop list
     band = find_row(ws, "Bus reaches school")
-    out["band"] = [ws.cell(band + 1, c).value for c in (1, 2, 3)] if band else [None] * 3
+    out["band"] = [None if is_na(ws.cell(band + 1, c).value) else ws.cell(band + 1, c).value for c in (1, 2, 3)] if band else [None] * 3
     st = find_row(ws, "Stop", band or 1)
     sh = {clean(ws.cell(st, c).value): c for c in range(1, ws.max_column + 1) if ws.cell(st, c).value}
     stops = []
@@ -285,7 +301,7 @@ def read_tab(ws):
         if isinstance(a, str) and (a.startswith("Routes already") or a.startswith("Board") or re.match(r"\d+\. ", a)):
             break
         get = lambda h: ws.cell(r, sh[h]).value if h in sh else None
-        if clean(get("Pickup point / area")):
+        if clean(get("Pickup point / area")) and not is_na(clean(get("Pickup point / area"))):
             stops.append({
                 "stop": clean(str(a)) if a is not None else None,
                 "area": clean(get("Pickup point / area")),
@@ -396,7 +412,11 @@ def apply(c, d, date, prev=None):
     oldfac = dict((a, v) for a, v in c["facilities"])
     fac = []
     prevb = {a: b for a, b, _ in prev["facilities"]} if prev else {}
+    prevf = {a: (b, f) for a, b, f in prev["facilities"]} if prev else {}
     for area, b_, f_ in d["facilities"]:
+        if prev and same_fac(prevf.get(area), (b_, f_)) and area in oldfac:
+            fac.append([area, oldfac[area]])  # school did not touch this area since the last sheet
+            continue
         its = pick_fac(prevb.get(area) if prev else None, b_, f_)
         if its and ", ".join(its) == ", ".join(items(", ".join(oldfac.get(area, [])))):
             its = [clean(i) for i in oldfac[area]]
@@ -453,7 +473,7 @@ def apply(c, d, date, prev=None):
                 groups = [[g_, t_, ", ".join(x.strip() for x in e.split(",") if x.strip())] for g_, t_, e in groups]
                 title = "Cambridge IGCSE subject groups · Grades 9 and 10" if a.startswith("Grade 9") else "Cambridge AS & A Level subject groups · Grades 11 and 12"
                 cur.append({"title": title, "note": "As listed by the school. Final choices depend on what the school offers.", "groups": groups})
-    if cur:
+    if cur and slug not in OVERRIDES["keep_old_curriculum"]:
         c["curriculum"] = cur
     # Tell every parent
     notes = [n for n in c["keyNotes"] if n != SAMPLES_NOTE]
@@ -482,7 +502,10 @@ def main():
         before = json.dumps(v["facilities"])
         cur = dict((a, its) for a, its in v["facilities"])
         prevb = {a: b for a, b, _ in read_tab(pwb[ex])["facilities"]} if pwb and ex in pwb.sheetnames else {}
+        prevf = {a: (b, f) for a, b, f in read_tab(pwb[ex])["facilities"]} if pwb and ex in pwb.sheetnames else {}
         for area, b_, f_ in read_tab(wb[ex])["facilities"]:
+            if pwb and same_fac(prevf.get(area), (b_, f_)):
+                continue
             its = pick_fac(prevb.get(area) if pwb else None, b_, f_)
             if its and [x.lower() for x in its] != [clean(x).lower() for x in cur.get(area, [])]:
                 cur[area] = its

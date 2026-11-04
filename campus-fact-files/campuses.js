@@ -409,7 +409,7 @@ window.CAMPUSES = [
     "grade": "Senior KG",
     "tuition": 150428,
     "max": 30,
-    "ratio": "10:1",
+    "ratio": "15:1",
     "timings": "9:00 am – 1:00 pm",
     "annual": 25000,
     "ex": {
@@ -431,7 +431,7 @@ window.CAMPUSES = [
     "grade": "Grade 1",
     "tuition": 150428,
     "max": 30,
-    "ratio": "1 mother teacher",
+    "ratio": "30:1",
     "timings": "8:00 am – 2:30 pm",
     "annual": 25000,
     "ex": {
@@ -651,7 +651,7 @@ window.CAMPUSES = [
     "grade": "Grade 11",
     "tuition": 230512,
     "max": 30,
-    "ratio": "40:1",
+    "ratio": "30:1",
     "timings": "8:00 am – 2:30 pm",
     "annual": 25000,
     "ex": {
@@ -673,7 +673,7 @@ window.CAMPUSES = [
     "grade": "Grade 12",
     "tuition": 230512,
     "max": 30,
-    "ratio": "40:1",
+    "ratio": "30:1",
     "timings": "8:00 am – 2:30 pm",
     "annual": 25000,
     "ex": {
@@ -848,7 +848,7 @@ window.CAMPUSES = [
    ],
    [
     "Care Desk",
-    null
+    "Yes"
    ]
   ],
   "tieups": [
@@ -869,16 +869,8 @@ window.CAMPUSES = [
     "LitApp"
    ],
    [
-    "Open Door Learning",
-    "Mastery Assessments and Thinking Classroom"
-   ],
-   [
-    "Jodo Gyan",
-    "Mathematics"
-   ],
-   [
-    "Go Sharpner",
-    "ed-tech and sustainability networking platform"
+    "Infirmary",
+    "Blue Circle"
    ]
   ],
   "routes": {
@@ -1253,6 +1245,10 @@ window.CAMPUSES = [
      "Books": {
       "cell": "8,000",
       "max": 8000
+     },
+     "CBSE examination fee": {
+      "cell": "–",
+      "max": 0
      }
     }
    },
@@ -1269,6 +1265,10 @@ window.CAMPUSES = [
      "Books": {
       "cell": "8,000",
       "max": 8000
+     },
+     "CBSE examination fee": {
+      "cell": "–",
+      "max": 0
      }
     }
    },
@@ -1285,6 +1285,10 @@ window.CAMPUSES = [
      "Books": {
       "cell": "8,000",
       "max": 8000
+     },
+     "CBSE examination fee": {
+      "cell": "–",
+      "max": 0
      }
     }
    },
@@ -1301,6 +1305,10 @@ window.CAMPUSES = [
      "Books": {
       "cell": "8,000",
       "max": 8000
+     },
+     "CBSE examination fee": {
+      "cell": "–",
+      "max": 0
      }
     }
    },
@@ -1317,6 +1325,10 @@ window.CAMPUSES = [
      "Books": {
       "cell": "8,000",
       "max": 8000
+     },
+     "CBSE examination fee": {
+      "cell": "–",
+      "max": 0
      }
     }
    },
@@ -1333,6 +1345,10 @@ window.CAMPUSES = [
      "Books": {
       "cell": "8,000",
       "max": 8000
+     },
+     "CBSE examination fee": {
+      "cell": "–",
+      "max": 0
      }
     }
    },
@@ -1349,6 +1365,10 @@ window.CAMPUSES = [
      "Books": {
       "cell": "8,000",
       "max": 8000
+     },
+     "CBSE examination fee": {
+      "cell": "–",
+      "max": 0
      }
     }
    },
@@ -1365,6 +1385,10 @@ window.CAMPUSES = [
      "Books": {
       "cell": "8,000",
       "max": 8000
+     },
+     "CBSE examination fee": {
+      "cell": "–",
+      "max": 0
      }
     }
    },
@@ -1381,6 +1405,10 @@ window.CAMPUSES = [
      "Books": {
       "cell": "8,000",
       "max": 8000
+     },
+     "CBSE examination fee": {
+      "cell": "–",
+      "max": 0
      }
     }
    },
@@ -1397,6 +1425,10 @@ window.CAMPUSES = [
      "Books": {
       "cell": "8,000",
       "max": 8000
+     },
+     "CBSE examination fee": {
+      "cell": "–",
+      "max": 0
      }
     }
    },
@@ -1413,6 +1445,10 @@ window.CAMPUSES = [
      "Books": {
       "cell": "8,000",
       "max": 8000
+     },
+     "CBSE examination fee": {
+      "cell": "–",
+      "max": 0
      }
     }
    }
@@ -1583,7 +1619,7 @@ window.CAMPUSES = [
    ],
    [
     "Infirmary",
-    "Address Health"
+    "Blue Circle"
    ],
    [
     "International Benchmark Assessment",
@@ -2023,7 +2059,7 @@ window.CAMPUSES = [
    ],
    [
     "Infirmary",
-    "Address Health"
+    "Blue Circle"
    ],
    [
     "International Benchmark Assessment",
@@ -2273,66 +2309,138 @@ window.CAMPUSES = [
    {
     "grade": "Nursery",
     "max": 35,
-    "ratio": "30:1",
+    "ratio": "15:1",
     "timings": "8:30 am – 12:30 pm",
     "annual": 25000,
-    "ex": {}
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Junior KG",
     "max": 35,
-    "ratio": "30:1",
+    "ratio": "15:1",
     "timings": "8:30 am – 12:30 pm",
     "annual": 25000,
-    "ex": {}
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Senior KG",
     "max": 35,
-    "ratio": "30:1",
+    "ratio": "15:1",
     "timings": "8:30 am – 12:30 pm",
     "annual": 25000,
-    "ex": {}
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 1",
     "max": 35,
-    "ratio": "30:1",
+    "ratio": "35:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "ex": {}
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 2",
     "max": 35,
-    "ratio": "30:1",
+    "ratio": "35:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "ex": {}
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 3",
     "max": 35,
-    "ratio": "30:1",
+    "ratio": "35:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "ex": {}
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 4",
     "max": 35,
-    "ratio": "30:1",
+    "ratio": "35:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "ex": {}
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 5",
     "max": 35,
-    "ratio": "30:1",
+    "ratio": "35:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "ex": {}
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    }
   ],
   "applicationFee": 2000,
@@ -2464,7 +2572,7 @@ window.CAMPUSES = [
    ],
    [
     "ERP",
-    "Entab- Admissions & Finance & Managebac- Academics"
+    "MCB"
    ],
    [
     "Care Desk",
@@ -3032,6 +3140,7 @@ window.CAMPUSES = [
     "grade": "Nursery",
     "tuition": 98340,
     "max": 40,
+    "ratio": "20:1",
     "timings": "9:30 am – 1:00 pm",
     "ex": {
      "Uniform": {
@@ -3048,6 +3157,7 @@ window.CAMPUSES = [
     "grade": "Junior KG",
     "tuition": 98340,
     "max": 40,
+    "ratio": "20:1",
     "timings": "9:30 am – 1:00 pm",
     "ex": {
      "Uniform": {
@@ -3064,6 +3174,7 @@ window.CAMPUSES = [
     "grade": "Senior KG",
     "tuition": 98340,
     "max": 40,
+    "ratio": "20:1",
     "timings": "9:30 am – 1:00 pm",
     "ex": {
      "Uniform": {
@@ -3080,6 +3191,7 @@ window.CAMPUSES = [
     "grade": "Grade 1",
     "tuition": 100128,
     "max": 40,
+    "ratio": "40:1",
     "timings": "8:00 am – 3:00 pm",
     "ex": {
      "Uniform": {
@@ -3096,6 +3208,7 @@ window.CAMPUSES = [
     "grade": "Grade 2",
     "tuition": 100128,
     "max": 40,
+    "ratio": "40:1",
     "timings": "8:00 am – 3:00 pm",
     "ex": {
      "Uniform": {
@@ -3112,6 +3225,7 @@ window.CAMPUSES = [
     "grade": "Grade 3",
     "tuition": 100128,
     "max": 40,
+    "ratio": "40:1",
     "timings": "8:00 am – 3:00 pm",
     "ex": {
      "Uniform": {
@@ -3128,6 +3242,7 @@ window.CAMPUSES = [
     "grade": "Grade 4",
     "tuition": 100128,
     "max": 40,
+    "ratio": "40:1",
     "timings": "8:00 am – 3:00 pm",
     "ex": {
      "Uniform": {
@@ -3144,6 +3259,7 @@ window.CAMPUSES = [
     "grade": "Grade 5",
     "tuition": 113098,
     "max": 40,
+    "ratio": "40:1",
     "timings": "8:00 am – 3:00 pm",
     "ex": {
      "Uniform": {
@@ -3160,6 +3276,7 @@ window.CAMPUSES = [
     "grade": "Grade 6",
     "tuition": 113098,
     "max": 40,
+    "ratio": "40:1",
     "timings": "8:00 am – 3:00 pm",
     "ex": {
      "Uniform": {
@@ -3176,6 +3293,7 @@ window.CAMPUSES = [
     "grade": "Grade 7",
     "tuition": 113098,
     "max": 40,
+    "ratio": "40:1",
     "timings": "8:00 am – 3:00 pm",
     "ex": {
      "Uniform": {
@@ -3192,6 +3310,7 @@ window.CAMPUSES = [
     "grade": "Grade 8",
     "tuition": 113098,
     "max": 40,
+    "ratio": "40:1",
     "timings": "8:00 am – 3:00 pm",
     "ex": {
      "Uniform": {
@@ -3208,6 +3327,7 @@ window.CAMPUSES = [
     "grade": "Grade 9",
     "tuition": 113098,
     "max": 40,
+    "ratio": "40:1",
     "timings": "8:00 am – 3:00 pm",
     "ex": {
      "Uniform": {
@@ -3224,6 +3344,7 @@ window.CAMPUSES = [
     "grade": "Grade 10",
     "tuition": 113098,
     "max": 40,
+    "ratio": "40:1",
     "timings": "8:00 am – 3:00 pm",
     "ex": {
      "Uniform": {
@@ -3244,6 +3365,7 @@ window.CAMPUSES = [
     "grade": "Grade 11",
     "tuition": 125664,
     "max": 40,
+    "ratio": "40:1",
     "timings": "8:00 am – 3:00 pm",
     "ex": {
      "Uniform": {
@@ -3260,6 +3382,7 @@ window.CAMPUSES = [
     "grade": "Grade 12",
     "tuition": 125664,
     "max": 40,
+    "ratio": "40:1",
     "timings": "8:00 am – 3:00 pm",
     "ex": {
      "Uniform": {
@@ -3474,16 +3597,16 @@ window.CAMPUSES = [
     "LitApp"
    ],
    [
-    "Open Door Learning",
-    "Mastery Assessments and Thinking Classroom"
+    "Media Literacy",
+    "Fyule"
    ],
    [
-    "Jodo Gyan",
-    "Mathematics"
+    "Photo Sharing Platform",
+    "LitApp"
    ],
    [
-    "Go Sharpner",
-    "ed-tech and sustainability networking platform"
+    "Infirmary",
+    "Blue Circle"
    ]
   ],
   "routes": {
@@ -3513,7 +3636,7 @@ window.CAMPUSES = [
     "grade": "Pre-KG",
     "tuition": 102000,
     "max": 20,
-    "ratio": "20:1",
+    "ratio": "15:1",
     "timings": "9:30 am – 1:30 pm",
     "ex": {
      "Uniform": {
@@ -3530,7 +3653,7 @@ window.CAMPUSES = [
     "grade": "Nursery",
     "tuition": 102000,
     "max": 30,
-    "ratio": "30:1",
+    "ratio": "15:1",
     "timings": "9:30 am – 1:30 pm",
     "ex": {
      "Uniform": {
@@ -3547,7 +3670,7 @@ window.CAMPUSES = [
     "grade": "Junior KG",
     "tuition": 102000,
     "max": 30,
-    "ratio": "30:1",
+    "ratio": "15:1",
     "timings": "9:30 am – 1:30 pm",
     "ex": {
      "Uniform": {
@@ -3564,7 +3687,7 @@ window.CAMPUSES = [
     "grade": "Senior KG",
     "tuition": 102000,
     "max": 30,
-    "ratio": "30:1",
+    "ratio": "15:1",
     "timings": "9:30 am – 1:30 pm",
     "ex": {
      "Uniform": {
@@ -3632,7 +3755,7 @@ window.CAMPUSES = [
     "grade": "Grade 4",
     "tuition": 113000,
     "max": 35,
-    "ratio": "35:1",
+    "ratio": "30:1",
     "timings": "8:30 am – 3:15 pm",
     "ex": {
      "Uniform": {
@@ -3649,7 +3772,7 @@ window.CAMPUSES = [
     "grade": "Grade 5",
     "tuition": 113000,
     "max": 35,
-    "ratio": "35:1",
+    "ratio": "30:1",
     "timings": "8:30 am – 3:15 pm",
     "ex": {
      "Uniform": {
@@ -3666,7 +3789,7 @@ window.CAMPUSES = [
     "grade": "Grade 6",
     "tuition": 113000,
     "max": 35,
-    "ratio": "35:1",
+    "ratio": "30:1",
     "timings": "8:30 am – 3:15 pm",
     "ex": {
      "Uniform": {
@@ -3683,7 +3806,7 @@ window.CAMPUSES = [
     "grade": "Grade 7",
     "tuition": 113000,
     "max": 35,
-    "ratio": "35:1",
+    "ratio": "30:1",
     "timings": "8:30 am – 3:15 pm",
     "ex": {
      "Uniform": {
@@ -3700,7 +3823,7 @@ window.CAMPUSES = [
     "grade": "Grade 8",
     "tuition": 113000,
     "max": 35,
-    "ratio": "35:1",
+    "ratio": "30:1",
     "timings": "8:30 am – 3:15 pm",
     "ex": {
      "Uniform": {
@@ -3717,7 +3840,7 @@ window.CAMPUSES = [
     "grade": "Grade 9",
     "tuition": 124000,
     "max": 35,
-    "ratio": "35:1",
+    "ratio": "30:1",
     "timings": "8:30 am – 3:15 pm",
     "ex": {
      "Uniform": {
@@ -3734,9 +3857,22 @@ window.CAMPUSES = [
     "grade": "Grade 10",
     "tuition": 124000,
     "max": 35,
-    "ratio": "35:1",
+    "ratio": "30:1",
     "timings": "8:30 am – 3:15 pm",
-    "ex": {}
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "CBSE examination fee": {
+      "cell": "3,000",
+      "max": 3000
+     }
+    }
    }
   ],
   "applicationFee": 2000,
@@ -4190,7 +4326,7 @@ window.CAMPUSES = [
     "grade": "Grade 1",
     "tuition": 93000,
     "max": 30,
-    "ratio": "15:1",
+    "ratio": "30:1",
     "timings": "8:00 am – 3:00 pm",
     "ex": {
      "Uniform": {
@@ -4623,7 +4759,12 @@ window.CAMPUSES = [
     "ratio": "15:1",
     "timings": "8:30 am – 12:30 pm",
     "annual": 25000,
-    "ex": {}
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Junior KG (IB)",
@@ -4631,7 +4772,12 @@ window.CAMPUSES = [
     "ratio": "15:1",
     "timings": "8:30 am – 12:30 pm",
     "annual": 25000,
-    "ex": {}
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Senior KG (IB)",
@@ -4639,7 +4785,12 @@ window.CAMPUSES = [
     "ratio": "15:1",
     "timings": "8:30 am – 12:30 pm",
     "annual": 25000,
-    "ex": {}
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 1 (IB)",
@@ -4647,7 +4798,12 @@ window.CAMPUSES = [
     "ratio": "15:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "ex": {}
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 2 (IB)",
@@ -4655,7 +4811,12 @@ window.CAMPUSES = [
     "ratio": "15:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "ex": {}
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 3 (IB)",
@@ -4663,7 +4824,12 @@ window.CAMPUSES = [
     "ratio": "15:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "ex": {}
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 4 (IB)",
@@ -4671,7 +4837,12 @@ window.CAMPUSES = [
     "ratio": "15:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "ex": {}
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 5 (IB)",
@@ -4679,7 +4850,12 @@ window.CAMPUSES = [
     "ratio": "15:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "ex": {}
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 6 (IB)",
@@ -4687,7 +4863,12 @@ window.CAMPUSES = [
     "ratio": "30:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "ex": {}
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 7 (IB)",
@@ -4695,7 +4876,12 @@ window.CAMPUSES = [
     "ratio": "30:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "ex": {}
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 8 (IB)",
@@ -4703,7 +4889,12 @@ window.CAMPUSES = [
     "ratio": "30:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "ex": {}
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 9 (IB)",
@@ -4711,7 +4902,12 @@ window.CAMPUSES = [
     "ratio": "30:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "ex": {}
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 10 (IB)",
@@ -4719,19 +4915,34 @@ window.CAMPUSES = [
     "ratio": "30:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "ex": {}
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 11 (IB)",
     "max": 20,
     "timings": "8:30 am – 3:00 pm",
-    "ex": {}
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 12 (IB)",
     "max": 20,
     "timings": "8:30 am – 3:00 pm",
-    "ex": {}
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 6 (Cambridge)",
@@ -4739,7 +4950,12 @@ window.CAMPUSES = [
     "ratio": "30:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "ex": {}
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 7 (Cambridge)",
@@ -4747,7 +4963,12 @@ window.CAMPUSES = [
     "ratio": "30:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "ex": {}
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 8 (Cambridge)",
@@ -4755,7 +4976,12 @@ window.CAMPUSES = [
     "ratio": "30:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "ex": {}
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 9 (Cambridge)",
@@ -4763,7 +4989,12 @@ window.CAMPUSES = [
     "ratio": "30:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "ex": {}
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 10 (Cambridge)",
@@ -4771,7 +5002,12 @@ window.CAMPUSES = [
     "ratio": "30:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "ex": {}
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 11 (Cambridge)",
@@ -4779,7 +5015,12 @@ window.CAMPUSES = [
     "ratio": "30:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "ex": {}
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    },
    {
     "grade": "Grade 12 (Cambridge)",
@@ -4787,7 +5028,12 @@ window.CAMPUSES = [
     "ratio": "30:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "ex": {}
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
    }
   ],
   "applicationFee": 2000,
@@ -5551,6 +5797,8 @@ window.CAMPUSES = [
     "grade": "Nursery (CBSE)",
     "tuition": 120000,
     "max": 40,
+    "ratio": "20:1",
+    "timings": "9:30 am – 1:00 pm",
     "ex": {
      "Uniform": {
       "cell": "8,000",
@@ -5566,6 +5814,8 @@ window.CAMPUSES = [
     "grade": "Junior KG (CBSE)",
     "tuition": 120000,
     "max": 40,
+    "ratio": "20:1",
+    "timings": "9:30 am – 1:00 pm",
     "ex": {
      "Uniform": {
       "cell": "8,000",
@@ -5581,6 +5831,8 @@ window.CAMPUSES = [
     "grade": "Senior KG (CBSE)",
     "tuition": 120000,
     "max": 40,
+    "ratio": "20:1",
+    "timings": "9:30 am – 1:00 pm",
     "ex": {
      "Uniform": {
       "cell": "8,000",
@@ -5596,6 +5848,8 @@ window.CAMPUSES = [
     "grade": "Grade 1 (CBSE)",
     "tuition": 150000,
     "max": 40,
+    "ratio": "20:1",
+    "timings": "8:00 am – 3:00 pm",
     "ex": {
      "Uniform": {
       "cell": "8,000",
@@ -5611,6 +5865,8 @@ window.CAMPUSES = [
     "grade": "Grade 2 (CBSE)",
     "tuition": 150000,
     "max": 40,
+    "ratio": "40:1",
+    "timings": "8:00 am – 3:00 pm",
     "ex": {
      "Uniform": {
       "cell": "8,000",
@@ -5626,6 +5882,8 @@ window.CAMPUSES = [
     "grade": "Grade 3 (CBSE)",
     "tuition": 150000,
     "max": 40,
+    "ratio": "40:1",
+    "timings": "8:00 am – 3:00 pm",
     "ex": {
      "Uniform": {
       "cell": "8,000",
@@ -5641,6 +5899,8 @@ window.CAMPUSES = [
     "grade": "Grade 4 (CBSE)",
     "tuition": 165000,
     "max": 40,
+    "ratio": "40:1",
+    "timings": "8:00 am – 3:00 pm",
     "ex": {
      "Uniform": {
       "cell": "8,000",
@@ -5656,6 +5916,8 @@ window.CAMPUSES = [
     "grade": "Grade 5 (CBSE)",
     "tuition": 165000,
     "max": 40,
+    "ratio": "40:1",
+    "timings": "8:00 am – 3:00 pm",
     "ex": {
      "Uniform": {
       "cell": "8,000",
@@ -5671,6 +5933,8 @@ window.CAMPUSES = [
     "grade": "Grade 6 (CBSE)",
     "tuition": 165000,
     "max": 40,
+    "ratio": "40:1",
+    "timings": "8:00 am – 3:00 pm",
     "ex": {
      "Uniform": {
       "cell": "8,000",
@@ -5686,6 +5950,8 @@ window.CAMPUSES = [
     "grade": "Grade 7 (CBSE)",
     "tuition": 165000,
     "max": 40,
+    "ratio": "40:1",
+    "timings": "8:00 am – 3:00 pm",
     "ex": {
      "Uniform": {
       "cell": "8,000",
@@ -5701,6 +5967,8 @@ window.CAMPUSES = [
     "grade": "Grade 8 (CBSE)",
     "tuition": 165000,
     "max": 40,
+    "ratio": "40:1",
+    "timings": "8:00 am – 3:00 pm",
     "ex": {
      "Uniform": {
       "cell": "8,000",
@@ -5716,6 +5984,8 @@ window.CAMPUSES = [
     "grade": "Grade 1 (IB)",
     "tuition": 225000,
     "max": 40,
+    "ratio": "40:1",
+    "timings": "8:00 am – 3:00 pm",
     "ex": {
      "Uniform": {
       "cell": "8,000",
@@ -5731,6 +6001,8 @@ window.CAMPUSES = [
     "grade": "Grade 2 (IB)",
     "tuition": 225000,
     "max": 40,
+    "ratio": "40:1",
+    "timings": "8:00 am – 3:00 pm",
     "ex": {
      "Uniform": {
       "cell": "8,000",
@@ -5746,6 +6018,8 @@ window.CAMPUSES = [
     "grade": "Grade 3 (IB)",
     "tuition": 225000,
     "max": 40,
+    "ratio": "40:1",
+    "timings": "8:00 am – 3:00 pm",
     "ex": {
      "Uniform": {
       "cell": "8,000",
@@ -5761,6 +6035,8 @@ window.CAMPUSES = [
     "grade": "Grade 4 (IB)",
     "tuition": 225000,
     "max": 40,
+    "ratio": "40:1",
+    "timings": "8:00 am – 3:00 pm",
     "ex": {
      "Uniform": {
       "cell": "8,000",
@@ -5776,6 +6052,8 @@ window.CAMPUSES = [
     "grade": "Grade 5 (IB)",
     "tuition": 225000,
     "max": 40,
+    "ratio": "40:1",
+    "timings": "8:00 am – 3:00 pm",
     "ex": {
      "Uniform": {
       "cell": "8,000",
@@ -5791,6 +6069,8 @@ window.CAMPUSES = [
     "grade": "Grade 6 (IB)",
     "tuition": 250000,
     "max": 40,
+    "ratio": "40:1",
+    "timings": "8:00 am – 3:00 pm",
     "ex": {
      "Uniform": {
       "cell": "8,000",
@@ -5806,6 +6086,8 @@ window.CAMPUSES = [
     "grade": "Grade 7 (IB)",
     "tuition": 250000,
     "max": 40,
+    "ratio": "40:1",
+    "timings": "8:00 am – 3:00 pm",
     "ex": {
      "Uniform": {
       "cell": "8,000",
@@ -5821,6 +6103,8 @@ window.CAMPUSES = [
     "grade": "Grade 8 (IB)",
     "tuition": 250000,
     "max": 40,
+    "ratio": "40:1",
+    "timings": "8:00 am – 3:00 pm",
     "ex": {
      "Uniform": {
       "cell": "8,000",
