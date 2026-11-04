@@ -1236,6 +1236,7 @@ window.CAMPUSES = [
     "grade": "Nursery",
     "tuition": 200000,
     "max": 40,
+    "ratio": "20:1",
     "timings": "9:30 am – 1:00 pm",
     "ex": {
      "Uniform": {
@@ -1256,6 +1257,7 @@ window.CAMPUSES = [
     "grade": "Junior KG",
     "tuition": 200000,
     "max": 40,
+    "ratio": "20:1",
     "timings": "9:30 am – 1:00 pm",
     "ex": {
      "Uniform": {
@@ -1276,6 +1278,7 @@ window.CAMPUSES = [
     "grade": "Senior KG",
     "tuition": 200000,
     "max": 40,
+    "ratio": "20:1",
     "timings": "9:30 am – 1:00 pm",
     "ex": {
      "Uniform": {
@@ -1296,6 +1299,7 @@ window.CAMPUSES = [
     "grade": "Grade 1",
     "tuition": 225000,
     "max": 40,
+    "ratio": "20:1",
     "timings": "9:30 am – 1:00 pm",
     "ex": {
      "Uniform": {
@@ -1316,6 +1320,7 @@ window.CAMPUSES = [
     "grade": "Grade 2",
     "tuition": 225000,
     "max": 40,
+    "ratio": "40:1",
     "timings": "8:00 am – 3:00 pm",
     "ex": {
      "Uniform": {
@@ -1336,6 +1341,7 @@ window.CAMPUSES = [
     "grade": "Grade 3",
     "tuition": 225000,
     "max": 40,
+    "ratio": "40:1",
     "timings": "8:00 am – 3:00 pm",
     "ex": {
      "Uniform": {
@@ -1356,6 +1362,7 @@ window.CAMPUSES = [
     "grade": "Grade 4",
     "tuition": 225000,
     "max": 40,
+    "ratio": "40:1",
     "timings": "8:00 am – 3:00 pm",
     "ex": {
      "Uniform": {
@@ -1376,6 +1383,7 @@ window.CAMPUSES = [
     "grade": "Grade 5",
     "tuition": 250000,
     "max": 40,
+    "ratio": "40:1",
     "timings": "8:00 am – 3:00 pm",
     "ex": {
      "Uniform": {
@@ -1396,6 +1404,7 @@ window.CAMPUSES = [
     "grade": "Grade 6",
     "tuition": 250000,
     "max": 40,
+    "ratio": "40:1",
     "timings": "8:00 am – 3:00 pm",
     "ex": {
      "Uniform": {
@@ -1416,6 +1425,7 @@ window.CAMPUSES = [
     "grade": "Grade 7",
     "tuition": 250000,
     "max": 40,
+    "ratio": "40:1",
     "timings": "8:00 am – 3:00 pm",
     "ex": {
      "Uniform": {
@@ -1436,6 +1446,7 @@ window.CAMPUSES = [
     "grade": "Grade 8",
     "tuition": 250000,
     "max": 40,
+    "ratio": "40:1",
     "timings": "8:00 am – 3:00 pm",
     "ex": {
      "Uniform": {

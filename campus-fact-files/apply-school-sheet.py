@@ -27,8 +27,9 @@ TABS = {
 OVERRIDES = {
     # The "max per class" column holds whole-grade enrolment (e.g. 127 in Grade 3), not class size.
     "keep_old_max": {"gurugram", "kochi-gma"},
-    # Ratio typed as "2:1" / "4:1" with 40 per class: unclear, left blank until the school confirms.
-    "blank_ratio": {"indirapuram"},
+    "blank_ratio": set(),
+    # Ratio typed as "2:1" / "4:1"; Jay confirmed 4 Nov 2026 it means 20:1 and 40:1.
+    "ratio_map": {"indirapuram": {"2:1": "20:1", "4:1": "40:1"}},
     # The stop table was cleared and replaced with one unclear line; keep the 15 routes already shown.
     "keep_old_routes": {"lucknow", "jodhpur"},
     # Rows the school says do not run in 2027-28.
@@ -376,6 +377,7 @@ def apply(c, d, date, prev=None):
         nr["max"] = fr.get("max") if slug in OVERRIDES["keep_old_max"] else mx
         if slug not in OVERRIDES["blank_ratio"]:
             nr["ratio"] = ratio(r.get("Student–teacher ratio"))
+            nr["ratio"] = OVERRIDES["ratio_map"].get(slug, {}).get(nr["ratio"], nr["ratio"])
         nr["timings"] = timings(r.get("School timings"))
         an = num(r.get("Annual fee (₹)"))
         if an:
