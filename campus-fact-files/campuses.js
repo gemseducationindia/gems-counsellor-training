@@ -2309,7 +2309,7 @@ window.CAMPUSES = [
   "name": "GEMS Millennium School",
   "short": "GMS Kochi",
   "city": "Kochi",
-  "updated": "4 Nov 2026",
+  "updated": "5 Nov 2026",
   "board": "CBSE",
   "grades": "Nursery to Grade 5",
   "keyNotes": [
@@ -2323,16 +2323,7 @@ window.CAMPUSES = [
     "ratio": "15:1",
     "timings": "8:30 am – 12:30 pm",
     "annual": 25000,
-    "ex": {
-     "Uniform": {
-      "cell": "8,000",
-      "max": 8000
-     },
-     "Books": {
-      "cell": "8,000",
-      "max": 8000
-     }
-    }
+    "ex": {}
    },
    {
     "grade": "Junior KG",
@@ -2340,16 +2331,7 @@ window.CAMPUSES = [
     "ratio": "15:1",
     "timings": "8:30 am – 12:30 pm",
     "annual": 25000,
-    "ex": {
-     "Uniform": {
-      "cell": "8,000",
-      "max": 8000
-     },
-     "Books": {
-      "cell": "8,000",
-      "max": 8000
-     }
-    }
+    "ex": {}
    },
    {
     "grade": "Senior KG",
@@ -2357,16 +2339,7 @@ window.CAMPUSES = [
     "ratio": "15:1",
     "timings": "8:30 am – 12:30 pm",
     "annual": 25000,
-    "ex": {
-     "Uniform": {
-      "cell": "8,000",
-      "max": 8000
-     },
-     "Books": {
-      "cell": "8,000",
-      "max": 8000
-     }
-    }
+    "ex": {}
    },
    {
     "grade": "Grade 1",
@@ -2374,16 +2347,7 @@ window.CAMPUSES = [
     "ratio": "35:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "ex": {
-     "Uniform": {
-      "cell": "8,000",
-      "max": 8000
-     },
-     "Books": {
-      "cell": "8,000",
-      "max": 8000
-     }
-    }
+    "ex": {}
    },
    {
     "grade": "Grade 2",
@@ -2391,16 +2355,7 @@ window.CAMPUSES = [
     "ratio": "35:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "ex": {
-     "Uniform": {
-      "cell": "8,000",
-      "max": 8000
-     },
-     "Books": {
-      "cell": "8,000",
-      "max": 8000
-     }
-    }
+    "ex": {}
    },
    {
     "grade": "Grade 3",
@@ -2408,16 +2363,7 @@ window.CAMPUSES = [
     "ratio": "35:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "ex": {
-     "Uniform": {
-      "cell": "8,000",
-      "max": 8000
-     },
-     "Books": {
-      "cell": "8,000",
-      "max": 8000
-     }
-    }
+    "ex": {}
    },
    {
     "grade": "Grade 4",
@@ -2425,16 +2371,7 @@ window.CAMPUSES = [
     "ratio": "35:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "ex": {
-     "Uniform": {
-      "cell": "8,000",
-      "max": 8000
-     },
-     "Books": {
-      "cell": "8,000",
-      "max": 8000
-     }
-    }
+    "ex": {}
    },
    {
     "grade": "Grade 5",
@@ -2442,16 +2379,7 @@ window.CAMPUSES = [
     "ratio": "35:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
-    "ex": {
-     "Uniform": {
-      "cell": "8,000",
-      "max": 8000
-     },
-     "Books": {
-      "cell": "8,000",
-      "max": 8000
-     }
-    }
+    "ex": {}
    }
   ],
   "applicationFee": 2000,
