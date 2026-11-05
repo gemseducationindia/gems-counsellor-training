@@ -33,8 +33,10 @@ OVERRIDES = {
     # The stop table was cleared and replaced with one unclear line; keep the 15 routes already shown.
     "keep_old_routes": {"lucknow", "jodhpur"},
     # Rows the school says do not run in 2027-28.
-    "drop_grades": {"jodhpur": {"Grade 11", "Grade 12"}},
-    "grades_text": {"jodhpur": "Pre-KG to Grade 10"},
+    "drop_grades": {"jodhpur": {"Grade 11", "Grade 12"},
+                    # GMA Coimbatore admissions head, 5 Nov 2026: CBSE Playgroup to Grade 7, IB Playgroup to PYP 5.
+                    "coimbatore": {"Grade 8 (CBSE)", "Grade 6 (IB)", "Grade 7 (IB)", "Grade 8 (IB)"}},
+    "grades_text": {"jodhpur": "Pre-KG to Grade 10", "coimbatore": "CBSE: Playgroup to Grade 7 · IB: Playgroup to PYP 5"},
     "board": {"varanasi": "CBSE and IB"},
     # 3rd sheet added labels ("CIE", "IGCSE", "IBDP") inside the board column; subjects unchanged, keep the tables.
     "keep_old_curriculum": {"kochi-gma"},  # answered "yes" to "Is IB offered in 2027-28?"

@@ -5797,9 +5797,9 @@ window.CAMPUSES = [
   "name": "GEMS Modern Academy",
   "short": "GMA Coimbatore",
   "city": "Coimbatore",
-  "updated": "4 Nov 2026",
+  "updated": "5 Nov 2026",
   "board": "CBSE and IB",
-  "grades": "Nursery to Grade 8",
+  "grades": "CBSE: Playgroup to Grade 7 · IB: Playgroup to PYP 5",
   "keyNotes": [
    "No hostel facility at any GEMS campus. Day school only."
   ],
@@ -5975,23 +5975,6 @@ window.CAMPUSES = [
     }
    },
    {
-    "grade": "Grade 8 (CBSE)",
-    "tuition": 165000,
-    "max": 40,
-    "ratio": "40:1",
-    "timings": "8:00 am – 3:00 pm",
-    "ex": {
-     "Uniform": {
-      "cell": "8,000",
-      "max": 8000
-     },
-     "Books": {
-      "cell": "8,000",
-      "max": 8000
-     }
-    }
-   },
-   {
     "grade": "Grade 1 (IB)",
     "tuition": 225000,
     "max": 40,
@@ -6062,57 +6045,6 @@ window.CAMPUSES = [
    {
     "grade": "Grade 5 (IB)",
     "tuition": 225000,
-    "max": 40,
-    "ratio": "40:1",
-    "timings": "8:00 am – 3:00 pm",
-    "ex": {
-     "Uniform": {
-      "cell": "8,000",
-      "max": 8000
-     },
-     "Books": {
-      "cell": "8,000",
-      "max": 8000
-     }
-    }
-   },
-   {
-    "grade": "Grade 6 (IB)",
-    "tuition": 250000,
-    "max": 40,
-    "ratio": "40:1",
-    "timings": "8:00 am – 3:00 pm",
-    "ex": {
-     "Uniform": {
-      "cell": "8,000",
-      "max": 8000
-     },
-     "Books": {
-      "cell": "8,000",
-      "max": 8000
-     }
-    }
-   },
-   {
-    "grade": "Grade 7 (IB)",
-    "tuition": 250000,
-    "max": 40,
-    "ratio": "40:1",
-    "timings": "8:00 am – 3:00 pm",
-    "ex": {
-     "Uniform": {
-      "cell": "8,000",
-      "max": 8000
-     },
-     "Books": {
-      "cell": "8,000",
-      "max": 8000
-     }
-    }
-   },
-   {
-    "grade": "Grade 8 (IB)",
-    "tuition": 250000,
     "max": 40,
     "ratio": "40:1",
     "timings": "8:00 am – 3:00 pm",

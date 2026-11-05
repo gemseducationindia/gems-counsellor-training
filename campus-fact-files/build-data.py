@@ -381,7 +381,8 @@ _hi = {"Grade 9", "Grade 10", "Grade 11", "Grade 12"}
 for c in C:
     if c["slug"] == "coimbatore":
         c["feeRows"] = [fr for fr in c["feeRows"] if fr["grade"].split(" (")[0] not in _hi]
-        c["grades"] = "Nursery to Grade 8"
+        c["grades"] = "CBSE: Playgroup to Grade 7 · IB: Playgroup to PYP 5"  # school, 5 Nov 2026
+        c["feeRows"] = [fr for fr in c["feeRows"] if fr["grade"] not in ['Grade 6 (IB)', 'Grade 7 (IB)', 'Grade 8 (CBSE)', 'Grade 8 (IB)']]
 # Jay, 31 Oct 2026: GMA Kochi Pre EY = Nursery, EYP 1 = Junior KG, EYP 2 = Senior KG; MYP rows are the IB class size for Grades 6-9.
 GMA_KOCHI_MAX = {"Nursery (IB)": 20, "Junior KG (IB)": 18, "Senior KG (IB)": 25,
                  **{f"Grade {g} (IB)": 30 for g in range(1, 6)}, **{f"Grade {g} (IB)": 20 for g in range(6, 10)},
