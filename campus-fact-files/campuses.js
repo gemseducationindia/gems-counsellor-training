@@ -5797,13 +5797,30 @@ window.CAMPUSES = [
   "name": "GEMS Modern Academy",
   "short": "GMA Coimbatore",
   "city": "Coimbatore",
-  "updated": "5 Nov 2026",
+  "updated": "6 Nov 2026",
   "board": "CBSE and IB",
   "grades": "CBSE: Playgroup to Grade 7 · IB: Playgroup to PYP 5",
   "keyNotes": [
    "No hostel facility at any GEMS campus. Day school only."
   ],
   "feeRows": [
+   {
+    "grade": "Playgroup (CBSE)",
+    "tuition": 120000,
+    "max": 40,
+    "ratio": "20:1",
+    "timings": "9:30 am – 1:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
+   },
    {
     "grade": "Nursery (CBSE)",
     "tuition": 120000,
@@ -5963,6 +5980,74 @@ window.CAMPUSES = [
     "max": 40,
     "ratio": "40:1",
     "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
+   },
+   {
+    "grade": "Playgroup (IB)",
+    "tuition": 120000,
+    "max": 40,
+    "ratio": "20:1",
+    "timings": "9:30 am – 1:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
+   },
+   {
+    "grade": "Nursery (IB)",
+    "tuition": 120000,
+    "max": 40,
+    "ratio": "20:1",
+    "timings": "9:30 am – 1:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
+   },
+   {
+    "grade": "Junior KG (IB)",
+    "tuition": 120000,
+    "max": 40,
+    "ratio": "20:1",
+    "timings": "9:30 am – 1:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
+   },
+   {
+    "grade": "Senior KG (IB)",
+    "tuition": 120000,
+    "max": 40,
+    "ratio": "20:1",
+    "timings": "9:30 am – 1:00 pm",
     "ex": {
      "Uniform": {
       "cell": "8,000",
