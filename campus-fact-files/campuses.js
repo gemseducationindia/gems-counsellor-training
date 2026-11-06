@@ -9,9 +9,9 @@ window.CAMPUSES = [
   "name": "GEMS Millennium School",
   "short": "GMS Vikhroli",
   "city": "Vikhroli, Mumbai",
-  "updated": "4 Nov 2026",
+  "updated": "6 Nov 2026",
   "board": "ICSE and Cambridge",
-  "grades": "Playgroup to Grade 7",
+  "grades": "Playgroup to Grade 8",
   "keyNotes": [
    "No hostel facility at any GEMS campus. Day school only.",
    "Book and uniform samples are available at school for parents to see."
@@ -74,7 +74,7 @@ window.CAMPUSES = [
     "timings": "8:00 am – 3:00 pm"
    },
    {
-    "grade": "Grade 5",
+    "grade": "Grade 5 (ICSE)",
     "tuition": 255000,
     "max": 30,
     "ratio": "30:1",
@@ -95,6 +95,20 @@ window.CAMPUSES = [
     "timings": "8:00 am – 3:00 pm"
    },
    {
+    "grade": "Grade 8 (ICSE)",
+    "tuition": 255000,
+    "max": 30,
+    "ratio": "30:1",
+    "timings": "8:00 am – 3:00 pm"
+   },
+   {
+    "grade": "Grade 5 (Cambridge)",
+    "tuition": 287000,
+    "max": 30,
+    "ratio": "30:1",
+    "timings": "8:00 am – 3:00 pm"
+   },
+   {
     "grade": "Grade 6 (Cambridge)",
     "tuition": 287000,
     "max": 30,
@@ -103,6 +117,13 @@ window.CAMPUSES = [
    },
    {
     "grade": "Grade 7 (Cambridge)",
+    "tuition": 287000,
+    "max": 30,
+    "ratio": "30:1",
+    "timings": "8:00 am – 3:00 pm"
+   },
+   {
+    "grade": "Grade 8 (Cambridge)",
     "tuition": 287000,
     "max": 30,
     "ratio": "30:1",
@@ -1225,13 +1246,34 @@ window.CAMPUSES = [
   "name": "GEMS Millennium School",
   "short": "GMS Indirapuram",
   "city": "Indirapuram, Ghaziabad",
-  "updated": "4 Nov 2026",
+  "updated": "6 Nov 2026",
   "board": "CBSE",
-  "grades": "Nursery to Grade 8",
+  "grades": "Pre-KG to Grade 12",
   "keyNotes": [
    "No hostel facility at any GEMS campus. Day school only."
   ],
   "feeRows": [
+   {
+    "grade": "Pre-KG",
+    "tuition": 200000,
+    "max": 40,
+    "ratio": "20:1",
+    "timings": "9:30 am – 1:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "CBSE examination fee": {
+      "cell": "–",
+      "max": 0
+     }
+    }
+   },
    {
     "grade": "Nursery",
     "tuition": 200000,
@@ -1445,6 +1487,90 @@ window.CAMPUSES = [
    {
     "grade": "Grade 8",
     "tuition": 250000,
+    "max": 40,
+    "ratio": "40:1",
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "CBSE examination fee": {
+      "cell": "–",
+      "max": 0
+     }
+    }
+   },
+   {
+    "grade": "Grade 9",
+    "tuition": 250000,
+    "max": 40,
+    "ratio": "40:1",
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "CBSE examination fee": {
+      "cell": "–",
+      "max": 0
+     }
+    }
+   },
+   {
+    "grade": "Grade 10",
+    "tuition": 250000,
+    "max": 40,
+    "ratio": "40:1",
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "CBSE examination fee": {
+      "cell": "–",
+      "max": 0
+     }
+    }
+   },
+   {
+    "grade": "Grade 11",
+    "tuition": 300000,
+    "max": 40,
+    "ratio": "40:1",
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "CBSE examination fee": {
+      "cell": "–",
+      "max": 0
+     }
+    }
+   },
+   {
+    "grade": "Grade 12",
+    "tuition": 300000,
     "max": 40,
     "ratio": "40:1",
     "timings": "8:00 am – 3:00 pm",
@@ -3140,13 +3266,30 @@ window.CAMPUSES = [
   "name": "GEMS Millennium School",
   "short": "GMS Varanasi",
   "city": "Varanasi",
-  "updated": "4 Nov 2026",
+  "updated": "6 Nov 2026",
   "board": "CBSE and IB",
-  "grades": "Nursery to Grade 12",
+  "grades": "Pre-KG to Grade 12",
   "keyNotes": [
    "No hostel facility at any GEMS campus. Day school only."
   ],
   "feeRows": [
+   {
+    "grade": "Pre-KG",
+    "tuition": 98340,
+    "max": 40,
+    "ratio": "20:1",
+    "timings": "9:30 am – 1:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
+   },
    {
     "grade": "Nursery",
     "tuition": 98340,
@@ -4257,9 +4400,9 @@ window.CAMPUSES = [
   "name": "GEMS School of Excellence",
   "short": "GSE Jodhpur",
   "city": "Jodhpur",
-  "updated": "4 Nov 2026",
+  "updated": "6 Nov 2026",
   "board": "CBSE",
-  "grades": "Pre-KG to Grade 10",
+  "grades": "Pre-KG to Grade 12",
   "keyNotes": [
    "No hostel facility at any GEMS campus. Day school only.",
    "Book and uniform samples are available at school for parents to see."
@@ -4489,6 +4632,44 @@ window.CAMPUSES = [
    {
     "grade": "Grade 10",
     "tuition": 107000,
+    "max": 30,
+    "ratio": "30:1",
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "CBSE examination fee": {
+      "cell": "3,000",
+      "max": 3000
+     }
+    }
+   },
+   {
+    "grade": "Grade 11",
+    "tuition": 129000,
+    "max": 30,
+    "ratio": "30:1",
+    "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
+   },
+   {
+    "grade": "Grade 12",
+    "tuition": 129000,
     "max": 30,
     "ratio": "30:1",
     "timings": "8:00 am – 3:00 pm",
@@ -5797,13 +5978,30 @@ window.CAMPUSES = [
   "name": "GEMS Modern Academy",
   "short": "GMA Coimbatore",
   "city": "Coimbatore",
-  "updated": "5 Nov 2026",
+  "updated": "6 Nov 2026",
   "board": "CBSE and IB",
   "grades": "CBSE: Playgroup to Grade 7 · IB: Playgroup to PYP 5",
   "keyNotes": [
    "No hostel facility at any GEMS campus. Day school only."
   ],
   "feeRows": [
+   {
+    "grade": "Playgroup (CBSE)",
+    "tuition": 120000,
+    "max": 40,
+    "ratio": "20:1",
+    "timings": "9:30 am – 1:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
+   },
    {
     "grade": "Nursery (CBSE)",
     "tuition": 120000,
@@ -5963,6 +6161,74 @@ window.CAMPUSES = [
     "max": 40,
     "ratio": "40:1",
     "timings": "8:00 am – 3:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
+   },
+   {
+    "grade": "Playgroup (IB)",
+    "tuition": 120000,
+    "max": 40,
+    "ratio": "20:1",
+    "timings": "9:30 am – 1:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
+   },
+   {
+    "grade": "Nursery (IB)",
+    "tuition": 120000,
+    "max": 40,
+    "ratio": "20:1",
+    "timings": "9:30 am – 1:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
+   },
+   {
+    "grade": "Junior KG (IB)",
+    "tuition": 120000,
+    "max": 40,
+    "ratio": "20:1",
+    "timings": "9:30 am – 1:00 pm",
+    "ex": {
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
+   },
+   {
+    "grade": "Senior KG (IB)",
+    "tuition": 120000,
+    "max": 40,
+    "ratio": "20:1",
+    "timings": "9:30 am – 1:00 pm",
     "ex": {
      "Uniform": {
       "cell": "8,000",
