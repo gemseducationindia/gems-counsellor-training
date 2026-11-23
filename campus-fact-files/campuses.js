@@ -4938,7 +4938,7 @@ window.CAMPUSES = [
   "name": "GEMS Modern Academy",
   "short": "GMA Kochi",
   "city": "Kochi",
-  "updated": "4 Nov 2026",
+  "updated": "23 Nov 2026",
   "board": "IB and Cambridge",
   "grades": "Nursery to Grade 12",
   "keyNotes": [
@@ -4951,7 +4951,12 @@ window.CAMPUSES = [
     "ratio": "15:1",
     "timings": "8:30 am – 12:30 pm",
     "annual": 25000,
+    "tuition": 197640,
     "ex": {
+     "Registration fee (one time)": {
+      "cell": "10,000",
+      "max": 10000
+     },
      "Uniform": {
       "cell": "8,000",
       "max": 8000
@@ -4964,7 +4969,12 @@ window.CAMPUSES = [
     "ratio": "15:1",
     "timings": "8:30 am – 12:30 pm",
     "annual": 25000,
+    "tuition": 197640,
     "ex": {
+     "Registration fee (one time)": {
+      "cell": "10,000",
+      "max": 10000
+     },
      "Uniform": {
       "cell": "8,000",
       "max": 8000
@@ -4977,7 +4987,12 @@ window.CAMPUSES = [
     "ratio": "15:1",
     "timings": "8:30 am – 12:30 pm",
     "annual": 25000,
+    "tuition": 206320,
     "ex": {
+     "Registration fee (one time)": {
+      "cell": "10,000",
+      "max": 10000
+     },
      "Uniform": {
       "cell": "8,000",
       "max": 8000
@@ -4990,7 +5005,12 @@ window.CAMPUSES = [
     "ratio": "15:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
+    "tuition": 220480,
     "ex": {
+     "Registration fee (one time)": {
+      "cell": "10,000",
+      "max": 10000
+     },
      "Uniform": {
       "cell": "8,000",
       "max": 8000
@@ -5003,7 +5023,12 @@ window.CAMPUSES = [
     "ratio": "15:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
+    "tuition": 230580,
     "ex": {
+     "Registration fee (one time)": {
+      "cell": "10,000",
+      "max": 10000
+     },
      "Uniform": {
       "cell": "8,000",
       "max": 8000
@@ -5016,7 +5041,12 @@ window.CAMPUSES = [
     "ratio": "15:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
+    "tuition": 246270,
     "ex": {
+     "Registration fee (one time)": {
+      "cell": "10,000",
+      "max": 10000
+     },
      "Uniform": {
       "cell": "8,000",
       "max": 8000
@@ -5029,7 +5059,12 @@ window.CAMPUSES = [
     "ratio": "15:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
+    "tuition": 246270,
     "ex": {
+     "Registration fee (one time)": {
+      "cell": "10,000",
+      "max": 10000
+     },
      "Uniform": {
       "cell": "8,000",
       "max": 8000
@@ -5042,7 +5077,12 @@ window.CAMPUSES = [
     "ratio": "15:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
+    "tuition": 246270,
     "ex": {
+     "Registration fee (one time)": {
+      "cell": "10,000",
+      "max": 10000
+     },
      "Uniform": {
       "cell": "8,000",
       "max": 8000
@@ -5055,7 +5095,12 @@ window.CAMPUSES = [
     "ratio": "30:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
+    "tuition": 400680,
     "ex": {
+     "Registration fee (one time)": {
+      "cell": "10,000",
+      "max": 10000
+     },
      "Uniform": {
       "cell": "8,000",
       "max": 8000
@@ -5068,7 +5113,12 @@ window.CAMPUSES = [
     "ratio": "30:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
+    "tuition": 400680,
     "ex": {
+     "Registration fee (one time)": {
+      "cell": "10,000",
+      "max": 10000
+     },
      "Uniform": {
       "cell": "8,000",
       "max": 8000
@@ -5081,7 +5131,12 @@ window.CAMPUSES = [
     "ratio": "30:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
+    "tuition": 400680,
     "ex": {
+     "Registration fee (one time)": {
+      "cell": "10,000",
+      "max": 10000
+     },
      "Uniform": {
       "cell": "8,000",
       "max": 8000
@@ -5094,7 +5149,12 @@ window.CAMPUSES = [
     "ratio": "30:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
+    "tuition": 417860,
     "ex": {
+     "Registration fee (one time)": {
+      "cell": "10,000",
+      "max": 10000
+     },
      "Uniform": {
       "cell": "8,000",
       "max": 8000
@@ -5107,32 +5167,19 @@ window.CAMPUSES = [
     "ratio": "30:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
+    "tuition": 417860,
     "ex": {
+     "Registration fee (one time)": {
+      "cell": "10,000",
+      "max": 10000
+     },
      "Uniform": {
       "cell": "8,000",
       "max": 8000
-     }
-    }
-   },
-   {
-    "grade": "Grade 11 (IB)",
-    "max": 20,
-    "timings": "8:30 am – 3:00 pm",
-    "ex": {
-     "Uniform": {
-      "cell": "8,000",
-      "max": 8000
-     }
-    }
-   },
-   {
-    "grade": "Grade 12 (IB)",
-    "max": 20,
-    "timings": "8:30 am – 3:00 pm",
-    "ex": {
-     "Uniform": {
-      "cell": "8,000",
-      "max": 8000
+     },
+     "IB examination fee": {
+      "cell": "At actuals",
+      "max": null
      }
     }
    },
@@ -5142,7 +5189,12 @@ window.CAMPUSES = [
     "ratio": "30:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
+    "tuition": 263520,
     "ex": {
+     "Registration fee (one time)": {
+      "cell": "10,000",
+      "max": 10000
+     },
      "Uniform": {
       "cell": "8,000",
       "max": 8000
@@ -5155,7 +5207,12 @@ window.CAMPUSES = [
     "ratio": "30:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
+    "tuition": 263520,
     "ex": {
+     "Registration fee (one time)": {
+      "cell": "10,000",
+      "max": 10000
+     },
      "Uniform": {
       "cell": "8,000",
       "max": 8000
@@ -5168,10 +5225,19 @@ window.CAMPUSES = [
     "ratio": "30:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
+    "tuition": 263520,
     "ex": {
+     "Registration fee (one time)": {
+      "cell": "10,000",
+      "max": 10000
+     },
      "Uniform": {
       "cell": "8,000",
       "max": 8000
+     },
+     "Cambridge examination fee": {
+      "cell": "At actuals",
+      "max": null
      }
     }
    },
@@ -5181,7 +5247,12 @@ window.CAMPUSES = [
     "ratio": "30:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
+    "tuition": 282340,
     "ex": {
+     "Registration fee (one time)": {
+      "cell": "10,000",
+      "max": 10000
+     },
      "Uniform": {
       "cell": "8,000",
       "max": 8000
@@ -5194,10 +5265,19 @@ window.CAMPUSES = [
     "ratio": "30:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
+    "tuition": 282340,
     "ex": {
+     "Registration fee (one time)": {
+      "cell": "10,000",
+      "max": 10000
+     },
      "Uniform": {
       "cell": "8,000",
       "max": 8000
+     },
+     "Cambridge examination fee": {
+      "cell": "At actuals",
+      "max": null
      }
     }
    },
@@ -5207,10 +5287,19 @@ window.CAMPUSES = [
     "ratio": "30:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
+    "tuition": 313710,
     "ex": {
+     "Registration fee (one time)": {
+      "cell": "10,000",
+      "max": 10000
+     },
      "Uniform": {
       "cell": "8,000",
       "max": 8000
+     },
+     "Cambridge examination fee": {
+      "cell": "At actuals",
+      "max": null
      }
     }
    },
@@ -5220,17 +5309,31 @@ window.CAMPUSES = [
     "ratio": "30:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
+    "tuition": 313710,
     "ex": {
+     "Registration fee (one time)": {
+      "cell": "10,000",
+      "max": 10000
+     },
      "Uniform": {
       "cell": "8,000",
       "max": 8000
+     },
+     "Cambridge examination fee": {
+      "cell": "At actuals",
+      "max": null
      }
     }
    }
   ],
   "applicationFee": 2000,
-  "admissionFee": 30000,
+  "admissionFee": 50000,
   "extraFees": [
+   {
+    "key": "Registration fee (one time)",
+    "cell": null,
+    "max": null
+   },
    {
     "key": "Uniform",
     "cell": null,
@@ -5255,27 +5358,27 @@ window.CAMPUSES = [
   "transport": [
    [
     "0 – 5 km",
-    43700
+    45900
    ],
    [
     "5.1 – 10 km",
-    61300
+    64400
    ],
    [
     "10.1 – 15 km",
-    76200
+    80100
    ],
    [
     "15.1 – 20 km",
-    84400
+    88700
    ],
    [
     "20.1 – 30 km",
-    91000
+    95600
    ],
    [
     "Above 30 km",
-    100800
+    105900
    ]
   ],
   "bus": [
@@ -5415,9 +5518,6 @@ window.CAMPUSES = [
     ]
    }
   ],
-  "notShown": {
-   "prospectusFee": 2000
-  },
   "technology": [
    [
     "Smart boards per classroom",
