@@ -2435,9 +2435,9 @@ window.CAMPUSES = [
   "name": "GEMS Millennium School",
   "short": "GMS Kochi",
   "city": "Kochi",
-  "updated": "4 Nov 2026",
+  "updated": "24 Nov 2026",
   "board": "CBSE",
-  "grades": "Nursery to Grade 5",
+  "grades": "Nursery to Grade 7",
   "keyNotes": [
    "No hostel facility at any GEMS campus. Day school only.",
    "Book and uniform samples are available at school for parents to see."
@@ -2449,7 +2449,12 @@ window.CAMPUSES = [
     "ratio": "15:1",
     "timings": "8:30 am – 12:30 pm",
     "annual": 25000,
+    "tuition": 155150,
     "ex": {
+     "Registration fee (one time)": {
+      "cell": "10,000",
+      "max": 10000
+     },
      "Uniform": {
       "cell": "8,000",
       "max": 8000
@@ -2466,7 +2471,12 @@ window.CAMPUSES = [
     "ratio": "15:1",
     "timings": "8:30 am – 12:30 pm",
     "annual": 25000,
+    "tuition": 155150,
     "ex": {
+     "Registration fee (one time)": {
+      "cell": "10,000",
+      "max": 10000
+     },
      "Uniform": {
       "cell": "8,000",
       "max": 8000
@@ -2483,7 +2493,12 @@ window.CAMPUSES = [
     "ratio": "15:1",
     "timings": "8:30 am – 12:30 pm",
     "annual": 25000,
+    "tuition": 155150,
     "ex": {
+     "Registration fee (one time)": {
+      "cell": "10,000",
+      "max": 10000
+     },
      "Uniform": {
       "cell": "8,000",
       "max": 8000
@@ -2500,7 +2515,12 @@ window.CAMPUSES = [
     "ratio": "35:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
+    "tuition": 170670,
     "ex": {
+     "Registration fee (one time)": {
+      "cell": "10,000",
+      "max": 10000
+     },
      "Uniform": {
       "cell": "8,000",
       "max": 8000
@@ -2517,7 +2537,12 @@ window.CAMPUSES = [
     "ratio": "35:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
+    "tuition": 170670,
     "ex": {
+     "Registration fee (one time)": {
+      "cell": "10,000",
+      "max": 10000
+     },
      "Uniform": {
       "cell": "8,000",
       "max": 8000
@@ -2534,7 +2559,12 @@ window.CAMPUSES = [
     "ratio": "35:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
+    "tuition": 170670,
     "ex": {
+     "Registration fee (one time)": {
+      "cell": "10,000",
+      "max": 10000
+     },
      "Uniform": {
       "cell": "8,000",
       "max": 8000
@@ -2551,7 +2581,12 @@ window.CAMPUSES = [
     "ratio": "35:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
+    "tuition": 187740,
     "ex": {
+     "Registration fee (one time)": {
+      "cell": "10,000",
+      "max": 10000
+     },
      "Uniform": {
       "cell": "8,000",
       "max": 8000
@@ -2568,7 +2603,56 @@ window.CAMPUSES = [
     "ratio": "35:1",
     "timings": "8:30 am – 3:00 pm",
     "annual": 25000,
+    "tuition": 187740,
     "ex": {
+     "Registration fee (one time)": {
+      "cell": "10,000",
+      "max": 10000
+     },
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
+   },
+   {
+    "grade": "Grade 6",
+    "max": 35,
+    "ratio": "35:1",
+    "timings": "8:30 am – 3:00 pm",
+    "annual": 25000,
+    "tuition": 187740,
+    "ex": {
+     "Registration fee (one time)": {
+      "cell": "10,000",
+      "max": 10000
+     },
+     "Uniform": {
+      "cell": "8,000",
+      "max": 8000
+     },
+     "Books": {
+      "cell": "8,000",
+      "max": 8000
+     }
+    }
+   },
+   {
+    "grade": "Grade 7",
+    "max": 35,
+    "ratio": "35:1",
+    "timings": "8:30 am – 3:00 pm",
+    "annual": 25000,
+    "tuition": 187740,
+    "ex": {
+     "Registration fee (one time)": {
+      "cell": "10,000",
+      "max": 10000
+     },
      "Uniform": {
       "cell": "8,000",
       "max": 8000
@@ -2581,8 +2665,13 @@ window.CAMPUSES = [
    }
   ],
   "applicationFee": 2000,
-  "admissionFee": 100000,
+  "admissionFee": 50000,
   "extraFees": [
+   {
+    "key": "Registration fee (one time)",
+    "cell": null,
+    "max": null
+   },
    {
     "key": "Uniform",
     "cell": null,
@@ -2602,27 +2691,27 @@ window.CAMPUSES = [
   "transport": [
    [
     "0 – 5 km",
-    43700
+    45900
    ],
    [
     "5.1 – 10 km",
-    61300
+    64400
    ],
    [
     "10.1 – 15 km",
-    76200
+    80100
    ],
    [
     "15.1 – 20 km",
-    84400
+    88700
    ],
    [
     "20.1 – 30 km",
-    91000
+    95600
    ],
    [
     "Above 30 km",
-    100800
+    105900
    ]
   ],
   "bus": [
